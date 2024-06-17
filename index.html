@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Universal Open Textbook Initiative</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Universal Open Textbook Initiative</h1>
+        <p>The Universal Open Textbook Initiative was founded by the philosopher <a href="http://readvatsal.com/">Vatsal</a> with the goal of providing free, uniform, high quality textbooks to learners of all ages, all subjects, and all major languages. These textbooks can be used for schools, educational ventures, homeschooling, or any other end.</p>
+        <p>Get started by selecting a learner age, subject, and language from the available options below:</p>
+        <table>
+            <thead>
+                <tr>
+                    <th>Learner Age</th>
+                    <th>Subject</th>
+                    <th>Language</th>
+                    <th>Download</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <select id="learner-age" onchange="showSubject()">
+                            <option value="">Select Age</option>
+                            <option value="6">6</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="subject" onchange="showLanguage()" disabled>
+                            <option value="">Select Subject</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="language" onchange="showDownload()" disabled>
+                            <option value="">Select Language</option>
+                        </select>
+                    </td>
+                    <td>
+                        <a id="download-link" href="#" target="_blank" style="display: none;">Download PDF</a>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
