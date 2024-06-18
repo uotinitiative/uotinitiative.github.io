@@ -31,7 +31,7 @@ function showDownload() {
     const downloadLink = document.getElementById("download-link");
 
     if (language === "english") {
-        downloadLink.href = "https://chatgpt.com/c/af257b97-309a-4225-b6a1-83d3ec080cb4";
+        downloadLink.href = "https://uotinitiative.org/docs/6-Math-English.pdf";
         downloadLink.style.display = "inline";
     } else {
         downloadLink.style.display = "none";
