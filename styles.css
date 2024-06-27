@@ -57,3 +57,65 @@ a.hidden {
 a:hover {
     text-decoration: underline;
 }
+
+footer {
+    background-color: #ffffff; /* Matches the white background */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+    color: #333; /* A subtle contrast color for the text */
+    border-top: none; /* No top border */
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+footer nav a {
+    color: #007bff; /* Link color */
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer nav a:hover {
+    text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+      padding: 10px;
+    }
+    
+    table, thead, tbody, th, td, tr {
+      display: block;
+    }
+    
+    thead tr {
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr {
+      margin-bottom: 10px;
+    }
+    
+    td {
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    td:before {
+      position: absolute;
+      top: 6px;
+      left: 6px;
+      width: 45%;
+      padding-right: 10px;
+      white-space: nowrap;
+    }
+    
+    td:nth-of-type(1):before { content: "Learner Age"; }
+    td:nth-of-type(2):before { content: "Subject"; }
+    td:nth-of-type(3):before { content: "Language"; }
+    td:nth-of-type(4):before { content: "Download"; }
+  }
