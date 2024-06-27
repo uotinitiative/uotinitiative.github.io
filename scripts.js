@@ -31,7 +31,7 @@ function showDownload() {
     const downloadLink = document.getElementById("download-link");
 
     if (language === "english") {
-        downloadLink.href = "https://uotinitiative.org/docs/6-math-english.pdf";
+        downloadLink.href = "https://uotinitiative.org/docs/6-Math-English.pdf";
         downloadLink.style.display = "inline";
     } else {
         downloadLink.style.display = "none";
