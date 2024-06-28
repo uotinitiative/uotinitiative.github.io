@@ -3,21 +3,24 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-    background-color: #ffffff; /* White background */
+    background-color: #ffffff;
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 100vh;
+    flex-direction: column;
 }
 
 .container {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background: #fff;
     padding: 20px;
     max-width: 800px;
     margin: auto;
     text-align: center;
-    box-shadow: none; /* Removed shadow */
-    border: none; /* Removed border */
+    box-shadow: none;
+    border: none;
 }
 
 h1 {
@@ -32,7 +35,7 @@ table {
 
 th, td {
     padding: 10px;
-    border: none; /* Removed border */
+    border: none;
 }
 
 .option {
@@ -59,19 +62,17 @@ a:hover {
 }
 
 footer {
-    background-color: #ffffff; /* Matches the white background */
+    background-color: #ffffff;
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
-    color: #333; /* A subtle contrast color for the text */
-    border-top: none; /* No top border */
-    position: absolute;
-    bottom: 0;
+    color: #333;
+    border-top: none;
     width: 100%;
 }
 
 footer nav a {
-    color: #007bff; /* Link color */
+    color: #007bff;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -81,41 +82,47 @@ footer nav a:hover {
 }
 
 @media screen and (max-width: 768px) {
+    body {
+        display: block;
+    }
+
     .container {
-      padding: 10px;
+        justify-content: flex-start;
+        min-height: calc(100vh - 60px);
+        overflow-y: auto;
     }
     
     table, thead, tbody, th, td, tr {
-      display: block;
+        display: block;
     }
     
     thead tr {
-      position: absolute;
-      top: -9999px;
-      left: -9999px;
+        position: absolute;
+        top: -9999px;
+        left: -9999px;
     }
     
     tr {
-      margin-bottom: 10px;
+        margin-bottom: 10px;
     }
     
     td {
-      border: none;
-      position: relative;
-      padding-left: 50%;
+        border: none;
+        position: relative;
+        padding-left: 50%;
     }
     
     td:before {
-      position: absolute;
-      top: 6px;
-      left: 6px;
-      width: 45%;
-      padding-right: 10px;
-      white-space: nowrap;
+        position: absolute;
+        top: 6px;
+        left: 6px;
+        width: 45%;
+        padding-right: 10px;
+        white-space: nowrap;
     }
     
     td:nth-of-type(1):before { content: "Learner Age"; }
     td:nth-of-type(2):before { content: "Subject"; }
     td:nth-of-type(3):before { content: "Language"; }
     td:nth-of-type(4):before { content: "Download"; }
-  }
+}
