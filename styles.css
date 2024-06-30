@@ -36,6 +36,12 @@ table {
 th, td {
     padding: 10px;
     border: none;
+    font-size: 16px;
+}
+
+select, #download-link {
+    font-size: 16px;
+    font-family: Arial, sans-serif;
 }
 
 .option {
