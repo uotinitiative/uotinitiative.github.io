@@ -5,16 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal Open Textbook Initiative</title>
     <link rel="stylesheet" href="styles.css">
-    <script>
-        if (window.location.pathname.toLowerCase() === '/index.html') {
-            window.location.href = '/';
-        }
-    </script>
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
     <link rel="manifest" href="/favicon/site.webmanifest">
     <link rel="shortcut icon" href="/favicon/favicon.ico">
+    <script>
+        if (window.location.pathname.toLowerCase() === '/index.html') {
+            window.location.href = '/';
+        }
+    </script>
 </head>
 <body>
     <div class="container">
@@ -49,16 +49,16 @@
                         </select>
                     </td>
                     <td>
+                        <div id="loading-spinner" class="spinner" style="display: none;"></div>
                         <a id="download-link" href="#" target="_blank" style="display: none;">Download PDF</a>
                     </td>
                 </tr>
             </tbody>
         </table>
     </div>
-    <script src="scripts.js"></script>
     <footer>
-        <p>&copy; 2024 UOTI ∙ <a href="terms.html">Terms</a> ∙ <a href="mailto:contact@uotinitiative.org">Contact</a>
-       </p>
+        <p>&copy; 2024 UOTI ∙ <a href="terms.html">Terms</a> ∙ <a href="mailto:contact@uotinitiative.org">Contact</a></p>
     </footer>
-    </body>
+    <script src="scripts.js"></script>
+</body>
 </html>

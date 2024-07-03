@@ -1,3 +1,4 @@
+/* Global Styles */
 body {
     font-family: Arial, sans-serif;
     line-height: 1.6;
@@ -9,6 +10,7 @@ body {
     flex-direction: column;
 }
 
+/* Container Styles */
 .container {
     flex: 1;
     display: flex;
@@ -27,6 +29,7 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Table Styles */
 table {
     width: 100%;
     margin-top: 20px;
@@ -44,29 +47,21 @@ select, #download-link {
     font-family: Arial, sans-serif;
 }
 
-.option {
-    cursor: pointer;
-    color: #007bff;
-    text-decoration: underline;
-}
-
-.option.hidden {
-    display: none;
-}
-
+/* Link Styles */
 a {
     text-decoration: none;
     color: #007bff;
-}
-
-a.hidden {
-    display: none;
 }
 
 a:hover {
     text-decoration: underline;
 }
 
+a.hidden {
+    display: none;
+}
+
+/* Footer Styles */
 footer {
     background-color: #ffffff;
     text-align: center;
@@ -87,6 +82,23 @@ footer nav a:hover {
     text-decoration: underline;
 }
 
+/* Loading Spinner */
+.spinner {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #f3f3f3;
+    border-top: 2px solid #007bff;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Responsive Styles */
 @media screen and (max-width: 768px) {
     body {
         display: block;

@@ -1,3 +1,7 @@
+// Global constants
+const WAITING_TIME = 300; // Waiting time in milliseconds
+
+// Show subject options based on selected learner age
 function showSubject() {
     const learnerAge = document.getElementById("learner-age").value;
     const subjectSelect = document.getElementById("subject");
@@ -12,6 +16,7 @@ function showSubject() {
     }
 }
 
+// Show language options based on selected subject
 function showLanguage() {
     const subject = document.getElementById("subject").value;
     const languageSelect = document.getElementById("language");
@@ -26,20 +31,34 @@ function showLanguage() {
     }
 }
 
+// Show download link based on selected language
 function showDownload() {
     const language = document.getElementById("language").value;
     const downloadLink = document.getElementById("download-link");
+    const loadingSpinner = document.getElementById("loading-spinner");
 
     if (language === "english") {
-        downloadLink.href = "https://uotinitiative.org/docs/6-Math-English.pdf";
-        downloadLink.style.display = "inline";
+        // Show loading spinner
+        loadingSpinner.style.display = "block";
+        downloadLink.style.display = "none";
+
+        // Simulate loading time
+        setTimeout(() => {
+            // Hide loading spinner and show download link
+            loadingSpinner.style.display = "none";
+            downloadLink.href = "https://uotinitiative.org/docs/6-Math-English.pdf";
+            downloadLink.style.display = "inline";
+        }, WAITING_TIME);
     } else {
         downloadLink.style.display = "none";
+        loadingSpinner.style.display = "none";
     }
 }
 
+// Reset selections and hide download link
 function resetSelections() {
     document.getElementById("language").innerHTML = '<option value="">Select Language</option>';
     document.getElementById("language").disabled = true;
     document.getElementById("download-link").style.display = "none";
+    document.getElementById("loading-spinner").style.display = "none";
 }
