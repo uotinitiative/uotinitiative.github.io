@@ -47,6 +47,13 @@ select, #download-link {
     font-family: Arial, sans-serif;
 }
 
+.pdf-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
 /* Link Styles */
 a {
     text-decoration: none;
