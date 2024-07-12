@@ -48,10 +48,12 @@ select, #download-link {
 }
 
 .pdf-icon {
-    width: 16px;
-    height: 16px;
+    width: 14px;
+    height: 14px;
     margin-right: 5px;
     vertical-align: middle;
+    position: relative;
+    top: -1px;
 }
 
 /* Link Styles */
@@ -66,6 +68,12 @@ a:hover {
 
 a.hidden {
     display: none;
+}
+
+#download-link {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* Footer Styles */
