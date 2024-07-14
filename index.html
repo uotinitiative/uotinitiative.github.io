@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Universal Open Textbook Initiative</title>
+    <link rel="stylesheet" href="styles.css">
 
     <!-- Google Tag Manager -->
     <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -15,7 +16,6 @@
 
     <meta name="description" content="The Universal Open Textbook Initiative (UOTI) aims to provide free, high-quality textbooks for all learners. Get started by selecting a learner age, subject, and language from the available options.">
     <meta name="keywords" content="open textbooks, OER, universal education, Vatsal, learning resources">
-    <link rel="stylesheet" href="styles.css">
     <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
@@ -58,32 +58,32 @@
         <h1>Universal Open Textbook Initiative</h1>
         <p>The Universal Open Textbook Initiative was founded by the philosopher <a href="https://www.readvatsal.com" target="_blank" rel="noopener">Vatsal</a> with the goal of providing free, high-quality textbooks for learners of all ages, subjects, and major languages.</p>
         <p>You are free to download, share, and modify these textbooks for schools, educational ventures, homeschooling, personal learning, or any other purpose. Learn more in the <a href="faq.html">FAQ</a>.</p>
-        <p>Get started by selecting a learner age, subject, and language from the available options below. For more information on the options, consult the <a href="mastercurriculum.html">Master Curriculum Document</a>.</p>
+        <p>Get started by selecting a language, learner age, and subject from the available options below. For more information on the options, consult the <a href="mastercurriculum.html">Master Curriculum Document</a>.</p>
         <table>
             <thead>
                 <tr>
+                    <th>Language</th>
                     <th>Learner Age</th>
                     <th>Subject</th>
-                    <th>Language</th>
                     <th>Download</th>
                 </tr>
             </thead>
             <tbody>
                 <tr>
                     <td>
-                        <select id="learner-age" onchange="showSubject()">
-                            <option value="">Select Age</option>
-                            <option value="6">6</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select id="subject" onchange="showLanguage()" disabled>
-                            <option value="">Select Subject</option>
-                        </select>
-                    </td>
-                    <td>
-                        <select id="language" onchange="showDownload()" disabled>
+                        <select id="language" onchange="showLearnerAge()">
                             <option value="">Select Language</option>
+                            <option value="english">English</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="learner-age" onchange="showSubject()" disabled>
+                            <option value="">Select Age</option>
+                        </select>
+                    </td>
+                    <td>
+                        <select id="subject" onchange="showDownload()" disabled>
+                            <option value="">Select Subject</option>
                         </select>
                     </td>
                     <td>

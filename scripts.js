@@ -1,6 +1,21 @@
 // Global constants
 const WAITING_TIME = 300; // Waiting time in milliseconds
 
+// Show learner age options based on selected language
+function showLearnerAge() {
+    const language = document.getElementById("language").value;
+    const learnerAgeSelect = document.getElementById("learner-age");
+
+    if (language === "english") {
+        learnerAgeSelect.innerHTML = '<option value="">Select Age</option><option value="6">6</option>';
+        learnerAgeSelect.disabled = false;
+    } else {
+        learnerAgeSelect.innerHTML = '<option value="">Select Age</option>';
+        learnerAgeSelect.disabled = true;
+        resetSelections("learner-age");
+    }
+}
+
 // Show subject options based on selected learner age
 function showSubject() {
     const learnerAge = document.getElementById("learner-age").value;
@@ -12,32 +27,19 @@ function showSubject() {
     } else {
         subjectSelect.innerHTML = '<option value="">Select Subject</option>';
         subjectSelect.disabled = true;
-        resetSelections();
+        resetSelections("subject");
     }
 }
 
-// Show language options based on selected subject
-function showLanguage() {
-    const subject = document.getElementById("subject").value;
-    const languageSelect = document.getElementById("language");
-
-    if (subject === "math") {
-        languageSelect.innerHTML = '<option value="">Select Language</option><option value="english">English</option>';
-        languageSelect.disabled = false;
-    } else {
-        languageSelect.innerHTML = '<option value="">Select Language</option>';
-        languageSelect.disabled = true;
-        resetSelections();
-    }
-}
-
-// Show download link based on selected language
+// Show download link based on selected subject
 function showDownload() {
     const language = document.getElementById("language").value;
+    const learnerAge = document.getElementById("learner-age").value;
+    const subject = document.getElementById("subject").value;
     const downloadLink = document.getElementById("download-link");
     const loadingSpinner = document.getElementById("loading-spinner");
 
-    if (language === "english") {
+    if (language === "english" && learnerAge === "6" && subject === "math") {
         // Show loading spinner
         loadingSpinner.style.display = "block";
         downloadLink.style.display = "none";
@@ -46,7 +48,7 @@ function showDownload() {
         setTimeout(() => {
             // Hide loading spinner and show download link
             loadingSpinner.style.display = "none";
-            downloadLink.href = "https://uotinitiative.org/docs/6-Math-English.pdf";
+            downloadLink.href = `https://uotinitiative.org/docs/${learnerAge}-${subject}-${language}.pdf`;
             downloadLink.style.display = "inline";
         }, WAITING_TIME);
     } else {
@@ -56,9 +58,22 @@ function showDownload() {
 }
 
 // Reset selections and hide download link
-function resetSelections() {
-    document.getElementById("language").innerHTML = '<option value="">Select Language</option>';
-    document.getElementById("language").disabled = true;
+function resetSelections(startFrom) {
+    if (startFrom === "learner-age" || startFrom === "subject") {
+        document.getElementById("subject").innerHTML = '<option value="">Select Subject</option>';
+        document.getElementById("subject").disabled = true;
+    }
+    
     document.getElementById("download-link").style.display = "none";
     document.getElementById("loading-spinner").style.display = "none";
 }
+
+// Initialize the form
+function initForm() {
+    document.getElementById("language").addEventListener("change", showLearnerAge);
+    document.getElementById("learner-age").addEventListener("change", showSubject);
+    document.getElementById("subject").addEventListener("change", showDownload);
+}
+
+// Call initForm when the DOM is fully loaded
+document.addEventListener("DOMContentLoaded", initForm);
