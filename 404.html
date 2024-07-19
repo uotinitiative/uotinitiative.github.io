@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - Universal Open Textbook Initiative</title>
     <style>
+        /* Global Styles */
         body {
             font-family: Arial, sans-serif;
             line-height: 1.6;
@@ -17,6 +18,7 @@
             flex-direction: column;
         }
 
+        /* Container Styles */
         .container {
             flex: 1;
             display: flex;
@@ -27,20 +29,49 @@
             max-width: 800px;
             margin: auto;
             text-align: center;
+            box-shadow: none;
+            border: none;
+        }
+
+        p {
+            margin-bottom: 1em;
         }
 
         h1 {
             margin-bottom: 20px;
         }
 
-        .error-content {
-            margin: 2em 0;
+        /* Table Styles */
+        table {
+            width: 100%;
+            margin-top: 20px;
+            border-collapse: collapse;
         }
 
-        .back-link {
-            margin-top: 2em;
+        th,
+        td {
+            padding: 10px;
+            border: none;
+            font-size: 16px;
         }
 
+        select,
+        #download-link {
+            font-size: 16px;
+            font-family: Arial, sans-serif;
+            padding: 3px;
+        }
+
+        .pdf-icon {
+            width: 16px;
+            height: 16px;
+            margin-right: 5px;
+            vertical-align: middle;
+            position: relative;
+            top: -1px;
+        }
+
+        /* Link Styles */
         a {
             text-decoration: none;
             color: #007bff;
@@ -50,13 +81,193 @@
             text-decoration: underline;
         }
 
+        a.hidden {
+            display: none;
+        }
+
+        #download-link {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Footer Styles */
         footer {
             background-color: #ffffff;
             text-align: center;
             padding: 20px 0;
             font-size: 14px;
             color: #333;
+            border-top: none;
             width: 100%;
+        }
+
+        footer nav a {
+            color: #007bff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        footer nav a:hover {
+            text-decoration: underline;
+        }
+
+        /* Loading Spinner */
+        .spinner {
+            width: 20px;
+            height: 20px;
+            border: 2px solid #f3f3f3;
+            border-top: 2px solid #007bff;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+            margin: 0 auto;
+        }
+
+        @keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+
+        /* Responsive Styles */
+        @media screen and (max-width: 768px) {
+            body {
+                display: block;
+            }
+
+            .container {
+                justify-content: flex-start;
+                min-height: calc(100vh - 60px);
+                overflow-y: auto;
+            }
+
+            table,
+            thead,
+            tbody,
+            th,
+            td,
+            tr {
+                display: block;
+            }
+
+            thead tr {
+                position: absolute;
+                top: -9999px;
+                left: -9999px;
+            }
+
+            tr {
+                margin-bottom: 10px;
+            }
+
+            td {
+                border: none;
+                position: relative;
+                padding-left: 50%;
+            }
+
+            td:before {
+                position: absolute;
+                top: 6px;
+                left: 6px;
+                width: 45%;
+                padding-right: 10px;
+                white-space: nowrap;
+            }
+
+            td:nth-of-type(1):before {
+                content: "Language";
+            }
+
+            td:nth-of-type(2):before {
+                content: "Learner Age";
+            }
+
+            td:nth-of-type(3):before {
+                content: "Subject";
+            }
+
+            td:nth-of-type(4):before {
+                content: "Download";
+            }
+        }
+
+        /* Navbar Styles */
+        .navbar {
+            display: flex;
+            justify-content: flex;
+            align-items: center;
+            padding: 2rem 2rem;
+            background-color: #fff;
+        }
+
+        .hamburger-menu {
+            display: flex;
+            flex-direction: column;
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        .bar {
+            width: 34px;
+            height: 1px;
+            background-color: #333;
+            margin: 5.3px 0;
+            transition: 0.3s;
+        }
+
+        .nav-menu {
+            position: fixed;
+            right: -100%;
+            top: 0;
+            flex-direction: column;
+            background-color: #fff;
+            width: 250px;
+            height: 100%;
+            text-align: left;
+            transition: 0.3s;
+            box-shadow: -10px 0 27px rgba(0, 0, 0, 0.05);
+            z-index: 999;
+        }
+
+        .nav-menu.active {
+            left: 0;
+        }
+
+        .nav-menu ul {
+            list-style: none;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        .nav-menu ul li {
+            margin: 2.5rem 0;
+        }
+
+        .nav-menu a {
+            text-decoration: none;
+            color: #333;
+            font-size: 1.2rem;
+        }
+
+        .hamburger-menu.active .bar:nth-child(2) {
+            opacity: 0;
+        }
+
+        .hamburger-menu.active .bar:nth-child(1) {
+            transform: translateY(11.45px) rotate(45deg);
+        }
+
+        .hamburger-menu.active .bar:nth-child(3) {
+            transform: translateY(-11.45px) rotate(-45deg);
+        }
+
+        .container {
+            padding-top: 0px;
         }
     </style>
     <script>
@@ -76,6 +287,25 @@
 </head>
 
 <body>
+    <header>
+        <nav class="navbar">
+            <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+            </div>
+        </nav>
+    </header>
+
+    <div class="nav-menu">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="mastercurriculum.html">Master Curriculum</a></li>
+            <li><a href="mailto:contact@uotinitiative.org">Contact</a></li>
+        </ul>
+    </div>
+
     <div class="container">
         <h1>Page Not Found</h1>
         <div class="error-content">
@@ -93,6 +323,7 @@
             <a href="mailto:contact@uotinitiative.org">Contact</a>
         </p>
     </footer>
+    <script src="scripts.js"></script>
 </body>
 
 </html>

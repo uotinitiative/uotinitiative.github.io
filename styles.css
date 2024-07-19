@@ -40,13 +40,15 @@ table {
     border-collapse: collapse;
 }
 
-th, td {
+th,
+td {
     padding: 10px;
     border: none;
     font-size: 16px;
 }
 
-select, #download-link {
+select,
+#download-link {
     font-size: 16px;
     font-family: Arial, sans-serif;
     padding: 3px;
@@ -114,8 +116,13 @@ footer nav a:hover {
 }
 
 @keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
 /* Responsive Styles */
@@ -129,27 +136,32 @@ footer nav a:hover {
         min-height: calc(100vh - 60px);
         overflow-y: auto;
     }
-    
-    table, thead, tbody, th, td, tr {
+
+    table,
+    thead,
+    tbody,
+    th,
+    td,
+    tr {
         display: block;
     }
-    
+
     thead tr {
         position: absolute;
         top: -9999px;
         left: -9999px;
     }
-    
+
     tr {
         margin-bottom: 10px;
     }
-    
+
     td {
         border: none;
         position: relative;
         padding-left: 50%;
     }
-    
+
     td:before {
         position: absolute;
         top: 6px;
@@ -158,9 +170,94 @@ footer nav a:hover {
         padding-right: 10px;
         white-space: nowrap;
     }
-    
-    td:nth-of-type(1):before { content: "Language"; }
-    td:nth-of-type(2):before { content: "Learner Age"; }
-    td:nth-of-type(3):before { content: "Subject"; }
-    td:nth-of-type(4):before { content: "Download"; }
+
+    td:nth-of-type(1):before {
+        content: "Language";
+    }
+
+    td:nth-of-type(2):before {
+        content: "Learner Age";
+    }
+
+    td:nth-of-type(3):before {
+        content: "Subject";
+    }
+
+    td:nth-of-type(4):before {
+        content: "Download";
+    }
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    padding: 2rem 2rem;
+    background-color: #fff;
+}
+
+.hamburger-menu {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+.bar {
+    width: 34px;
+    height: 1px;
+    background-color: #333;
+    margin: 5.3px 0;
+    transition: 0.3s;
+}
+
+.nav-menu {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    flex-direction: column;
+    background-color: #fff;
+    width: 250px;
+    height: 100%;
+    text-align: left;
+    transition: 0.3s;
+    box-shadow: -10px 0 27px rgba(0, 0, 0, 0.05);
+    z-index: 999;
+}
+
+.nav-menu.active {
+    left: 0;
+}
+
+.nav-menu ul {
+    list-style: none;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.nav-menu ul li {
+    margin: 2.5rem 0;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1.2rem;
+}
+
+.hamburger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active .bar:nth-child(1) {
+    transform: translateY(11.45px) rotate(45deg);
+}
+
+.hamburger-menu.active .bar:nth-child(3) {
+    transform: translateY(-11.45px) rotate(-45deg);
+}
+
+.container {
+    padding-top: 0px;
 }
