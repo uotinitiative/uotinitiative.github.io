@@ -192,9 +192,9 @@ footer nav a:hover {
 /* Navbar Styles */
 .navbar {
     display: flex;
-    justify-content: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 2rem 2rem;
+    padding: 1rem 1rem;
     background-color: #fff;
 }
 
@@ -203,13 +203,19 @@ footer nav a:hover {
     flex-direction: column;
     cursor: pointer;
     z-index: 1000;
+    padding: 10px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+}
+
+.hamburger-menu:hover {
+    background-color: #f0f0f0;
 }
 
 .bar {
     width: 34px;
     height: 2px;
     margin: 5px auto;
-    -webkit-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
     background-color: #101010;
 }
@@ -220,7 +226,7 @@ footer nav a:hover {
     top: 0;
     flex-direction: column;
     background-color: #fff;
-    width: 250px;
+    width: 270px;
     height: 100%;
     text-align: left;
     transition: 0.3s;
@@ -235,22 +241,27 @@ footer nav a:hover {
 
 .nav-menu ul {
     list-style: none;
-    padding: 2rem;
-    margin-top: 2rem;
+    padding: 1rem;
+    margin-top: 4rem;
 }
 
 .nav-menu ul li {
-    margin: 2rem 0;
+    margin: 1rem 0;
 }
 
 .nav-menu a {
     text-decoration: none;
     color: #333;
-    font-size: 1.2rem;
+    font-size: 1rem;
+    padding: 10px 20px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
 }
 
 .nav-menu a:hover {
-    text-decoration: underline;
+    background-color: #f0f0f0;
+    text-decoration: none;
 }
 
 .hamburger-menu.active .bar:nth-child(2) {
