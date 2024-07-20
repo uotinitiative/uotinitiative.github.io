@@ -206,10 +206,11 @@ footer nav a:hover {
 
 .bar {
     width: 34px;
-    height: 1px;
-    background-color: #333;
-    margin: 5.3px 0;
-    transition: 0.3s;
+    height: 2px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #101010;
 }
 
 .nav-menu {
