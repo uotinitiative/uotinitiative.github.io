@@ -252,11 +252,11 @@ footer nav a:hover {
 }
 
 .hamburger-menu.active .bar:nth-child(1) {
-    transform: translateY(11.45px) rotate(45deg);
+    transform: translateY(11.90px) rotate(45deg);
 }
 
 .hamburger-menu.active .bar:nth-child(3) {
-    transform: translateY(-11.45px) rotate(-45deg);
+    transform: translateY(-11.90px) rotate(-45deg);
 }
 
 .container {
