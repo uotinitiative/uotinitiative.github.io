@@ -28,6 +28,7 @@
             padding: 20px;
             max-width: 800px;
             margin: auto;
+            padding-top: 0px;
             text-align: center;
             box-shadow: none;
             border: none;
@@ -214,10 +215,11 @@
 
         .bar {
             width: 34px;
-            height: 1px;
-            background-color: #333;
-            margin: 5.3px 0;
-            transition: 0.3s;
+            height: 2px;
+            margin: 5px auto;
+            -webkit-transition: all 0.3s ease-in-out;
+            transition: all 0.3s ease-in-out;
+            background-color: #101010;
         }
 
         .nav-menu {
@@ -230,7 +232,7 @@
             height: 100%;
             text-align: left;
             transition: 0.3s;
-            box-shadow: -10px 0 27px rgba(0, 0, 0, 0.05);
+            box-shadow: -10px 0 27px rgba(0, 0, 0, 0.5);
             z-index: 999;
         }
 
@@ -245,7 +247,7 @@
         }
 
         .nav-menu ul li {
-            margin: 2.5rem 0;
+            margin: 2rem 0;
         }
 
         .nav-menu a {
@@ -259,15 +261,11 @@
         }
 
         .hamburger-menu.active .bar:nth-child(1) {
-            transform: translateY(11.45px) rotate(45deg);
+            transform: translateY(12px) rotate(45deg);
         }
 
         .hamburger-menu.active .bar:nth-child(3) {
-            transform: translateY(-11.45px) rotate(-45deg);
-        }
-
-        .container {
-            padding-top: 0px;
+            transform: translateY(-12px) rotate(-45deg);
         }
     </style>
     <script>
