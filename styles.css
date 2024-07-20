@@ -226,6 +226,7 @@ footer nav a:hover {
     transition: 0.3s;
     box-shadow: -10px 0 27px rgba(0, 0, 0, 0.5);
     z-index: 999;
+    padding: 0.2rem;
 }
 
 .nav-menu.active {
