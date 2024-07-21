@@ -275,3 +275,25 @@ footer nav a:hover {
 .hamburger-menu.active .bar:nth-child(3) {
     transform: translateY(-12px) rotate(-45deg);
 }
+
+@media (hover: hover) and (pointer: fine) {
+    .hamburger-menu:hover {
+        background-color: #f0f0f0;
+    }
+
+    .nav-menu a:hover {
+        background-color: #f0f0f0;
+        text-decoration: none;
+    }
+}
+
+@media (hover: none) and (pointer: coarse) {
+    .hamburger-menu:hover {
+        background-color: transparent;
+    }
+
+    .nav-menu a:hover {
+        background-color: transparent;
+        text-decoration: none;
+    }
+}
