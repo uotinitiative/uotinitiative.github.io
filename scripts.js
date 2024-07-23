@@ -108,10 +108,26 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 
-    // Close menu immediately when scrolling starts
+    // Function to check if scrolling is possible
+    function isScrollable() {
+        return document.documentElement.scrollHeight > document.documentElement.clientHeight;
+    }
+
+    // Close menu immediately when scrolling starts, but only if scrolling is possible
     window.addEventListener('scroll', function() {
-        if (navMenu.classList.contains('active')) {
+        if (navMenu.classList.contains('active') && isScrollable()) {
             closeMenu();
         }
     }, { passive: true });
+
+    // Check for changes in page content that might affect scrollability
+    const resizeObserver = new ResizeObserver(() => {
+        if (navMenu.classList.contains('active') && !isScrollable()) {
+            navMenu.classList.add('no-scroll');
+        } else {
+            navMenu.classList.remove('no-scroll');
+        }
+    });
+
+    resizeObserver.observe(document.body);
 });
