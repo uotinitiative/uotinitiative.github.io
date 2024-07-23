@@ -83,6 +83,11 @@ document.addEventListener('DOMContentLoaded', function() {
     const hamburger = document.querySelector('.hamburger-menu');
     const navMenu = document.querySelector('.nav-menu');
 
+    function closeMenu() {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    }
+
     hamburger.addEventListener('click', function() {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
@@ -90,10 +95,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
     // Close menu when a nav link is clicked
     document.querySelectorAll('.nav-menu a').forEach(link => {
-        link.addEventListener('click', () => {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
-        });
+        link.addEventListener('click', closeMenu);
     });
 
     // Close menu when clicking outside
@@ -102,8 +104,14 @@ document.addEventListener('DOMContentLoaded', function() {
         const isClickOnHamburger = hamburger.contains(event.target);
         
         if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
-            hamburger.classList.remove('active');
-            navMenu.classList.remove('active');
+            closeMenu();
         }
     });
+
+    // Close menu immediately when scrolling starts
+    window.addEventListener('scroll', function() {
+        if (navMenu.classList.contains('active')) {
+            closeMenu();
+        }
+    }, { passive: true });
 });
