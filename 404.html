@@ -338,9 +338,15 @@
         </p>
     </footer>
     <script>
+        // Nav link
         document.addEventListener('DOMContentLoaded', function () {
             const hamburger = document.querySelector('.hamburger-menu');
             const navMenu = document.querySelector('.nav-menu');
+
+            function closeMenu() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
 
             hamburger.addEventListener('click', function () {
                 hamburger.classList.toggle('active');
@@ -349,10 +355,7 @@
 
             // Close menu when a nav link is clicked
             document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', () => {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
-                });
+                link.addEventListener('click', closeMenu);
             });
 
             // Close menu when clicking outside
@@ -361,10 +364,32 @@
                 const isClickOnHamburger = hamburger.contains(event.target);
 
                 if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
-                    hamburger.classList.remove('active');
-                    navMenu.classList.remove('active');
+                    closeMenu();
                 }
             });
+
+            // Function to check if scrolling is possible
+            function isScrollable() {
+                return document.documentElement.scrollHeight > document.documentElement.clientHeight;
+            }
+
+            // Close menu immediately when scrolling starts, but only if scrolling is possible
+            window.addEventListener('scroll', function () {
+                if (navMenu.classList.contains('active') && isScrollable()) {
+                    closeMenu();
+                }
+            }, { passive: true });
+
+            // Check for changes in page content that might affect scrollability
+            const resizeObserver = new ResizeObserver(() => {
+                if (navMenu.classList.contains('active') && !isScrollable()) {
+                    navMenu.classList.add('no-scroll');
+                } else {
+                    navMenu.classList.remove('no-scroll');
+                }
+            });
+
+            resizeObserver.observe(document.body);
         });
     </script>
 </body>
