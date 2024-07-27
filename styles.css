@@ -64,6 +64,15 @@ select,
     top: -1px;
 }
 
+.homepage-icon {
+    width: 16px;
+    height: 16px;
+    margin-right: 9px;
+    vertical-align: middle;
+    position: relative;
+    top: -1px;
+}
+
 /* Link Styles */
 a {
     text-decoration: none;
