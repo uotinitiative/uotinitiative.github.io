@@ -5,21 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Page Not Found - Universal Open Textbook Initiative</title>
-    <link rel="stylesheet" href="uotinitiative.github.io/styles.css">
-    <script>
-        // Ensure correct path for resources and links
-        document.addEventListener('DOMContentLoaded', function () {
-            var baseUrl = window.location.protocol + '//' + window.location.hostname +
-                (window.location.hostname === 'localhost' ? ':' + window.location.port : '');
-            document.querySelector('.back-link a').href = baseUrl + '/';
-            var footerLinks = document.querySelectorAll('footer a');
-            footerLinks.forEach(function (link) {
-                if (link.getAttribute('href').startsWith('/')) {
-                    link.href = baseUrl + link.getAttribute('href');
-                }
-            });
-        });
-    </script>
+    <link rel="stylesheet" href="https://uotinitiative.org/styles.css">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://uotinitiative.org/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://uotinitiative.org/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://uotinitiative.org/favicon/favicon-16x16.png">
+    <link rel="manifest" href="https://uotinitiative.org/favicon/site.webmanifest">
+    <link rel="shortcut icon" href="https://uotinitiative.org/favicon/favicon.ico">
 </head>
 
 <body>
@@ -36,9 +27,9 @@
     <div class="nav-menu">
         <ul>
             <li><a href="/">Home</a></li>
-            <li><a href="faq.html">FAQ</a></li>
-            <li><a href="mastercurriculum.html">Master Curriculum Document</a></li>
-            <li><a href="mailto:contact@uotinitiative.org">Contact</a></li>
+            <li><a href="https://uotinitiative.org/faq.html">FAQ</a></li>
+            <li><a href="https://uotinitiative.org/mastercurriculum.html">Master Curriculum Document</a></li>
+            <li><a href="https://uotinitiative.org/mailto:contact@uotinitiative.org">Contact</a></li>
         </ul>
     </div>
 
@@ -49,71 +40,18 @@
             <p>You might want to check the URL for any typos or return to our homepage.</p>
         </div>
         <div class="back-link">
-            <img src="homepage-icon.svg" alt="Homepage icon" class="homepage-icon"><a href="/">Back to Home</a>
+            <img src="https://uotinitiative.org/homepage-icon.svg" alt="Homepage icon" class="homepage-icon"><a href="/">Back to Home</a>
         </div>
     </div>
     <footer>
         <p>© 2024 UOTI ∙
-            <a href="terms.html">Terms</a> ∙
-            <a href="privacy.html">Privacy</a> ∙
+            <a href="https://uotinitiative.org/terms.html">Terms</a> ∙
+            <a href="https://uotinitiative.org/privacy.html">Privacy</a> ∙
             <a href="mailto:contact@uotinitiative.org">Contact</a>
         </p>
     </footer>
-    <script>
-        // Nav link
-        document.addEventListener('DOMContentLoaded', function () {
-            const hamburger = document.querySelector('.hamburger-menu');
-            const navMenu = document.querySelector('.nav-menu');
+    <script src="https://uotinitiative.org/scripts.js"></script>
 
-            function closeMenu() {
-                hamburger.classList.remove('active');
-                navMenu.classList.remove('active');
-            }
-
-            hamburger.addEventListener('click', function () {
-                hamburger.classList.toggle('active');
-                navMenu.classList.toggle('active');
-            });
-
-            // Close menu when a nav link is clicked
-            document.querySelectorAll('.nav-menu a').forEach(link => {
-                link.addEventListener('click', closeMenu);
-            });
-
-            // Close menu when clicking outside
-            document.addEventListener('click', function (event) {
-                const isClickInsideMenu = navMenu.contains(event.target);
-                const isClickOnHamburger = hamburger.contains(event.target);
-
-                if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
-                    closeMenu();
-                }
-            });
-
-            // Function to check if scrolling is possible
-            function isScrollable() {
-                return document.documentElement.scrollHeight > document.documentElement.clientHeight;
-            }
-
-            // Close menu immediately when scrolling starts, but only if scrolling is possible
-            window.addEventListener('scroll', function () {
-                if (navMenu.classList.contains('active') && isScrollable()) {
-                    closeMenu();
-                }
-            }, { passive: true });
-
-            // Check for changes in page content that might affect scrollability
-            const resizeObserver = new ResizeObserver(() => {
-                if (navMenu.classList.contains('active') && !isScrollable()) {
-                    navMenu.classList.add('no-scroll');
-                } else {
-                    navMenu.classList.remove('no-scroll');
-                }
-            });
-
-            resizeObserver.observe(document.body);
-        });
-    </script>
 </body>
 
 </html>
