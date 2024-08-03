@@ -1,3 +1,27 @@
 title: Universal Open Textbook Initiative
 description: The Universal Open Textbook Initiative (UOTI) aims to provide free, high-quality textbooks for all learners.
 permalink: /:title/
+
+theme: minima
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+
+markdown: kramdown
+kramdown:
+  auto_ids: true
+  hard_wrap: false
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
