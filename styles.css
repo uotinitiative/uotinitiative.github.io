@@ -88,7 +88,7 @@ select,
 /* Link Styles */
 a {
     text-decoration: none;
-    color: #007bff;
+    color: #2964AA;
 }
 
 a:hover {
@@ -117,7 +117,7 @@ footer {
 }
 
 footer nav a {
-    color: #007bff;
+    color: #2964AA;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -131,7 +131,7 @@ footer nav a:hover {
     width: 20px;
     height: 20px;
     border: 2px solid #f3f3f3;
-    border-top: 2px solid #007bff;
+    border-top: 2px solid #2964AA;
     border-radius: 50%;
     animation: spin 1s linear infinite;
     margin: 0 auto;
