@@ -1,75 +1,248 @@
+// Configuration object
+const CONFIG = {
+    languages: {
+        English: {
+            ages: {
+                "13 (US Grade 8)": {
+                    subjects: {
+                        "Prealgebra": "https://assets.uotinitiative.org/English/english_13_prealgebra/english_13_prealgebra.pdf",
+                    }
+                },
+
+                "14 (US Grade 9)": {
+                    subjects: {
+                        "Algebra": "https://assets.uotinitiative.org/English/english_14_algebra/english_14_algebra.pdf",
+                    }
+                },
+
+                "15 (US Grade 10)": {
+                    subjects: {
+                        "Algebra": "https://assets.uotinitiative.org/English/english_15_algebra/english_15_algebra.pdf",
+                        "Algebra and Trigonometry": "https://assets.uotinitiative.org/English/english_15_algebra_and_trigonometry/english_15_algebra_and_trigonometry.pdf",
+                    }
+                },
+
+                "16 (US Grade 11)": {
+                    subjects: {
+                        "Algebra": "https://assets.uotinitiative.org/English/english_16_algebra/english_16_algebra.pdf",
+                    }
+                },
+
+                "17 (US Grade 12)": {
+                    subjects: {
+                        "Physics": "https://assets.uotinitiative.org/English/english_17_physics/english_17_physics.pdf",
+                        "Precalculus": "https://assets.uotinitiative.org/English/english_17_precalculus/english_17_precalculus.pdf",
+                        "Statistics": "https://assets.uotinitiative.org/English/english_17_statistics/english_17_statistics.pdf",
+                    }
+                },
+
+                "18 (US Bachelor's 1)": {
+                    subjects: {
+                        "Anatomy and Physiology": "https://assets.uotinitiative.org/English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf",
+                        "Anthropology": "https://assets.uotinitiative.org/English/english_18_anthropology/english_18_anthropology.pdf",
+                        "Astronomy": "https://assets.uotinitiative.org/English/english_18_astronomy/english_18_astronomy.pdf",
+                        "Biology for Non-Science Majors": "https://assets.uotinitiative.org/English/english_18_biology_for_non_science_majors/english_18_biology_for_non_science_majors.pdf",
+                        "Biology for Science Majors": "https://assets.uotinitiative.org/English/english_18_biology_for_science_majors/english_18_biology_for_science_majors.pdf",
+                        "Biosystems Engineering": "https://assets.uotinitiative.org/English/english_18_biosystems_engineering/english_18_biosystems_engineering.pdf",
+                        "Calculus: Volume 1": "https://assets.uotinitiative.org/English/english_18_calculus_vol_1/english_18_calculus_vol_1.pdf",
+                        "Calculus: Volume 2": "https://assets.uotinitiative.org/English/english_18_calculus_vol_2/english_18_calculus_vol_2.pdf",
+                        "Calculus: Volume 3": "https://assets.uotinitiative.org/English/english_18_calculus_vol_3/english_18_calculus_vol_3.pdf",
+                        "Chemistry": "https://assets.uotinitiative.org/English/english_18_chemistry/english_18_chemistry.pdf",
+                        "Foundations of Computation": "https://assets.uotinitiative.org/English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf",
+                        "Macroeconomics": "https://assets.uotinitiative.org/English/english_18_macroeconomics/english_18_macroeconomics.pdf",
+                        "Mathematics for Liberal Arts Majors": "https://assets.uotinitiative.org/English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf",
+                        "Microbiology for Non-Majors": "https://assets.uotinitiative.org/English/english_18_microbiology_for_non_majors/english_18_microbiology_for_non_majors.pdf",
+                        "Microeconomics": "https://assets.uotinitiative.org/English/english_18_microeconomics/english_18_microeconomics.pdf",
+                        "Organic Chemistry": "https://assets.uotinitiative.org/English/english_18_organic_chemistry/english_18_organic_chemistry.pdf",
+                        "Philosophy": "https://assets.uotinitiative.org/English/english_18_philosophy/english_18_philosophy.pdf",
+                        "Physics (Algebra-Based)": "https://assets.uotinitiative.org/English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf",
+                        "Physics (Calculus-Based): Volume 1": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf",
+                        "Physics (Calculus-Based): Volume 2": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_2/english_18_physics_calculus_based_vol_2.pdf",
+                        "Physics (Calculus-Based): Volume 3": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_3/english_18_physics_calculus_based_vol_3.pdf",
+                        "Political Science": "https://assets.uotinitiative.org/English/english_18_political_science/english_18_political_science.pdf",
+                        "Psychology": "https://assets.uotinitiative.org/English/english_18_psychology/english_18_psychology.pdf",
+                        "Python Programming": "https://assets.uotinitiative.org/English/english_18_python_programming/english_18_python_programming.pdf",
+                        "Sociology": "https://assets.uotinitiative.org/English/english_18_sociology/english_18_sociology.pdf",
+                        "Statistics": "https://assets.uotinitiative.org/English/english_18_statistics/english_18_statistics.pdf",
+                        "Workplace Software and Skills": "https://assets.uotinitiative.org/English/english_18_workplace_software_and_skills/english_18_workplace_software_and_skills.pdf",
+                    }
+                },
+
+                "19 (US Bachelor's 2)": {
+                    subjects: {
+                        "Discrete Structures": "https://assets.uotinitiative.org/English/english_19_discrete_structures/english_19_discrete_structures.pdf",
+                        "Linear Algebra": "https://assets.uotinitiative.org/English/english_19_linear_algebra/english_19_linear_algebra.pdf",
+                    }
+                },
+
+                "20 (US Bachelor's 3)": {
+                    subjects: {
+                        "Abstract Algebra": "https://assets.uotinitiative.org/English/english_20_abstract_algebra/english_20_abstract_algebra.pdf",
+                        "Differential Equations": "https://assets.uotinitiative.org/English/english_20_differential_equations/english_20_differential_equations.pdf",
+                        "Electromagnetics: Volume 1": "https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_1/english_20_electromagnetics_volume_1.pdf",
+                        "Electromagnetics: Volume 2": "https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_2/english_20_electromagnetics_volume_2.pdf",
+                        "Linear, Time-Invariant, Dynamic Systems": "https://assets.uotinitiative.org/English/english_20_linear_time_invariant_dynamic_systems/english_20_linear_time_invariant_dynamic_systems.pdf",
+                    }
+                },
+
+                "21 (US Bachelor's 4)": {
+                    subjects: {
+                        "Complex Analysis": "https://assets.uotinitiative.org/English/english_21_complex_analysis/english_21_complex_analysis.pdf",
+                        "Real Analysis (Advanced Calculus): Volume 1": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf",
+                        "Real Analysis (Advanced Calculus): Volume 2": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf",
+                    }
+                },
+
+                "22 (US Master's 1)": {
+                    subjects: {
+                        "Coastal Dynamics": "https://assets.uotinitiative.org/English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf",
+                        "Structured Electronics Design": "https://assets.uotinitiative.org/English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf",
+                        "Traffic Flow Theory": "https://assets.uotinitiative.org/English/english_22_traffic_flow_theory/english_22_traffic_flow_theory.pdf",
+                    }
+                },
+
+                "23 (US Master's 2)": {
+                    subjects: {
+                        "Quantum Electrical Circuits": "https://assets.uotinitiative.org/English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
+                    }
+                },
+
+                "N/A (Lifelong Learning)": {
+                    subjects: {
+                        "The Little Book of Deep Learning": "https://fleuret.org/public/lbdl.pdf",
+                    }
+                }
+            }
+        },
+
+        Español: {
+            ages: {
+                "17 (US grado 12)": {
+                    subjects: {
+                        "Precálculo": "https://assets.uotinitiative.org/Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf",
+                    }
+                },
+
+                "18 (US licenciatura 1)": {
+                    subjects: {
+                        "Cálculo: Volumen 1": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf",
+                        "Cálculo: Volumen 2": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf",
+                        "Cálculo: Volumen 3": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf",
+                        "Química": "https://assets.uotinitiative.org/Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf",
+                        "Física (con base en cálculo): Volumen 1": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
+                        "Física (con base en cálculo): Volumen 2": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
+                        "Física (con base en cálculo): Volumen 3": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
+                        "Estadística": "https://assets.uotinitiative.org/Spanish/spanish_18_statistics/spanish_18_statistics.pdf",
+                    }
+                },
+
+                "20 (US licenciatura 3)": {
+                    subjects: {
+                        "Algebra Abstracta": "https://assets.uotinitiative.org/Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
+                    }
+                }
+            }
+        },
+
+        Polski: {
+            ages: {
+                "18 (licencjat amerykański 1)": {
+                    subjects: {
+                        "Makroekonomia": "https://assets.uotinitiative.org/Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
+                        "Mikroekonomia": "https://assets.uotinitiative.org/Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom I": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom II": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom III": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
+                        "Psychologia": "https://assets.uotinitiative.org/Polish/polish_18_psychology/polish_18_psychology.pdf",
+
+                    }
+                }
+            }
+        }
+    }
+};
+
 // Global constants
 const WAITING_TIME = 300; // Waiting time in milliseconds
+
+// Helper function to populate select options
+function populateSelect(selectId, options, defaultText = "Select Option") {
+    const select = document.getElementById(selectId);
+    select.innerHTML = `<option value="">${defaultText}</option>`;
+    Object.keys(options).forEach(key => {
+        const option = document.createElement('option');
+        option.value = key;
+        option.textContent = key;
+        select.appendChild(option);
+    });
+    select.disabled = Object.keys(options).length === 0;
+}
 
 // Show learner age options based on selected language
 function showLearnerAge() {
     const language = document.getElementById("language").value;
-    const learnerAgeSelect = document.getElementById("learner-age");
-
-    if (language === "english") {
-        learnerAgeSelect.innerHTML = '<option value="">Select Age</option><option value="6">6</option>';
-        learnerAgeSelect.disabled = false;
-    } else {
-        learnerAgeSelect.innerHTML = '<option value="">Select Age</option>';
-        learnerAgeSelect.disabled = true;
-        resetSelections("learner-age");
-    }
+    const ages = language ? CONFIG.languages[language].ages : {};
+    populateSelect("learner-age", ages, "Select Age");
+    resetSelections("learner-age");
 }
 
 // Show subject options based on selected learner age
 function showSubject() {
-    const learnerAge = document.getElementById("learner-age").value;
-    const subjectSelect = document.getElementById("subject");
-
-    if (learnerAge === "6") {
-        subjectSelect.innerHTML = '<option value="">Select Subject</option><option value="math">Math</option>';
-        subjectSelect.disabled = false;
-    } else {
-        subjectSelect.innerHTML = '<option value="">Select Subject</option>';
-        subjectSelect.disabled = true;
-        resetSelections("subject");
-    }
+    const language = document.getElementById("language").value;
+    const age = document.getElementById("learner-age").value;
+    const subjects = (language && age) ? CONFIG.languages[language].ages[age].subjects : {};
+    populateSelect("subject", subjects, "Select Subject");
+    resetSelections("subject");
 }
 
 // Show download link based on selected subject
 function showDownload() {
     const language = document.getElementById("language").value;
-    const learnerAge = document.getElementById("learner-age").value;
+    const age = document.getElementById("learner-age").value;
     const subject = document.getElementById("subject").value;
     const downloadLink = document.getElementById("download-link");
     const loadingSpinner = document.getElementById("loading-spinner");
 
-    if (language === "english" && learnerAge === "6" && subject === "math") {
-        // Show loading spinner
-        loadingSpinner.style.display = "block";
-        downloadLink.style.display = "none";
+    if (language && age && subject) {
+        const pdfUrl = CONFIG.languages[language].ages[age].subjects[subject];
+        if (pdfUrl) {
+            // Show loading spinner
+            loadingSpinner.style.display = "block";
+            downloadLink.style.display = "none";
 
-        // Simulate loading time
-        setTimeout(() => {
-            // Hide loading spinner and show download link
-            loadingSpinner.style.display = "none";
-            downloadLink.href = `https://uotinitiative.org/docs/${learnerAge}-${subject}-${language}.pdf`;
-            downloadLink.style.display = "inline";
-        }, WAITING_TIME);
-    } else {
-        downloadLink.style.display = "none";
-        loadingSpinner.style.display = "none";
+            // Simulate loading time
+            setTimeout(() => {
+                // Hide loading spinner and show download link
+                loadingSpinner.style.display = "none";
+                downloadLink.href = pdfUrl;
+                downloadLink.style.display = "inline";
+            }, WAITING_TIME);
+            return;
+        }
     }
+
+    downloadLink.style.display = "none";
+    loadingSpinner.style.display = "none";
 }
 
 // Reset selections and hide download link
 function resetSelections(startFrom) {
-    if (startFrom === "learner-age" || startFrom === "subject") {
+    if (startFrom === "language") {
+        document.getElementById("learner-age").innerHTML = '<option value="">Select Age</option>';
+        document.getElementById("learner-age").disabled = true;
+    }
+    if (startFrom === "language" || startFrom === "learner-age") {
         document.getElementById("subject").innerHTML = '<option value="">Select Subject</option>';
         document.getElementById("subject").disabled = true;
     }
-    
+
     document.getElementById("download-link").style.display = "none";
     document.getElementById("loading-spinner").style.display = "none";
 }
 
 // Initialize the form
 function initForm() {
+    populateSelect("language", CONFIG.languages, "Select Language");
     document.getElementById("language").addEventListener("change", showLearnerAge);
     document.getElementById("learner-age").addEventListener("change", showSubject);
     document.getElementById("subject").addEventListener("change", showDownload);
@@ -79,7 +252,7 @@ function initForm() {
 document.addEventListener("DOMContentLoaded", initForm);
 
 // Nav link
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     const hamburger = document.querySelector('.hamburger-menu');
     const navMenu = document.querySelector('.nav-menu');
 
@@ -88,7 +261,7 @@ document.addEventListener('DOMContentLoaded', function() {
         navMenu.classList.remove('active');
     }
 
-    hamburger.addEventListener('click', function() {
+    hamburger.addEventListener('click', function () {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
@@ -99,10 +272,10 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // Close menu when clicking outside
-    document.addEventListener('click', function(event) {
+    document.addEventListener('click', function (event) {
         const isClickInsideMenu = navMenu.contains(event.target);
         const isClickOnHamburger = hamburger.contains(event.target);
-        
+
         if (!isClickInsideMenu && !isClickOnHamburger && navMenu.classList.contains('active')) {
             closeMenu();
         }
@@ -114,7 +287,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     // Close menu immediately when scrolling starts, but only if scrolling is possible
-    window.addEventListener('scroll', function() {
+    window.addEventListener('scroll', function () {
         if (navMenu.classList.contains('active') && isScrollable()) {
             closeMenu();
         }
