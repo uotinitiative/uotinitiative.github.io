@@ -88,6 +88,7 @@ const CONFIG = {
                 "21 (US Bachelor’s 4)": {
                     subjects: {
                         "Complex Analysis": "https://assets.uotinitiative.org/English/english_21_complex_analysis/english_21_complex_analysis.pdf",
+                        "Optics": "https://assets.uotinitiative.org/English/english_21_optics/english_21_optics.pdf",
                         "Real Analysis (Advanced Calculus): Volume 1": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf",
                         "Real Analysis (Advanced Calculus): Volume 2": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf",
                     }
