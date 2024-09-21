@@ -51,9 +51,7 @@ const CONFIG = {
                         "Foundations of Computation": "https://assets.uotinitiative.org/English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf",
                         "Macroeconomics": "https://assets.uotinitiative.org/English/english_18_macroeconomics/english_18_macroeconomics.pdf",
                         "Mathematics for Liberal Arts Majors": "https://assets.uotinitiative.org/English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf",
-                        "Microbiology for Non-Majors": "https://assets.uotinitiative.org/English/english_18_microbiology_for_non_majors/english_18_microbiology_for_non_majors.pdf",
                         "Microeconomics": "https://assets.uotinitiative.org/English/english_18_microeconomics/english_18_microeconomics.pdf",
-                        "Organic Chemistry": "https://assets.uotinitiative.org/English/english_18_organic_chemistry/english_18_organic_chemistry.pdf",
                         "Philosophy": "https://assets.uotinitiative.org/English/english_18_philosophy/english_18_philosophy.pdf",
                         "Physics (Algebra-Based)": "https://assets.uotinitiative.org/English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf",
                         "Physics (Calculus-Based): Volume 1": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf",
@@ -72,6 +70,8 @@ const CONFIG = {
                     subjects: {
                         "Discrete Structures": "https://assets.uotinitiative.org/English/english_19_discrete_structures/english_19_discrete_structures.pdf",
                         "Linear Algebra": "https://assets.uotinitiative.org/English/english_19_linear_algebra/english_19_linear_algebra.pdf",
+                        "Microbiology for Non-Majors": "https://assets.uotinitiative.org/English/english_19_microbiology_for_non_majors/english_19_microbiology_for_non_majors.pdf",
+                        "Organic Chemistry": "https://assets.uotinitiative.org/English/english_19_organic_chemistry/english_19_organic_chemistry.pdf",
                     }
                 },
 
