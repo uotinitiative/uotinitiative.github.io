@@ -106,12 +106,6 @@ const CONFIG = {
                     subjects: {
                         "Quantum Electrical Circuits": "https://assets.uotinitiative.org/English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
                     }
-                },
-
-                "N/A (Lifelong Learning)": {
-                    subjects: {
-                        "The Little Book of Deep Learning": "https://fleuret.org/public/lbdl.pdf",
-                    }
                 }
             }
         },
