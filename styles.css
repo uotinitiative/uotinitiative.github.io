@@ -1,6 +1,6 @@
 /* Global Styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -17,10 +17,9 @@ body {
     flex-direction: column;
     justify-content: center;
     background: #fff;
-    padding: 20px;
+    padding: 0 20px 20px;
     max-width: 800px;
     margin: auto;
-    padding-top: 0px;
     text-align: center;
     box-shadow: none;
     border: none;
@@ -34,6 +33,39 @@ h1 {
     margin-bottom: 20px;
 }
 
+/* Select Styles */
+select {
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    padding: 10px 36px 10px 20px;
+    font-size: 15px;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+    cursor: pointer;
+    width: 180px;
+    background-image: url("data:image/svg+xml;utf8,<svg fill='gray' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    background-size: 14px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+    line-height: 1.5;
+    text-indent: 2px;
+    white-space: normal;
+}
+
+select:focus {
+    outline: none;
+    border-color: #2964AA;
+    box-shadow: 0 0 0 3px rgba(41, 100, 170, 0.15);
+}
+
+select:hover {
+    border-color: #a0aec0;
+}
+
 /* Table Styles */
 table {
     width: 100%;
@@ -41,31 +73,14 @@ table {
     border-collapse: collapse;
 }
 
-th,
-td {
+th, td {
     padding: 10px;
     border: none;
     font-size: 16px;
 }
 
-select {
-    white-space: normal;
-    width: 180px;
-}
-
-select:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-select,
-#download-link {
-    font-size: 16px;
-    font-family: Arial, sans-serif;
-    padding: 3px;
-}
-
-.pdf-icon {
+/* PDF & Home Icons */
+.pdf-icon, .back-to-home-icon {
     width: 16px;
     height: 16px;
     margin-left: 4px;
@@ -76,13 +91,8 @@ select,
 }
 
 .back-to-home-icon {
-    width: 16px;
-    height: 16px;
+    margin-left: 0;
     margin-right: 9px;
-    vertical-align: middle;
-    position: relative;
-    top: -2px;
-    pointer-events: none;
 }
 
 /* Link Styles */
@@ -103,6 +113,9 @@ a.hidden {
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    font-size: 16px;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+    padding: 3px;
 }
 
 /* Footer Styles */
@@ -138,13 +151,8 @@ footer nav a:hover {
 }
 
 @keyframes spin {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
 }
 
 /* Responsive Styles */
@@ -159,12 +167,7 @@ footer nav a:hover {
         overflow-y: auto;
     }
 
-    table,
-    thead,
-    tbody,
-    th,
-    td,
-    tr {
+    table, thead, tbody, th, td, tr {
         display: block;
     }
 
@@ -193,21 +196,10 @@ footer nav a:hover {
         white-space: nowrap;
     }
 
-    td:nth-of-type(1):before {
-        content: "Language";
-    }
-
-    td:nth-of-type(2):before {
-        content: "Learner Age";
-    }
-
-    td:nth-of-type(3):before {
-        content: "Subject";
-    }
-
-    td:nth-of-type(4):before {
-        content: "Download";
-    }
+    td:nth-of-type(1):before { content: "Language"; }
+    td:nth-of-type(2):before { content: "Learner Age"; }
+    td:nth-of-type(3):before { content: "Subject"; }
+    td:nth-of-type(4):before { content: "Download"; }
 }
 
 /* Navbar Styles */
@@ -215,7 +207,7 @@ footer nav a:hover {
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    padding: 1rem 1rem;
+    padding: 1rem;
     background-color: #fff;
 }
 
@@ -243,14 +235,14 @@ footer nav a:hover {
 
 .nav-menu {
     position: fixed;
-    right: -100%;
+    left: -100%;
     top: 0;
     flex-direction: column;
     background-color: #fff;
     width: 250px;
     height: 100%;
     text-align: left;
-    transition: 0.3s;
+    transition: left 0.3s;
     box-shadow: -10px 0 27px rgba(0, 0, 0, 0.5);
     z-index: 999;
     padding: 0.2rem;
@@ -297,6 +289,7 @@ footer nav a:hover {
     transform: translateY(-12px) rotate(-45deg);
 }
 
+/* Hover fallback for devices */
 @media (hover: hover) and (pointer: fine) {
     .hamburger-menu:hover {
         background-color: #f0f0f0;
@@ -304,7 +297,6 @@ footer nav a:hover {
 
     .nav-menu a:hover {
         background-color: #f0f0f0;
-        text-decoration: none;
     }
 }
 
@@ -315,6 +307,5 @@ footer nav a:hover {
 
     .nav-menu a:hover {
         background-color: transparent;
-        text-decoration: none;
     }
 }
