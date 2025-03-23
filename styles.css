@@ -206,7 +206,7 @@ header {
 
 .logo {
     height: 50px;
-    width: 71;
+    width: auto;
 }
 
 .custom-nav {
