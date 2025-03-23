@@ -169,6 +169,14 @@ a.hidden {
 /* =====================================================
    7. Headers (Desktop & Mobile)
 ===================================================== */
+/* Sticky Header for Desktop & Mobile */
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background-color: #fff;
+}
+
 /* --- Desktop Header --- */
 .custom-header {
     border-bottom: 1px solid #f0f0f0;
