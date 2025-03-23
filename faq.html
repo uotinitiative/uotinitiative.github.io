@@ -1,31 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FAQ - Universal Open Textbook Initiative</title>
 
-  <!-- Google Tag Manager -->
-  <script>(function (w, d, s, l, i) {
-      w[l] = w[l] || []; w[l].push({
-        'gtm.start':
-          new Date().getTime(), event: 'gtm.js'
-      }); var f = d.getElementsByTagName(s)[0],
-        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
-          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
-    })(window, document, 'script', 'dataLayer', 'GTM-TSVCJPLS');</script>
-  <!-- End Google Tag Manager -->
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
 
+  <!-- Meta Tags -->
   <meta name="description"
     content="Find answers to common questions about the Universal Open Textbook Initiative (UOTI), our mission, and how to get involved.">
   <meta name="keywords" content="FAQ, open textbooks, OER, universal education, Vatsal">
-  <link rel="stylesheet" href="styles.css">
-  <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-  <link rel="manifest" href="/favicon/site.webmanifest">
-  <link rel="shortcut icon" href="/favicon/favicon.ico">
+
+  <!-- Favicon and App Icons -->
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
       {
         "@context": "https://schema.org",
@@ -39,37 +34,79 @@
         }
       }
     </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TSVCJPLS');
+  </script>
+  <!-- End Google Tag Manager -->
 </head>
-
 <body>
-
   <!-- Google Tag Manager (noscript) -->
-  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSVCJPLS" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript>
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSVCJPLS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
   <!-- End Google Tag Manager (noscript) -->
 
+  <!-- Header Section -->
   <header>
-    <nav class="navbar">
-      <div class="hamburger-menu">
-        <div class="bar"></div>
-        <div class="bar"></div>
-        <div class="bar"></div>
+    <!-- Desktop Navigation -->
+    <div class="custom-header desktop-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <nav class="custom-nav">
+          <a href="/">HOME</a>
+          <a href="faq">FAQ</a>
+          <a href="https://assets.uotinitiative.org/Master_Curriculum_Document/master_curriculum_document.pdf" target="_blank">CURRICULUM</a>
+          <a href="mailto:vatsal@readvatsal.com">CONTACT</a>
+        </nav>
       </div>
-    </nav>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <nav class="navbar">
+        <div class="hamburger-menu">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+      </nav>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="https://assets.uotinitiative.org/Master_Curriculum_Document/master_curriculum_document.pdf" target="_blank">CURRICULUM</a></li>
+          <li><a href="mailto:vatsal@readvatsal.com">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+    </div>
+
   </header>
 
-  <div class="nav-menu">
-    <ul>
-      <li><a href="/">Home</a></li>
-      <li><a href="faq">FAQ</a></li>
-      <li><a href="https://assets.uotinitiative.org/Master_Curriculum_Document/master_curriculum_document.pdf" target="_blank">Master Curriculum Document</a></li>
-      <li><a href="mailto:vatsal@readvatsal.com">Contact</a></li>
-    </ul>
-  </div>
-
-  <div class="container">
+  <!-- Main Content -->
+  <main class="container">
     <h1>Frequently Asked Questions</h1>
-    <div class="faq-content">
+    <section class="faq-content">
       <p><b>1. What is the mission of the Universal Open Textbook Initiative (UOTI)?</b></p>
       <p>Our mission is to improve the quality of educational resources across the world and provide a foundation of educational content that everyone can use and build on.</p>
 
@@ -91,20 +128,18 @@
 
       <p><b>7. How can I help?</b></p>
       <p>We welcome contributions from philanthropists, translators, subject matter experts, educators, and others. If you’d like to contribute, please contact us via email at vatsal@readvatsal.com.</p>
-    </div>
-    <div>
+
       <a href="/">
         <img src="back-to-home-icon.svg" alt="back-to-home-icon" class="back-to-home-icon">Back to Home</a>
-    </div>
-  </div>
+    </section>
+  </main>
+
+  <!-- Footer Section -->
   <footer>
-    <p>© 2025 UOTI ∙
-      <a href="terms">Terms</a> ∙
-      <a href="privacy">Privacy</a> ∙
-      <a href="mailto:vatsal@readvatsal.com">Contact</a>
-    </p>
+    <p>© 2025 UOTI ∙ <a href="terms">Terms</a> ∙ <a href="privacy">Privacy</a> ∙ <a href="mailto:vatsal@readvatsal.com">Contact</a></p>
   </footer>
+
+  <!-- External Scripts -->
   <script src="scripts.js"></script>
 </body>
-
 </html>
