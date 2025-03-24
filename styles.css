@@ -276,7 +276,7 @@ header {
     width: 250px;
     height: 100%;
     text-align: left;
-    transition: left 0.5s;
+    transition: left 0.3s;
     box-shadow: -10px 0 27px rgba(0, 0, 0, 0.5);
     z-index: 999;
     padding: 0.2rem;
