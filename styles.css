@@ -222,8 +222,10 @@ header {
 }
 
 .logo {
-    height: 50px;
-    width: 70px;
+    height: 60px;
+    width: 60px;
+    display: block;
+
 }
 
 .custom-nav {
@@ -256,7 +258,7 @@ header {
 
 .mobile-only .header-content {
     border-bottom: 1px solid #f0f0f0;
-    padding: 20px;
+    padding: 15px;
     justify-content: space-between;
     margin-bottom: 20px;
 
