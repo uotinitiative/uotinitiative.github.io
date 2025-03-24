@@ -206,7 +206,7 @@ header {
 
 .logo {
     height: 50px;
-    width: auto;
+    width: 70px;
 }
 
 .custom-nav {
@@ -373,7 +373,7 @@ header {
 
     .header-logo {
         position: relative;
-        z-index: 1001; /* Higher than the nav-menu's 999 */
+        z-index: 1001;
   }
 
     .container {
