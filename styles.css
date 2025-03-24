@@ -21,23 +21,6 @@ h1 {
     margin-bottom: 20px;
 }
 
-.donate-button {
-    background-color: #2964AA;
-    color: #fff !important;
-    padding: 8px 16px;
-    border-radius: 20px;
-    font-size: 14px;
-    font-weight: 500;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    transition: background-color 0.3s ease;
-}
-
-.donate-button:hover {
-    background-color: #1d4f8a;
-    text-decoration: none;
-}
-
 /* =====================================================
    2. Layout Containers
 ===================================================== */
@@ -194,6 +177,24 @@ header {
   background-color: #fff;
 }
 
+/* Donate Button for Desktop & Mobile */
+.donate-button {
+    background-color: #2964AA;
+    color: #fff !important;
+    padding: 8px 16px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    transition: background-color 0.3s ease;
+}
+
+.donate-button:hover {
+    background-color: #1d4f8a;
+    text-decoration: none;
+}
+
 /* --- Desktop Header --- */
 .custom-header {
     border-bottom: 1px solid #f0f0f0;
@@ -261,7 +262,6 @@ header {
     padding: 15px;
     justify-content: space-between;
     margin-bottom: 20px;
-
 }
 
 .hamburger-menu {
