@@ -21,6 +21,17 @@ h1 {
     margin-bottom: 20px;
 }
 
+.fade-in {
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.fade-in.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
 /* =====================================================
    2. Layout Containers
 ===================================================== */
@@ -217,15 +228,32 @@ header {
 }
 
 .custom-nav a {
+    position: relative;
     text-decoration: none;
     color: #000;
     font-size: 14px;
     letter-spacing: 0.1em;
     font-weight: 400;
+    transition: color 0.3s ease;
+}
+
+.custom-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: -4px;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background-color: #2964AA;
+    transition: width 0.3s ease;
 }
 
 .custom-nav a:hover {
-    text-decoration: underline;
+    color: #2964AA;
+}
+
+.custom-nav a:hover::after {
+    width: 100%;
 }
 
 /* --- Mobile Header --- */

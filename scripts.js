@@ -299,3 +299,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
     resizeObserver.observe(document.body);
 });
+
+// Fade in
+  document.addEventListener("DOMContentLoaded", function() {
+    const fadeElements = document.querySelectorAll('.fade-in');
+    fadeElements.forEach(el => {
+      setTimeout(() => el.classList.add('visible'), 100);
+    });
+  });
