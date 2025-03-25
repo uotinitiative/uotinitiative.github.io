@@ -414,8 +414,8 @@ header {
     td {
         border: none;
         position: relative;
-        padding-left: 45%;
-        padding-right: 5%;
+        padding-left: 40%;
+        padding-right: 0%;
         box-sizing: border-box;
         min-height: 44px;
         display: flex;
@@ -428,9 +428,14 @@ header {
         top: 50%;
         transform: translateY(-50%);
         left: 10px;
-        width: 40%;
+        width: auto;
         font-weight: 500;
     }
+
+    td select {
+        width: 100%;
+    }
+
 
     tr {
         margin-bottom: 15px;
