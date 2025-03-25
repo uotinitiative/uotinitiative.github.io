@@ -215,16 +215,15 @@ header {
 }
 
 .header-logo,
-.custom-nav,
-.search-container {
+.custom-nav {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .logo {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
     display: block;
 
 }
@@ -232,7 +231,7 @@ header {
 .custom-nav {
     display: flex;
     align-items: center;
-    gap: 28px;
+    gap: 22px;
     font-family: system-ui, -apple-system, Arial, sans-serif;
 }
 
