@@ -291,13 +291,14 @@ header {
     cursor: pointer;
     position: relative;
     z-index: 1001;
-    transition: background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
     margin-left: 8px;
     width: 24px;
+    background-color: transparent;
 }
 
 .hamburger-menu:hover {
-    background-color: #f0f0f0;
+    background-color: transparent;
 }
 
 .bar {
@@ -386,12 +387,9 @@ header {
 
 /* --- Hover Fallback for Devices --- */
 @media (hover: hover) and (pointer: fine) {
-  .hamburger-menu:hover {
-    background-color: #f0f0f0;
-  }
-  .nav-menu a:hover {
-    background-color: #f0f0f0;
-  }
+    .hamburger-menu:hover {
+        background-color: transparent;
+    }
 }
 
 @media (hover: none) and (pointer: coarse) {
