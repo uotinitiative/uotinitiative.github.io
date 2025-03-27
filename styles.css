@@ -38,6 +38,29 @@ h1 {
     border: none;
 }
 
+.back-to-top-button {
+  background-color: #f3f4f6;
+  color: #111827;
+  padding: 8px 16px;
+  border-radius: 12px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: none;
+  letter-spacing: normal;
+  transition: background-color 0.3s ease;
+  border: 1px solid #d1d5db;
+  display: inline-block;
+}
+
+.back-to-top-button:hover {
+  background-color: #e5e7eb;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
 footer {
     background-color: #ffffff;
     text-align: center;
@@ -492,4 +515,262 @@ header {
     td:nth-of-type(2):before { content: "Learner Age"; }
     td:nth-of-type(3):before { content: "Subject"; }
     td:nth-of-type(4):before { content: "Download"; }
+}
+
+/* =====================================================
+   10. Search
+===================================================== */
+.search-content {
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.search-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+}
+
+#catalog-search {
+    width: 100%;
+    padding: 12px 40px 12px 15px;
+    border: 2px solid #ddd;
+    border-radius: 25px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+#catalog-search:focus {
+    outline: none;
+    border-color: #4a90e2;
+    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+}
+
+.search-icon {
+    position: absolute;
+    right: 15px;
+    color: #666;
+    pointer-events: none;
+}
+
+.search-container:hover #catalog-search {
+    border-color: #bbb;
+}
+
+.catalog-card {
+    border: 1px solid #f0f0f0;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+.catalog-card h3 {
+    margin-top: 10;
+}
+.catalog-card p {
+    margin-bottom: 10px;
+}
+
+.filter-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.tag {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 12px;
+  background-color: #f3f4f6;
+  color: #333;
+  border-radius: 20px;
+  font-size: 14px;
+  cursor: pointer;
+  border: 1px solid transparent;
+  transition: background-color 0.3s ease;
+  user-select: none;
+}
+
+.tag:hover {
+  background-color: #e0e7ff;
+}
+
+.tag.active {
+  background-color: #2964AA;
+  color: white;
+  border-color: #2964AA;
+}
+
+.tag-close {
+  font-size: 16px;
+  margin-left: 8px;
+  line-height: 1;
+  color: inherit;
+  opacity: 0.6;
+}
+
+.tag-close {
+  display: none; /* Hide by default */
+}
+
+.tag.active .tag-close {
+  display: inline; /* Show only when tag is active */
+}
+
+.filter-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin: 1rem 0;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.filter-group label {
+    font-weight: 600;
+    color: #1e293b;
+}
+
+.filter-group select {
+    padding: 0.5rem;
+    border: 1px solid #e2e8f0;
+    border-radius: 4px;
+    background-color: white;
+    min-width: 200px;
+    font-size: 0.9rem;
+}
+
+.filter-group select:focus {
+    outline: none;
+    border-color: #3b82f6;
+    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+}
+
+@media (max-width: 768px) {
+    .filter-container {
+        flex-direction: column;
+    }
+    
+    .filter-group select {
+        width: 100%;
+    }
+}
+
+/* Table Styles */
+.table-container {
+    width: 100%;
+    overflow-x: auto;
+    margin: 20px 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+#catalog-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 0;
+}
+
+#catalog-table th,
+#catalog-table td {
+    padding: 12px 15px;
+    text-align: left;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+#catalog-table th {
+    background-color: #f8fafc;
+    font-weight: 600;
+    color: #1e293b;
+    white-space: nowrap;
+}
+
+#catalog-table tr:hover {
+    background-color: #f8fafc;
+}
+
+#catalog-table td {
+    color: #334155;
+}
+
+.download-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    color: #2964AA;
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.download-link:hover {
+    text-decoration: underline;
+}
+
+.download-link i {
+    font-size: 14px;
+}
+
+/* Responsive Table */
+@media screen and (max-width: 768px) {
+    .table-container {
+        margin: 10px -20px;
+        border-radius: 0;
+    }
+
+    #catalog-table {
+        display: block;
+    }
+
+    #catalog-table thead {
+        display: none;
+    }
+
+    #catalog-table tbody {
+        display: block;
+    }
+
+    #catalog-table tr {
+        display: block;
+        margin-bottom: 15px;
+        border: 1px solid #e2e8f0;
+        border-radius: 8px;
+        background: white;
+    }
+
+    #catalog-table td {
+        display: block;
+        text-align: right;
+        padding: 8px 15px;
+        border: none;
+        position: relative;
+    }
+
+    #catalog-table td:before {
+        content: attr(data-label);
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-weight: 600;
+        color: #1e293b;
+    }
+
+    #catalog-table td:not(:last-child) {
+        border-bottom: 1px solid #e2e8f0;
+    }
 }

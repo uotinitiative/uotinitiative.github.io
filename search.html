@@ -1,0 +1,856 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Search - Universal Open Textbook Initiative</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Meta Tags -->
+  <meta name="description"
+    content="Search textbooks in the Universal Open Textbook Initiative (UOTI) catalog.">
+  <meta name="keywords" content="search, catalog, open textbooks, OER, universal education, Vatsal">
+
+  <!-- Favicon and App Icons -->
+<link rel="icon" href="/favicon/favicon.ico" />
+<link rel="shortcut icon" href="/favicon/favicon.ico" />
+<link rel="icon" type="image/png" href="/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="/favicon/web-app-manifest-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="/favicon/web-app-manifest-512x512.png" sizes="512x512" />
+<link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="/favicon/site.webmanifest" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Search - Universal Open Textbook Initiative",
+        "description": "Search textbooks in the Universal Open Textbook Initiative (UOTI) catalog.",
+        "isPartOf": {
+          "@type": ["Organization", "EducationalOrganization"],
+          "name": "Universal Open Textbook Initiative",
+          "url": "https://uotinitiative.org"
+        }
+      }
+    </script>
+
+  <!-- Google Tag Manager -->
+  <script>
+    (function(w,d,s,l,i){
+      w[l]=w[l]||[];
+      w[l].push({'gtm.start': new Date().getTime(), event:'gtm.js'});
+      var f=d.getElementsByTagName(s)[0],
+          j=d.createElement(s), dl=l!='dataLayer'?'&l='+l:'';
+      j.async=true;
+      j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;
+      f.parentNode.insertBefore(j,f);
+    })(window, document, 'script', 'dataLayer', 'GTM-TSVCJPLS');
+  </script>
+  <!-- End Google Tag Manager -->
+</head>
+<body>
+  <!-- Google Tag Manager (noscript) -->
+  <noscript>
+    <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TSVCJPLS" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+  </noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+    <!-- Header Section -->
+  <header>
+    <!-- Desktop Navigation -->
+    <div class="custom-header desktop-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <nav class="custom-nav">
+          <a href="/">HOME</a>
+          <a href="search">SEARCH</a>
+          <a href="faq">FAQ</a>
+          <a href="mailto:contact@uotinitiative.org">CONTACT</a>
+        </nav>
+        <div class="header-logo">
+          <a href="https://buymeacoffee.com/uotinitiative.org" class="donate-button" target="_blank">DONATE</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <div class="mobile-right">
+          <div class="header-logo">
+            <a href="https://buymeacoffee.com/uotinitiative.org" class="donate-button" target="_blank">DONATE</a>
+          </div>
+          <nav class="navbar">
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="/">HOME</a></li>
+          <li><a href="search">SEARCH</a></li>
+          <li><a href="faq">FAQ</a></li>
+          <li><a href="mailto:contact@uotinitiative.org">CONTACT</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Main Content -->
+  <main class="container">
+    <h1>Search</h1>
+    <section class="search-content">
+      <p>Search the Curriculum Catalog for information on the scope and content of each textbook available on our website.</p>
+    </section>
+
+    <div class="search-container">
+      <input type="text" id="catalog-search" onkeyup="filterAndHighlight()" placeholder="Search Catalog...">
+      <i class="fas fa-search search-icon"></i>
+    </div>
+
+    <div class="filter-tags">
+      <span class="tag" data-filter="high-school">High School <span class="tag-close">×</span></span>
+      <span class="tag" data-filter="bachelor">Bachelor's <span class="tag-close">×</span></span>
+      <span class="tag" data-filter="master">Master's <span class="tag-close">×</span></span>
+      <span class="tag" data-filter="english">English <span class="tag-close">×</span></span>
+      <span class="tag" data-filter="spanish">Spanish <span class="tag-close">×</span></span>
+      <span class="tag" data-filter="polish">Polish <span class="tag-close">×</span></span>
+    </div>
+
+    <p id="no-match" style="display:none; color: #b91c1c; font-weight: bold; text-align: center;">No results found.</p>
+
+    <!-- Cards -->
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="prealgebra"
+        data-age="13"
+        data-grade="8"
+        data-tags="english,high-school,prealgebra,grade-8,age-13">
+      <h3 class="card-title">Prealgebra (Age 13, US Grade 8)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet scope and sequence requirements for a one-semester prealgebra course. The text introduces the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Contents:</strong> Whole Numbers — The Language of Algebra — Integers — Fractions — Decimals — Percents — The Properties of Real Numbers — Solving Linear Equations — Math Models and Geometry — Polynomials — Graphs</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_13_prealgebra/english_13_prealgebra.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra"
+        data-age="14"
+        data-grade="grade-9"
+        data-tags="english,high-school,algebra,grade-9,age-14">
+      <h3 class="card-title">Algebra (Age 14, US Grade 9)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet the scope and sequence requirements of a one-semester elementary algebra course. The text expands on the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Contents:</strong> Foundations — Solving Linear Equations and Inequalities — Math Models — Graphs — Systems of Linear Equations — Polynomials — Factoring — Rational Expressions and Equations — Roots and Radicals — Quadratic Equations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_14_algebra/english_14_algebra.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra"
+        data-age="15"
+        data-grade="grade-10"
+        data-tags="english,high-school,algebra,grade-10,age-15">
+      <h3 class="card-title">Algebra (Age 15, US Grade 10)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet the scope and sequence requirements of a one-semester intermediate algebra course. The text expands on the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Contents:</strong> Foundations — Solving Linear Equations — Graphs and Functions — Systems of Linear Equations — Polynomials and Polynomial Functions — Factoring — Rational Expressions and Functions — Roots and Radicals — Quadratic Equations and Functions — Exponential and Logarithmic Functions — Conics — Sequences, Series and Binomial Theorem</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_15_algebra/english_15_algebra.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra-and-trigonometry"
+        data-age="15"
+        data-grade="grade-10"
+        data-tags="english,high-school,algebra-and-trigonometry,grade-10,age-15">
+      <h3 class="card-title">Algebra and Trigonometry (Age 15, US Grade 10)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook provides a comprehensive exploration of algebraic principles and meets scope and sequence requirements for a typical introductory algebra and trigonometry course. The modular approach and the richness of content ensures that the book meets the needs of a variety of courses.</p>
+      <p class="card-contents"><strong>Contents:</strong> Prerequisites — Equations and Inequalities — Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — The Unit Circle: Sine and Cosine Functions — Periodic Functions — Trigonometric Identities and Equations — Further Applications of Trigonometry — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability, and Counting Theory</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_15_algebra_and_trigonometry/english_15_algebra_and_trigonometry.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra"
+        data-age="16"
+        data-grade="grade-11"
+        data-tags="english,high-school,algebra,grade-11,age-16">
+      <h3 class="card-title">Algebra (Age 16, US Grade 11)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook integrates comprehensive algebraic principles with effective foundational review. Each section is paired with a thoughtfully developed, topically aligned skills module that prepares students for the course material.</p>
+      <p class="card-contents"><strong>Contents:</strong> Prerequisites — Equations and Inequalities — Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability, and Counting Theory</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_16_algebra/english_16_algebra.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="physics"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,high-school,physics,grade-12,age-17">
+      <h3 class="card-title">Physics (Age 17, US Grade 12)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers the scope and sequence requirements of a typical one-year physics course. The text provides comprehensive coverage of physical concepts, quantitative examples and skills, and interesting applications.</p>
+      <p class="card-contents"><strong>Contents:</strong> What is Physics? — Motion in One Dimension — Acceleration — Forces and Newton's Laws of Motion — Motion in Two Dimensions — Circular and Rotational Motion — Newton's Law of Gravitation — Momentum — Work, Energy, and Simple Machines — Special Relativity — Thermal Energy, Heat, and Work — Thermodynamics — Waves and Their Properties — Sound — Light — Mirrors and Lenses — Diffraction and Interference — Static Electricity — Electrical Circuits — Magnetism — The Quantum Nature of Light — The Atom — Particle Physics</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_17_physics/english_17_physics.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="high-school"
+        data-subject="precalculus"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,spanish,high-school,precalculus,grade-12,age-17">
+      <h3 class="card-title">Precalculus (Age 17, US Grade 12)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is adaptable and designed to fit the needs of a variety of precalculus courses. It is a comprehensive text that covers more ground than a typical one- or two-semester college-level precalculus course.</p>
+      <p class="card-contents"><strong>Contents:</strong> Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — Trigonometric Functions — Periodic Functions — Trigonometric Identities and Equations — Further Applications of Trigonometry — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability and Counting Theory — Introduction to Calculus</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_17_precalculus/english_17_precalculus.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="statistics"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,high-school,statistics,grade-12,age-17">
+      <h3 class="card-title">Statistics (Age 17, US Grade 12)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers the scope and sequence requirements of a typical one-year statistics course. The text provides comprehensive coverage of statistical concepts, including quantitative examples, collaborative activities, and practical applications.</p>
+      <p class="card-contents"><strong>Contents:</strong> Sampling and Data — Descriptive Statistics — Probability Topics — Discrete Random Variables — Continuous Random Variables — The Normal Distribution — The Central Limit Theorem — Confidence Intervals — Hypothesis Testing with One Sample — Hypothesis Testing with Two Samples — The Chi-Square Distribution — Linear Regression and Correlation — F Distribution and One-Way ANOVA</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_17_statistics/english_17_statistics.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="anatomy-and-physiology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,anatomy-and-physiology,bachelor's-1,age-18">
+      <h3 class="card-title">Anatomy and Physiology (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is developed to meet the scope and sequence for a two-semester human anatomy and physiology course for life science and allied health majors. The book is organized by body systems.</p>
+      <p class="card-contents"><strong>Contents:</strong> Levels of Organization (An Introduction to the Human Body, The Chemical Level of Organization, The Cellular Level of Organization, The Tissue Level of Organization) — Support and Movement (The Integumentary System, Bone Tissue and the Skeletal System, Axial Skeleton, The Appendicular Skeleton, Joints, Muscle Tissue, The Muscular System) — Regulation, Integration, and Control (The Nervous System and Nervous Tissue, Anatomy of the Nervous System, The Somatic Nervous System, The Autonomic Nervous System, The Neurological Exam, The Endocrine System) — Fluids and Transport (The Cardiovascular System: Blood, The Cardiovascular System: The Heart, The Cardiovascular System: Blood Vessels and Circulation, The Lymphatic and Immune System) — Energy, Maintenance, and Environmental Exchange (The Respiratory System, The Digestive System, Metabolism and Nutrition, The Urinary System, Fluid, Electrolyte, and Acid-Base Balance) — Human Development and the Continuity of Life (The Reproductive System, Development and Inheritance)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="anthropology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,anthropology,bachelor's-1,age-18">
+      <h3 class="card-title">Anthropology (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is useful for both general and cultural introductory courses as well as for introductory courses in some of the anthropology subfields. It is a four-field text, grounded in foundational content in cultural anthropology, archaeology, biological anthropology, and linguistic anthropology.</p>
+      <p class="card-contents"><strong>Contents:</strong> What is Anthropology? — Methods: Cultural and Archaeological — Culture Concept Theory: Theories of Cultural Change — Biological Evolution and Early Human Evidence — The Genus Homo and the Emergence of Us — Language and Communication — Work, Life, and Value: Economic Anthropology — Authority, Decisions, and Power: Political Anthropology — Social Inequalities — The Global Impact of Human Migration — Forming Family through Kinship — Gender and Sexuality — Religion and Culture — Anthropology of Food — Anthropology of Media — Art, Music, and Sport — Medical Anthropology — Human-Animal Relationship — Indigenous Anthropology — Anthropology on the Ground</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_anthropology/english_18_anthropology.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="astronomy"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,astronomy,bachelor's-1,age-18">
+      <h3 class="card-title">Astronomy (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet scope and sequence requirements of introductory astronomy courses. It can be used for either a one-semester or two-semester introductory course.</p>
+      <p class="card-contents"><strong>Contents:</strong> Science and the Universe: A Brief Tour — Observing the Sky: The Birth of Astronomy — Orbits and Gravity — Earth, Moon, and Sky — Radiation and Spectra — Astronomical Instruments — Other Worlds: An Introduction to the Solar System — Earth as a Planet — Cratered Worlds — Earthlike Planets: Venus and Mars — The Giant Planets — Rings, Moons, and Pluto — Comets and Asteroids: Debris of the Solar System — Cosmic Samples and the Origin of the Solar System — The Sun: A Garden-Variety Star — The Sun: A Nuclear Powerhouse — Analyzing Starlight — The Stars: A Celestial Census — Celestial Distances — Between the Stars: Gas and Dust in Space — The Birth of Stars and the Discovery of Planets outside the Solar System — Stars from Adolescence to Old Age — The Death of Stars — Black Holes and Curved Spacetime — The Milky Way Galaxy — Galaxies — Active Galaxies, Quasars, and Supermassive Black Holes — The Evolution and Distribution of Galaxies — The Big Bang — Life in the Universe</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_astronomy/english_18_astronomy.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="biology-for-non-science-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,biology-for-non-science-majors,bachelor's-1,age-18">
+      <h3 class="card-title">Biology for Non-Science Majors (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed for the single-semester introduction to biology course for non-science majors. It is grounded on an evolutionary basis and includes exciting features that highlight careers in the biological sciences and everyday applications of the concepts at hand.</p>
+      <p class="card-contents"><strong>Contents:</strong> The Cellular Foundation of Life (Introduction to Biology, Chemistry of Life, Cell Structure and Function, How Cells Obtain Energy, Photosynthesis) — Cell Division and Genetics (Reproduction at the Cellular Level, The Cellular Basis of Inheritance, Patterns of Inheritance) — Molecular Biology and Biotechnology (Molecular Biology, Biotechnology) — Evolution and the Diversity of Life (Evolution and Its Processes, Diversity of Life, Diversity of Microbes, Fungi, and Protists, Diversity of Plants, Diversity of Animals) — Animal Structure and Function (The Body’s Systems, The Immune System and Disease, Animal Reproduction and Development) — Ecology (Population and Community Ecology, Ecosystems and the Biosphere, Conservation and Biodiversity)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_biology_for_non_science_majors/english_18_biology_for_non_science_majors.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="biology-for-science-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,biology-for-science-majors,grade-bachelor's-1,age-18">
+      <h3 class="card-title">Biology for Science Majors (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to cover the scope and sequence requirements of a typical two-semester biology course for science majors. The text provides comprehensive coverage of foundational research and core biology concepts through an evolutionary lens.</p>
+      <p class="card-contents"><strong>Contents:</strong> The Chemistry of Life (The Study of Life, The Chemical Foundation of Life, Biological Macromolecules) — The Cell (Cell Structure, Structure and Function of Plasma Membranes, Metabolism, Cellular Respiration, Photosynthesis, Cell Communication, Cell Reproduction) — Genetics (Meiosis and Sexual Reproduction, Mendel's Experiments and Heredity, Modern Understandings of Inheritance, DNA Structure and Function, Genes and Proteins, Gene Expression, Biotechnology and Genomics) — Evolutionary Processes (Evolution and the Origin of Species, The Evolution of Populations, Phylogenies and the History of Life) — Biological Diversity (Viruses, Prokaryotes: Bacteria and Archaea, Protists, Fungi, Seedless Plants, Seed Plants, Introduction to Animal Diversity, Invertebrates, Vertebrates) — Plant Structure and Function (Plant Form and Physiology, Soil and Plant Nutrition, Plant Reproduction) — Animal Structure and Function (The Animal Body: Basic Form and Function, Animal Nutrition and the Digestive System, The Nervous System, Sensory Systems, The Endocrine System, The Musculoskeletal System, The Respiratory System, The Circulatory System, Osmotic Regulation and Excretion, The Immune System, Animal Reproduction and Development) — Ecology (Ecology and the Biosphere, Population and Community Ecology, Ecosystems, Conservation Biology and Biodiversity)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_biology_for_science_majors/english_18_biology_for_science_majors.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="biosystems-engineering"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,biosystems-engineering,bachelor's-1,age-18">
+      <h3 class="card-title">Biosystems Engineering (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed for university-level introductory courses in biosystems engineering.</p>
+      <p class="card-contents"><strong>Contents:</strong> Energy Systems — Information Technology, Sensors, and Control Systems — Machinery Systems — Natural Resources and Environmental Systems — Plant, Animal, and Facility Systems — Processing Systems</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_biosystems_engineering/english_18_biosystems_engineering.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-1"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,calculus:-volume-1,bachelor's-1,age-18">
+      <h3 class="card-title">Calculus: Volume 1 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Contents:</strong> Functions and Graphs — Limits — Derivatives — Applications of Derivatives — Integration — Applications of Integration</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_calculus_vol_1/english_18_calculus_vol_1.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-2"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,calculus:-volume-2,bachelor's-1,age-18">
+      <h3 class="card-title">Calculus: Volume 2 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Contents:</strong> Integration — Applications of Integration — Techniques of Integration — Introduction to Differential Equations — Sequences and Series — Power Series — Parametric Equations and Polar Coordinates</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_calculus_vol_2/english_18_calculus_vol_2.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-3"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,calculus:-volume-3,bachelor's-1,age-18">
+      <h3 class="card-title">Calculus: Volume 3 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Contents:</strong> Parametric Equations and Polar Coordinates — Vectors in Space — Vector-Valued Functions — Differentiation of Functions of Several Variables — Multiple Integration — Vector Calculus — Second-Order Differential Equations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_calculus_vol_3/english_18_calculus_vol_3.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="chemistry"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,chemistry,bachelor's-1,age-18">
+      <h3 class="card-title">Chemistry (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet the scope and sequence requirements of the two-semester general chemistry course. The textbook provides an important opportunity for students to learn the core concepts of chemistry and understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Contents:</strong> Essential Ideas — Atoms, Molecules, and Ions — Composition of Substances and Solutions — Stoichiometry of Chemical Reactions — Thermochemistry — Electronic Structure and Periodic Properties of Elements — Chemical Bonding and Molecular Geometry — Advanced Theories of Covalent Bonding — Gases — Liquids and Solids — Solutions and Colloids — Kinetics — Fundamental Equilibrium Concepts — Acid-Base Equilibria — Equilibria of Other Reaction Classes — Thermodynamics — Electrochemistry — Representative Metals, Metalloids, and Nonmetals — Transition Metals and Coordination Chemistry — Organic Chemistry — Nuclear Chemistry</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_chemistry/english_18_chemistry.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="foundations-of-computation"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,foundations-of-computation,bachelor's-1,age-18">
+      <h3 class="card-title">Foundations of Computation (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed for a one-semester course in theoretical computer science. It has no prerequisites other than a general familiarity with computer programming.</p>
+      <p class="card-contents"><strong>Contents:</strong> Logic and Proof — Sets, Functions, and Relations — Regular Expressions and FSA’s — Grammars — Turing Machines and Computability</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,polish"
+        data-level="bachelor"
+        data-subject="macroeconomics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,macroeconomics,bachelor's-1,age-18">
+      <h3 class="card-title">Macroeconomics (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers the scope and sequence of most one semester introductory macroeconomics courses. The text uses conversational language and ample illustrations to explore economic theories, and provides a wide array of examples using both fictional and real-world applications.</p>
+      <p class="card-contents"><strong>Contents:</strong> Welcome to Economics — Choice in a World of Scarcity — Demand and Supply — Labor and Financial Markets — Elasticity — The Macroeconomic Perspective — Economic Growth — Unemployment — Inflation — The International Trade and Capital Flows — The Aggregate Demand/Aggregate Supply Model — The Keynesian Perspective — The Neoclassical Perspective — Money and Banking — Monetary Policy and Bank Regulation — Exchange Rates and International Capital Flows — Government Budgets and Fiscal Policy — The Impacts of Government Borrowing — Macroeconomic Policy Around the World — International Trade — Globalization and Protectionism</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_macroeconomics/english_18_macroeconomics.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="mathematics-for-liberal-arts-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,mathematics-for-liberal-arts-majors,bachelor's-1,age-18">
+      <h3 class="card-title">Mathematics for Liberal Arts Majors (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet the requirements for a liberal arts mathematics course. The textbook covers a range of topics that are typically found in a liberal arts course as well as some topics to connect mathematics to the world around us.</p>
+      <p class="card-contents"><strong>Contents:</strong>Sets — Logic — Real Number Systems and Number Theory — Number Representation and Calculation — Algebra — Money Management — Probability — Statistics — Metric Measurement — Geometry — Voting and Apportionment — Graph Theory — Math and Society</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,polish"
+        data-level="bachelor"
+        data-subject="microeconomics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,microeconomics,bachelor's-1,age-18">
+      <h3 class="card-title">Microeconomics (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers the scope and sequence of most one semester introductory microeconomics courses. The text uses conversational language and ample illustrations to explore economic theories, and provides a wide array of examples using both fictional and real-world applications.</p>
+      <p class="card-contents"><strong>Contents:</strong> Welcome to Economics — Choice in a World of Scarcity — Demand and Supply — Labor and Financial Markets — Elasticity — Consumer Choices — Production, Costs, and Industry Structure — Perfect Competition — Monopoly — Monopolistic Competition and Oligopoly — Monopoly and Antitrust Policy — Environmental Protection and Negative Externalities — Positive Externalities and Public Goods — Labor Markets and Income — Poverty and Economic Inequality — Information, Risk, and Insurance — Financial Markets — Public Economy — International Trade — Globalization and Protectionism</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_microeconomics/english_18_microeconomics.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_microeconomics/polish_18_microeconomics.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="philosophy"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,philosophy,bachelor's-1,age-18">
+      <h3 class="card-title">Philosophy (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook provides an overview of a common range of philosophical topics for a first- or second-year general education philosophy course. It is organized thematically, following the principal categories of academic philosophy (logic, metaphysics, epistemology, theories of value, and history of philosophy.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction to Philosophy — Critical Thinking, Research, Reading, and Writing — The Early History of Philosophy around the World — The Emergence of Classical Philosophy — Logic and Reasoning — Metaphysics — Epistemology — Value Theory — Normative Moral Theory — Applied Ethics — Political Philosophy — Contemporary Philosophies and Social Theories</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_philosophy/english_18_philosophy.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title">Physics (Algebra-Based) (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook introduces topics conceptually and progresses through clear explanations in the context of career-oriented, practical applications, and meets the scope and sequence of an algebra-based physics course. It requires knowledge of algebra and some trigonometry, but not calculus.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction: The Nature of Science and Physics — Kinematics — Two-Dimensional Kinematics — Dynamics: Force and Newton’s Laws of Motion — Further Applications of Newton’s Laws: Friction, Drag, and Elasticity — Uniform Circular Motion and Gravitation — Work, Energy, and Energy Resources — Linear Momentum and Collisions — Statics and Torque — Rotational Motion and Angular Momentum — Fluid Statics — Fluid Dynamics and Its Biological and Medical Applications — Temperature, Kinetic Theory, and the Gas Laws — Heat and Heat Transfer Methods — Thermodynamics — Oscillatory Motion and Waves — Physics of Hearing — Electric Charge and Electric Field — Electric Potential and Electric Field — Electric Current, Resistance, and Ohm’s Law — Circuits and DC Instruments — Magnetism — Electromagnetic Induction, AC Circuits, and Electrical Technologies — Electromagnetic Waves — Geometric Optics — Vision and Optical Instruments — Wave Optics — Special Relativity — Quantum Physics — Atomic Physics — Radioactivity and Nuclear Physics — Medical Applications of Nuclear Physics — Particle Physics — Frontiers of Physics</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title">Physics (Calculus-Based): Volume 1 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Contents:</strong> Mechanics (Units and Measurement, Vectors, Motion Along a Straight Line, Motion in Two and Three Dimensions, Newton’s Laws of Motion, Applications of Newton’s Laws, Work and Kinetic Energy, Potential Energy and Conservation of Energy, Linear Momentum and Collisions, Fixed-Axis Rotation, Angular Momentum, Static Equilibrium and Elasticity, Gravitation, Fluid Mechanics) — Waves and Acoustics (Oscillations, Waves, Sound)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title">Physics (Calculus-Based): Volume 2 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Contents:</strong> Thermodynamics (Temperature and Heat, The Kinetic Theory of Gases, The First Law of Thermodynamics, The Second Law of Thermodynamics) — Electricity and Magnetism (Electric Charges and Fields, Gauss’s Law, Electric Potential, Capacitance, Current and Resistance, Direct-Current Circuits, Magnetic Forces and Fields, Sources of Magnetic Fields, Electromagnetic Induction, Inductance, Alternating-Current Circuits, Electromagnetic Waves)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_2/english_18_physics_calculus_based_vol_2.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title">Physics (Calculus-Based): Volume 3 (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Contents:</strong> Optics (The Nature of Light, Geometric Optics and Image Formation, Interference, Diffraction) — Modern Physics (Relativity, Photons and Matter Waves, Quantum Mechanics, Atomic Structure, Condensed Matter Physics, Nuclear Physics, Particle Physics and Cosmology)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_3/english_18_physics_calculus_based_vol_3.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf" target="_blank" rel="noopener">Spanish</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="political-science"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,political-science,bachelor's-1,age-18">
+      <h3 class="card-title">Political Science (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet the scope and sequence of an introduction to political science course. It introduces the broad scope of the political science discipline in a holistic manner via logically connected conceptual building blocks and provides a strong foundation in global political systems, exploring how and why political realities unfold.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction to Political Science (What Is Politics and What Is Political Science?) — Individuals (Political Behavior Is Human Behavior, Political Ideology, Civil Liberties, Political Participation and Public Opinion) — Groups (The Fundamentals of Group Political Activity, Civil Rights, Interest Groups, Political Parties, and Elections) — Institutions (Legislatures, Executives, Cabinets, and Bureaucracies, Courts and Law, The Media) — States and International Relations (Governing Regimes, International Relations, International Law and International Organizations, International Political Economy)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_political_science/english_18_political_science.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,polish"
+        data-level="bachelor"
+        data-subject="psychology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,polish,bachelor,psychology,bachelor's-1,age-18">
+      <h3 class="card-title">Psychology (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Polish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to meet scope and sequence requirements for the single-semester introduction to psychology course. The book offers a comprehensive treatment of core concepts, grounded in both classic studies and current and emerging research.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction to Psychology — Psychological Research — Biopsychology — States of Consciousness — Sensation and Perception — Learning — Thinking and Intelligence — Memory — Lifespan Development — Emotion and Motivation — Personality — Social Psychology — Industrial-Organizational Psychology — Stress, Lifestyle, and Health — Psychological Disorders — Therapy and Treatment</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_psychology/english_18_psychology.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Polish/polish_18_psychology/polish_18_psychology.pdf" target="_blank" rel="noopener">Polish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="python-programming"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,python-programming,bachelor's-1,age-18">
+      <h3 class="card-title">Python Programming (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook provides a comprehensive foundation in programming concepts and skills, and is aligned to the scope of most introductory courses. The offering is suitable for a diverse learner audience, including those pursuing computer science, business, science, social science, statistics, data science, and related areas of study and employment.</p>
+      <p class="card-contents"><strong>Contents:</strong> Statements — Expressions — Objects — Decisions — Loops — Functions — Modules — Strings — Lists — Dictionaries — Classes — Recursion — Inheritance — Files — Data Science</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_python_programming/english_18_python_programming.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="sociology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,sociology,bachelor's-1,age-18">
+      <h3 class="card-title">Sociology (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook aligns to the topics and objectives of many introductory sociology courses. It is arranged in a manner that provides foundational sociological theories and contexts, then progresses through various aspects of human and societal interactions.</p>
+      <p class="card-contents"><strong>Contents:</strong> An Introduction to Sociology — Sociological Research — Culture — Society and Social Interaction — Socialization — Groups and Organization — Deviance, Crime, and Social Control — Media and Technology — Social Stratification — Global Inequality — Race and Ethnicity — Gender, Sex, and Sexuality — Aging and the Elderly — Relationships, Marriage, and Family — Religion — Education — Government and Politics — Work and the Economy — Health and Medicine — Population, Urbanization, and the Environment — Social Movements and Social Change</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_sociology/english_18_sociology.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="statistics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,statistics,bachelor's-1,age-18">
+      <h3 class="card-title">Statistics (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook follows scope and sequence requirements of a one-semester introduction to statistics course and is geared toward students majoring in fields other than math or engineering. The text assumes some knowledge of intermediate algebra and focuses on statistics application over theory.</p>
+      <p class="card-contents"><strong>Contents:</strong> Sampling and Data — Descriptive Statistics — Probability Topics — Discrete Random Variables — Continuous Random Variables — The Normal Distribution — The Central Limit Theorem — Confidence Intervals — Hypothesis Testing with One Sample — Hypothesis Testing with Two Samples — The Chi-Square Distribution — Linear Regression and Correlation — F Distribution and One-Way ANOVA</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_statistics/english_18_statistics.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_18_statistics/spanish_18_statistics.pdf" target="_blank" rel="noopener">Spanish</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="workplace-software-and-skills"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,workplace-software-and-skills,bachelor's-1,age-18">
+      <h3 class="card-title">Workplace Software and Skills (Age 18, US Bachelor's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers applications from the Microsoft 365 (formerly Microsoft Office) suite and Google Workspace. Coverage of both suites aligns with contemporary business use and prepares students for workforce needs, especially introductory students who have had limited exposure to these software programs.</p>
+      <p class="card-contents"><strong>Contents:</strong> Technology in Everyday Life and Business — Essentials of Software Applications for Business — Creating and Working in Documents — Document Preparation — Advanced Document Preparation — Preparing Presentations — Advanced Presentation Skills — Content Management Systems and Social Media in Business — Working with Spreadsheets — Advanced Excel Formulas, Functions, and Techniques — Advanced Excel Spreadsheets: Statistical and Data Analysis — Using Excel in Accounting and Financial Reporting — Understanding and Using Databases — Advanced Database Use — Integrating Applications</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_18_workplace_software_and_skills/english_18_workplace_software_and_skills.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="discrete-structures"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,discrete-structures,bachelor's-2,age-19">
+      <h3 class="card-title">Discrete Structures (Age 19, US Bachelor's 2)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook contains the content of a two semester course in discrete structures, which is typically a second-year course for students in computer science or mathematics, but it does not have a calculus prerequisite.</p>
+      <p class="card-contents"><strong>Contents:</strong> Set Theory — Combinatorics — Logic — More on Sets — Introduction to Matrix Algebra — Relations — Functions — Recursion and Recurrence Relations — Graph Theory — Trees — Algebraic Structures — More Matrix Algebra — Boolean Algebra — Monoids and Automata — Group Theory and Applications — An Introduction to Rings and Fields</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_19_discrete_structures/english_19_discrete_structures.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="linear-algebra"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,linear-algebra,bachelor's-2,age-19">
+      <h3 class="card-title">Linear Algebra (Age 19, US Bachelor's 2)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook helps students to master the material of a standard US undergraduate first course in linear algebra. A prerequisite for the course is a background of at least one semester of calculus.</p>
+      <p class="card-contents"><strong>Contents:</strong> Linear Systems (Solving Linear Systems, Linear Geometry, Reduced Echelon Form) — Vector Spaces (Definition of Vector Space, Linear Independence, Basis and Dimension) — Maps Between Spaces (Isomorphisms, Homomorphisms, Computing Linear Maps, Matrix Operations, Change of Basis, Projection) — Determinants (Definition, Geometry of Determinants, Laplace’s Formula) — Similarity (Complex Vector Spaces, Similarity, Nilpotence, Jordan Form)</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_19_linear_algebra/english_19_linear_algebra.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="microbiology-for-non-majors"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,microbiology-for-non-majors,bachelor's-2,age-19">
+      <h3 class="card-title">Microbiology for Non-Majors (Age 19, US Bachelor's 2)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed to cover the scope and sequence requirements for the single-semester Microbiology course for non-majors. The book presents the core concepts of microbiology with a focus on applications for careers in allied health.</p>
+      <p class="card-contents"><strong>Contents:</strong> An Invisible World — How We See the Invisible World — The Cell — Prokaryotic Diversity — The Eukaryotes of Microbiology — Acellular Pathogens — Microbial Biochemistry — Microbial Metabolism — Microbial Growth — Biochemistry of the Genome — Mechanisms of Microbial Genetics — Modern Applications of Microbial Genetics — Control of Microbial Growth — Antimicrobial Drugs — Microbial Mechanisms of Pathogenicity — Disease and Epidemiology — Innate Nonspecific Host Defenses — Adaptive Specific Host Defenses — Diseases of the Immune System — Laboratory Analysis of the Immune Response — Skin and Eye Infections — Respiratory System Infections — Urogenital System Infections — Digestive System Infections — Circulatory and Lymphatic System Infections — Nervous System Infections</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_19_microbiology_for_non_majors/english_19_microbiology_for_non_majors.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="organic-chemistry"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,organic-chemistry,bachelor's-2,age-19">
+      <h3 class="card-title">Organic Chemistry (Age 19, US Bachelor's 2)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook meets the scope and sequence of a two-semester introductory organic chemistry course. It follows a functional group approach.</p>
+      <p class="card-contents"><strong>Contents:</strong> Structure and Bonding — Polar Covalent Bonds; Acids and Bases — Organic Compounds: Alkanes and Their Stereochemistry — Organic Compounds: Cycloalkanes and Their Stereochemistry — Stereochemistry at Tetrahedral Centers — An Overview of Organic Reactions — Alkenes: Structure and Reactivity — Alkenes: Reactions and Synthesis — Alkynes: An Introduction to Organic Synthesis — Organohalides — Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations — Structure Determination: Mass Spectrometry and Infrared Spectroscopy — Structure Determination: Nuclear Magnetic Resonance Spectroscopy — Conjugated Compounds and Ultraviolet Spectroscopy — Benzene and Aromaticity — Chemistry of Benzene: Electrophilic Aromatic Substitution — Alcohols and Phenols — Ethers and Epoxides; Thiols and Sulfides — Aldehydes and Ketones: Nucleophilic Addition Reactions — Carboxylic Acids and Nitriles — Carboxylic Acid Derivatives: Nucleophilic Acyl Substitution Reactions — Carbonyl Alpha-Substitution Reactions — Carbonyl Condensation Reactions — Amines and Heterocycles — Biomolecules: Carbohydrates — Biomolecules: Amino Acids, Peptides, and Proteins — Biomolecules: Lipids — Biomolecules: Nucleic Acids — The Organic Chemistry of Metabolic Pathways — Orbitals and Organic Chemistry: Pericyclic Reactions — Synthetic Polymers</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_19_organic_chemistry/english_19_organic_chemistry.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="abstract-algebra"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,spanish,bachelor,abstract-algebra,bachelor's-3,age-20">
+      <h3 class="card-title">Abstract Algebra (Age 20, US Bachelor's 3)</h3>
+      <p class="card-language"><strong>Language:</strong> English, Spanish</p>
+      <p class="card-about"><strong>About:</strong> This textbook is intended for a one or two-semester undergraduate course in abstract algebra. Though there are no specific prerequisites for a course in abstract algebra, students who have had other higher-level courses in mathematics will generally be more prepared than those who have not.</p>
+      <p class="card-contents"><strong>Contents:</strong> Preliminaries — The Integers — Groups — Cyclic Groups — Permutation Groups — Cosets and Lagrange’s Theorem — Introduction to Cryptography — Algebraic Coding Theory — Isomorphisms — Normal Subgroups and Factor Groups — Homomorphisms — Matrix Groups and Symmetry — The Structure of Groups — Group Actions — The Sylow Theorems — Rings — Polynomials — Integral Domains — Lattices and Boolean Algebras — Vector Spaces — Fields — Finite Fields — Galois Theory</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_20_abstract_algebra/english_20_abstract_algebra.pdf" target="_blank" rel="noopener">English</a>, <a href="https://assets.uotinitiative.org/Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf" target="_blank" rel="noopener">Spanish</a></p>
+</div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="differential-equations"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,differential-equations,bachelor's-3,age-20">
+      <h3 class="card-title">Differential Equations (Age 20, US Bachelor's 3)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is appropriate for a first course in differential equations for one or two semesters. It is written for students in science, engineering, and mathematics who have completed calculus through partial differentiation.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — First Order Equations — Numerical Methods — Applications of First Order Equations — Linear Second Order Equations — Applications of Linear Second Order Equations — Series Solutions of Linear Second Order Equations — Laplace Transforms — Linear Higher Order Equations — Linear Systems of Differential Equations — Boundary Value Problems and Fourier Expansions — Fourier Solutions of Partial Differential Equations — Boundary Value Problems for Second Order Linear Equations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_20_differential_equations/english_20_differential_equations.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="electromagnetics:-volume-1"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,electromagnetics:-volume-1,bachelor's-3,age-20">
+      <h3 class="card-title">Electromagnetics: Volume 1 (Age 20, US Bachelor's 3)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed for electrical engineering students in the third year of a bachelor of science degree program. It is intended as a primary textbook for a one-semester first course in undergraduate engineering electromagnetics.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — First Order Equations — Numerical Methods — Applications of First Order Equations — Linear Second Order Equations — Applications of Linear Second Order Equations — Series Solutions of Linear Second Order Equations — Laplace Transforms — Linear Higher Order Equations — Linear Systems of Differential Equations — Boundary Value Problems and Fourier Expansions — Fourier Solutions of Partial Differential Equations — Boundary Value Problems for Second Order Linear Equations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_1/english_20_electromagnetics_volume_1.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="electromagnetics:-volume-2"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,electromagnetics:-volume-2,bachelor's-3,age-20">
+      <h3 class="card-title">Electromagnetics: Volume 2 (Age 20, US Bachelor's 3)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook is designed for electrical engineering students in the third year of a bachelor of science degree program. It is intended as the primary textbook for the second semester of a two-semester undergraduate engineering electromagnetics sequence.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — First Order Equations — Numerical Methods — Applications of First Order Equations — Linear Second Order Equations — Applications of Linear Second Order Equations — Series Solutions of Linear Second Order Equations — Laplace Transforms — Linear Higher Order Equations — Linear Systems of Differential Equations — Boundary Value Problems and Fourier Expansions — Fourier Solutions of Partial Differential Equations — Boundary Value Problems for Second Order Linear Equations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_2/english_20_electromagnetics_volume_2.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="linear,-time-invariant,-dynamic-systems"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,linear,-time-invariant,-dynamic-systems,bachelor's-3,age-20">
+      <h3 class="card-title">Linear, Time-Invariant, Dynamic Systems (Age 20, US Bachelor's 3)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook provides an introduction to linear, time-invariant, dynamic systems for students of engineering. The general minimum prerequisite for studying this textbook is the intellectual maturity of a third-year college student in an accredited four-year engineering curriculum.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — Complex Numbers and Arithmetic — Mechanical Units — Frequency Response of 1st Order Systems — Basic Electrical Components and Circuits — General Time Response of 1st Order Systems by Application of the Convolution Integral — Undamped 2nd Order Systems — Pulse Inputs — Damped 2nd Order Systems — 2nd Order Systems — Mechanical Systems with Rigid-Body Plane Translation and Rotation — Vibration Modes of Undamped Mechanical Systems with Two Degrees of Freedom — Laplace Block Diagrams, and Additional Background Material for the Study of Feedback-Control Systems — Introduction to Feedback Control: Output Operations for Control of Rotational Position — Input-error Operations: Proportional, Integral, and Derivative 15 Types of Control — Introduction to System Stability: Time-Response Criteria — Introduction to System Stability: Frequency-Response Criteria</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_20_linear_time_invariant_dynamic_systems/english_20_linear_time_invariant_dynamic_systems.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="complex-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,complex-analysis,bachelor's-4,age-21">
+      <h3 class="card-title">Complex Analysis (Age 21, US Bachelor's 4)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook supports a one-semester undergraduate complex analysis course. It is suitable for use with mathematics, engineering, and physics students.</p>
+      <p class="card-contents"><strong>Contents:</strong> Complex Numbers — Complex Functions — Analytic and Harmonic Functions — Sequences, Series, and Fractals — Elementary Functions — Complex Integration — Taylor and Laurent Series — Residue Theory — Conformal Mapping — Applications of Harmonic Functions — Fourier Series and the Laplace Transform</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_21_complex_analysis/english_21_complex_analysis.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="optics"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,optics,bachelor's-4,age-21">
+      <h3 class="card-title">Optics (Age 21, US Bachelor's 4)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook treats optics at the level of students in the later stage of their bachelor or the beginning of their master. It is assumed that the student is familiar with Maxwell’s equations.</p>
+      <p class="card-contents"><strong>Contents:</strong> Basic Electromagnetic and Wave Optics — Geometrical Optics — Optical Instruments — Polarisation — Interference and Coherence — Scalar Diffraction Optics — Lasers</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_21_optics/english_21_optics.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="real-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,real-analysis,bachelor's-4,age-21">
+      <h3 class="card-title">Real Analysis (Advanced Calculus): Volume 1 (Age 21, US Bachelor's 4)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers all the standard material for a senior level undergraduate real analysis course. The first volume is a one semester course in basic analysis. With the second volume, it is a year-long course. A prerequisite for the course is a basic proof course.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — Real Numbers — Sequences and Series — Continuous Functions — The Derivative — The Riemann Integral — Sequences of Functions — Metric Spaces</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="real-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,real-analysis,bachelor's-4,age-21">
+      <h3 class="card-title">Real Analysis (Advanced Calculus): Volume 2 (Age 21, US Bachelor's 4)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook covers all the standard material for a senior level undergraduate real analysis course. The first volume is a one semester course in basic analysis. With the second volume, it is a year-long course. A prerequisite for the course is a basic proof course.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — Several Variables and Partial Derivatives — One-dimensional Integrals in Several Variables — Multivariable Integral — Functions as Limits</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="coastal-dynamics"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,coastal-dynamics,master's-1,age-22">
+      <h3 class="card-title">Coastal Dynamics (Age 22, US Master's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook focuses on the interrelation between physical wave, flow and sediment transport phenomena and the resulting morphodynamics of a wide variety of coastal systems. The objective is to provide hydraulic and coastal engineering Master of Science students with insights into the phenomenological and theoretical, as well as applied aspects of these phenomena.</p>
+      <p class="card-contents"><strong>Contents:</strong> Overview — Large-scale Geographical Variation of Coasts — Ocean Waves — Global Wave and Tidal Environments — Coastal Hydrodynamics — Sediment Transport — Cross-shore Transport and Profile Development — Longshore Transport and Coastline Changes — Coastal Inlets and Tidal Basins — Coastal Protection</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="structured-electronics-design"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,structured-electronics-design,master's-1,age-22">
+      <h3 class="card-title">Structured Electronics Design (Age 22, US Master's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook offers strategies, methods, and techniques for electronic circuit design.</p>
+      <p class="card-contents"><strong>Contents:</strong> Introduction — Modeling and Specification of Amplifiers — Amplification Mechanism — Active Devices — Basic Amplification: CS Stage — Balancing Techniques — Design of Feedback Amplifier Configurations — Application and Specification of Operational Amplifiers — Introduction to Amplifier Biasing — Modeling of Negative Feedback Circuits — Amplifier Performance and Controller Requirements — Frequency Compensation — Local Feedback Stages — Multi-stage Feedback Amplifiers — Amplifier Biasing — Signal Modeling (Selected Topics) — System Modeling (Selected Topics) — Network Theory (Selected Topics) — Noise in Electronic Systems</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="traffic-flow-theory"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,traffic-flow-theory,master's-1,age-22">
+      <h3 class="card-title">Traffic Flow Theory (Age 22, US Master's 1)</h3>
+      <p class="card-language"><strong>Language:</strong> English</p>
+      <p class="card-about"><strong>About:</strong> This textbook provides an introduction to the field of traffic flow theory. Only basic calculus is assumed as base knowledge.</p>
+      <p class="card-contents"><strong>Contents:</strong> Variables — Cumulative Curves — Relationships of Traffic Variables — Shock Wave Theory — Shockwave Theory: Moving Bottlenecks — Traffic States and Phenomena — Car-following — Microscopic Lane Change Models — Use of Traffic Models — Macroscopic Dynamic Traffic Flow Models — An Introduction to Node Models — Macroscopic Fundamental Diagram — Method of Characteristics — Headway Models — Traffic State Dynamics in Three Representations</p>
+      <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_22_traffic_flow_theory/english_22_traffic_flow_theory.pdf" target="_blank" rel="noopener">English</a></p>
+    </div>
+
+<div class="catalog-card"
+     data-language="english"
+     data-level="master"
+     data-subject="quantum-electrical-circuits"
+     data-age="23"
+     data-grade="master's-2"
+     data-tags="english,master,quantum-electrical-circuits,master's-2,age-23">
+  <h3 class="card-title">Quantum Electrical Circuits (Age 23, US Master's 2)</h3>
+  <p class="card-language"><strong>Language:</strong> English</p>
+  <p class="card-about"><strong>About:</strong> This textbook provides a comprehensive overview of circuit quantum electrodynamics or circuit QED. It is intended for theoretically-oriented Master or PhD students in physics and electrical engineering, as well as Master and PhD students who work on experimental superconducting quantum devices and wish to learn more theory.</p>
+  <p class="card-contents"><strong>Contents:</strong> Introduction — Lagrangians and Hamiltonians for Electrical Circuits — Applying Canonical Quantization — The Transmon Qubit, Resonators and their Coupling — Linear Networks and Black-box Quantization — Nonreciprocity — Noise, or All that Can Go Wrong — Models of Superconducting Amplifiers</p>
+  <p class="card-download"><strong>Download Link:</strong> <a href="https://assets.uotinitiative.org/English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf" target="_blank" rel="noopener">English</a></p>
+</div>
+
+    <!-- Back to top button -->
+    <div style="text-align:center; margin-top:40px;">
+    <a href="#top" class="back-to-top-button">Back to Top</a>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 UOTI ∙ <a href="terms">Terms</a> ∙ <a href="privacy">Privacy</a> ∙ <a href="mailto:contact@uotinitiative.org">Contact</a></p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>

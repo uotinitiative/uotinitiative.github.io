@@ -299,3 +299,86 @@ document.addEventListener('DOMContentLoaded', function () {
 
     resizeObserver.observe(document.body);
 });
+
+// Search
+
+function stripHTML(html) {
+  const div = document.createElement("div");
+  div.innerHTML = html;
+  return div.textContent || div.innerText || "";
+}
+
+function highlightMatch(html, query) {
+  if (!query) return html;
+  const div = document.createElement("div");
+  div.innerHTML = html;
+
+  const walker = document.createTreeWalker(div, NodeFilter.SHOW_TEXT, null, false);
+  const regex = new RegExp(`(${query})`, 'gi');
+
+  while (walker.nextNode()) {
+    const node = walker.currentNode;
+    if (node.nodeValue.toLowerCase().includes(query.toLowerCase())) {
+      const span = document.createElement("span");
+      span.innerHTML = node.nodeValue.replace(regex, "<mark>$1</mark>");
+      node.parentNode.replaceChild(span, node);
+    }
+  }
+  return div.innerHTML;
+}
+
+function filterAndHighlight() {
+  const input = document.getElementById('catalog-search').value.toLowerCase().trim();
+  const cards = document.querySelectorAll('.catalog-card');
+  const noMatch = document.getElementById('no-match');
+  let matchFound = false;
+
+  cards.forEach(card => {
+    if (!card.hasAttribute('data-original')) {
+      card.setAttribute('data-original', card.innerHTML);
+    }
+
+    const originalHTML = card.getAttribute('data-original');
+    const plainText = stripHTML(originalHTML).toLowerCase();
+    const cardText = plainText + ' ' + Object.values(card.dataset).join(' ').toLowerCase();
+
+    // Match tags (all selected tags must be present)
+    const matchesTags = Array.from(selectedTags).every(tag =>
+      cardText.includes(tag.toLowerCase())
+    );
+
+    const matchesSearch = plainText.includes(input);
+
+    const shouldShow = matchesSearch && matchesTags;
+
+    if (shouldShow) {
+      card.style.display = '';
+      card.innerHTML = highlightMatch(originalHTML, input);
+    } else {
+      card.style.display = 'none';
+    }
+
+    matchFound = matchFound || shouldShow;
+  });
+
+  noMatch.style.display = matchFound ? 'none' : 'block';
+}
+
+
+const selectedTags = new Set();
+
+document.querySelectorAll('.tag').forEach(tag => {
+  tag.addEventListener('click', () => {
+    const value = tag.dataset.filter;
+
+    if (selectedTags.has(value)) {
+      selectedTags.delete(value);
+      tag.classList.remove('active');
+    } else {
+      selectedTags.add(value);
+      tag.classList.add('active');
+    }
+
+    filterAndHighlight(); // re-run filtering
+  });
+});
