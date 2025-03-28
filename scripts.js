@@ -36,7 +36,7 @@ const CONFIG = {
                     }
                 },
 
-                "18 (US Bachelor’s 1)": {
+                "18 (US Bachelor's 1)": {
                     subjects: {
                         "Anatomy and Physiology": "https://assets.uotinitiative.org/English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf",
                         "Anthropology": "https://assets.uotinitiative.org/English/english_18_anthropology/english_18_anthropology.pdf",
@@ -66,7 +66,7 @@ const CONFIG = {
                     }
                 },
 
-                "19 (US Bachelor’s 2)": {
+                "19 (US Bachelor's 2)": {
                     subjects: {
                         "Discrete Structures": "https://assets.uotinitiative.org/English/english_19_discrete_structures/english_19_discrete_structures.pdf",
                         "Linear Algebra": "https://assets.uotinitiative.org/English/english_19_linear_algebra/english_19_linear_algebra.pdf",
@@ -75,7 +75,7 @@ const CONFIG = {
                     }
                 },
 
-                "20 (US Bachelor’s 3)": {
+                "20 (US Bachelor's 3)": {
                     subjects: {
                         "Abstract Algebra": "https://assets.uotinitiative.org/English/english_20_abstract_algebra/english_20_abstract_algebra.pdf",
                         "Differential Equations": "https://assets.uotinitiative.org/English/english_20_differential_equations/english_20_differential_equations.pdf",
@@ -85,7 +85,7 @@ const CONFIG = {
                     }
                 },
 
-                "21 (US Bachelor’s 4)": {
+                "21 (US Bachelor's 4)": {
                     subjects: {
                         "Complex Analysis": "https://assets.uotinitiative.org/English/english_21_complex_analysis/english_21_complex_analysis.pdf",
                         "Optics": "https://assets.uotinitiative.org/English/english_21_optics/english_21_optics.pdf",
@@ -94,7 +94,7 @@ const CONFIG = {
                     }
                 },
 
-                "22 (US Master’s 1)": {
+                "22 (US Master's 1)": {
                     subjects: {
                         "Coastal Dynamics": "https://assets.uotinitiative.org/English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf",
                         "Structured Electronics Design": "https://assets.uotinitiative.org/English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf",
@@ -102,7 +102,7 @@ const CONFIG = {
                     }
                 },
 
-                "23 (US Master’s 2)": {
+                "23 (US Master's 2)": {
                     subjects: {
                         "Quantum Electrical Circuits": "https://assets.uotinitiative.org/English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
                     }
@@ -340,14 +340,14 @@ function filterAndHighlight() {
 
     const originalHTML = card.getAttribute('data-original');
     const plainText = stripHTML(originalHTML).toLowerCase();
-    const cardText = plainText + ' ' + Object.values(card.dataset).join(' ').toLowerCase();
+    const tags = card.dataset.tags.split(',');
 
     // Match tags (all selected tags must be present)
     const matchesTags = Array.from(selectedTags).every(tag =>
-      cardText.includes(tag.toLowerCase())
+      tags.includes(tag.toLowerCase())
     );
 
-    const matchesSearch = plainText.includes(input);
+    const matchesSearch = input === '' || plainText.includes(input);
 
     const shouldShow = matchesSearch && matchesTags;
 
