@@ -3,14 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Universal Open Textbook Initiative</title>
+  <title>Insights - Universal Open Textbook Initiative</title>
 
   <!-- Stylesheet -->
   <link rel="stylesheet" href="styles.css">
 
   <!-- Meta Tags -->
-  <meta name="description" content="The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks.">
-  <meta name="keywords" content="open textbooks, OER, universal education, Vatsal, learning resources">
+  <meta name="description"
+    content="Explore the latest statistics and updates about the Universal Open Textbook Initiative (UOTI).">
+  <meta name="keywords" content="insights, stats, updates, open textbooks, OER, universal education, Vatsal">
 
   <!-- Favicon and App Icons -->
 <link rel="icon" href="/favicon/favicon.ico" />
@@ -22,34 +23,20 @@
 <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png" />
 <link rel="manifest" href="/favicon/site.webmanifest" />
 
-  <!-- Redirect /index.html to / -->
-  <script>
-    if (window.location.pathname.toLowerCase() === '/index.html') {
-      window.location.href = '/';
-    }
-  </script>
-
   <!-- Structured Data -->
   <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": ["NonProfit", "EducationalOrganization"],
-      "name": "Universal Open Textbook Initiative",
-      "foundingDate": "2024-05-27",
-      "founder": {
-        "@type": "Person",
-        "name": "Vatsal",
-        "url": "https://www.readvatsal.com"
-      },
-      "description": "The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks.",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "email": "contact@uotinitiative.org",
-        "contactType": "customer support"
-      },
-      "url": "https://uotinitiative.org"
-    }
-  </script>
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Insights - Universal Open Textbook Initiative",
+        "description": "Explore the latest statistics and updates about the Universal Open Textbook Initiative (UOTI).",
+        "isPartOf": {
+          "@type": ["Organization", "EducationalOrganization"],
+          "name": "Universal Open Textbook Initiative",
+          "url": "https://uotinitiative.org"
+        }
+      }
+    </script>
 
   <!-- Google Tag Manager -->
   <script>
@@ -129,58 +116,47 @@
 
   <!-- Main Content -->
   <main class="container">
-    <h1>Universal Open Textbook Initiative</h1>
-    <section class="intro">
-      <p>The Universal Open Textbook Initiative is building the world’s largest repository of high-quality, multilingual open textbooks. Founded by the philosopher <a href="https://www.readvatsal.com" target="_blank">Vatsal</a>, the initiative aims to improve the quality and accessibility of educational resources worldwide.</p>
-      <p>You can download, share, and adapt these textbooks for use in schools and colleges, homeschooling, learning ventures, self-education, or any other purpose. Learn more <a href="about">about us</a>.</p>
-      <p>Get started by selecting a language, learner age, and subject from the options below. Or use the <a href="search">Search</a> page to explore the scope and content of each textbook available on our platform.</p>
+    <h1>Insights</h1>
+
+    <!-- By the Numbers Section -->
+    <section>
+      <p><strong>By the Numbers</strong></p>
+      <p>📚 Unique Open Textbooks: <b>50</b><br>
+         🏫 Grade Levels Covered: <b>Grade 8 - Master’s 2</b><br>
+         🌍 Languages Covered: <b>3</b> <br>
+         🧑‍🎓 Learners Reached Globally: <b>100+</b>
+        </p>
     </section>
 
-    <section class="download-section">
-      <table>
-        <thead>
-          <tr>
-            <th>Language</th>
-            <th>Learner Age</th>
-            <th>Subject</th>
-            <th>Download</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>
-              <select id="language" onchange="showLearnerAge()">
-                <option value="">Select Language</option>
-              </select>
-            </td>
-            <td>
-              <select id="learner-age" onchange="showSubject()" disabled>
-                <option value="">Select Age</option>
-              </select>
-            </td>
-            <td>
-              <select id="subject" onchange="showDownload()" disabled>
-                <option value="">Select Subject</option>
-              </select>
-            </td>
-            <td>
-              <div id="loading-spinner" class="spinner" style="display: none;"></div>
-              <a id="download-link" href="#" target="_blank" style="display: none;">
-                Click to Download <img src="pdf-icon.svg" alt="PDF icon" class="pdf-icon">
-              </a>
-            </td>
-          </tr>
-        </tbody>
-      </table>
+    <!-- Platform Updates -->
+    <section>
+      <p><strong>Latest Platform Updates</strong></p>
+      <ul style="text-align:left; max-width: 700px; margin: 0 auto;">
+        <li><b>March 2025:</b> Added Search page and improved site-wide user interface</li>
+      </ul>
     </section>
+
+    <!-- Future Plans -->
+    <section>
+      <p><strong>Coming Soon</strong></p>
+      <ul style="text-align:left; max-width: 700px; margin: 0 auto;">
+        <li>More textbooks in editable format</li>
+        <li>More translations</li>
+      </ul>
+      <p>Have feedback or ideas? Let us know at <a href="mailto:contact@uotinitiative.org">contact@uotinitiative.org</a>.</p>
+    </section>
+
+    <!-- Back to top -->
+    <div style="text-align:center; margin-top:40px;">
+      <a href="#top" class="back-to-top-button">Back to Top</a>
+    </div>
   </main>
 
-  <!-- Footer Section -->
+  <!-- Footer -->
   <footer>
     <p>© 2025 UOTI ∙ <a href="terms">Terms</a> ∙ <a href="privacy">Privacy</a> ∙ <a href="mailto:contact@uotinitiative.org">Contact</a></p>
   </footer>
 
-  <!-- External Scripts -->
   <script src="scripts.js"></script>
 </body>
 </html>
