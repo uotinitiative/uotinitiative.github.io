@@ -5,7 +5,7 @@ const CONFIG = {
             ages: {
                 "13 (US Grade 8)": {
                     subjects: {
-                        "Prealgebra": "https://assets.uotinitiative.org/English/english_13_prealgebra/english_13_prealgebra.pdf",
+                        "Prealgebra": "English/english_13_prealgebra/english_13_prealgebra.pdf",
                     }
                 },
 
@@ -207,11 +207,20 @@ function showDownload() {
 
             // Simulate loading time
             setTimeout(() => {
-                // Hide loading spinner and show download link
-                loadingSpinner.style.display = "none";
-                downloadLink.href = pdfUrl;
-                downloadLink.style.display = "inline";
-            }, WAITING_TIME);
+fetch(`https://uoti-backend.onrender.com/download?file=${encodeURIComponent(pdfUrl)}`)
+        .then(res => res.json())
+        .then(data => {
+            loadingSpinner.style.display = "none";
+            downloadLink.href = data.url;
+            downloadLink.style.display = "inline";
+        })
+        .catch(err => {
+            console.error("Failed to fetch signed URL", err);
+            loadingSpinner.style.display = "none";
+            alert("Sorry, the download failed. Please try again.");
+        });
+}, WAITING_TIME);
+
             return;
         }
     }
