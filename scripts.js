@@ -11,100 +11,100 @@ const CONFIG = {
 
                 "14 (US Grade 9)": {
                     subjects: {
-                        "Algebra": "https://assets.uotinitiative.org/English/english_14_algebra/english_14_algebra.pdf",
+                        "Algebra": "English/english_14_algebra/english_14_algebra.pdf",
                     }
                 },
 
                 "15 (US Grade 10)": {
                     subjects: {
-                        "Algebra": "https://assets.uotinitiative.org/English/english_15_algebra/english_15_algebra.pdf",
-                        "Algebra and Trigonometry": "https://assets.uotinitiative.org/English/english_15_algebra_and_trigonometry/english_15_algebra_and_trigonometry.pdf",
+                        "Algebra": "English/english_15_algebra/english_15_algebra.pdf",
+                        "Algebra and Trigonometry": "English/english_15_algebra_and_trigonometry/english_15_algebra_and_trigonometry.pdf",
                     }
                 },
 
                 "16 (US Grade 11)": {
                     subjects: {
-                        "Algebra": "https://assets.uotinitiative.org/English/english_16_algebra/english_16_algebra.pdf",
+                        "Algebra": "English/english_16_algebra/english_16_algebra.pdf",
                     }
                 },
 
                 "17 (US Grade 12)": {
                     subjects: {
-                        "Physics": "https://assets.uotinitiative.org/English/english_17_physics/english_17_physics.pdf",
-                        "Precalculus": "https://assets.uotinitiative.org/English/english_17_precalculus/english_17_precalculus.pdf",
-                        "Statistics": "https://assets.uotinitiative.org/English/english_17_statistics/english_17_statistics.pdf",
+                        "Physics": "English/english_17_physics/english_17_physics.pdf",
+                        "Precalculus": "English/english_17_precalculus/english_17_precalculus.pdf",
+                        "Statistics": "English/english_17_statistics/english_17_statistics.pdf",
                     }
                 },
 
                 "18 (US Bachelor's 1)": {
                     subjects: {
-                        "Anatomy and Physiology": "https://assets.uotinitiative.org/English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf",
-                        "Anthropology": "https://assets.uotinitiative.org/English/english_18_anthropology/english_18_anthropology.pdf",
-                        "Astronomy": "https://assets.uotinitiative.org/English/english_18_astronomy/english_18_astronomy.pdf",
-                        "Biology for Non-Science Majors": "https://assets.uotinitiative.org/English/english_18_biology_for_non_science_majors/english_18_biology_for_non_science_majors.pdf",
-                        "Biology for Science Majors": "https://assets.uotinitiative.org/English/english_18_biology_for_science_majors/english_18_biology_for_science_majors.pdf",
-                        "Biosystems Engineering": "https://assets.uotinitiative.org/English/english_18_biosystems_engineering/english_18_biosystems_engineering.pdf",
-                        "Calculus: Volume 1": "https://assets.uotinitiative.org/English/english_18_calculus_vol_1/english_18_calculus_vol_1.pdf",
-                        "Calculus: Volume 2": "https://assets.uotinitiative.org/English/english_18_calculus_vol_2/english_18_calculus_vol_2.pdf",
-                        "Calculus: Volume 3": "https://assets.uotinitiative.org/English/english_18_calculus_vol_3/english_18_calculus_vol_3.pdf",
-                        "Chemistry": "https://assets.uotinitiative.org/English/english_18_chemistry/english_18_chemistry.pdf",
-                        "Foundations of Computation": "https://assets.uotinitiative.org/English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf",
-                        "Macroeconomics": "https://assets.uotinitiative.org/English/english_18_macroeconomics/english_18_macroeconomics.pdf",
-                        "Mathematics for Liberal Arts Majors": "https://assets.uotinitiative.org/English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf",
-                        "Microeconomics": "https://assets.uotinitiative.org/English/english_18_microeconomics/english_18_microeconomics.pdf",
-                        "Philosophy": "https://assets.uotinitiative.org/English/english_18_philosophy/english_18_philosophy.pdf",
-                        "Physics (Algebra-Based)": "https://assets.uotinitiative.org/English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf",
-                        "Physics (Calculus-Based): Volume 1": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf",
-                        "Physics (Calculus-Based): Volume 2": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_2/english_18_physics_calculus_based_vol_2.pdf",
-                        "Physics (Calculus-Based): Volume 3": "https://assets.uotinitiative.org/English/english_18_physics_calculus_based_vol_3/english_18_physics_calculus_based_vol_3.pdf",
-                        "Political Science": "https://assets.uotinitiative.org/English/english_18_political_science/english_18_political_science.pdf",
-                        "Psychology": "https://assets.uotinitiative.org/English/english_18_psychology/english_18_psychology.pdf",
-                        "Python Programming": "https://assets.uotinitiative.org/English/english_18_python_programming/english_18_python_programming.pdf",
-                        "Sociology": "https://assets.uotinitiative.org/English/english_18_sociology/english_18_sociology.pdf",
-                        "Statistics": "https://assets.uotinitiative.org/English/english_18_statistics/english_18_statistics.pdf",
-                        "Workplace Software and Skills": "https://assets.uotinitiative.org/English/english_18_workplace_software_and_skills/english_18_workplace_software_and_skills.pdf",
+                        "Anatomy and Physiology": "English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf",
+                        "Anthropology": "English/english_18_anthropology/english_18_anthropology.pdf",
+                        "Astronomy": "English/english_18_astronomy/english_18_astronomy.pdf",
+                        "Biology for Non-Science Majors": "English/english_18_biology_for_non_science_majors/english_18_biology_for_non_science_majors.pdf",
+                        "Biology for Science Majors": "English/english_18_biology_for_science_majors/english_18_biology_for_science_majors.pdf",
+                        "Biosystems Engineering": "English/english_18_biosystems_engineering/english_18_biosystems_engineering.pdf",
+                        "Calculus: Volume 1": "English/english_18_calculus_vol_1/english_18_calculus_vol_1.pdf",
+                        "Calculus: Volume 2": "English/english_18_calculus_vol_2/english_18_calculus_vol_2.pdf",
+                        "Calculus: Volume 3": "English/english_18_calculus_vol_3/english_18_calculus_vol_3.pdf",
+                        "Chemistry": "English/english_18_chemistry/english_18_chemistry.pdf",
+                        "Foundations of Computation": "English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf",
+                        "Macroeconomics": "English/english_18_macroeconomics/english_18_macroeconomics.pdf",
+                        "Mathematics for Liberal Arts Majors": "English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf",
+                        "Microeconomics": "English/english_18_microeconomics/english_18_microeconomics.pdf",
+                        "Philosophy": "English/english_18_philosophy/english_18_philosophy.pdf",
+                        "Physics (Algebra-Based)": "English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf",
+                        "Physics (Calculus-Based): Volume 1": "English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf",
+                        "Physics (Calculus-Based): Volume 2": "English/english_18_physics_calculus_based_vol_2/english_18_physics_calculus_based_vol_2.pdf",
+                        "Physics (Calculus-Based): Volume 3": "English/english_18_physics_calculus_based_vol_3/english_18_physics_calculus_based_vol_3.pdf",
+                        "Political Science": "English/english_18_political_science/english_18_political_science.pdf",
+                        "Psychology": "English/english_18_psychology/english_18_psychology.pdf",
+                        "Python Programming": "English/english_18_python_programming/english_18_python_programming.pdf",
+                        "Sociology": "English/english_18_sociology/english_18_sociology.pdf",
+                        "Statistics": "English/english_18_statistics/english_18_statistics.pdf",
+                        "Workplace Software and Skills": "English/english_18_workplace_software_and_skills/english_18_workplace_software_and_skills.pdf",
                     }
                 },
 
                 "19 (US Bachelor's 2)": {
                     subjects: {
-                        "Discrete Structures": "https://assets.uotinitiative.org/English/english_19_discrete_structures/english_19_discrete_structures.pdf",
-                        "Linear Algebra": "https://assets.uotinitiative.org/English/english_19_linear_algebra/english_19_linear_algebra.pdf",
-                        "Microbiology for Non-Majors": "https://assets.uotinitiative.org/English/english_19_microbiology_for_non_majors/english_19_microbiology_for_non_majors.pdf",
-                        "Organic Chemistry": "https://assets.uotinitiative.org/English/english_19_organic_chemistry/english_19_organic_chemistry.pdf",
+                        "Discrete Structures": "English/english_19_discrete_structures/english_19_discrete_structures.pdf",
+                        "Linear Algebra": "English/english_19_linear_algebra/english_19_linear_algebra.pdf",
+                        "Microbiology for Non-Majors": "English/english_19_microbiology_for_non_majors/english_19_microbiology_for_non_majors.pdf",
+                        "Organic Chemistry": "English/english_19_organic_chemistry/english_19_organic_chemistry.pdf",
                     }
                 },
 
                 "20 (US Bachelor's 3)": {
                     subjects: {
-                        "Abstract Algebra": "https://assets.uotinitiative.org/English/english_20_abstract_algebra/english_20_abstract_algebra.pdf",
-                        "Differential Equations": "https://assets.uotinitiative.org/English/english_20_differential_equations/english_20_differential_equations.pdf",
-                        "Electromagnetics: Volume 1": "https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_1/english_20_electromagnetics_volume_1.pdf",
-                        "Electromagnetics: Volume 2": "https://assets.uotinitiative.org/English/english_20_electromagnetics_volume_2/english_20_electromagnetics_volume_2.pdf",
-                        "Linear, Time-Invariant, Dynamic Systems": "https://assets.uotinitiative.org/English/english_20_linear_time_invariant_dynamic_systems/english_20_linear_time_invariant_dynamic_systems.pdf",
+                        "Abstract Algebra": "English/english_20_abstract_algebra/english_20_abstract_algebra.pdf",
+                        "Differential Equations": "English/english_20_differential_equations/english_20_differential_equations.pdf",
+                        "Electromagnetics: Volume 1": "English/english_20_electromagnetics_volume_1/english_20_electromagnetics_volume_1.pdf",
+                        "Electromagnetics: Volume 2": "English/english_20_electromagnetics_volume_2/english_20_electromagnetics_volume_2.pdf",
+                        "Linear, Time-Invariant, Dynamic Systems": "English/english_20_linear_time_invariant_dynamic_systems/english_20_linear_time_invariant_dynamic_systems.pdf",
                     }
                 },
 
                 "21 (US Bachelor's 4)": {
                     subjects: {
-                        "Complex Analysis": "https://assets.uotinitiative.org/English/english_21_complex_analysis/english_21_complex_analysis.pdf",
-                        "Optics": "https://assets.uotinitiative.org/English/english_21_optics/english_21_optics.pdf",
-                        "Real Analysis (Advanced Calculus): Volume 1": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf",
-                        "Real Analysis (Advanced Calculus): Volume 2": "https://assets.uotinitiative.org/English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf",
+                        "Complex Analysis": "English/english_21_complex_analysis/english_21_complex_analysis.pdf",
+                        "Optics": "English/english_21_optics/english_21_optics.pdf",
+                        "Real Analysis (Advanced Calculus): Volume 1": "English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf",
+                        "Real Analysis (Advanced Calculus): Volume 2": "English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf",
                     }
                 },
 
                 "22 (US Master's 1)": {
                     subjects: {
-                        "Coastal Dynamics": "https://assets.uotinitiative.org/English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf",
-                        "Structured Electronics Design": "https://assets.uotinitiative.org/English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf",
-                        "Traffic Flow Theory": "https://assets.uotinitiative.org/English/english_22_traffic_flow_theory/english_22_traffic_flow_theory.pdf",
+                        "Coastal Dynamics": "English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf",
+                        "Structured Electronics Design": "English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf",
+                        "Traffic Flow Theory": "English/english_22_traffic_flow_theory/english_22_traffic_flow_theory.pdf",
                     }
                 },
 
                 "23 (US Master's 2)": {
                     subjects: {
-                        "Quantum Electrical Circuits": "https://assets.uotinitiative.org/English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
+                        "Quantum Electrical Circuits": "English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
                     }
                 }
             }
@@ -114,26 +114,26 @@ const CONFIG = {
             ages: {
                 "17 (US grado 12)": {
                     subjects: {
-                        "Precálculo": "https://assets.uotinitiative.org/Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf",
+                        "Precálculo": "Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf",
                     }
                 },
 
                 "18 (US licenciatura 1)": {
                     subjects: {
-                        "Cálculo: Volumen 1": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf",
-                        "Cálculo: Volumen 2": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf",
-                        "Cálculo: Volumen 3": "https://assets.uotinitiative.org/Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf",
-                        "Química": "https://assets.uotinitiative.org/Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf",
-                        "Física (con base en cálculo): Volumen 1": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
-                        "Física (con base en cálculo): Volumen 2": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
-                        "Física (con base en cálculo): Volumen 3": "https://assets.uotinitiative.org/Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
-                        "Estadística": "https://assets.uotinitiative.org/Spanish/spanish_18_statistics/spanish_18_statistics.pdf",
+                        "Cálculo: Volumen 1": "Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf",
+                        "Cálculo: Volumen 2": "Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf",
+                        "Cálculo: Volumen 3": "Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf",
+                        "Química": "Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf",
+                        "Física (con base en cálculo): Volumen 1": "Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
+                        "Física (con base en cálculo): Volumen 2": "Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
+                        "Física (con base en cálculo): Volumen 3": "Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
+                        "Estadística": "Spanish/spanish_18_statistics/spanish_18_statistics.pdf",
                     }
                 },
 
                 "20 (US licenciatura 3)": {
                     subjects: {
-                        "Algebra Abstracta": "https://assets.uotinitiative.org/Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
+                        "Algebra Abstracta": "Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
                     }
                 }
             }
@@ -143,12 +143,12 @@ const CONFIG = {
             ages: {
                 "18 (licencjat amerykański 1)": {
                     subjects: {
-                        "Makroekonomia": "https://assets.uotinitiative.org/Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
-                        "Mikroekonomia": "https://assets.uotinitiative.org/Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom I": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom II": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom III": "https://assets.uotinitiative.org/Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
-                        "Psychologia": "https://assets.uotinitiative.org/Polish/polish_18_psychology/polish_18_psychology.pdf",
+                        "Makroekonomia": "Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
+                        "Mikroekonomia": "Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
+                        "Fizyka (z elementami analizy matematycznej): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
+                        "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
 
                     }
                 }
