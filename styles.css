@@ -267,6 +267,14 @@ header {
     font-weight: 400;
 }
 
+.custom-nav a.active {
+    color: #2964AA;
+}
+
+.nav-menu a.active {
+    color: #2964AA;
+}
+
 .custom-nav a:hover {
     text-decoration: underline;
 }
