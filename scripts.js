@@ -207,7 +207,7 @@ function showDownload() {
 
             // Simulate loading time
             setTimeout(() => {
-fetch(`https://uoti-backend.onrender.com/download?file=${encodeURIComponent(pdfUrl)}`)
+fetch(`https://uoti-vercel.vercel.app/api/download?file=${encodeURIComponent(pdfUrl)}`)
         .then(res => res.json())
         .then(data => {
             loadingSpinner.style.display = "none";
