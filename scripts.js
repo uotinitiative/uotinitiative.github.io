@@ -158,7 +158,7 @@ const CONFIG = {
 };
 
 // Global constants
-const WAITING_TIME = 300; // Waiting time in milliseconds
+const WAITING_TIME = 100; // Waiting time in milliseconds
 
 // Helper function to populate select options
 function populateSelect(selectId, options, defaultText = "Select Option") {
