@@ -1,7 +1,7 @@
 // Configuration object
 const CONFIG = {
     languages: {
-        English: {
+        "English": {
             ages: {
                 "13 (US Grade 8)": {
                     subjects: {
@@ -110,7 +110,17 @@ const CONFIG = {
             }
         },
 
-        Español: {
+        "العربية": {
+            ages: {
+                "18 (بكالوريوس الولايات المتحدة 1)": {
+                    subjects: {
+                        "علم الأحياء لتخصصات العلوم": "Arabic/arabic_18_biology_for_science_majors/arabic_18_biology_for_science_majors.pdf",
+                    }
+                }
+            }
+        },
+
+        "Español": {
             ages: {
                 "17 (US grado 12)": {
                     subjects: {
@@ -139,7 +149,7 @@ const CONFIG = {
             }
         },
 
-        Polski: {
+        "Polski": {
             ages: {
                 "18 (licencjat amerykański 1)": {
                     subjects: {
@@ -150,6 +160,16 @@ const CONFIG = {
                         "Fizyka (z elementami analizy matematycznej): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
                         "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
 
+                    }
+                }
+            }
+        },
+
+        "中文 (简体)": {
+            ages: {
+                "18 (美国学士学位 1)": {
+                    subjects: {
+                        "理科专业的生物学": "Chinese/chinese_18_biology_for_science_majors/chinese_18_biology_for_science_majors.pdf",
                     }
                 }
             }
