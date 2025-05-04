@@ -11,28 +11,28 @@ const CONFIG = {
 
                 "14 (US Grade 9)": {
                     subjects: {
-                        "Algebra": "English/english_14_algebra/english_14_algebra.pdf",
+                        "Algebra 1 (Elementary Algebra)": "English/english_14_algebra_1_elementary_algebra/english_14_algebra_1_elementary_algebra.pdf",
                     }
                 },
 
                 "15 (US Grade 10)": {
                     subjects: {
-                        "Algebra": "English/english_15_algebra/english_15_algebra.pdf",
-                        "Algebra and Trigonometry": "English/english_15_algebra_and_trigonometry/english_15_algebra_and_trigonometry.pdf",
+                        "Algebra 2 (Intermediate Algebra)": "English/english_15_algebra_2_intermediate_algebra/english_15_algebra_2_intermediate_algebra.pdf",
                     }
                 },
 
                 "16 (US Grade 11)": {
                     subjects: {
-                        "Algebra": "English/english_16_algebra/english_16_algebra.pdf",
+                        "Algebra with Trigonometry": "English/english_16_algebra_with_trigonometry/english_16_algebra_with_trigonometry.pdf",
+                        "Introductory Physics (Algebra-Based)": "English/english_16_introductory_physics_algebra_based/english_16_introductory_physics_algebra_based.pdf",
                     }
                 },
 
                 "17 (US Grade 12)": {
                     subjects: {
-                        "Physics": "English/english_17_physics/english_17_physics.pdf",
+                        "College Algebra (Non-STEM Track)": "English/english_17_college_algebra_non_stem_track/english_17_college_algebra_non_stem_track.pdf",
+                        "Introductory Statistics": "English/english_17_introductory_statistics/english_17_introductory_statistics.pdf",
                         "Precalculus": "English/english_17_precalculus/english_17_precalculus.pdf",
-                        "Statistics": "English/english_17_statistics/english_17_statistics.pdf",
                     }
                 },
 
@@ -112,11 +112,20 @@ const CONFIG = {
 
         "العربية": {
             ages: {
-                "18 (بكالوريوس الولايات المتحدة 1)": {
+                "18 (بكالوريوس الولايات المتحدة الأمريكية 1)": {
                     subjects: {
                         "علم الأحياء لتخصصات العلوم": "Arabic/arabic_18_biology_for_science_majors/arabic_18_biology_for_science_majors.pdf",
+                        "حساب التفاضل والتكامل: المجلد 1": "Arabic/arabic_18_calculus_vol_1/arabic_18_calculus_vol_1.pdf",
+                        "الاقتصاد الكلي": "Arabic/arabic_18_macroeconomics/arabic_18_macroeconomics.pdf",
+
                     }
-                }
+                },
+
+                "20 (بكالوريوس الولايات المتحدة الأمريكية 3)": {
+                                    subjects: {
+                                        "كتاب الجبر التجريدي": "Arabic/arabic_20_abstract_algebra/arabic_20_abstract_algebra.pdf",
+                     }
+                },
             }
         },
 
@@ -170,6 +179,14 @@ const CONFIG = {
                 "18 (美国学士学位 1)": {
                     subjects: {
                         "理科专业的生物学": "Chinese/chinese_18_biology_for_science_majors/chinese_18_biology_for_science_majors.pdf",
+                        "微积分第一册": "Chinese/chinese_18_calculus_vol_1/chinese_18_calculus_vol_1.pdf",
+
+                    }
+                },
+
+                "20 (美国学士学位 3)": {
+                    subjects: {
+                        "抽象代数": "Chinese/chinese_20_abstract_algebra/chinese_20_abstract_algebra.pdf",
                     }
                 }
             }
