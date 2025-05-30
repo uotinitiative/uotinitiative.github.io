@@ -3,6 +3,18 @@ const CONFIG = {
     languages: {
         "English": {
             ages: {
+                "11 (US Grade 6)": {
+                    subjects: {
+                        "Math": "English/english_11_math/english_11_math.pdf",
+                    }
+                },
+
+                "12 (US Grade 7)": {
+                    subjects: {
+                        "Math": "English/english_12_math/english_12_math.pdf",
+                    }
+                },
+
                 "13 (US Grade 8)": {
                     subjects: {
                         "Prealgebra": "English/english_13_prealgebra/english_13_prealgebra.pdf",
