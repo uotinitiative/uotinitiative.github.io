@@ -457,3 +457,25 @@ document.querySelectorAll('.tag').forEach(tag => {
       });
     });
   });
+
+// Stats
+document.addEventListener('DOMContentLoaded', () => {
+  const counters = document.querySelectorAll('.counter');
+
+  counters.forEach(counter => {
+    const update = () => {
+      const target = +counter.getAttribute('data-target');
+      const current = +counter.innerText;
+      const increment = Math.ceil(target / 200);
+
+      if (current < target) {
+        counter.innerText = Math.min(current + increment, target);
+        setTimeout(update, 10);
+      } else {
+        counter.innerText = target;
+      }
+    };
+
+    update();
+  });
+});

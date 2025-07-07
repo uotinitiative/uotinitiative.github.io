@@ -838,3 +838,54 @@ header {
 .faq-question.collapsible.active::after {
   content: '−';
 }
+
+/* =====================================================
+   12. Stats
+===================================================== */
+.stats {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  margin: 1rem 0;
+  flex-wrap: wrap;
+}
+.stat h3 {
+  margin-bottom: 0.5rem;
+  font-size:.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+.stat .counter {
+  font-size:2.75rem;
+  font-weight: bold;
+  color: #2964AA;
+  display: inline-block;
+  min-width: 2ch;
+}
+.stat p {
+  margin: 0;
+  line-height: 1.3;
+}
+
+.stat{
+  background:#f9fafb;
+  border:1px solid #e5e7eb;
+  border-radius:12px;
+  padding:1.25rem 1.75rem;
+  min-width:140px;          /* keeps width even when number changes */
+  text-align:center;
+  box-shadow:0 2px 4px rgba(0,0,0,.04);
+}
+
+.stat span{
+    margin:0 .25rem;
+    font-weight:500;
+    color:#6b7280
+}
+
+.stat small{
+    display:block;
+    font-size:.75rem;
+    color:#6b7280;
+    margin-top:.25rem
+}
