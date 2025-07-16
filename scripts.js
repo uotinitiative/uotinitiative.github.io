@@ -170,22 +170,6 @@ const CONFIG = {
             }
         },
 
-        "Polski": {
-            ages: {
-                "18 (licencjat amerykański 1)": {
-                    subjects: {
-                        "Makroekonomia": "Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
-                        "Mikroekonomia": "Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
-                        "Fizyka (z elementami analizy matematycznej): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
-                        "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
-
-                    }
-                }
-            }
-        },
-
         "中文 (简体)": {
             ages: {
                 "18 (美国学士学位 1)": {
@@ -202,7 +186,22 @@ const CONFIG = {
                     }
                 }
             }
-        }
+        },
+
+        "Polski": {
+            ages: {
+                "18 (licencjat amerykański 1)": {
+                    subjects: {
+                            "Makroekonomia": "Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
+                            "Mikroekonomia": "Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
+                            "Fizyka (z elementami analizy matematycznej): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
+                            "Fizyka (z elementami analizy matematycznej): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
+                            "Fizyka (z elementami analizy matematycznej): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
+                            "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
+                            }
+                        }
+                    }
+                }
     }
 };
 
