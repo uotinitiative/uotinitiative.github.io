@@ -205,8 +205,27 @@ const CONFIG = {
     }
 };
 
-// Global constants
-const WAITING_TIME = 10; // Waiting time in milliseconds
+function disableDownloadLink() {
+    const downloadLink = document.getElementById("download-link");
+    if (!downloadLink) {
+        return;
+    }
+    downloadLink.classList.add("disabled");
+    downloadLink.setAttribute("aria-disabled", "true");
+    downloadLink.setAttribute("tabindex", "-1");
+    downloadLink.href = "#";
+}
+
+function enableDownloadLink(url) {
+    const downloadLink = document.getElementById("download-link");
+    if (!downloadLink) {
+        return;
+    }
+    downloadLink.classList.remove("disabled");
+    downloadLink.removeAttribute("aria-disabled");
+    downloadLink.removeAttribute("tabindex");
+    downloadLink.href = url;
+}
 
 // Helper function to populate select options
 function populateSelect(selectId, options, defaultText = "Select Option") {
@@ -243,38 +262,31 @@ function showDownload() {
     const language = document.getElementById("language").value;
     const age = document.getElementById("learner-age").value;
     const subject = document.getElementById("subject").value;
-    const downloadLink = document.getElementById("download-link");
-    const loadingSpinner = document.getElementById("loading-spinner");
 
-    if (language && age && subject) {
-        const pdfUrl = CONFIG.languages[language].ages[age].subjects[subject];
-        if (pdfUrl) {
-            // Show loading spinner
-            loadingSpinner.style.display = "block";
-            downloadLink.style.display = "none";
+    if (!(language && age && subject)) {
+        disableDownloadLink();
+        return;
+    }
 
-            // Simulate loading time
-            setTimeout(() => {
-fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(pdfUrl)}`)
+    const pdfUrl = CONFIG.languages[language].ages[age].subjects[subject];
+
+    if (!pdfUrl) {
+        disableDownloadLink();
+        return;
+    }
+
+    disableDownloadLink();
+
+    fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(pdfUrl)}`)
         .then(res => res.json())
         .then(data => {
-            loadingSpinner.style.display = "none";
-            downloadLink.href = data.url;
-            downloadLink.style.display = "inline";
+            enableDownloadLink(data.url);
         })
         .catch(err => {
             console.error("Failed to fetch signed URL", err);
-            loadingSpinner.style.display = "none";
+            disableDownloadLink();
             alert("Sorry, the download failed. Please try again.");
         });
-}, WAITING_TIME);
-
-            return;
-        }
-    }
-
-    downloadLink.style.display = "none";
-    loadingSpinner.style.display = "none";
 }
 
 // Reset selections and hide download link
@@ -288,8 +300,7 @@ function resetSelections(startFrom) {
         document.getElementById("subject").disabled = true;
     }
 
-    document.getElementById("download-link").style.display = "none";
-    document.getElementById("loading-spinner").style.display = "none";
+    disableDownloadLink();
 }
 
 // Initialize the form
@@ -298,6 +309,7 @@ function initForm() {
     document.getElementById("language").addEventListener("change", showLearnerAge);
     document.getElementById("learner-age").addEventListener("change", showSubject);
     document.getElementById("subject").addEventListener("change", showDownload);
+    disableDownloadLink();
 }
 
 // Call initForm when the DOM is fully loaded

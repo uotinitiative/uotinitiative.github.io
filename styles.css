@@ -171,26 +171,22 @@ a.hidden {
     padding: 3px;
 }
 
-/* =====================================================
-   6. Loading Spinner
-===================================================== */
-.spinner {
-    width: 20px;
-    height: 20px;
-    border: 2px solid #f3f3f3;
-    border-top: 2px solid #2964AA;
-    border-radius: 50%;
-    animation: spin 1s linear infinite;
-    margin: 0 auto;
+#download-link.disabled,
+.download-link.disabled {
+    color: #94A3B8;
+    cursor: not-allowed;
+    pointer-events: none;
+    text-decoration: none;
 }
 
-@keyframes spin {
-    0% { transform: rotate(0deg); }
-    100% { transform: rotate(360deg); }
+#download-link.disabled .pdf-icon,
+.download-link.disabled .pdf-icon {
+    filter: grayscale(1);
+    opacity: 0.6;
 }
 
 /* =====================================================
-   7. Headers (Desktop & Mobile)
+   6. Headers (Desktop & Mobile)
 ===================================================== */
 /* Sticky Header for Desktop & Mobile */
 header {
