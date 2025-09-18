@@ -156,7 +156,7 @@ const CONFIG = {
 
                 "20 (بكالوريوس الولايات المتحدة الأمريكية 3)": {
                                     subjects: {
-                                        "كتاب الجبر التجريدي": "Arabic/arabic_20_abstract_algebra/arabic_20_abstract_algebra.pdf",
+                                        "الجبر التجريدي": "Arabic/arabic_20_abstract_algebra/arabic_20_abstract_algebra.pdf",
                      }
                 },
             }
@@ -164,28 +164,28 @@ const CONFIG = {
 
         "Español": {
             ages: {
-                "17 (US grado 12)": {
+                "17 (grado 12 de EE. UU.)": {
                     subjects: {
                         "Precálculo": "Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf",
                     }
                 },
 
-                "18 (US licenciatura 1)": {
+                "18 (licenciatura de EE. UU., año 1)": {
                     subjects: {
                         "Cálculo: Volumen 1": "Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf",
                         "Cálculo: Volumen 2": "Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf",
                         "Cálculo: Volumen 3": "Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf",
                         "Química": "Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf",
-                        "Física (con base en cálculo): Volumen 1": "Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
-                        "Física (con base en cálculo): Volumen 2": "Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
-                        "Física (con base en cálculo): Volumen 3": "Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
+                        "Física (basada en cálculo): Volumen 1": "Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
+                        "Física (basada en cálculo): Volumen 2": "Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
+                        "Física (basada en cálculo): Volumen 3": "Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
                         "Estadística": "Spanish/spanish_18_statistics/spanish_18_statistics.pdf",
                     }
                 },
 
-                "20 (US licenciatura 3)": {
+                "20 (licenciatura de EE. UU., año 3)": {
                     subjects: {
-                        "Algebra Abstracta": "Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
+                        "Álgebra Abstracta": "Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
                     }
                 }
             }
@@ -195,7 +195,7 @@ const CONFIG = {
             ages: {
                 "18 (美国学士学位 1)": {
                     subjects: {
-                        "理科专业的生物学": "Chinese/chinese_18_biology_for_science_majors/chinese_18_biology_for_science_majors.pdf",
+                        "理科专业生物学": "Chinese/chinese_18_biology_for_science_majors/chinese_18_biology_for_science_majors.pdf",
                         "微积分第一册": "Chinese/chinese_18_calculus_vol_1/chinese_18_calculus_vol_1.pdf",
 
                     }
@@ -215,9 +215,9 @@ const CONFIG = {
                     subjects: {
                             "Makroekonomia": "Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
                             "Mikroekonomia": "Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
-                            "Fizyka (z elementami analizy matematycznej): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
-                            "Fizyka (z elementami analizy matematycznej): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
-                            "Fizyka (z elementami analizy matematycznej): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
+                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
+                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
+                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
                             "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
                             }
                         }
