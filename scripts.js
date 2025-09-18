@@ -259,11 +259,22 @@ function populateSelect(selectId, options, defaultText = "Select Option") {
         select.appendChild(option);
     });
     select.disabled = Object.keys(options).length === 0;
+    updateSelectTitle(select);
+}
+
+// Ensure the full option text is accessible via hover
+function updateSelectTitle(select) {
+    if (!select) {
+        return;
+    }
+    const selectedOption = select.options[select.selectedIndex];
+    select.title = selectedOption ? selectedOption.textContent : "";
 }
 
 // Show learner age options based on selected language
 function showLearnerAge() {
     const language = document.getElementById("language").value;
+    updateSelectTitle(document.getElementById("language"));
     const ages = language ? CONFIG.languages[language].ages : {};
     populateSelect("learner-age", ages, "Select Age");
     resetSelections("learner-age");
@@ -273,6 +284,7 @@ function showLearnerAge() {
 function showSubject() {
     const language = document.getElementById("language").value;
     const age = document.getElementById("learner-age").value;
+    updateSelectTitle(document.getElementById("learner-age"));
     const subjects = (language && age) ? CONFIG.languages[language].ages[age].subjects : {};
     populateSelect("subject", subjects, "Select Subject");
     resetSelections("subject");
@@ -283,6 +295,7 @@ function showDownload() {
     const language = document.getElementById("language").value;
     const age = document.getElementById("learner-age").value;
     const subject = document.getElementById("subject").value;
+    updateSelectTitle(document.getElementById("subject"));
 
     if (!(language && age && subject)) {
         disableDownloadLink();
@@ -315,10 +328,12 @@ function resetSelections(startFrom) {
     if (startFrom === "language") {
         document.getElementById("learner-age").innerHTML = '<option value="">Select Age</option>';
         document.getElementById("learner-age").disabled = true;
+        updateSelectTitle(document.getElementById("learner-age"));
     }
     if (startFrom === "language" || startFrom === "learner-age") {
         document.getElementById("subject").innerHTML = '<option value="">Select Subject</option>';
         document.getElementById("subject").disabled = true;
+        updateSelectTitle(document.getElementById("subject"));
     }
 
     disableDownloadLink();
