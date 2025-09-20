@@ -3,6 +3,42 @@ const CONFIG = {
     languages: {
         "English": {
             ages: {
+                "5 (US Kindergarten)": {
+                    subjects: {
+                        "Science": "English/english_5_science/english_5_science.pdf",
+                    }
+                },
+
+                "6 (US Grade 1)": {
+                    subjects: {
+                        "Science": "English/english_6_science/english_6_science.pdf",
+                    }
+                },
+
+                "7 (US Grade 2)": {
+                    subjects: {
+                        "Science": "English/english_7_science/english_7_science.pdf",
+                    }
+                },
+
+                "8 (US Grade 3)": {
+                    subjects: {
+                        "Science": "English/english_8_science/english_8_science.pdf",
+                    }
+                },
+
+                "9 (US Grade 4)": {
+                    subjects: {
+                        "Science": "English/english_9_science/english_9_science.pdf",
+                    }
+                },
+
+                "10 (US Grade 5)": {
+                    subjects: {
+                        "Science": "English/english_10_science/english_10_science.pdf",
+                    }
+                },
+
                 "11 (US Grade 6)": {
                     subjects: {
                         "Math": "English/english_11_math/english_11_math.pdf",

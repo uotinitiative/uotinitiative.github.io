@@ -16,6 +16,11 @@ p {
     margin-bottom: 1em;
 }
 
+.highlight-yellow {
+    background: linear-gradient(transparent 0%, #fff59d 5%);
+    padding: 0 2px;
+}
+
 h1 {
     font-size: 35px;
     margin-bottom: 20px;
