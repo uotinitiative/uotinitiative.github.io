@@ -1,266 +1,54 @@
 // Configuration object
-const CONFIG = {
-    languages: {
-        "English": {
-            ages: {
-                "5 (US Kindergarten)": {
-                    subjects: {
-                        "Science": "English/english_5_science/english_5_science.pdf",
-                    }
-                },
+// Catalog configuration is populated at runtime from data/catalog.json
+const CONFIG = { languages: {} };
+let catalogReady = false;
+let catalogLoadPromise = null;
 
-                "6 (US Grade 1)": {
-                    subjects: {
-                        "Science": "English/english_6_science/english_6_science.pdf",
-                    }
-                },
+function buildConfigMap(entries) {
+    const languages = {};
 
-                "7 (US Grade 2)": {
-                    subjects: {
-                        "Science": "English/english_7_science/english_7_science.pdf",
-                    }
-                },
+    entries.forEach(({ language, age, subject, pdf }) => {
+        if (!languages[language]) {
+            languages[language] = { ages: {} };
+        }
 
-                "8 (US Grade 3)": {
-                    subjects: {
-                        "Science": "English/english_8_science/english_8_science.pdf",
-                    }
-                },
+        const ageBucket = languages[language].ages;
+        if (!ageBucket[age]) {
+            ageBucket[age] = { subjects: {} };
+        }
 
-                "9 (US Grade 4)": {
-                    subjects: {
-                        "Science": "English/english_9_science/english_9_science.pdf",
-                    }
-                },
+        ageBucket[age].subjects[subject] = pdf;
+    });
 
-                "10 (US Grade 5)": {
-                    subjects: {
-                        "Science": "English/english_10_science/english_10_science.pdf",
-                    }
-                },
+    return { languages }; // keep downstream access identical to the legacy CONFIG shape
+}
 
-                "11 (US Grade 6)": {
-                    subjects: {
-                        "Math": "English/english_11_math/english_11_math.pdf",
-                    }
-                },
-
-                "12 (US Grade 7)": {
-                    subjects: {
-                        "Math": "English/english_12_math/english_12_math.pdf",
-                    }
-                },
-
-                "13 (US Grade 8)": {
-                    subjects: {
-                        "Prealgebra": "English/english_13_prealgebra/english_13_prealgebra.pdf",
-                    }
-                },
-
-                "14 (US Grade 9)": {
-                    subjects: {
-                        "Algebra 1 (Elementary Algebra)": "English/english_14_algebra_1_elementary_algebra/english_14_algebra_1_elementary_algebra.pdf",
-                    }
-                },
-
-                "15 (US Grade 10)": {
-                    subjects: {
-                        "Algebra 2 (Intermediate Algebra)": "English/english_15_algebra_2_intermediate_algebra/english_15_algebra_2_intermediate_algebra.pdf",
-                    }
-                },
-
-                "16 (US Grade 11)": {
-                    subjects: {
-                        "Algebra with Trigonometry": "English/english_16_algebra_with_trigonometry/english_16_algebra_with_trigonometry.pdf",
-                        "Introductory Physics (Algebra-Based)": "English/english_16_introductory_physics_algebra_based/english_16_introductory_physics_algebra_based.pdf",
-                    }
-                },
-
-                "17 (US Grade 12)": {
-                    subjects: {
-                        "College Algebra (Non-STEM Track)": "English/english_17_college_algebra_non_stem_track/english_17_college_algebra_non_stem_track.pdf",
-                        "Introductory Statistics": "English/english_17_introductory_statistics/english_17_introductory_statistics.pdf",
-                        "Precalculus": "English/english_17_precalculus/english_17_precalculus.pdf",
-                    }
-                },
-
-                "18 (US Bachelor's 1)": {
-                    subjects: {
-                        "Anatomy and Physiology": "English/english_18_anatomy_and_physiology/english_18_anatomy_and_physiology.pdf",
-                        "Anthropology": "English/english_18_anthropology/english_18_anthropology.pdf",
-                        "Astronomy": "English/english_18_astronomy/english_18_astronomy.pdf",
-                        "Biology for Non-Science Majors": "English/english_18_biology_for_non_science_majors/english_18_biology_for_non_science_majors.pdf",
-                        "Biology for Science Majors": "English/english_18_biology_for_science_majors/english_18_biology_for_science_majors.pdf",
-                        "Biosystems Engineering": "English/english_18_biosystems_engineering/english_18_biosystems_engineering.pdf",
-                        "Business Law Essentials": "English/english_18_business_law_essentials/english_18_business_law_essentials.pdf",
-                        "Calculus: Volume 1": "English/english_18_calculus_vol_1/english_18_calculus_vol_1.pdf",
-                        "Calculus: Volume 2": "English/english_18_calculus_vol_2/english_18_calculus_vol_2.pdf",
-                        "Calculus: Volume 3": "English/english_18_calculus_vol_3/english_18_calculus_vol_3.pdf",
-                        "Chemistry": "English/english_18_chemistry/english_18_chemistry.pdf",
-                        "Foundations of Computation": "English/english_18_foundations_of_computation/english_18_foundations_of_computation.pdf",
-                        "Introduction to Business": "English/english_18_introduction_to_business/english_18_introduction_to_business.pdf",
-                        "Introductory Business Statistics": "English/english_18_introductory_business_statistics/english_18_introductory_business_statistics.pdf",
-                        "Macroeconomics": "English/english_18_macroeconomics/english_18_macroeconomics.pdf",
-                        "Mathematics for Liberal Arts Majors": "English/english_18_mathematics_for_liberal_arts_majors/english_18_mathematics_for_liberal_arts_majors.pdf",
-                        "Microeconomics": "English/english_18_microeconomics/english_18_microeconomics.pdf",
-                        "Nutrition for Nurses": "English/english_18_nutrition_for_nurses/english_18_nutrition_for_nurses.pdf",
-                        "Philosophy": "English/english_18_philosophy/english_18_philosophy.pdf",
-                        "Physics (Algebra-Based)": "English/english_18_physics_algebra_based/english_18_physics_algebra_based.pdf",
-                        "Physics (Calculus-Based): Volume 1": "English/english_18_physics_calculus_based_vol_1/english_18_physics_calculus_based_vol_1.pdf",
-                        "Physics (Calculus-Based): Volume 2": "English/english_18_physics_calculus_based_vol_2/english_18_physics_calculus_based_vol_2.pdf",
-                        "Physics (Calculus-Based): Volume 3": "English/english_18_physics_calculus_based_vol_3/english_18_physics_calculus_based_vol_3.pdf",
-                        "Political Science": "English/english_18_political_science/english_18_political_science.pdf",
-                        "Principles of Accounting, Volume 1: Financial Accounting": "English/english_18_principles_of_accounting_vol_1_financial_accounting/english_18_principles_of_accounting_vol_1_financial_accounting.pdf",
-                        "Principles of Accounting, Volume 2: Managerial Accounting": "English/english_18_principles_of_accounting_vol_2_managerial_accounting/english_18_principles_of_accounting_vol_2_managerial_accounting.pdf",
-                        "Principles of Management": "English/english_18_principles_of_management/english_18_principles_of_management.pdf",
-                        "Psychology": "English/english_18_psychology/english_18_psychology.pdf",
-                        "Python Programming": "English/english_18_python_programming/english_18_python_programming.pdf",
-                        "Sociology": "English/english_18_sociology/english_18_sociology.pdf",
-                        "Statistics": "English/english_18_statistics/english_18_statistics.pdf",
-                        "Workplace Software and Skills": "English/english_18_workplace_software_and_skills/english_18_workplace_software_and_skills.pdf",
-                        "World History, Volume 1: to 1500": "English/english_18_world_history_volume_1_to_1500/english_18_world_history_volume_1_to_1500.pdf",
-                        "World History, Volume 2: from 1400": "English/english_18_world_history_volume_2_from_1400/english_18_world_history_volume_2_from_1400.pdf",
-                        "Writing Guide with Handbook": "English/english_18_writing_guide_with_handbook/english_18_writing_guide_with_handbook.pdf",
-                    }
-                },
-
-                "19 (US Bachelor's 2)": {
-                    subjects: {
-                        "Clinical Nursing Skills": "English/english_19_clinical_nursing_skills/english_19_clinical_nursing_skills.pdf",
-                        "Discrete Structures": "English/english_19_discrete_structures/english_19_discrete_structures.pdf",
-                        "Entrepreneurship": "English/english_19_entrepreneurship/english_19_entrepreneurship.pdf",
-                        "Introductory Business Ethics": "English/english_19_introductory_business_ethics/english_19_introductory_business_ethics.pdf",
-                        "Linear Algebra": "English/english_19_linear_algebra/english_19_linear_algebra.pdf",
-                        "Microbiology for Non-Majors": "English/english_19_microbiology_for_non_majors/english_19_microbiology_for_non_majors.pdf",
-                        "Organic Chemistry": "English/english_19_organic_chemistry/english_19_organic_chemistry.pdf",
-                        "Organizational Behavior": "English/english_19_organizational_behavior/english_19_organizational_behavior.pdf",
-                        "Pharmacology for Nurses": "English/english_19_pharmacology_for_nurses/english_19_pharmacology_for_nurses.pdf",
-                        "Principles of Finance": "English/english_19_principles_of_finance/english_19_principles_of_finance.pdf",
-                        "Principles of Marketing": "English/english_19_principles_of_marketing/english_19_principles_of_marketing.pdf",
-                    }
-                },
-
-                "20 (US Bachelor's 3)": {
-                    subjects: {
-                        "Abstract Algebra": "English/english_20_abstract_algebra/english_20_abstract_algebra.pdf",
-                        "Differential Equations": "English/english_20_differential_equations/english_20_differential_equations.pdf",
-                        "Electromagnetics: Volume 1": "English/english_20_electromagnetics_volume_1/english_20_electromagnetics_volume_1.pdf",
-                        "Electromagnetics: Volume 2": "English/english_20_electromagnetics_volume_2/english_20_electromagnetics_volume_2.pdf",
-                        "Introduction to Intellectual Property": "English/english_20_introduction_to_intellectual_property/english_20_introduction_to_intellectual_property.pdf",
-                        "Linear, Time-Invariant, Dynamic Systems": "English/english_20_linear_time_invariant_dynamic_systems/english_20_linear_time_invariant_dynamic_systems.pdf",
-                        "Maternal-Newborn Nursing": "English/english_20_maternal_newborn_nursing/english_20_maternal_newborn_nursing.pdf",
-                        "Population Health for Nurses": "English/english_20_population_health_for_nurses/english_20_population_health_for_nurses.pdf",
-                        "Psychiatric-Mental Health Nursing": "English/english_20_psychiatric_mental_health_nursing/english_20_psychiatric_mental_health_nursing.pdf",
-                    }
-                },
-
-                "21 (US Bachelor's 4)": {
-                    subjects: {
-                        "Complex Analysis": "English/english_21_complex_analysis/english_21_complex_analysis.pdf",
-                        "Optics": "English/english_21_optics/english_21_optics.pdf",
-                        "Real Analysis (Advanced Calculus): Volume 1": "English/english_21_real_analysis_advanced_calculus_volume_1/english_21_real_analysis_advanced_calculus_volume_1.pdf",
-                        "Real Analysis (Advanced Calculus): Volume 2": "English/english_21_real_analysis_advanced_calculus_volume_2/english_21_real_analysis_advanced_calculus_volume_2.pdf",
-                    }
-                },
-
-                "22 (US Master's 1)": {
-                    subjects: {
-                        "Coastal Dynamics": "English/english_22_coastal_dynamics/english_22_coastal_dynamics.pdf",
-                        "Structured Electronics Design": "English/english_22_structured_electronics_design/english_22_structured_electronics_design.pdf",
-                        "Traffic Flow Theory": "English/english_22_traffic_flow_theory/english_22_traffic_flow_theory.pdf",
-                    }
-                },
-
-                "23 (US Master's 2)": {
-                    subjects: {
-                        "Quantum Electrical Circuits": "English/english_23_quantum_electrical_circuits/english_23_quantum_electrical_circuits.pdf",
-                    }
+async function loadCatalogConfig() {
+    if (!catalogLoadPromise) {
+        catalogLoadPromise = fetch('data/catalog.json', { cache: 'no-store' })
+            .then(response => {
+                if (!response.ok) {
+                    throw new Error(`Failed to load catalog: ${response.status}`);
                 }
-            }
-        },
-
-        "العربية": {
-            ages: {
-                "18 (بكالوريوس الولايات المتحدة الأمريكية 1)": {
-                    subjects: {
-                        "علم الأحياء لتخصصات العلوم": "Arabic/arabic_18_biology_for_science_majors/arabic_18_biology_for_science_majors.pdf",
-                        "حساب التفاضل والتكامل: المجلد 1": "Arabic/arabic_18_calculus_vol_1/arabic_18_calculus_vol_1.pdf",
-                        "الاقتصاد الكلي": "Arabic/arabic_18_macroeconomics/arabic_18_macroeconomics.pdf",
-
-                    }
-                },
-
-                "20 (بكالوريوس الولايات المتحدة الأمريكية 3)": {
-                                    subjects: {
-                                        "الجبر التجريدي": "Arabic/arabic_20_abstract_algebra/arabic_20_abstract_algebra.pdf",
-                     }
-                },
-            }
-        },
-
-        "Español": {
-            ages: {
-                "17 (grado 12 de EE. UU.)": {
-                    subjects: {
-                        "Precálculo": "Spanish/spanish_17_precalculus/spanish_17_precalculus.pdf",
-                    }
-                },
-
-                "18 (licenciatura de EE. UU., año 1)": {
-                    subjects: {
-                        "Cálculo: Volumen 1": "Spanish/spanish_18_calculus_vol_1/spanish_18_calculus_vol_1.pdf",
-                        "Cálculo: Volumen 2": "Spanish/spanish_18_calculus_vol_2/spanish_18_calculus_vol_2.pdf",
-                        "Cálculo: Volumen 3": "Spanish/spanish_18_calculus_vol_3/spanish_18_calculus_vol_3.pdf",
-                        "Química": "Spanish/spanish_18_chemistry/spanish_18_chemistry.pdf",
-                        "Física (basada en cálculo): Volumen 1": "Spanish/spanish_18_physics_calculus_based_vol_1/spanish_18_physics_calculus_based_vol_1.pdf",
-                        "Física (basada en cálculo): Volumen 2": "Spanish/spanish_18_physics_calculus_based_vol_2/spanish_18_physics_calculus_based_vol_2.pdf",
-                        "Física (basada en cálculo): Volumen 3": "Spanish/spanish_18_physics_calculus_based_vol_3/spanish_18_physics_calculus_based_vol_3.pdf",
-                        "Estadística": "Spanish/spanish_18_statistics/spanish_18_statistics.pdf",
-                    }
-                },
-
-                "20 (licenciatura de EE. UU., año 3)": {
-                    subjects: {
-                        "Álgebra Abstracta": "Spanish/spanish_20_abstract_algebra/spanish_20_abstract_algebra.pdf",
-                    }
-                }
-            }
-        },
-
-        "中文 (简体)": {
-            ages: {
-                "18 (美国学士学位 1)": {
-                    subjects: {
-                        "理科专业生物学": "Chinese/chinese_18_biology_for_science_majors/chinese_18_biology_for_science_majors.pdf",
-                        "微积分第一册": "Chinese/chinese_18_calculus_vol_1/chinese_18_calculus_vol_1.pdf",
-
-                    }
-                },
-
-                "20 (美国学士学位 3)": {
-                    subjects: {
-                        "抽象代数": "Chinese/chinese_20_abstract_algebra/chinese_20_abstract_algebra.pdf",
-                    }
-                }
-            }
-        },
-
-        "Polski": {
-            ages: {
-                "18 (licencjat amerykański 1)": {
-                    subjects: {
-                            "Makroekonomia": "Polish/polish_18_macroeconomics/polish_18_macroeconomics.pdf",
-                            "Mikroekonomia": "Polish/polish_18_microeconomics/polish_18_microeconomics.pdf",
-                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom I": "Polish/polish_18_physics_calculus_based_vol_1/polish_18_physics_calculus_based_vol_1.pdf",
-                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom II": "Polish/polish_18_physics_calculus_based_vol_2/polish_18_physics_calculus_based_vol_2.pdf",
-                            "Fizyka (oparta na rachunku różniczkowym i całkowym): Tom III": "Polish/polish_18_physics_calculus_based_vol_3/polish_18_physics_calculus_based_vol_3.pdf",
-                            "Psychologia": "Polish/polish_18_psychology/polish_18_psychology.pdf",
-                            }
-                        }
-                    }
-                }
+                return response.json();
+            })
+            .then(entries => {
+                const normalizedEntries = Array.isArray(entries) ? entries : [];
+                const map = buildConfigMap(normalizedEntries);
+                CONFIG.languages = map.languages;
+                catalogReady = true;
+                return CONFIG;
+            })
+            .catch(error => {
+                console.error('Catalog data failed to load', error);
+                catalogReady = false;
+                catalogLoadPromise = null;
+                throw error;
+            });
     }
-};
+
+    return catalogLoadPromise;
+}
 
 function disableDownloadLink() {
     const downloadLink = document.getElementById("download-link");
@@ -287,14 +75,19 @@ function enableDownloadLink(url) {
 // Helper function to populate select options
 function populateSelect(selectId, options, defaultText = "Select Option") {
     const select = document.getElementById(selectId);
+    if (!select) {
+        return;
+    }
+
+    const optionKeys = options ? Object.keys(options) : [];
     select.innerHTML = `<option value="">${defaultText}</option>`;
-    Object.keys(options).forEach(key => {
+    optionKeys.forEach(key => {
         const option = document.createElement('option');
         option.value = key;
         option.textContent = key;
         select.appendChild(option);
     });
-    select.disabled = Object.keys(options).length === 0;
+    select.disabled = optionKeys.length === 0;
     updateSelectTitle(select);
 }
 
@@ -311,7 +104,12 @@ function updateSelectTitle(select) {
 function showLearnerAge() {
     const language = document.getElementById("language").value;
     updateSelectTitle(document.getElementById("language"));
-    const ages = language ? CONFIG.languages[language].ages : {};
+    if (!catalogReady || !language || !CONFIG.languages[language]) {
+        resetSelections("language");
+        return;
+    }
+
+    const ages = CONFIG.languages[language].ages;
     populateSelect("learner-age", ages, "Select Age");
     resetSelections("learner-age");
 }
@@ -321,7 +119,14 @@ function showSubject() {
     const language = document.getElementById("language").value;
     const age = document.getElementById("learner-age").value;
     updateSelectTitle(document.getElementById("learner-age"));
-    const subjects = (language && age) ? CONFIG.languages[language].ages[age].subjects : {};
+    if (!catalogReady || !(language && age)) {
+        resetSelections("learner-age");
+        return;
+    }
+
+    const languageConfig = CONFIG.languages[language];
+    const ageConfig = languageConfig && languageConfig.ages ? languageConfig.ages[age] : null;
+    const subjects = ageConfig ? ageConfig.subjects : {};
     populateSelect("subject", subjects, "Select Subject");
     resetSelections("subject");
 }
@@ -333,12 +138,14 @@ function showDownload() {
     const subject = document.getElementById("subject").value;
     updateSelectTitle(document.getElementById("subject"));
 
-    if (!(language && age && subject)) {
+    if (!catalogReady || !(language && age && subject)) {
         disableDownloadLink();
         return;
     }
 
-    const pdfUrl = CONFIG.languages[language].ages[age].subjects[subject];
+    const languageConfig = CONFIG.languages[language];
+    const ageConfig = languageConfig && languageConfig.ages ? languageConfig.ages[age] : null;
+    const pdfUrl = ageConfig && ageConfig.subjects ? ageConfig.subjects[subject] : null;
 
     if (!pdfUrl) {
         disableDownloadLink();
@@ -362,26 +169,49 @@ function showDownload() {
 // Reset selections and hide download link
 function resetSelections(startFrom) {
     if (startFrom === "language") {
-        document.getElementById("learner-age").innerHTML = '<option value="">Select Age</option>';
-        document.getElementById("learner-age").disabled = true;
-        updateSelectTitle(document.getElementById("learner-age"));
+        const learnerAgeSelect = document.getElementById("learner-age");
+        if (learnerAgeSelect) {
+            learnerAgeSelect.innerHTML = '<option value="">Select Age</option>';
+            learnerAgeSelect.disabled = true;
+            updateSelectTitle(learnerAgeSelect);
+        }
     }
     if (startFrom === "language" || startFrom === "learner-age") {
-        document.getElementById("subject").innerHTML = '<option value="">Select Subject</option>';
-        document.getElementById("subject").disabled = true;
-        updateSelectTitle(document.getElementById("subject"));
+        const subjectSelect = document.getElementById("subject");
+        if (subjectSelect) {
+            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+            subjectSelect.disabled = true;
+            updateSelectTitle(subjectSelect);
+        }
     }
 
     disableDownloadLink();
 }
 
 // Initialize the form
-function initForm() {
-    populateSelect("language", CONFIG.languages, "Select Language");
-    document.getElementById("language").addEventListener("change", showLearnerAge);
-    document.getElementById("learner-age").addEventListener("change", showSubject);
-    document.getElementById("subject").addEventListener("change", showDownload);
+async function initForm() {
+    const languageSelect = document.getElementById("language");
+    const ageSelect = document.getElementById("learner-age");
+    const subjectSelect = document.getElementById("subject");
+
     disableDownloadLink();
+
+    if (!(languageSelect && ageSelect && subjectSelect)) {
+        return;
+    }
+
+    languageSelect.addEventListener("change", showLearnerAge);
+    ageSelect.addEventListener("change", showSubject);
+    subjectSelect.addEventListener("change", showDownload);
+
+    try {
+        await loadCatalogConfig();
+        populateSelect("language", CONFIG.languages, "Select Language");
+    } catch (error) {
+        languageSelect.innerHTML = '<option value="">Catalog unavailable</option>';
+        languageSelect.disabled = true;
+        resetSelections("language");
+    }
 }
 
 // Call initForm when the DOM is fully loaded
