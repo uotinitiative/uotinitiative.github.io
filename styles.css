@@ -184,6 +184,13 @@ a.hidden {
     padding: 3px;
 }
 
+#download-link.download-link-active,
+.download-link.download-link-active {
+    background: linear-gradient(transparent 0%, #fff59d 5%);
+    border-radius: 6px;
+    transition: background 0.2s ease-in-out;
+}
+
 #download-link.disabled,
 .download-link.disabled {
     color: #94A3B8;

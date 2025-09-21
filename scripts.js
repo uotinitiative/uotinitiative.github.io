@@ -56,6 +56,7 @@ function disableDownloadLink() {
         return;
     }
     downloadLink.classList.add("disabled");
+    downloadLink.classList.remove("download-link-active");
     downloadLink.setAttribute("aria-disabled", "true");
     downloadLink.setAttribute("tabindex", "-1");
     downloadLink.href = "#";
@@ -67,6 +68,7 @@ function enableDownloadLink(url) {
         return;
     }
     downloadLink.classList.remove("disabled");
+    downloadLink.classList.add("download-link-active");
     downloadLink.removeAttribute("aria-disabled");
     downloadLink.removeAttribute("tabindex");
     downloadLink.href = url;
