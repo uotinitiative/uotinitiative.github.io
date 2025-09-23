@@ -51,7 +51,9 @@
   gtag('config', 'G-EKZHGCZVQT');
 </script>
 
-    <!-- Header Section -->
+</head>
+<body class="textbook-detail-page search-page">
+  <!-- Header Section -->
   <header>
     <!-- Desktop Navigation -->
     <div class="custom-header desktop-only">
@@ -107,31 +109,40 @@
   </header>
 
   <!-- Main Content -->
-  <main class="container">
+  <main class="container book-container">
+    <nav class="breadcrumb">
+      <a href="/">Home</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <span aria-current="page">Search</span>
+    </nav>
+
     <h1>Search</h1>
-    <section class="search-content">
-      <p>Search the full catalog and explore the scope and content of each textbook available on our platform.</p>
+
+    <section class="textbook-panel">
+      <div class="textbook-panel-body">
+        <p>Type a keyword or toggle filters to narrow the list. Results update instantly as you search.</p>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="catalog-search" onkeyup="filterAndHighlight()" placeholder="Search textbooks">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <div class="filter-tags">
+        <span class="tag" data-filter="elementary-school">Elementary School<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="middle-school">Middle School<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="high-school">High School<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="bachelor">Bachelor’s<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="master">Master’s<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="english">English<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="spanish">Spanish<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="polish">Polish<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="arabic">Arabic<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="chinese(simplified)">Chinese (Simplified)<span class="tag-close">×</span></span>
+      </div>
+
+      <p id="no-match" class="textbook-panel-body no-match-message" style="display:none;">No results found.</p>
     </section>
-
-    <div class="search-container">
-      <input type="text" id="catalog-search" onkeyup="filterAndHighlight()" placeholder="Search textbooks">
-      <i class="fas fa-search search-icon"></i>
-    </div>
-
-    <div class="filter-tags">
-      <span class="tag" data-filter="elementary-school">Elementary School<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="middle-school">Middle School<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="high-school">High School<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="bachelor">Bachelor’s<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="master">Master’s<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="english">English<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="spanish">Spanish<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="polish">Polish<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="arabic">Arabic<span class="tag-close">×</span></span>
-      <span class="tag" data-filter="chinese(simplified)">Chinese (Simplified)<span class="tag-close">×</span></span>
-    </div>
-
-    <p id="no-match" style="display:none; color: #b91c1c; font-weight: bold; text-align: center;">No results found.</p>
 
     <!-- Cards -->
     <div class="catalog-card"
@@ -1249,9 +1260,10 @@ second-grade science course that builds curiosity about Earth’s systems throug
       <a class="card-detail-link" href="quantum-electrical-circuits-age-23-masters-2">View textbook details</a>
     </div>
 
-    <!-- Back to top button -->
-    <div style="text-align:center; margin-top:40px;">
-    <a href="#top" class="back-to-top-button">Back to Top</a>
+    <div class="textbook-panel back-to-top-panel">
+      <div class="textbook-panel-body">
+        <a href="#top" class="back-to-top-button">Back to Top</a>
+      </div>
     </div>
 
   </main>
