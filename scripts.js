@@ -74,6 +74,76 @@ function enableDownloadLink(url) {
     downloadLink.href = url;
 }
 
+// Prepare signed URLs for textbook detail download links
+function prepareTextbookDetailDownloads() {
+    const detailLinks = document.querySelectorAll('.textbook-download');
+    if (!detailLinks.length) {
+        return;
+    }
+
+    detailLinks.forEach(link => {
+        const state = link.getAttribute('data-download-state');
+        if (state === 'loading' || state === 'ready') {
+            return;
+        }
+
+        const linkTarget = link.getAttribute('data-pdf') || link.getAttribute('href');
+        if (!linkTarget || linkTarget === '#' || linkTarget.startsWith('http')) {
+            return;
+        }
+
+        link.setAttribute('data-pdf', linkTarget);
+        link.setAttribute('data-download-state', 'loading');
+        link.classList.add('textbook-download--loading');
+        link.setAttribute('aria-disabled', 'true');
+        link.setAttribute('tabindex', '-1');
+        if (!link.hasAttribute('data-original-content')) {
+            link.setAttribute('data-original-content', link.innerHTML);
+        }
+        if (link.hasAttribute('target') && !link.hasAttribute('data-original-target')) {
+            link.setAttribute('data-original-target', link.getAttribute('target'));
+        }
+        link.href = '#';
+
+        fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(linkTarget)}`)
+            .then(res => {
+                if (!res.ok) {
+                    throw new Error(`Failed to fetch signed URL: ${res.status}`);
+                }
+                return res.json();
+            })
+            .then(data => {
+                if (!data || !data.url) {
+                    throw new Error('Response missing URL');
+                }
+                link.href = data.url;
+                link.classList.remove('textbook-download--loading');
+                link.removeAttribute('aria-disabled');
+                link.removeAttribute('tabindex');
+                const originalContent = link.getAttribute('data-original-content');
+                if (originalContent) {
+                    link.innerHTML = originalContent;
+                }
+                const originalTarget = link.getAttribute('data-original-target');
+                if (originalTarget) {
+                    link.setAttribute('target', originalTarget);
+                }
+                link.setAttribute('data-download-state', 'ready');
+            })
+            .catch(error => {
+                console.error('Signed download link failed to load', error);
+                link.classList.remove('textbook-download--loading');
+                link.classList.add('textbook-download--error');
+                link.textContent = 'Download unavailable';
+                link.setAttribute('data-download-state', 'error');
+                link.removeAttribute('tabindex');
+                link.removeAttribute('aria-disabled');
+                link.removeAttribute('target');
+                link.href = '#';
+            });
+    });
+}
+
 // Helper function to populate select options
 function populateSelect(selectId, options, defaultText = "Select Option") {
     const select = document.getElementById(selectId);
@@ -218,6 +288,7 @@ async function initForm() {
 
 // Call initForm when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", initForm);
+document.addEventListener("DOMContentLoaded", prepareTextbookDetailDownloads);
 
 // Nav link
 document.addEventListener('DOMContentLoaded', function () {
