@@ -643,6 +643,21 @@ header {
     text-transform: uppercase;
     margin-bottom: 32px;
 }
+.static-page .book-container {
+    max-width: 760px;
+    margin: 0 auto;
+    font-size: 15px;
+    line-height: 1.7;
+    letter-spacing: 0.01em;
+    color: #1f2937;
+}
+.static-page .book-container h1 {
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 0.04em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+}
 .textbook-panel {
     border-top: 1px solid #e5e7eb;
     padding-top: 24px;
@@ -678,6 +693,14 @@ header {
 .privacy-page .textbook-panel-title {
     text-align: center;
 }
+.homepage .page-section-title,
+.search-page .page-section-title,
+.about-page .page-section-title,
+.updates-page .page-section-title,
+.terms-page .page-section-title,
+.privacy-page .page-section-title {
+    text-align: center;
+}
 .homepage .book-container p {
     margin-bottom: 14px;
 }
@@ -707,6 +730,48 @@ header {
 .textbook-panel a:hover {
     text-decoration: underline;
 }
+.page-section {
+    border-top: 1px solid #e5e7eb;
+    padding-top: 24px;
+    margin-bottom: 32px;
+}
+.page-section--intro {
+    margin-top: -8px;
+}
+.page-section-title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+.page-section-body {
+    color: #475569;
+    font-size: 15px;
+}
+.page-section-body p {
+    margin: 0 0 1rem;
+}
+.page-section-body p:last-child {
+    margin-bottom: 0;
+}
+.page-section ul,
+.page-section ol {
+    margin: 0;
+    padding-left: 20px;
+    color: #475569;
+}
+.page-section li {
+    margin-bottom: 10px;
+    line-height: 1.7;
+}
+.page-section a {
+    color: #2964aa;
+    text-decoration: none;
+}
+.page-section a:hover {
+    text-decoration: underline;
+}
 .back-to-top-panel {
     border-top: none;
     padding-top: 0;
@@ -714,6 +779,15 @@ header {
     margin-bottom: 0;
 }
 .back-to-top-panel .textbook-panel-body {
+    margin: 0;
+}
+.page-back-to-top {
+    border-top: none;
+    padding-top: 0;
+    margin-top: 16px;
+    margin-bottom: 0;
+}
+.page-back-to-top .page-section-body {
     margin: 0;
 }
 .no-match-message {
@@ -797,6 +871,18 @@ header {
         margin-bottom: 24px;
     }
 
+    .static-page .book-container {
+        font-size: 14px;
+        line-height: 1.65;
+        padding-top: 32px;
+    }
+
+    .static-page .book-container h1 {
+        font-size: 26px;
+        letter-spacing: 0.025em;
+        margin-bottom: 24px;
+    }
+
     .textbook-panel {
         padding-top: 20px;
         margin-bottom: 24px;
@@ -808,6 +894,20 @@ header {
     }
 
     .textbook-panel-body {
+        font-size: 14px;
+    }
+
+    .page-section {
+        padding-top: 20px;
+        margin-bottom: 24px;
+    }
+
+    .page-section-title {
+        font-size: 11px;
+        letter-spacing: 0.12em;
+    }
+
+    .page-section-body {
         font-size: 14px;
     }
 
@@ -930,7 +1030,7 @@ header {
   justify-content: center;
   margin: 20px 0;
 }
-.textbook-detail-page .filter-tags {
+.search-page .filter-tags {
   justify-content: flex-start;
   margin-left: 0;
 }
