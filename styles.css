@@ -703,9 +703,77 @@ header {
 }
 .homepage .book-container p {
     margin-bottom: 14px;
+    text-align: center;
 }
 .homepage .book-container p:last-of-type {
     margin-bottom: 18px;
+}
+.homepage .book-container {
+    text-align: center;
+    align-items: center;
+}
+.homepage-intro {
+    max-width: 680px;
+    margin: 0 auto 32px;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.homepage-intro p {
+    margin: 0;
+}
+.homepage-intro p:last-of-type {
+    margin-bottom: 0;
+}
+.homepage-downloads {
+    max-width: 760px;
+    margin: 0 auto 40px;
+}
+.homepage-downloads table {
+    margin: 0 auto;
+}
+.homepage-downloads th,
+.homepage-downloads td {
+    text-align: center;
+}
+
+@media screen and (max-width: 768px) {
+    .homepage-downloads {
+        margin: 0 0 40px;
+        width: 100%;
+    }
+
+    .homepage-downloads table {
+        width: 100%;
+    }
+
+    .homepage-downloads tr {
+        margin-bottom: 24px;
+    }
+
+    .homepage-downloads td {
+        padding-left: 0;
+        padding-right: 0;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        min-height: auto;
+    }
+
+    .homepage-downloads td:before {
+        position: relative;
+        top: auto;
+        left: auto;
+        transform: none;
+        margin-bottom: 8px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .homepage-downloads td select,
+    .homepage-downloads td a {
+        width: 100%;
+    }
 }
 .textbook-panel-body p {
     margin: 0 0 1rem;
