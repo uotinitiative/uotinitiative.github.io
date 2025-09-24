@@ -862,6 +862,7 @@ header {
 }
 .page-back-to-top .page-section-body {
     margin: 0;
+    text-align: center;
 }
 .no-match-message {
     color: #b91c1c;
