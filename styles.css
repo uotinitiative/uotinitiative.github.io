@@ -660,8 +660,8 @@ header {
 }
 .textbook-panel {
     border-top: 1px solid #e5e7eb;
-    padding-top: 24px;
-    margin-bottom: 32px;
+    padding-top: 22px;
+    margin-bottom: 12px;
 }
 .textbook-panel--about {
     margin-top: -8px;
