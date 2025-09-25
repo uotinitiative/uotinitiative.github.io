@@ -179,16 +179,35 @@ a.hidden {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    font-size: 16px;
+    gap: 8px;
+    font-size: 14px;
     font-family: system-ui, -apple-system, Arial, sans-serif;
-    padding: 3px;
+    padding: 10px 16px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    background-color: #ffffff;
+    box-sizing: border-box;
+    min-height: 44px;
+    transition: border-color 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.homepage-downloads .download-link {
+    font-size: 14px;
+    min-width: 180px;
+    justify-content: center;
+}
+
+.homepage-downloads .download-link:not(.disabled):hover {
+    border-color: #a0aec0;
+    box-shadow: 0 2px 4px rgba(15, 23, 42, 0.12);
 }
 
 #download-link.download-link-active,
 .download-link.download-link-active {
     background: linear-gradient(transparent 0%, #fff59d 5%);
     border-radius: 6px;
-    transition: background 0.2s ease-in-out;
+    border-color: #facc15;
+    transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
 }
 
 #download-link.disabled,
@@ -197,6 +216,8 @@ a.hidden {
     cursor: not-allowed;
     pointer-events: none;
     text-decoration: none;
+    border-color: #e2e8f0;
+    background-color: #f8fafc;
 }
 
 #download-link.disabled .pdf-icon,
