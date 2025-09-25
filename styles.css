@@ -717,7 +717,6 @@ header {
     margin: 0 auto 0px;
     display: flex;
     flex-direction: column;
-    gap: 16px;
 }
 .homepage-intro p {
     margin: 0;
