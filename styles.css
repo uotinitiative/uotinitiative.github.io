@@ -626,6 +626,14 @@ header {
 .catalog-card p {
     margin-bottom: 10px;
 }
+.card-title-link {
+    color: #2964AA;
+    text-decoration: none;
+}
+.card-title-link:hover,
+.card-title-link:focus {
+    text-decoration: underline;
+}
 .card-detail-link {
     display: inline-flex;
     align-items: center;
