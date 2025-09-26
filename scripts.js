@@ -4,6 +4,92 @@ const CONFIG = { languages: {} };
 let catalogReady = false;
 let catalogLoadPromise = null;
 
+// Map English textbook folders to their corresponding detail page slugs
+// Used to route catalog selections to the richer detail page instead of directly to the PDF
+const DETAIL_PAGE_MAP = {
+  'english_10_science': 'science-age-10-grade-5',
+  'english_11_math': 'math-age-11-grade-6',
+  'english_12_math': 'math-age-12-grade-7',
+  'english_13_prealgebra': 'prealgebra-age-13-grade-8',
+  'english_14_algebra_1_elementary_algebra': 'algebra-1-age-14-grade-9',
+  'english_15_algebra_2_intermediate_algebra': 'algebra-2-age-15-grade-10',
+  'english_16_algebra_with_trigonometry': 'algebra-with-trigonometry-age-16-grade-11',
+  'english_16_introductory_physics_algebra_based': 'introductory-physics-algebra-based-age-16-grade-11',
+  'english_17_college_algebra_non_stem_track': 'college-algebra-non-stem-age-17-grade-12',
+  'english_17_introductory_statistics': 'introductory-statistics-age-17-grade-12',
+  'english_17_precalculus': 'precalculus-age-17-grade-12',
+  'english_18_anatomy_and_physiology': 'anatomy-and-physiology-age-18-bachelors-1',
+  'english_18_anthropology': 'anthropology-age-18-bachelors-1',
+  'english_18_astronomy': 'astronomy-age-18-bachelors-1',
+  'english_18_biology_for_non_science_majors': 'biology-non-science-majors-age-18-bachelors-1',
+  'english_18_biology_for_science_majors': 'biology-science-majors-age-18-bachelors-1',
+  'english_18_biosystems_engineering': 'biosystems-engineering-age-18-bachelors-1',
+  'english_18_business_law_essentials': 'business-law-essentials-age-18-bachelors-1',
+  'english_18_calculus_vol_1': 'calculus-volume-1-age-18-bachelors-1',
+  'english_18_calculus_vol_2': 'calculus-volume-2-age-18-bachelors-1',
+  'english_18_calculus_vol_3': 'calculus-volume-3-age-18-bachelors-1',
+  'english_18_chemistry': 'chemistry-age-18-bachelors-1',
+  'english_18_foundations_of_computation': 'foundations-of-computation-age-18-bachelors-1',
+  'english_18_introduction_to_business': 'introduction-to-business-age-18-bachelors-1',
+  'english_18_introductory_business_statistics': 'introductory-business-statistics-age-18-bachelors-1',
+  'english_18_macroeconomics': 'macroeconomics-age-18-bachelors-1',
+  'english_18_mathematics_for_liberal_arts_majors': 'mathematics-for-liberal-arts-age-18-bachelors-1',
+  'english_18_microeconomics': 'microeconomics-age-18-bachelors-1',
+  'english_18_nutrition_for_nurses': 'nutrition-for-nurses-age-18-bachelors-1',
+  'english_18_philosophy': 'philosophy-age-18-bachelors-1',
+  'english_18_physics_algebra_based': 'physics-algebra-based-age-18-bachelors-1',
+  'english_18_physics_calculus_based_vol_1': 'physics-calculus-based-volume-1-age-18-bachelors-1',
+  'english_18_physics_calculus_based_vol_2': 'physics-calculus-based-volume-2-age-18-bachelors-1',
+  'english_18_physics_calculus_based_vol_3': 'physics-calculus-based-volume-3-age-18-bachelors-1',
+  'english_18_political_science': 'political-science-age-18-bachelors-1',
+  'english_18_principles_of_accounting_vol_1_financial_accounting': 'principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1',
+  'english_18_principles_of_accounting_vol_2_managerial_accounting': 'principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1',
+  'english_18_principles_of_management': 'principles-of-management-age-18-bachelors-1',
+  'english_18_psychology': 'psychology-age-18-bachelors-1',
+  'english_18_python_programming': 'python-programming-age-18-bachelors-1',
+  'english_18_sociology': 'sociology-age-18-bachelors-1',
+  'english_18_statistics': 'statistics-age-18-bachelors-1',
+  'english_18_workplace_software_and_skills': 'workplace-software-and-skills-age-18-bachelors-1',
+  'english_18_world_history_volume_1_to_1500': 'world-history-volume-1-to-1500-age-18-bachelors-1',
+  'english_18_world_history_volume_2_from_1400': 'world-history-volume-2-from-1400-age-18-bachelors-1',
+  'english_18_writing_guide_with_handbook': 'writing-guide-with-handbook-age-18-bachelors-1',
+  'english_19_clinical_nursing_skills': 'clinical-nursing-skills-age-19-bachelors-2',
+  'english_19_discrete_structures': 'discrete-structures-age-19-bachelors-2',
+  'english_19_entrepreneurship': 'entrepreneurship-age-19-bachelors-2',
+  'english_19_introductory_business_ethics': 'introductory-business-ethics-age-19-bachelors-2',
+  'english_19_linear_algebra': 'linear-algebra-age-19-bachelors-2',
+  'english_19_microbiology_for_non_majors': 'microbiology-for-non-majors-age-19-bachelors-2',
+  'english_19_organic_chemistry': 'organic-chemistry-age-19-bachelors-2',
+  'english_19_organizational_behavior': 'organizational-behavior-age-19-bachelors-2',
+  'english_19_pharmacology_for_nurses': 'pharmacology-for-nurses-age-19-bachelors-2',
+  'english_19_principles_of_finance': 'principles-of-finance-age-19-bachelors-2',
+  'english_19_principles_of_marketing': 'principles-of-marketing-age-19-bachelors-2',
+  'english_20_abstract_algebra': 'abstract-algebra-age-20-bachelors-3',
+  'english_20_differential_equations': 'differential-equations-age-20-bachelors-3',
+  'english_20_electromagnetics_volume_1': 'electromagnetics-volume-1-age-20-bachelors-3',
+  'english_20_electromagnetics_volume_2': 'electromagnetics-volume-2-age-20-bachelors-3',
+  'english_20_introduction_to_intellectual_property': 'introduction-to-intellectual-property-age-20-bachelors-3',
+  'english_20_linear_time_invariant_dynamic_systems': 'linear-time-invariant-dynamic-systems-age-20-bachelors-3',
+  'english_20_maternal_newborn_nursing': 'maternal-newborn-nursing-age-20-bachelors-3',
+  'english_20_population_health_for_nurses': 'population-health-for-nurses-age-20-bachelors-3',
+  'english_20_psychiatric_mental_health_nursing': 'psychiatric-mental-health-nursing-age-20-bachelors-3',
+  'english_21_complex_analysis': 'complex-analysis-age-21-bachelors-4',
+  'english_21_optics': 'optics-age-21-bachelors-4',
+  'english_21_real_analysis_volume_1': 'real-analysis-volume-1-age-21-bachelors-4',
+  'english_21_real_analysis_advanced_calculus_volume_1': 'real-analysis-volume-1-age-21-bachelors-4',
+  'english_21_real_analysis_volume_2': 'real-analysis-volume-2-age-21-bachelors-4',
+  'english_21_real_analysis_advanced_calculus_volume_2': 'real-analysis-volume-2-age-21-bachelors-4',
+  'english_22_coastal_dynamics': 'coastal-dynamics-age-22-masters-1',
+  'english_22_structured_electronics_design': 'structured-electronics-design-age-22-masters-1',
+  'english_22_traffic_flow_theory': 'traffic-flow-theory-age-22-masters-1',
+  'english_23_quantum_electrical_circuits': 'quantum-electrical-circuits-age-23-masters-2',
+  'english_5_science': 'science-age-5-kindergarten',
+  'english_6_science': 'science-age-6-grade-1',
+  'english_7_science': 'science-age-7-grade-2',
+  'english_8_science': 'science-age-8-grade-3',
+  'english_9_science': 'science-age-9-grade-4',
+};
+
 function buildConfigMap(entries) {
     const languages = {};
 
@@ -72,6 +158,38 @@ function enableDownloadLink(url) {
     downloadLink.removeAttribute("aria-disabled");
     downloadLink.removeAttribute("tabindex");
     downloadLink.href = url;
+}
+
+function getDetailSlugFromPdf(pdfUrl) {
+    if (!pdfUrl || typeof pdfUrl !== 'string') {
+        return null;
+    }
+
+    if (pdfUrl.startsWith('http')) {
+        return null; // External URLs do not have matching detail pages
+    }
+
+    const segments = pdfUrl.split('/');
+    if (segments.length < 2) {
+        return null;
+    }
+
+    const folderName = segments[1];
+    if (!folderName) {
+        return null;
+    }
+
+    if (DETAIL_PAGE_MAP[folderName]) {
+        return DETAIL_PAGE_MAP[folderName];
+    }
+
+    const folderParts = folderName.split('_');
+    if (folderParts.length < 2) {
+        return null;
+    }
+
+    const englishKey = ['english', ...folderParts.slice(1)].join('_');
+    return DETAIL_PAGE_MAP[englishKey] || null;
 }
 
 // Prepare signed URLs for textbook detail download links
@@ -225,6 +343,12 @@ function showDownload() {
     }
 
     disableDownloadLink();
+
+    const detailSlug = getDetailSlugFromPdf(pdfUrl);
+    if (detailSlug) {
+        enableDownloadLink(detailSlug);
+        return;
+    }
 
     fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(pdfUrl)}`)
         .then(res => res.json())
