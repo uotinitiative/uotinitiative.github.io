@@ -206,8 +206,8 @@ a.hidden {
 .download-link.download-link-active {
     background: linear-gradient(transparent 0%, #fff59d 5%);
     border-radius: 6px;
-    border-color: #facc15;
-    transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out;
+    border-color: #d1d5db;
+    transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 #download-link.disabled,
@@ -1340,6 +1340,10 @@ header {
     color: #2964AA;
     text-decoration: none;
     font-weight: 500;
+}
+
+.download-link.download-link-active {
+    color: #111827;
 }
 
 .download-link:hover {
