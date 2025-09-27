@@ -435,9 +435,44 @@ async function initForm() {
     }
 }
 
+function initSiteLanguageSelectors() {
+    const documentLang = (document.documentElement.lang || '').toLowerCase();
+    const selectors = document.querySelectorAll('[data-language-switcher]');
+
+    if (!selectors.length) {
+        return;
+    }
+
+    selectors.forEach(select => {
+        const options = Array.from(select.options || []);
+        const matchingOption = options.find(option => {
+            return (option.dataset.lang || '').toLowerCase() === documentLang;
+        });
+
+        if (matchingOption) {
+            select.value = matchingOption.value;
+        }
+
+        select.addEventListener('change', event => {
+            const target = event.currentTarget;
+            if (!target) {
+                return;
+            }
+
+            const selectedOption = target.selectedOptions && target.selectedOptions[0];
+            const nextLocation = selectedOption ? selectedOption.value : '';
+
+            if (nextLocation) {
+                window.location.href = nextLocation;
+            }
+        });
+    });
+}
+
 // Call initForm when the DOM is fully loaded
 document.addEventListener("DOMContentLoaded", initForm);
 document.addEventListener("DOMContentLoaded", prepareTextbookDetailDownloads);
+document.addEventListener('DOMContentLoaded', initSiteLanguageSelectors);
 
 // Nav link
 document.addEventListener('DOMContentLoaded', function () {

@@ -1,0 +1,1300 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wyszukaj - Uniwersalna Inicjatywa Otwartych Podręczników</title>
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" integrity="sha512-..." crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Meta Tags -->
+  <meta name="description"
+    content="Przeglądaj cały katalog i poznaj zakres oraz zawartość każdego podręcznika dostępnego w Uniwersalnej Inicjatywie Otwartych Podręczników (UOTI).">
+  <meta name="keywords" content="wyszukiwanie, katalog, otwarte podręczniki, OER, powszechna edukacja, Vatsal">
+
+  <!-- Favicon and App Icons -->
+<link rel="icon" href="https://uotinitiative.org/favicon/favicon.ico" />
+<link rel="shortcut icon" href="https://uotinitiative.org/favicon/favicon.ico" />
+<link rel="icon" type="image/png" href="https://uotinitiative.org/favicon/favicon-96x96.png" sizes="96x96" />
+<link rel="icon" type="image/png" href="https://uotinitiative.org/favicon/web-app-manifest-192x192.png" sizes="192x192" />
+<link rel="icon" type="image/png" href="https://uotinitiative.org/favicon/web-app-manifest-512x512.png" sizes="512x512" />
+<link rel="icon" type="image/svg+xml" href="https://uotinitiative.org/favicon/favicon.svg" />
+<link rel="apple-touch-icon" sizes="180x180" href="https://uotinitiative.org/favicon/apple-touch-icon.png" />
+<link rel="manifest" href="https://uotinitiative.org/favicon/site.webmanifest" />
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "WebPage",
+        "name": "Search - Universal Open Textbook Initiative",
+        "description": "Przeglądaj cały katalog i poznaj zakres oraz zawartość każdego podręcznika dostępnego w Uniwersalnej Inicjatywie Otwartych Podręczników (UOTI).",
+        "isPartOf": {
+          "@type": ["Organization", "EducationalOrganization"],
+          "name": "Universal Open Textbook Initiative",
+          "url": "https://uotinitiative.org"
+        }
+      }
+    </script>
+
+<!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-EKZHGCZVQT"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-EKZHGCZVQT');
+</script>
+
+</head>
+<body class="static-page search-page">
+  <!-- Header Section -->
+  <header>
+    <!-- Desktop Navigation -->
+    <div class="custom-header desktop-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <nav class="custom-nav">
+          <a href="search-pl.html" class="active">SZUKAJ</a>
+          <a href="about-pl.html">O NAS</a>
+          <a href="updates-pl.html">AKTUALNOŚCI</a>
+          <a href="mailto:contact@uotinitiative.org">KONTAKT</a>
+        </nav>
+        <div class="header-actions">
+          <div class="language-selector">
+            <label class="visually-hidden" for="site-language-selector-desktop">Wybierz język strony</label>
+            <select id="site-language-selector-desktop" class="language-selector__control" data-language-switcher>
+              <option value="search.html" data-lang="en">Angielski</option>
+              <option value="search-es.html" data-lang="es">Español</option>
+              <option value="search-ar.html" data-lang="ar">العربية</option>
+              <option value="search-zh.html" data-lang="zh">中文</option>
+              <option value="search-pl.html" data-lang="pl">Polski</option>
+            </select>
+          </div>
+          <a href="mailto:contact@uotinitiative.org" class="donate-button" target="_blank">WESPRZYJ</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-only">
+      <div class="header-content">
+        <div class="header-logo">
+          <a href="/">
+            <img src="logo.svg" alt="Logo" class="logo">
+          </a>
+        </div>
+        <div class="mobile-right">
+          <div class="language-selector">
+            <label class="visually-hidden" for="site-language-selector-mobile">Wybierz język strony</label>
+            <select id="site-language-selector-mobile" class="language-selector__control" data-language-switcher>
+              <option value="search.html" data-lang="en">Angielski</option>
+              <option value="search-es.html" data-lang="es">Español</option>
+              <option value="search-ar.html" data-lang="ar">العربية</option>
+              <option value="search-zh.html" data-lang="zh">中文</option>
+              <option value="search-pl.html" data-lang="pl">Polski</option>
+            </select>
+          </div>
+          <div class="header-logo">
+            <a href="mailto:contact@uotinitiative.org" class="donate-button" target="_blank">WESPRZYJ</a>
+          </div>
+          <nav class="navbar">
+            <div class="hamburger-menu">
+              <div class="bar"></div>
+              <div class="bar"></div>
+              <div class="bar"></div>
+            </div>
+          </nav>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <ul>
+          <li><a href="search-pl.html" class="active">Szukaj</a></li>
+          <li><a href="about-pl.html">O nas</a></li>
+          <li><a href="updates-pl.html">Aktualności</a></li>
+          <li><a href="mailto:contact@uotinitiative.org">Kontakt</a></li>
+        </ul>
+      </div>
+    </div>
+
+  </header>
+
+  <!-- Main Content -->
+  <main class="container book-container">
+    <nav class="breadcrumb">
+      <a href="/">Strona główna</a>
+      <span aria-hidden="true">&rsaquo;</span>
+      <span aria-current="page">Wyszukaj</span>
+    </nav>
+
+    <h1>Wyszukaj</h1>
+
+    <section class="page-section">
+      <div class="page-section-body">
+        <p>Wpisz słowo kluczowe lub ustaw filtry, aby zawęzić listę. Wyniki aktualizują się natychmiast podczas wyszukiwania.</p>
+      </div>
+
+      <div class="search-container">
+        <input type="text" id="catalog-search" onkeyup="filterAndHighlight()" placeholder="Wyszukaj podręczniki">
+        <i class="fas fa-search search-icon"></i>
+      </div>
+
+      <div class="filter-tags">
+        <span class="tag" data-filter="early-childhood">Wczesne dzieciństwo<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="elementary-school">Szkoła podstawowa<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="middle-school">Szkoła średnia I stopnia<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="high-school">Szkoła średnia II stopnia<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="bachelor">Studia licencjackie<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="master">Studia magisterskie<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="english">Angielski<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="spanish">Hiszpański<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="polish">Polski<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="arabic">Arabski<span class="tag-close">×</span></span>
+        <span class="tag" data-filter="chinese(simplified)">Chiński (uproszczony)<span class="tag-close">×</span></span>
+      </div>
+
+      <p id="no-match" class="page-section-body no-match-message" style="display:none;">Brak wyników.</p>
+    </section>
+
+    <!-- Cards -->
+    <div class="catalog-card"
+        data-language="english"
+        data-level="early-childhood"
+        data-subject="science"
+        data-age="5"
+        data-grade="kindergarten"
+        data-tags="english,early-childhood,science,grade-kindergarten,age-5">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-5-kindergarten">Science (Age 5, US Kindergarten)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a
+      kindergarten science course that nurtures early scientific thinking through simple, observable phenomena. It develops foundational ideas about weather and seasons and about forces and motion, preparing students for deeper study of Earth and physical science in later grades.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> What is Weather? — What is Gravity?</p>
+      <a class="card-detail-link" href="science-age-5-kindergarten">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="elementary-school"
+        data-subject="science"
+        data-age="6"
+        data-grade="grade-1"
+        data-tags="english,elementary-school,science,grade-1,age-6">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-6-grade-1">Science (Age 6, US Grade 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a
+      first-grade science course that builds early inquiry through observation, description, and simple investigations. It develops core ideas about light and vision, patterns in the sky, structure and function in living things, and foundational physical science, organized across engaging chapters with prompts that ask students to notice, predict, and explain.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Me and My Shadow — How Do I See? — My Features Can Help Me — Signals - Light and Sound — Sky Patterns — Telescopes — The Lighthouse — The Moon — Why Do I Look Like I Do? — Gravity — How Do I Make Sounds?</p>
+      <a class="card-detail-link" href="science-age-6-grade-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="elementary-school"
+        data-subject="science"
+        data-age="7"
+        data-grade="grade-2"
+        data-tags="english,elementary-school,science,grade-2,age-7">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-7-grade-2">Science (Age 7, US Grade 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a
+second-grade science course that builds curiosity about Earth’s systems through observation, comparison, and simple investigations. It develops core ideas about water on Earth, patterns and change, and Earth’s dynamic processes across engaging chapters with prompts to notice, predict, and explain.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> A World of Ice and Water — Changes — Earthquakes — The Grand Canyon — Mountains — Preventing Erosion — Tsunamis — Volcanoes</p>
+      <a class="card-detail-link" href="science-age-7-grade-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="elementary-school"
+        data-subject="science"
+        data-age="8"
+        data-grade="grade-3"
+        data-tags="english,elementary-school,science,grade-3,age-8">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-8-grade-3">Science (Age 8, US Grade 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a
+      third-grade science course that advances inquiry with hands-on observation, simple investigations, and use of basic data tools. It develops core ideas in physical science, Earth science, and life science. Across clearly organized chapters with vocabulary, visuals, and checks for understanding, students practice describing patterns, testing cause-and-effect, and using models and evidence.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Physical Science (Forces — Friction — Gravity — Magnets — Static Electricity) — Earth Science (Weather Forecasting — World Climates — Fossils of Plants and Animals) — Life Science (Adaptation and Natural Selection — Insect Reproduction and Life Cycles — Plant Adaptations to Environmental Changes — Plant Reproduction and Life Cycles — Animal Characteristics and Classification</p>
+      <a class="card-detail-link" href="science-age-8-grade-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="elementary-school"
+        data-subject="science"
+        data-age="9"
+        data-grade="grade-4"
+        data-tags="english,elementary-school,science,grade-4,age-9">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-9-grade-4">Science (Age 9, US Grade 4)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a
+      fourth-grade science course that deepens students’ use of evidence, models, and simple data analysis. Organized into clear chapters with visuals, vocabulary, and checks for understanding, the program builds cause-and-effect reasoning and connects concepts across systems, preparing learners for more quantitative study in later grades.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Physical Science (Types of Energy — Characteristics of Sound — Forms and Changes of Energy — Transfer of Thermal Energy — Energy Resources — Moving Air and Water as Energy Sources — Reflection of Light — Refraction of Light — Static Electric Charge — Electric Current — Electric Circuits — Speed) — Earth Science (Introduction to Earth’s Surface — Theory of Plate Tectonics — Relative Ages of Rocks — Fossils — Weathering — Erosion and Deposition by Glaciers — Erosion and Deposition by Wind — Erosion and Deposition by Gravity — Erosion and Deposition by Waves — Erosion and Deposition by Flowing Water — Ocean Movements and Waves) — Life Science (Learned Behavior of Animals — Nervous System — The Respiratory System — The Cardiovascular System — The Digestive System — The Skin — The Skeletal System — Introduction to Plants — Plant Reproduction — Seasonal Changes in Plants — Habitat Destruction</p>
+      <a class="card-detail-link" href="science-age-9-grade-4">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="elementary-school"
+        data-subject="science"
+        data-age="10"
+        data-grade="grade-5"
+        data-tags="english,elementary-school,science,grade-5,age-10">
+      <h3 class="card-title"><a class="card-title-link" href="science-age-10-grade-5">Science (Age 10, US Grade 5)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a fifth-grade science course that strengthens conceptual understanding while introducing more systematic investigation and modeling. Through coherent progressions, everyday examples, and frequent opportunities to observe, explain, and argue from evidence, the course equips students with the vocabulary and reasoning tools needed for middle-school science.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Physical Science (Atoms — Types of Matter — Matter, Mass, and Volume — Solids, Liquids, and Gases — Physical Properties of Matter — Chemical Properties of Matter — Physical and Chemical Changes in Matter — Rate of Dissolving — Separating Mixtures — Magnets and Magnetism — Earth as a Magnet) — Earth Science (Water on Earth — Humans and the Water Supply — Protecting the Water Supply — Use and Conservation of Resources — Weather and Water in the Atmosphere — Climate and Its Causes — World Climates — The Sun-Earth-Moon System — Earth's Motion in Space — Gravity — Stars {Gr 4-5}) — Life Science (Importance of Plants — The Flow of Energy in an Ecosystem)</p>
+      <a class="card-detail-link" href="science-age-10-grade-5">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="middle-school"
+        data-subject="math"
+        data-age="11"
+        data-grade="6"
+        data-tags="english,middle-school,math,grade-6,age-11">
+      <h3 class="card-title"><a class="card-title-link" href="math-age-11-grade-6">Math (Age 11, US Grade 6)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the full scope-and-sequence expectations of a year-long middle-school math course that bridges elementary arithmetic and formal pre-algebra. It develops number sense, proportional reasoning, geometry, measurement, statistics, and introductory algebra in a coherent progression that prepares students for the abstract thinking demanded in later grades.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Number Sense and Variable Expressions — Statistics and Measurement — Addition and Subtraction of Decimals — Multiplication and Division of Decimals — Number Patterns and Fractions — Addition and Subtraction of Fractions — Multiplication and Division of Fractions — Ratios, Proportions, and Percents — Geometric Figures — Geometry and Measurement — Integers — Equations and Functions; Probability</p>
+      <a class="card-detail-link" href="math-age-11-grade-6">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="middle-school"
+        data-subject="math"
+        data-age="12"
+        data-grade="7"
+        data-tags="english,middle-school,math,grade-7,age-12">
+      <h3 class="card-title"><a class="card-title-link" href="math-age-12-grade-7">Math (Age 12, US Grade 7)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to offer a full, year-long curriculum that transitions students from the computational fluency of elementary school to the symbolic reasoning of pre-algebra. It begins with pattern recognition and variable expressions and culminates in data analysis and probability.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Algebraic Thinking — Using Decimals — Using Fractions — Using Integers — Using Ratios, Rates and Proportions — Using Percents — Equations, Inequalities and Functions — Geometry — Distance and Area — Surface Area and Volume — Data and Statistics — Probability</p>
+      <a class="card-detail-link" href="math-age-12-grade-7">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="middle-school"
+        data-subject="prealgebra"
+        data-age="13"
+        data-grade="8"
+        data-tags="english,middle-school,prealgebra,grade-8,age-13">
+      <h3 class="card-title"><a class="card-title-link" href="prealgebra-age-13-grade-8">Prealgebra (Age 13, US Grade 8)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet scope and sequence requirements for a one-semester prealgebra course. The text introduces the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Whole Numbers — The Language of Algebra — Integers — Fractions — Decimals — Percents — The Properties of Real Numbers — Solving Linear Equations — Math Models and Geometry — Polynomials — Graphs</p>
+      <a class="card-detail-link" href="prealgebra-age-13-grade-8">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="elementary-algebra"
+        data-age="14"
+        data-grade="grade-9"
+        data-tags="english,high-school,elementary-algebra,grade-9,age-14">
+      <h3 class="card-title"><a class="card-title-link" href="algebra-1-age-14-grade-9">Algebra 1 (Elementary Algebra) (Age 14, US Grade 9)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of a one-semester elementary algebra course. The text expands on the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Foundations — Solving Linear Equations and Inequalities — Math Models — Graphs — Systems of Linear Equations — Polynomials — Factoring — Rational Expressions and Equations — Roots and Radicals — Quadratic Equations</p>
+      <a class="card-detail-link" href="algebra-1-age-14-grade-9">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="intermediate-algebra"
+        data-age="15"
+        data-grade="grade-10"
+        data-tags="english,high-school,intermediate-algebra,grade-10,age-15">
+      <h3 class="card-title"><a class="card-title-link" href="algebra-2-age-15-grade-10">Algebra 2 (Intermediate Algebra) (Age 15, US Grade 10)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of a one-semester intermediate algebra course. The text expands on the fundamental concepts of algebra while addressing the needs of students with diverse backgrounds and learning styles.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Foundations — Solving Linear Equations — Graphs and Functions — Systems of Linear Equations — Polynomials and Polynomial Functions — Factoring — Rational Expressions and Functions — Roots and Radicals — Quadratic Equations and Functions — Exponential and Logarithmic Functions — Conics — Sequences, Series and Binomial Theorem</p>
+      <a class="card-detail-link" href="algebra-2-age-15-grade-10">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra-with-trigonometry"
+        data-age="16"
+        data-grade="grade-11"
+        data-tags="english,high-school,algebra-with-trigonometry,grade-11,age-16">
+      <h3 class="card-title"><a class="card-title-link" href="algebra-with-trigonometry-age-16-grade-11">Algebra with Trigonometry (Age 16, US Grade 11)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides a comprehensive exploration of algebraic principles and meets scope and sequence requirements for a typical introductory algebra and trigonometry course. The modular approach and the richness of content ensures that the book meets the needs of a variety of courses.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Prerequisites — Equations and Inequalities — Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — The Unit Circle: Sine and Cosine Functions — Periodic Functions — Trigonometric Identities and Equations — Further Applications of Trigonometry — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability, and Counting Theory</p>
+      <a class="card-detail-link" href="algebra-with-trigonometry-age-16-grade-11">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="physics-algebra-Based"
+        data-age="16"
+        data-grade="grade-11"
+        data-tags="english,high-school,physics,grade-11,age-16">
+      <h3 class="card-title"><a class="card-title-link" href="introductory-physics-algebra-based-age-16-grade-11">Introductory Physics (Algebra-Based) (Age 16, US Grade 11)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers the scope and sequence requirements of a typical one-year physics course. The text provides comprehensive coverage of physical concepts, quantitative examples and skills, and interesting applications.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> What is Physics? — Motion in One Dimension — Acceleration — Forces and Newton’s Laws of Motion — Motion in Two Dimensions — Circular and Rotational Motion — Newton’s Law of Gravitation — Momentum — Work, Energy, and Simple Machines — Special Relativity — Thermal Energy, Heat, and Work — Thermodynamics — Waves and Their Properties — Sound — Light — Mirrors and Lenses — Diffraction and Interference — Static Electricity — Electrical Circuits — Magnetism — The Quantum Nature of Light — The Atom — Particle Physics</p>
+      <a class="card-detail-link" href="introductory-physics-algebra-based-age-16-grade-11">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="algebra-non-STEM"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,high-school,algebra,grade-12,age-17">
+      <h3 class="card-title"><a class="card-title-link" href="college-algebra-non-stem-age-17-grade-12">College Algebra (Non-STEM Track) (Age 17, US Grade 12)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook integrates comprehensive algebraic principles with effective foundational review. Each section is paired with a thoughtfully developed, topically aligned skills module that prepares students for the course material.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Prerequisites — Equations and Inequalities — Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability, and Counting Theory</p>
+      <a class="card-detail-link" href="college-algebra-non-stem-age-17-grade-12">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="high-school"
+        data-subject="statistics"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,high-school,statistics,grade-12,age-17">
+      <h3 class="card-title"><a class="card-title-link" href="introductory-statistics-age-17-grade-12">Introductory Statistics (Age 17, US Grade 12)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers the scope and sequence requirements of a typical one-year statistics course. The text provides comprehensive coverage of statistical concepts, including quantitative examples, collaborative activities, and practical applications.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Sampling and Data — Descriptive Statistics — Probability Topics — Discrete Random Variables — Continuous Random Variables — The Normal Distribution — The Central Limit Theorem — Confidence Intervals — Hypothesis Testing with One Sample — Hypothesis Testing with Two Samples — The Chi-Square Distribution — Linear Regression and Correlation — F Distribution and One-Way ANOVA</p>
+      <a class="card-detail-link" href="introductory-statistics-age-17-grade-12">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="high-school"
+        data-subject="precalculus"
+        data-age="17"
+        data-grade="grade-12"
+        data-tags="english,spanish,high-school,precalculus,grade-12,age-17">
+      <h3 class="card-title"><a class="card-title-link" href="precalculus-age-17-grade-12">Precalculus (Age 17, US Grade 12)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is adaptable and designed to fit the needs of a variety of precalculus courses. It is a comprehensive text that covers more ground than a typical one- or two-semester college-level precalculus course.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Functions — Linear Functions — Polynomial and Rational Functions — Exponential and Logarithmic Functions — Trigonometric Functions — Periodic Functions — Trigonometric Identities and Equations — Further Applications of Trigonometry — Systems of Equations and Inequalities — Analytic Geometry — Sequences, Probability and Counting Theory — Introduction to Calculus</p>
+      <a class="card-detail-link" href="precalculus-age-17-grade-12">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="anatomy-and-physiology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,anatomy-and-physiology,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="anatomy-and-physiology-age-18-bachelors-1">Anatomy and Physiology (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is developed to meet the scope and sequence for a two-semester human anatomy and physiology course for life science and allied health majors. The book is organized by body systems.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Levels of Organization (An Introduction to the Human Body, The Chemical Level of Organization, The Cellular Level of Organization, The Tissue Level of Organization) — Support and Movement (The Integumentary System, Bone Tissue and the Skeletal System, Axial Skeleton, The Appendicular Skeleton, Joints, Muscle Tissue, The Muscular System) — Regulation, Integration, and Control (The Nervous System and Nervous Tissue, Anatomy of the Nervous System, The Somatic Nervous System, The Autonomic Nervous System, The Neurological Exam, The Endocrine System) — Fluids and Transport (The Cardiovascular System: Blood, The Cardiovascular System: The Heart, The Cardiovascular System: Blood Vessels and Circulation, The Lymphatic and Immune System) — Energy, Maintenance, and Environmental Exchange (The Respiratory System, The Digestive System, Metabolism and Nutrition, The Urinary System, Fluid, Electrolyte, and Acid-Base Balance) — Human Development and the Continuity of Life (The Reproductive System, Development and Inheritance)</p>
+      <a class="card-detail-link" href="anatomy-and-physiology-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="anthropology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,anthropology,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="anthropology-age-18-bachelors-1">Anthropology (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is useful for both general and cultural introductory courses as well as for introductory courses in some of the anthropology subfields. It is a four-field text, grounded in foundational content in cultural anthropology, archaeology, biological anthropology, and linguistic anthropology.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> What is Anthropology? — Methods: Cultural and Archaeological — Culture Concept Theory: Theories of Cultural Change — Biological Evolution and Early Human Evidence — The Genus Homo and the Emergence of Us — Language and Communication — Work, Life, and Value: Economic Anthropology — Authority, Decisions, and Power: Political Anthropology — Social Inequalities — The Global Impact of Human Migration — Forming Family through Kinship — Gender and Sexuality — Religion and Culture — Anthropology of Food — Anthropology of Media — Art, Music, and Sport — Medical Anthropology — Human-Animal Relationship — Indigenous Anthropology — Anthropology on the Ground</p>
+      <a class="card-detail-link" href="anthropology-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="astronomy"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,astronomy,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="astronomy-age-18-bachelors-1">Astronomy (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet scope and sequence requirements of introductory astronomy courses. It can be used for either a one-semester or two-semester introductory course.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Science and the Universe: A Brief Tour — Observing the Sky: The Birth of Astronomy — Orbits and Gravity — Earth, Moon, and Sky — Radiation and Spectra — Astronomical Instruments — Other Worlds: An Introduction to the Solar System — Earth as a Planet — Cratered Worlds — Earthlike Planets: Venus and Mars — The Giant Planets — Rings, Moons, and Pluto — Comets and Asteroids: Debris of the Solar System — Cosmic Samples and the Origin of the Solar System — The Sun: A Garden-Variety Star — The Sun: A Nuclear Powerhouse — Analyzing Starlight — The Stars: A Celestial Census — Celestial Distances — Between the Stars: Gas and Dust in Space — The Birth of Stars and the Discovery of Planets outside the Solar System — Stars from Adolescence to Old Age — The Death of Stars — Black Holes and Curved Spacetime — The Milky Way Galaxy — Galaxies — Active Galaxies, Quasars, and Supermassive Black Holes — The Evolution and Distribution of Galaxies — The Big Bang — Life in the Universe</p>
+      <a class="card-detail-link" href="astronomy-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="biology-for-non-science-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,biology-for-non-science-majors,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="biology-non-science-majors-age-18-bachelors-1">Biology for Non-Science Majors (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed for the single-semester introduction to biology course for non-science majors. It is grounded on an evolutionary basis and includes exciting features that highlight careers in the biological sciences and everyday applications of the concepts at hand.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> The Cellular Foundation of Life (Introduction to Biology, Chemistry of Life, Cell Structure and Function, How Cells Obtain Energy, Photosynthesis) — Cell Division and Genetics (Reproduction at the Cellular Level, The Cellular Basis of Inheritance, Patterns of Inheritance) — Molecular Biology and Biotechnology (Molecular Biology, Biotechnology) — Evolution and the Diversity of Life (Evolution and Its Processes, Diversity of Life, Diversity of Microbes, Fungi, and Protists, Diversity of Plants, Diversity of Animals) — Animal Structure and Function (The Body’s Systems, The Immune System and Disease, Animal Reproduction and Development) — Ecology (Population and Community Ecology, Ecosystems and the Biosphere, Conservation and Biodiversity)</p>
+      <a class="card-detail-link" href="biology-non-science-majors-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,arabic,chinese(simplified)"
+        data-level="bachelor"
+        data-subject="biology-for-science-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,arabic,chinese(simplified),bachelor,biology-for-science-majors,grade-bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="biology-science-majors-age-18-bachelors-1">Biology for Science Majors (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Arabski, Chiński (uproszczony)</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to cover the scope and sequence requirements of a typical two-semester biology course for science majors. The text provides comprehensive coverage of foundational research and core biology concepts through an evolutionary lens.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> The Chemistry of Life (The Study of Life, The Chemical Foundation of Life, Biological Macromolecules) — The Cell (Cell Structure, Structure and Function of Plasma Membranes, Metabolism, Cellular Respiration, Photosynthesis, Cell Communication, Cell Reproduction) — Genetics (Meiosis and Sexual Reproduction, Mendel’s Experiments and Heredity, Modern Understandings of Inheritance, DNA Structure and Function, Genes and Proteins, Gene Expression, Biotechnology and Genomics) — Evolutionary Processes (Evolution and the Origin of Species, The Evolution of Populations, Phylogenies and the History of Life) — Biological Diversity (Viruses, Prokaryotes: Bacteria and Archaea, Protists, Fungi, Seedless Plants, Seed Plants, Introduction to Animal Diversity, Invertebrates, Vertebrates) — Plant Structure and Function (Plant Form and Physiology, Soil and Plant Nutrition, Plant Reproduction) — Animal Structure and Function (The Animal Body: Basic Form and Function, Animal Nutrition and the Digestive System, The Nervous System, Sensory Systems, The Endocrine System, The Musculoskeletal System, The Respiratory System, The Circulatory System, Osmotic Regulation and Excretion, The Immune System, Animal Reproduction and Development) — Ecology (Ecology and the Biosphere, Population and Community Ecology, Ecosystems, Conservation Biology and Biodiversity)</p>
+      <a class="card-detail-link" href="biology-science-majors-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="biosystems-engineering"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,biosystems-engineering,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="biosystems-engineering-age-18-bachelors-1">Biosystems Engineering (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed for university-level introductory courses in biosystems engineering.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Energy Systems — Information Technology, Sensors, and Control Systems — Machinery Systems — Natural Resources and Environmental Systems — Plant, Animal, and Facility Systems — Processing Systems</p>
+      <a class="card-detail-link" href="biosystems-engineering-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="business-law-essentials"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,business-law-essentials,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="business-law-essentials-age-18-bachelors-1">Business Law Essentials (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is a brief introductory textbook designed to meet the scope and sequence requirements of courses on Business Law or the Legal Environment of Business. The concepts are presented in a streamlined manner, and cover the key concepts necessary to establish a strong foundation in the subject. The textbook may need to be supplemented with additional content, cases, or related materials, and is offered as a foundational resource that focuses on the baseline concepts, issues, and approaches.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> American Law, Legal Reasoning, and the Legal System — Disputes and Dispute Settlement — Business Ethics and Social Responsibility — Business and the United States Constitution — Criminal Liability — The Tort System — Contract Law — Sales Contracts — Employment and Labor Law — Government Regulation — Antitrust Law — Unfair Trade Practices and the Federal Trade Commission — International Law — Securities Regulation</p>
+      <a class="card-detail-link" href="business-law-essentials-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,arabic,chinese(simplified),spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-1"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,arabic,chinese(simplified),spanish,bachelor,calculus:-volume-1,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="calculus-volume-1-age-18-bachelors-1">Calculus: Volume 1 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Arabski, Chiński (uproszczony), Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Functions and Graphs — Limits — Derivatives — Applications of Derivatives — Integration — Applications of Integration</p>
+      <a class="card-detail-link" href="calculus-volume-1-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-2"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,calculus:-volume-2,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="calculus-volume-2-age-18-bachelors-1">Calculus: Volume 2 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Integration — Applications of Integration — Techniques of Integration — Introduction to Differential Equations — Sequences and Series — Power Series — Parametric Equations and Polar Coordinates</p>
+      <a class="card-detail-link" href="calculus-volume-2-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="calculus:-volume-3"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,calculus:-volume-3,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="calculus-volume-3-age-18-bachelors-1">Calculus: Volume 3 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the typical two- or three-semester general calculus course. It guides students through the core concepts of calculus and helps them understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Parametric Equations and Polar Coordinates — Vectors in Space — Vector-Valued Functions — Differentiation of Functions of Several Variables — Multiple Integration — Vector Calculus — Second-Order Differential Equations</p>
+      <a class="card-detail-link" href="calculus-volume-3-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="chemistry"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,chemistry,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="chemistry-age-18-bachelors-1">Chemistry (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of the two-semester general chemistry course. The textbook provides an important opportunity for students to learn the core concepts of chemistry and understand how those concepts apply to their lives and the world around them.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Essential Ideas — Atoms, Molecules, and Ions — Composition of Substances and Solutions — Stoichiometry of Chemical Reactions — Thermochemistry — Electronic Structure and Periodic Properties of Elements — Chemical Bonding and Molecular Geometry — Advanced Theories of Covalent Bonding — Gases — Liquids and Solids — Solutions and Colloids — Kinetics — Fundamental Equilibrium Concepts — Acid-Base Equilibria — Equilibria of Other Reaction Classes — Thermodynamics — Electrochemistry — Representative Metals, Metalloids, and Nonmetals — Transition Metals and Coordination Chemistry — Organic Chemistry — Nuclear Chemistry</p>
+      <a class="card-detail-link" href="chemistry-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="foundations-of-computation"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,foundations-of-computation,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="foundations-of-computation-age-18-bachelors-1">Foundations of Computation (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed for a one-semester course in theoretical computer science. It has no prerequisites other than a general familiarity with computer programming.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Logic and Proof — Sets, Functions, and Relations — Regular Expressions and FSA’s — Grammars — Turing Machines and Computability</p>
+      <a class="card-detail-link" href="foundations-of-computation-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="introduction-to-business"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,introduction-to-business,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="introduction-to-business-age-18-bachelors-1">Introduction to Business (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of foundational business courses. The textbook presents business principles and emerging trends in fields including management, leadership, production, marketing, and finance. It includes hundreds of current business examples from a range of industries, geographic locations, and featuring a variety of individuals. Through this content, students will acquire the knowledge, skills, and competencies to prepare for the competitive workplace.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Understanding Economic Systems and Business — Making Ethical Decisions and Managing a Socially Responsible Business — Competing in the Global Marketplace — Forms of Business Ownership — Entrepreneurship: Starting and Managing Your Own Business — Management and Leadership in Today’s Organizations — Designing Organizational Structures — Managing Human Resources and Labor Relations — Motivating Employees — Achieving World-Class Operations Management — Creating Products and Pricing Strategies to Meet Customers’ Needs — Distributing and Promoting Products and Services — Using Technology to Manage Information — Using Financial Information and Accounting — Understanding Money and Financial Institutions — Understanding Financial Management and Securities Markets — Your Career in Business</p>
+      <a class="card-detail-link" href="introduction-to-business-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="introductory-business-statistics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,introductory-business-statistics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="introductory-business-statistics-age-18-bachelors-1">Introductory Business Statistics (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of the one-semester statistics course for business, economics, and related majors. Core statistical concepts and skills have been augmented with practical business examples, scenarios, and exercises. The result is a meaningful understanding of the discipline which will serve students in their business careers and real-world experiences.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Sampling and Data — Descriptive Statistics — Probability Topics — Discrete Random Variables — Continuous Random Variables — The Normal Distribution — The Central Limit Theorem — Confidence Intervals — Hypothesis Testing with One Sample — Hypothesis Testing with Two Samples — The Chi-Square Distribution — F Distribution and One-Way ANOVA — Linear Regression and Correlation</p>
+      <a class="card-detail-link" href="introductory-business-statistics-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,arabic,polish"
+        data-level="bachelor"
+        data-subject="macroeconomics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,arabic,polish,bachelor,macroeconomics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="macroeconomics-age-18-bachelors-1">Macroeconomics (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Arabski, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers the scope and sequence of most one semester introductory macroeconomics courses. The text uses conversational language and ample illustrations to explore economic theories, and provides a wide array of examples using both fictional and real-world applications.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Welcome to Economics — Choice in a World of Scarcity — Demand and Supply — Labor and Financial Markets — Elasticity — The Macroeconomic Perspective — Economic Growth — Unemployment — Inflation — The International Trade and Capital Flows — The Aggregate Demand/Aggregate Supply Model — The Keynesian Perspective — The Neoclassical Perspective — Money and Banking — Monetary Policy and Bank Regulation — Exchange Rates and International Capital Flows — Government Budgets and Fiscal Policy — The Impacts of Government Borrowing — Macroeconomic Policy Around the World — International Trade — Globalization and Protectionism</p>
+      <a class="card-detail-link" href="macroeconomics-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="mathematics-for-liberal-arts-majors"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,mathematics-for-liberal-arts-majors,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="mathematics-for-liberal-arts-age-18-bachelors-1">Mathematics for Liberal Arts Majors (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the requirements for a liberal arts mathematics course. The textbook covers a range of topics that are typically found in a liberal arts course as well as some topics to connect mathematics to the world around us.</p>
+      <p class="card-contents"><strong>Spis treści:</strong>Sets — Logic — Real Number Systems and Number Theory — Number Representation and Calculation — Algebra — Money Management — Probability — Statistics — Metric Measurement — Geometry — Voting and Apportionment — Graph Theory — Math and Society</p>
+      <a class="card-detail-link" href="mathematics-for-liberal-arts-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,polish"
+        data-level="bachelor"
+        data-subject="microeconomics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,polish,bachelor,microeconomics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="microeconomics-age-18-bachelors-1">Microeconomics (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers the scope and sequence of most one semester introductory microeconomics courses. The text uses conversational language and ample illustrations to explore economic theories, and provides a wide array of examples using both fictional and real-world applications.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Welcome to Economics — Choice in a World of Scarcity — Demand and Supply — Labor and Financial Markets — Elasticity — Consumer Choices — Production, Costs, and Industry Structure — Perfect Competition — Monopoly — Monopolistic Competition and Oligopoly — Monopoly and Antitrust Policy — Environmental Protection and Negative Externalities — Positive Externalities and Public Goods — Labor Markets and Income — Poverty and Economic Inequality — Information, Risk, and Insurance — Financial Markets — Public Economy — International Trade — Globalization and Protectionism</p>
+      <a class="card-detail-link" href="microeconomics-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="nutrition-for-nurses"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,nutrition-for-nurses,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="nutrition-for-nurses-age-18-bachelors-1">Nutrition for Nurses (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook emphasizes evidence-based practice and holistic assessment to facilitate the integration of nutritional awareness for pre-licensure nursing students in the provision of client-centered care. It prepares students to serve as professionals who are part of an interdisciplinary team, which includes registered dieticians and nutritionists, and to emphasize nutrition as a key component of wellness, disease prevention, and disease management.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Nutrition Basics For Nurses (Introduction to Nutrition for Nurses — A Holistic View of Macronutrients Introduction — A Holistic View of Micronutrients Introduction — The Digestive Process) — Nutrition And Neurological Wellness (Applying Clinical Judgment to Promote Nutrition for Neurological Wellness — Special Nutritional Considerations for Neurological Health) — Nutrition and Endocrine Wellness (Applying Clinical Judgment to Promote Nutrition for Endocrine Wellness — Special Nutritional Considerations for Endocrine Health) — Nutrition and Hematological Wellness (Applying Clinical Judgment to Promote Nutrition for Hematologic Wellness — Special Nutritional Considerations for Hematologic Health) — Nutrition and Cardiovascular Wellness (Applying Clinical Judgment to Promote Nutrition for Cardiovascular Wellness — Special Nutritional Considerations for Cardiovascular Health) — Nutrition and Pulmonary Wellness (Applying Clinical Judgment to Promote Nutrition for Pulmonary — Special Nutritional Considerations for Pulmonary Health Introduction) — Nutrition and Renal Wellness (Applying Clinical Judgment to Promote Nutrition for Renal Wellness — Special Nutritional Considerations for Renal Health) — Nutrition and Gastrointestinal Wellness (Applying Clinical Judgment to Promote Nutrition for Gastrointestinal Wellness — Special Nutritional Considerations for Gastrointestinal Health) — Nutrition and Musculoskeletal and Integumentary Wellness (Applying Clinical Judgment to Promote Nutrition for Musculoskeletal and Integumentary Wellness — Special Nutritional Considerations for Musculoskeletal and Integumentary Health)</p>
+      <a class="card-detail-link" href="nutrition-for-nurses-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="philosophy"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,philosophy,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="philosophy-age-18-bachelors-1">Philosophy (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides an overview of a common range of philosophical topics for a first- or second-year general education philosophy course. It is organized thematically, following the principal categories of academic philosophy (logic, metaphysics, epistemology, theories of value, and history of philosophy.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Philosophy — Critical Thinking, Research, Reading, and Writing — The Early History of Philosophy around the World — The Emergence of Classical Philosophy — Logic and Reasoning — Metaphysics — Epistemology — Value Theory — Normative Moral Theory — Applied Ethics — Political Philosophy — Contemporary Philosophies and Social Theories</p>
+      <a class="card-detail-link" href="philosophy-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="physics-algebra-based-age-18-bachelors-1">Physics (Algebra-Based) (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook introduces topics conceptually and progresses through clear explanations in the context of career-oriented, practical applications, and meets the scope and sequence of an algebra-based physics course. It requires knowledge of algebra and some trigonometry, but not calculus.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction: The Nature of Science and Physics — Kinematics — Two-Dimensional Kinematics — Dynamics: Force and Newton’s Laws of Motion — Further Applications of Newton’s Laws: Friction, Drag, and Elasticity — Uniform Circular Motion and Gravitation — Work, Energy, and Energy Resources — Linear Momentum and Collisions — Statics and Torque — Rotational Motion and Angular Momentum — Fluid Statics — Fluid Dynamics and Its Biological and Medical Applications — Temperature, Kinetic Theory, and the Gas Laws — Heat and Heat Transfer Methods — Thermodynamics — Oscillatory Motion and Waves — Physics of Hearing — Electric Charge and Electric Field — Electric Potential and Electric Field — Electric Current, Resistance, and Ohm’s Law — Circuits and DC Instruments — Magnetism — Electromagnetic Induction, AC Circuits, and Electrical Technologies — Electromagnetic Waves — Geometric Optics — Vision and Optical Instruments — Wave Optics — Special Relativity — Quantum Physics — Atomic Physics — Radioactivity and Nuclear Physics — Medical Applications of Nuclear Physics — Particle Physics — Frontiers of Physics</p>
+      <a class="card-detail-link" href="physics-algebra-based-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="physics-calculus-based-volume-1-age-18-bachelors-1">Physics (Calculus-Based): Volume 1 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Mechanics (Units and Measurement, Vectors, Motion Along a Straight Line, Motion in Two and Three Dimensions, Newton’s Laws of Motion, Applications of Newton’s Laws, Work and Kinetic Energy, Potential Energy and Conservation of Energy, Linear Momentum and Collisions, Fixed-Axis Rotation, Angular Momentum, Static Equilibrium and Elasticity, Gravitation, Fluid Mechanics) — Waves and Acoustics (Oscillations, Waves, Sound)</p>
+      <a class="card-detail-link" href="physics-calculus-based-volume-1-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="physics-calculus-based-volume-2-age-18-bachelors-1">Physics (Calculus-Based): Volume 2 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Thermodynamics (Temperature and Heat, The Kinetic Theory of Gases, The First Law of Thermodynamics, The Second Law of Thermodynamics) — Electricity and Magnetism (Electric Charges and Fields, Gauss’s Law, Electric Potential, Capacitance, Current and Resistance, Direct-Current Circuits, Magnetic Forces and Fields, Sources of Magnetic Fields, Electromagnetic Induction, Inductance, Alternating-Current Circuits, Electromagnetic Waves)</p>
+      <a class="card-detail-link" href="physics-calculus-based-volume-2-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish,polish"
+        data-level="bachelor"
+        data-subject="physics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,polish,bachelor,physics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="physics-calculus-based-volume-3-age-18-bachelors-1">Physics (Calculus-Based): Volume 3 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is part of a three-volume collection designed for the two- or three- semester calculus-based physics course. The text has been developed to meet the scope and sequence of most university physics courses and provides a foundation for a career in mathematics, science, or engineering.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Optics (The Nature of Light, Geometric Optics and Image Formation, Interference, Diffraction) — Modern Physics (Relativity, Photons and Matter Waves, Quantum Mechanics, Atomic Structure, Condensed Matter Physics, Nuclear Physics, Particle Physics and Cosmology)</p>
+      <a class="card-detail-link" href="physics-calculus-based-volume-3-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="political-science"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,political-science,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="political-science-age-18-bachelors-1">Political Science (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence of an introduction to political science course. It introduces the broad scope of the political science discipline in a holistic manner via logically connected conceptual building blocks and provides a strong foundation in global political systems, exploring how and why political realities unfold.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Political Science (What Is Politics and What Is Political Science?) — Individuals (Political Behavior Is Human Behavior, Political Ideology, Civil Liberties, Political Participation and Public Opinion) — Groups (The Fundamentals of Group Political Activity, Civil Rights, Interest Groups, Political Parties, and Elections) — Institutions (Legislatures, Executives, Cabinets, and Bureaucracies, Courts and Law, The Media) — States and International Relations (Governing Regimes, International Relations, International Law and International Organizations, International Political Economy)</p>
+      <a class="card-detail-link" href="political-science-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="principles-of-accounting-vol-1-financial-accounting"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,principles-of-accounting-vol-1-financial-accounting,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1">Principles of Accounting, Volume 1: Financial Accounting (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of a two-semester accounting course that covers the fundamentals of financial and managerial accounting. This book is specifically designed to appeal to both accounting and non-accounting majors, exposing students to the core concepts of accounting in familiar ways to build a strong foundation that can be applied across business fields. Students are immersed in the “why” as well as the “how” aspects of accounting in order to reinforce concepts and promote comprehension over rote memorization.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Role of Accounting in Society — Introduction to Financial Statements — Analyzing and Recording Transactions — The Adjustment Process — Completing the Accounting Cycle — Merchandising Transactions — Accounting Information Systems — Fraud, Internal Controls, and Cash — Accounting for Receivables — Inventory — Long-Term Assets — Current Liabilities — Long-Term Liabilities — Corporation Accounting — Partnership Accounting — Statement of Cash Flows</p>
+      <a class="card-detail-link" href="principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="principles-of-accounting-vol-2-managerial-accounting"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,principles-of-accounting-vol-2-managerial-accounting,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1">Principles of Accounting, Volume 2: Managerial Accounting (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of a two-semester accounting course that covers the fundamentals of financial and managerial accounting. This book is specifically designed to appeal to both accounting and non-accounting majors, exposing students to the core concepts of accounting in familiar ways to build a strong foundation that can be applied across business fields. Students are immersed in the “why” as well as the “how” aspects of accounting in order to reinforce concepts and promote comprehension over rote memorization.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Accounting as a Tool for Managers — Building Blocks of Managerial Accounting — Cost-Volume-Profit Analysis — Job Order Costing — Process Costing — Activity-Based, Variable, and Absorption Costing — Budgeting — Standard Costs and Variances — Responsibility Accounting and Decentralization — Short-Term Decision Making — Capital Budgeting Decisions — Balanced Scorecard and Other Performance Measures — Sustainability Reporting</p>
+      <a class="card-detail-link" href="principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="principles-of-management"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,principles-of-management,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="principles-of-management-age-18-bachelors-1">Principles of Management (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of the introductory course on management. This is a traditional approach to management using the leading, planning, organizing, and controlling approach.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Managing and Performing — Managerial Decision-Making — The History of Management — External and Internal Organizational Environments and Corporate Culture — Ethics, Corporate Responsibility, and Sustainability — International Management — Entrepreneurship — Strategic Analysis: Understanding a Firm’s Competitive Environment — The Strategic Management Process: Achieving and Sustaining Competitive Advantage — Organizational Structure and Change — Human Resource Management — Diversity in Organizations — Leadership — Work Motivation for Performance — Managing Teams — Managerial Communication — Organizational Planning and Controlling — Management of Technology and Innovation</p>
+      <a class="card-detail-link" href="principles-of-management-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,polish"
+        data-level="bachelor"
+        data-subject="psychology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,polish,bachelor,psychology,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="psychology-age-18-bachelors-1">Psychology (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Polski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet scope and sequence requirements for the single-semester introduction to psychology course. The book offers a comprehensive treatment of core concepts, grounded in both classic studies and current and emerging research.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Psychology — Psychological Research — Biopsychology — States of Consciousness — Sensation and Perception — Learning — Thinking and Intelligence — Memory — Lifespan Development — Emotion and Motivation — Personality — Social Psychology — Industrial-Organizational Psychology — Stress, Lifestyle, and Health — Psychological Disorders — Therapy and Treatment</p>
+      <a class="card-detail-link" href="psychology-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="python-programming"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,python-programming,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="python-programming-age-18-bachelors-1">Python Programming (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides a comprehensive foundation in programming concepts and skills, and is aligned to the scope of most introductory courses. The offering is suitable for a diverse learner audience, including those pursuing computer science, business, science, social science, statistics, data science, and related areas of study and employment.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Statements — Expressions — Objects — Decisions — Loops — Functions — Modules — Strings — Lists — Dictionaries — Classes — Recursion — Inheritance — Files — Data Science</p>
+      <a class="card-detail-link" href="python-programming-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="sociology"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,sociology,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="sociology-age-18-bachelors-1">Sociology (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook aligns to the topics and objectives of many introductory sociology courses. It is arranged in a manner that provides foundational sociological theories and contexts, then progresses through various aspects of human and societal interactions.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> An Introduction to Sociology — Sociological Research — Culture — Society and Social Interaction — Socialization — Groups and Organization — Deviance, Crime, and Social Control — Media and Technology — Social Stratification — Global Inequality — Race and Ethnicity — Gender, Sex, and Sexuality — Aging and the Elderly — Relationships, Marriage, and Family — Religion — Education — Government and Politics — Work and the Economy — Health and Medicine — Population, Urbanization, and the Environment — Social Movements and Social Change</p>
+      <a class="card-detail-link" href="sociology-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,spanish"
+        data-level="bachelor"
+        data-subject="statistics"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,spanish,bachelor,statistics,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="statistics-age-18-bachelors-1">Statistics (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook follows scope and sequence requirements of a one-semester introduction to statistics course and is geared toward students majoring in fields other than math or engineering. The text assumes some knowledge of intermediate algebra and focuses on statistics application over theory.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Sampling and Data — Descriptive Statistics — Probability Topics — Discrete Random Variables — Continuous Random Variables — The Normal Distribution — The Central Limit Theorem — Confidence Intervals — Hypothesis Testing with One Sample — Hypothesis Testing with Two Samples — The Chi-Square Distribution — Linear Regression and Correlation — F Distribution and One-Way ANOVA</p>
+      <a class="card-detail-link" href="statistics-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="workplace-software-and-skills"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,workplace-software-and-skills,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="workplace-software-and-skills-age-18-bachelors-1">Workplace Software and Skills (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers applications from the Microsoft 365 (formerly Microsoft Office) suite and Google Workspace. Coverage of both suites aligns with contemporary business use and prepares students for workforce needs, especially introductory students who have had limited exposure to these software programs.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Technology in Everyday Life and Business — Essentials of Software Applications for Business — Creating and Working in Documents — Document Preparation — Advanced Document Preparation — Preparing Presentations — Advanced Presentation Skills — Content Management Systems and Social Media in Business — Working with Spreadsheets — Advanced Excel Formulas, Functions, and Techniques — Advanced Excel Spreadsheets: Statistical and Data Analysis — Using Excel in Accounting and Financial Reporting — Understanding and Using Databases — Advanced Database Use — Integrating Applications</p>
+      <a class="card-detail-link" href="workplace-software-and-skills-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="world-history-volume-1-to-1500"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,bachelor,world-history-volume-1-to-1500,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="world-history-volume-1-to-1500-age-18-bachelors-1">World History, Volume 1: to 1500 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to support both semesters of the world history course offered at both two-year and four-year institutions. Serving a student base of both majors and non-majors in the field, the course introduces students to a global perspective of history conveyed within an engaging narrative. Concepts and assessments are presented in ways to help students think critically about the issues they encounter so they can broaden their perspective of global history and how the topics studied apply to their current life as citizens of the world.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Early Human Societies (Understanding the Past — Early Humans — Early Civilizations and Urban Societies Introduction — The Near East — Asia in Ancient Times) — States And Empires, 1000 BCE–500 CE (Mediterranean Peoples — Experiencing the Roman Empire — The Americas in Ancient Times — Africa in Ancient Times) — An Age Of Religion, 500–1200 CE (Empires of Faith — The Rise of Islam and the Caliphates — India, the Indian Ocean Basin, and East Asia — The Post-Roman West and the Crusading Movement) — A Global Middle Ages, 1200–1500 CE (Pax Mongolica: The Steppe Empire of the Mongols — States and Societies in Sub-Saharan Africa — Climate Change and Plague in the Fourteenth Century — The Ottomans, the Mamluks, and the Ming</p>
+      <a class="card-detail-link" href="world-history-volume-1-to-1500-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="world-history-volume-2-from-1400"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,world-history-volume-2-from-1400,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="world-history-volume-2-from-1400-age-18-bachelors-1">World History, Volume 2: from 1400 (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to support both semesters of the world history course offered at both two-year and four-year institutions. Serving a student base of both majors and non-majors in the field, the course introduces students to a global perspective of history conveyed within an engaging narrative. Concepts and assessments are presented in ways to help students think critically about the issues they encounter so they can broaden their perspective of global history and how the topics studied apply to their current life as citizens of the world.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Connections Across Continents, 1500–1800 (Understanding the Past — Exchange in East Asia and the Indian Ocean — Early Modern Africa and the Wider World — The Islamic World — Foundations of the Atlantic World) — An Age Of Revolution, 1750–1914 (Colonization and Economic Expansion — Revolutions in Europe and North America — Revolutions in Latin America — Expansion in the Industrial Age — Life and Labor in the Industrial World) — The Modern World, 1914–Present (The War to End All Wars — The Interwar Period — The Causes and Consequences of World War II — Cold War Conflicts — The Contemporary World and Ongoing Challenges)</p>
+      <a class="card-detail-link" href="world-history-volume-2-from-1400-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="writing-guide-with-handbook"
+        data-age="18"
+        data-grade="bachelor's-1"
+        data-tags="english,writing-guide-with-handbook,bachelor's-1,age-18">
+      <h3 class="card-title"><a class="card-title-link" href="writing-guide-with-handbook-age-18-bachelors-1">Writing Guide with Handbook (Age 18, US Studia licencjackie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook bridges the gap between everyday rhetoric and academic discourse by revealing to students that they are already engaged in rhetorical work within the familiar contexts of personal interaction and social media. The text seeks to extend these existing skills by showing students how to construct a variety of compelling compositions within self-defined contexts. It breaks down barriers in the field of composition by offering an inviting and inclusive approach to students of all intersectional identities. To meet this goal, the text creates a reciprocal relationship between daily conversation and the evolving world of academia, which must allow itself to be shaped by students as much as it seeks to shape them.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> The Things We Carry: Experience, Culture, and Language (The Digital World: Building on What You Already Know to Respond Critically — Language, Identity, and Culture: Exploring, Employing, Embracing — Literacy Narrative: Building Bridges, Bridging Gaps) — Bridging the Divide Between Personal Identity and Academia (Memoir or Personal Narrative: Learning Lessons from the Personal — Profile: Telling a Rich and Compelling Story — Proposal: Writing About Problems and Solutions — Evaluation or Review: Would You Recommend It? — Analytical Report: Writing from Facts — Rhetorical Analysis: Interpreting the Art of Rhetoric — Position Argument: Practicing the Art of Rhetoric — Reasoning Strategies: Improving Critical Thinking — Argumentative Research: Enhancing the Art of Rhetoric with Evidence — Research Process: Accessing and Recording Information — Annotated Bibliography: Gathering, Evaluating, and Documenting Sources — Case Study Profile: What One Person Says About All) — Navigating Rhetoric in Real Life (Print or Textual Analysis: What You Read — Image Analysis: What You See — Multimodal and Online Writing: Creative Interaction between Text and Image — Scripting for the Public Forum: Writing to Speak — Portfolio Reflection: Your Growth as a Writer)</p>
+      <a class="card-detail-link" href="writing-guide-with-handbook-age-18-bachelors-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="clinical-nursing-skills"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,clinical-nursing-skills,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="clinical-nursing-skills-age-19-bachelors-2">Clinical Nursing Skills (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to equip nursing students with the practical knowledge and hands-on skills necessary to provide comprehensive patient care. It emphasizes the application of clinical judgment in a variety of settings, ensuring that students are prepared to deliver high-quality care across different patient populations and clinical scenarios. Covering a wide range of clinical skills, including fundamental nursing procedures, advanced technical skills, and critical thinking techniques, the book provides step-by-step instructions and evidence-based guidelines to help students master the competencies required for effective nursing practice.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Concepts of Comprehensive Clinical Care (The Role of the Nurse in Comprehensive Care — The Evolution of the Nurse's Role Introduction — Patient Communication and Interviewing — Obtaining a Complete Health History — Cultural Competence and Assessment — Infection Prevention Techniques and Safety in the Clinical Setting) — General Assessment and Special Considerations (Hygiene — Wound and Burn Assessment and Care — Activity Assessment and Management — Specimen Collection and Lab Testing) — Medication Management (Principles of Medication Administration — Medication Administration Procedures — Intravenous Administration — Miscellaneous Medication Administration) — Health Assessment and Promotion (General Survey, Anthropometric Measurement, and Vital Signs — Pain Assessment — Nutrition Assessment — Oxygenation and Perfusion — Fluids, Electrolytes, and Elimination — Psychosocial Assessment — Assessment of the Integumentary System — Assessment of the Head and Neck — Assessment of the Thorax, Lungs, Breast, and Lymphatic System — Assessment of the Cardiovascular and Peripheral Vascular System — Assessment of the Musculoskeletal System — Assessment of the Neurological System — Assessment of the Abdomen — Clinical Judgment and Critical Thinking)</p>
+      <a class="card-detail-link" href="clinical-nursing-skills-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="discrete-structures"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,discrete-structures,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="discrete-structures-age-19-bachelors-2">Discrete Structures (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook contains the content of a two semester course in discrete structures, which is typically a second-year course for students in computer science or mathematics, but it does not have a calculus prerequisite.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Set Theory — Combinatorics — Logic — More on Sets — Introduction to Matrix Algebra — Relations — Functions — Recursion and Recurrence Relations — Graph Theory — Trees — Algebraic Structures — More Matrix Algebra — Boolean Algebra — Monoids and Automata — Group Theory and Applications — An Introduction to Rings and Fields</p>
+      <a class="card-detail-link" href="discrete-structures-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="entrepreneurship"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,entrepreneurship,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="entrepreneurship-age-19-bachelors-2">Entrepreneurship (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the course needs of a one-semester undergraduate introductory entrepreneurship course. It covers the key principles of entrepreneurship alongside the concepts, strategies, and tools needed to succeed as a small business owner, franchisee, founder, or other entrepreneurial professional.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> The Entrepreneurial Perspective — The Entrepreneurial Journey and Pathways — The Ethical and Social Responsibilities of Entrepreneurs — Creativity, Innovation, and Invention — Identifying Entrepreneurial Opportunity — Problem Solving and Need Recognition Techniques — Telling Your Entrepreneurial Story and Pitching the Idea — Entrepreneurial Marketing and Sales — Entrepreneurial Finance and Accounting — Launch for Growth to Success — Business Model and Plan — Building Networks and Foundations — Business Structure Options: Legal, Tax, and Risk Issues — Fundamentals of Resource Planning — Next Steps</p>
+      <a class="card-detail-link" href="entrepreneurship-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="introductory-business-ethics"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,introductory-business-ethics,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="introductory-business-ethics-age-19-bachelors-2">Introductory Business Ethics (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of the single-semester standardized business ethics course across all majors. It includes innovative features designed to enhance student learning, including case studies, application scenarios, and links to video interviews with executives, all of which help instill in students a sense of ethical awareness and responsibility. The book provides an important opportunity for students to learn the core concepts of business ethics and understand how to apply those concepts to their professional lives.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Why Ethics Matter — Ethics from Antiquity to the Present — Defining and Prioritizing Stakeholders — Three Special Stakeholders: Society, the Environment, and Government — The Impact of Culture and Time on Business Ethics — What Employers Owe Employees — What Employees Owe Employers — Recognizing and Respecting the Rights of All — Professions under the Microscope — Changing Work Environments and Future Trends — Epilogue: Why Ethics Still Matter</p>
+      <a class="card-detail-link" href="introductory-business-ethics-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="linear-algebra"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,linear-algebra,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="linear-algebra-age-19-bachelors-2">Linear Algebra (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook helps students to master the material of a standard US undergraduate first course in linear algebra. A prerequisite for the course is a background of at least one semester of calculus.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Linear Systems (Solving Linear Systems, Linear Geometry, Reduced Echelon Form) — Vector Spaces (Definition of Vector Space, Linear Independence, Basis and Dimension) — Maps Between Spaces (Isomorphisms, Homomorphisms, Computing Linear Maps, Matrix Operations, Change of Basis, Projection) — Determinants (Definition, Geometry of Determinants, Laplace’s Formula) — Similarity (Complex Vector Spaces, Similarity, Nilpotence, Jordan Form)</p>
+      <a class="card-detail-link" href="linear-algebra-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="microbiology-for-non-majors"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,microbiology-for-non-majors,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="microbiology-for-non-majors-age-19-bachelors-2">Microbiology for Non-Majors (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to cover the scope and sequence requirements for the single-semester Microbiology course for non-majors. The book presents the core concepts of microbiology with a focus on applications for careers in allied health.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> An Invisible World — How We See the Invisible World — The Cell — Prokaryotic Diversity — The Eukaryotes of Microbiology — Acellular Pathogens — Microbial Biochemistry — Microbial Metabolism — Microbial Growth — Biochemistry of the Genome — Mechanisms of Microbial Genetics — Modern Applications of Microbial Genetics — Control of Microbial Growth — Antimicrobial Drugs — Microbial Mechanisms of Pathogenicity — Disease and Epidemiology — Innate Nonspecific Host Defenses — Adaptive Specific Host Defenses — Diseases of the Immune System — Laboratory Analysis of the Immune Response — Skin and Eye Infections — Respiratory System Infections — Urogenital System Infections — Digestive System Infections — Circulatory and Lymphatic System Infections — Nervous System Infections</p>
+      <a class="card-detail-link" href="microbiology-for-non-majors-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="organic-chemistry"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,organic-chemistry,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="organic-chemistry-age-19-bachelors-2">Organic Chemistry (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook meets the scope and sequence of a two-semester introductory organic chemistry course. It follows a functional group approach.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Structure and Bonding — Polar Covalent Bonds; Acids and Bases — Organic Compounds: Alkanes and Their Stereochemistry — Organic Compounds: Cycloalkanes and Their Stereochemistry — Stereochemistry at Tetrahedral Centers — An Overview of Organic Reactions — Alkenes: Structure and Reactivity — Alkenes: Reactions and Synthesis — Alkynes: An Introduction to Organic Synthesis — Organohalides — Reactions of Alkyl Halides: Nucleophilic Substitutions and Eliminations — Structure Determination: Mass Spectrometry and Infrared Spectroscopy — Structure Determination: Nuclear Magnetic Resonance Spectroscopy — Conjugated Compounds and Ultraviolet Spectroscopy — Benzene and Aromaticity — Chemistry of Benzene: Electrophilic Aromatic Substitution — Alcohols and Phenols — Ethers and Epoxides; Thiols and Sulfides — Aldehydes and Ketones: Nucleophilic Addition Reactions — Carboxylic Acids and Nitriles — Carboxylic Acid Derivatives: Nucleophilic Acyl Substitution Reactions — Carbonyl Alpha-Substitution Reactions — Carbonyl Condensation Reactions — Amines and Heterocycles — Biomolecules: Carbohydrates — Biomolecules: Amino Acids, Peptides, and Proteins — Biomolecules: Lipids — Biomolecules: Nucleic Acids — The Organic Chemistry of Metabolic Pathways — Orbitals and Organic Chemistry: Pericyclic Reactions — Synthetic Polymers</p>
+      <a class="card-detail-link" href="organic-chemistry-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="organizational-behavior"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,organizational-behavior,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="organizational-behavior-age-19-bachelors-2">Organizational Behavior (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to meet the scope and sequence requirements of the introductory course on Organizational Behavior. This is a traditional approach to organizational behavior. Management is a broad business discipline, and the Organizational Behavior course covers many areas such as individual and group behavior at work, as well as organizational processes such as communication in the workplace and managing conflict and negotiation.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Management and Organizational Behavior — Individual and Cultural Differences — Perception and Job Attitudes — Learning and Reinforcement — Diversity in Organizations — Perception and Managerial Decision Making — Work Motivation for Performance — Performance Appraisal and Rewards — Group and Intergroup Relations — Understanding and Managing Work Teams — Communication — Leadership — Organizational Power and Politics — Conflict and Negotiations — External and Internal Organizational Environments and Corporate Culture — Organizational Structure and Change — Human Resource Management — Stress and Well Being — Entrepreneurship</p>
+      <a class="card-detail-link" href="organizational-behavior-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="pharmacology-for-nurses"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,pharmacology-for-nurses,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="pharmacology-for-nurses-age-19-bachelors-2">Pharmacology for Nurses (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is intended for nursing students in an introductory program. It aims to provide a fundamental understanding of the therapeutic use of drugs so the nurse can provide safe and effective care to the client. Along with a discussion of each body system, the text also reviews the pathophysiology of various disease processes and medications used in treatment. It helps students prepare for the licensing exam by offering applicable, real-life content in short, manageable sections; it focuses on common client conditions that nurses will encounter throughout their career and embraces a skills orientation.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Pharmacology for Nurses (Introduction to Pharmacology — Drug Administration — Ethics, Legal Considerations, and Safety) — Homeostasis (Introduction to Homeostasis — Fluids and Electrolytes, Vitamins, Minerals, and Alternative) — Immune System (Introduction to the Immune System and the Inflammatory Response — Anti-infective Drugs — Introduction to Cancer Therapy and Cancer Drugs) — Nervous System and Drugs for Mental Well-Being (Introduction to the Nervous System — Drugs to Treat Myasthenia Gravis and Alzheimer’s Disease — Drugs to Treat Parkinson’s Disease and Multiple Sclerosis — Anticonvulsant Drugs and Drugs to Treat Epilepsy, Migraine Headaches, and Intracranial Emergencies — Psychopharmacologic Drugs — Pain Response Drugs — Substance Use Disorder Treatment Drugs) — Cardiovascular System (Introduction to the Cardiovascular System — Antidysrhythmic Drugs — Antihypertensive and Antianginal Drugs — Heart Failure Drugs — Anticoagulant, Antiplatelet, and Thrombolytic Drugs — Lipid-Lowering Drugs — Cardiac Emergency and Shock Drugs) — Respiratory System (Introduction to the Respiratory System — Upper Respiratory Disorder Drugs — Lower Respiratory Disorder Drugs) — Endocrine System (Hypothalamus, Pituitary, and Adrenal Disorder Drugs — Thyroid and Parathyroid Disorder Drugs — Diabetic Drugs) — Digestive System (Introduction to the Digestive System — Gastrointestinal Disorder Drugs — Hyperacidity and Antiulcer Drugs — Weight Management Drugs) — Renal and Urinary Systems (Introduction to the Renal and Urinary Systems — Diuretic Drugs — Urinary and Bladder Disorder Drugs) — Reproductive System (Reproductive Health Drugs — Transgender and Nonbinary Drugs) — Sensory and Dermatologic Systems (Ophthalmic Drugs — Otic Drugs — Dermatologic Disorder Drugs)</p>
+      <a class="card-detail-link" href="pharmacology-for-nurses-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="principles-of-finance"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,principles-of-finance,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="principles-of-finance-age-19-bachelors-2">Principles of Finance (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is targeted at the core finance course for undergraduate business majors. The book is designed for conceptual accessibility to students who are relatively early in their business curriculum (such as second-year students), yet it is also suitable for more advanced students. Due to the wide range of audiences and course approaches, the book is designed to be as flexible as possible. It provides a solid grounding in the core concepts of financial theory so that business students interested in a major or minor in finance will also be prepared for more rigorous upper-level courses. Concepts are further reinforced through applicable connections and practical calculation techniques for more detailed and realistic company scenarios from various industries.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Finance — Corporate Structure and Governance — Economic Foundations: Money and Rates — Accrual Accounting Process — Financial Statements — Measures of Financial Health — Time Value of Money I: Single Payment Value — Time Value of Money II: Equal Multiple Payments — Time Value of Money III: Unequal Multiple Payment Values — Bonds and Bond Valuation — Stocks and Stock Valuation — Historical Performance of US Markets — Statistical Analysis in Finance — Regression Analysis in Finance — How to Think about Investing — How Companies Think about Investing — How Firms Raise Capital — Financial Forecasting — The Importance of Trade Credit and Working Capital in Planning — Risk Management and the Financial Manager</p>
+      <a class="card-detail-link" href="principles-of-finance-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="principles-of-marketing"
+        data-age="19"
+        data-grade="bachelor's-2"
+        data-tags="english,bachelor,principles-of-marketing,bachelor's-2,age-19">
+      <h3 class="card-title"><a class="card-title-link" href="principles-of-marketing-age-19-bachelors-2">Principles of Marketing (Age 19, US Studia licencjackie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is targeted at the core marketing course for undergraduate business majors and minors. The book is designed for conceptual accessibility to students who are relatively early in their business curriculum (such as second-year students), yet it is also suitable for more advanced students. Due to the wide range of audiences and course approaches, the book is designed to be as flexible as possible. It provides a solid grounding in the core concepts and frameworks of marketing theory and analysis so that business students interested in a major or minor in marketing will also be prepared for more rigorous upper-level courses. Concepts are reinforced through detailed and realistic company and organization scenarios and examples from various industries and geographical locations.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Setting the Stage (Marketing and Customer Value — Strategic Planning in Marketing) — Understanding the Marketplace (Consumer Markets and Purchasing Behavior — Business Markets and Purchasing Behavior — Market Segmentation, Targeting, and Positioning — Marketing Research and Market Intelligence — Marketing in a Global Environment — Marketing in a Diverse Marketplace) — Product, Promotion, Price, and Place Unit (Products: Consumer Offerings — Maintaining a Competitive Edge with New Offerings — Services: The Intangible Product — Pricing Products and Services — Integrated Marketing Communications — The Promotion Mix: Advertising and Public Relations — The Promotion Mix: Personal Selling and Sales Promotion — Direct, Online, Social Media, and Mobile Marketing — Distribution: Delivering Customer Value — Retailing and Wholesaling — Sustainable Marketing: The New Paradigm)</p>
+      <a class="card-detail-link" href="principles-of-marketing-age-19-bachelors-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english,arabic,chinese(simplified),spanish"
+        data-level="bachelor"
+        data-subject="abstract-algebra"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,arabic,chinese(simplified),spanish,bachelor,abstract-algebra,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="abstract-algebra-age-20-bachelors-3">Abstract Algebra (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski, Arabski, Chiński (uproszczony), Hiszpański</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is intended for a one or two-semester undergraduate course in abstract algebra. Though there are no specific prerequisites for a course in abstract algebra, students who have had other higher-level courses in mathematics will generally be more prepared than those who have not.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Preliminaries — The Integers — Groups — Cyclic Groups — Permutation Groups — Cosets and Lagrange’s Theorem — Introduction to Cryptography — Algebraic Coding Theory — Isomorphisms — Normal Subgroups and Factor Groups — Homomorphisms — Matrix Groups and Symmetry — The Structure of Groups — Group Actions — The Sylow Theorems — Rings — Polynomials — Integral Domains — Lattices and Boolean Algebras — Vector Spaces — Fields — Finite Fields — Galois Theory</p>
+      <a class="card-detail-link" href="abstract-algebra-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="differential-equations"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,differential-equations,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="differential-equations-age-20-bachelors-3">Differential Equations (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is appropriate for a first course in differential equations for one or two semesters. It is written for students in science, engineering, and mathematics who have completed calculus through partial differentiation.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — First Order Equations — Numerical Methods — Applications of First Order Equations — Linear Second Order Equations — Applications of Linear Second Order Equations — Series Solutions of Linear Second Order Equations — Laplace Transforms — Linear Higher Order Equations — Linear Systems of Differential Equations — Boundary Value Problems and Fourier Expansions — Fourier Solutions of Partial Differential Equations — Boundary Value Problems for Second Order Linear Equations</p>
+      <a class="card-detail-link" href="differential-equations-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="electromagnetics:-volume-1"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,electromagnetics:-volume-1,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="electromagnetics-volume-1-age-20-bachelors-3">Electromagnetics: Volume 1 (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed for electrical engineering students in the third year of a bachelor of science degree program. It is intended as a primary textbook for a one-semester first course in undergraduate engineering electromagnetics.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Preliminary Concepts — Electric and Magnetic Fields — Transmission Lines — Vector Analysis — Electrostatics — 
+     Steady Current and Conductivity — Magnetostatics — 
+     Time-Varying Fields — Plane Waves in Lossless Media — 
+     Constitutive Parameters of Some Common Materials — 
+     Mathematical Formulas — Physical Constants</p>
+      <a class="card-detail-link" href="electromagnetics-volume-1-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="electromagnetics:-volume-2"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,electromagnetics:-volume-2,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="electromagnetics-volume-2-age-20-bachelors-3">Electromagnetics: Volume 2 (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed for electrical engineering students in the third year of a bachelor of science degree program. It is intended as the primary textbook for the second semester of a two-semester undergraduate engineering electromagnetics sequence.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Preliminary Concepts — Magnetostatics Redux — Wave Propagation in General Media — Current Flow in Imperfect Conductors — Wave Reflection and Transmission — Waveguides — Transmission Lines Redux — Optical Fiber — Radiation — Antennas — Constitutive Parameters of Some Common Materials — Mathematical Formulas — Physical Constants</p>
+      <a class="card-detail-link" href="electromagnetics-volume-2-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="introduction-to-intellectual-property"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,introduction-to-intellectual-property,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="introduction-to-intellectual-property-age-20-bachelors-3">Introduction to Intellectual Property (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides a clear, effective introduction to the legal issues and applications of Intellectual Property. It covers patent basics and enforcement, copyright, trademark, and trade secrets. The book is directed at students and ordinary citizens with no formal background in the field, and who may be studying entrepreneurship, marketing, computer science, engineering, or other fields. It is useful in an array of courses ranging from Business Law and Product Design to Information Systems and many others.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Patent Basics — Patent Enforcement — Copyright Basics — Trademark Basics — Trade Secret Basics</p>
+      <a class="card-detail-link" href="introduction-to-intellectual-property-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="linear,-time-invariant,-dynamic-systems"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,linear,-time-invariant,-dynamic-systems,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="linear-time-invariant-dynamic-systems-age-20-bachelors-3">Linear, Time-Invariant, Dynamic Systems (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides an introduction to linear, time-invariant, dynamic systems for students of engineering. The general minimum prerequisite for studying this textbook is the intellectual maturity of a third-year college student in an accredited four-year engineering curriculum.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — Complex Numbers and Arithmetic — Mechanical Units — Frequency Response of 1st Order Systems — Basic Electrical Components and Circuits — General Time Response of 1st Order Systems by Application of the Convolution Integral — Undamped 2nd Order Systems — Pulse Inputs — Damped 2nd Order Systems — 2nd Order Systems — Mechanical Systems with Rigid-Body Plane Translation and Rotation — Vibration Modes of Undamped Mechanical Systems with Two Degrees of Freedom — Laplace Block Diagrams, and Additional Background Material for the Study of Feedback-Control Systems — Introduction to Feedback Control: Output Operations for Control of Rotational Position — Input-error Operations: Proportional, Integral, and Derivative 15 Types of Control — Introduction to System Stability: Time-Response Criteria — Introduction to System Stability: Frequency-Response Criteria</p>
+      <a class="card-detail-link" href="linear-time-invariant-dynamic-systems-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="maternal-newborn-nursing"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,maternal-newborn-nursing,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="maternal-newborn-nursing-age-20-bachelors-3">Maternal-Newborn Nursing (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is written with a focus on pregnancy, birth, postpartum, breastfeeding, and newborn care. It presents normal physiology and abnormal conditions specific to maternal/newborn care. The student will be able to implement the Clinical Judgement Measurement Model to recognize, analyze, prioritize, create, act on, and evaluate outcomes throughout the many normal and abnormal conditions presented. Students will be able to provide patient education regarding contraception, pregnancy, labor, or chronic pelvic pain; screen for mental health issues such as postpartum depression and anxiety, grief, or fear; determine a patient’s access to care questioning transportation, insurance, employment; and integrate inclusive care by addressing patients by their preferred name, recognizing populations at higher risk for health disparities or complications, and providing a safe place for care.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction to Maternal-Newborn and Women's Health Nursing (Foundations in Maternal-Newborn and Women’s Health Nursing — Culturally Competent Nursing Care) — Women's Health Through the Lifespan (Health Promotion, Disease and Injury Prevention, and Well-Person Care — Influences on Fertility — Family Planning — Structural and Tissue Disorders of the Reproductive System — Commonly Occurring Reproductive and Genitourinary System Infections — Disorders of the Breast — Violence Against Women) — Care During Pregnancy (Pregnancy — Prenatal Care — Pregnancy at Risk — Prenatal Testing — Childbirth Education Options) — Care During Labor and Birth (Process of Labor and Birth — Electronic Fetal and Uterine Contraction Monitoring — Pain Management During Labor and Birth — Nursing Care and Interventions During Labor and Birth — Complications of Labor and Birth) — Care During the Postpartum Period (Postpartum Care — Postpartum Complications) — Newborn Care (Immediate Care of the Newborn — Newborn Assessment — Care of the Typical Newborn — Care of the Newborn at Risk — Perinatal Bereavement — Unfolding Case Study: Applying Clinical Judgment)</p>
+      <a class="card-detail-link" href="maternal-newborn-nursing-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="population-health-for-nurses"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,population-health-for-nurses,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="population-health-for-nurses-age-20-bachelors-3">Population Health for Nurses (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook frames foundational knowledge nurses need to practice in the traditional fields of community and public health nursing—defining the breadth of the discipline, its methods and theories, and the central concept of health equity as well as incorporating the nursing process—all within the context of population health. The text prepares nurses to develop interventions, policies, and practices in collaborative partnerships that promote health equity and improved health outcomes across the health care delivery continuum, which includes public health, acute care, ambulatory care, transitional care, and long-term care.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Preserving the Health of Populations and Communities (What Is Population Health? — Foundations of Public/Community Health — Public/Community Health in Practice — The Health of the Population) — Issues and Challenges of Population Health (Demographic Trends and Societal Changes — Structural Racism and Systemic Inequities — Policies and Regulatory Conditions Impacting Health Outcomes — Social Determinants Affecting Health Outcomes — Health Disparities) — Population-Based Practice and the Tenets of Public Health (Socio-Ecological Perspectives and Health — Evidence-Based Decision-Making — Epidemiology for Informing Population/Community Health Decisions — Pandemics and Infectious Disease Outbreaks — Environmental Health — Health Promotion and Disease Prevention Strategies) — Merging Public Health Principles With the Nursing Process (Creating a Healthy Community — Assessment, Analysis, and Diagnosis — Planning Health Promotion and Disease Prevention Interventions — Planning Community Health Education — Implementation and Evaluation Considerations) — Culturally Congruent Care (Cultural Influences on Health Beliefs and Practices — Transcultural Nursing — Culturally and Linguistically Responsive Nursing Care — Designing Culturally and Linguistically Appropriate Programs — Managing the Dynamics of Difference) — Caring for Populations and Communities (Health Promotion and Maintenance Across the Lifespan — Caring for Vulnerable Populations and Communities — Caring for Families — Caring Across Practice Settings — Care Transition and Coordination Across the Community — Caring for Populations and Communities in Crisis — Principles of Disaster Management) — The Nurse’s Role as Advocate and Leader (Advocating for Population Health — Engagement in the Policy Development Process — Leading the Way to Improving Population Health)</p>
+      <a class="card-detail-link" href="population-health-for-nurses-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="psychiatric-mental-health-nursing"
+        data-age="20"
+        data-grade="bachelor's-3"
+        data-tags="english,bachelor,psychiatric-mental-health-nursing,bachelor's-3,age-20">
+      <h3 class="card-title"><a class="card-title-link" href="psychiatric-mental-health-nursing-age-20-bachelors-3">Psychiatric-Mental Health Nursing (Age 20, US Studia licencjackie 3)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook is designed to support a one-semester psychiatric-mental health nursing course offered at both two-year and four-year institutions. Serving a student base of both students specializing in psychiatric nursing and those from other health disciplines, the course integrates evidence-based practices with practical strategies for communication, readying students to build therapeutic relationships with clients and caregivers.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Theories, Practice, and Trends (Foundations of Psychiatric-Mental Health Nursing — Fundamentals of Theories and Therapies — Communication, Perception, and Assessment — Neurobiology and Pharmacological Standards) — Therapeutic Considerations in Mental Health (Therapeutic Settings — Therapeutic Relationships — Interprofessional Care — Cultural Considerations — Social and Emotional Concerns) — Client Rights and Legal Issues (Legal and Ethical Guidelines — Court Involvement — Self-Determination and Advocacy) — Psychiatric Nursing Practice (Clinical Guidelines and Practice — Neurocognitive Disorders — Schizophrenia Spectrum Disorder and Other Psychotic Disorders — Mood Disorders and Suicide — Anxiety, OCD, and Trauma-Stressor Disorders — Personality Disorders — Substance Use and Misuse — Eating Disorders — Somatic Symptom Disorders — Sexual Dysfunction and Gender Dysphoria) — Psychiatric Nursing Practice for Special Populations (Children and Adolescents — Older Adults) — Mental Health Care in the Community (Community Mental Health Treatment — Adjuncts to Treatments — Current Trends and Growing Needs — Critical Thinking in Psychiatric-Mental Health Nursing)</p>
+      <a class="card-detail-link" href="psychiatric-mental-health-nursing-age-20-bachelors-3">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="complex-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,complex-analysis,bachelor's-4,age-21">
+      <h3 class="card-title"><a class="card-title-link" href="complex-analysis-age-21-bachelors-4">Complex Analysis (Age 21, US Studia licencjackie 4)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook supports a one-semester undergraduate complex analysis course. It is suitable for use with mathematics, engineering, and physics students.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Complex Numbers — Complex Functions — Analytic and Harmonic Functions — Sequences, Series, and Fractals — Elementary Functions — Complex Integration — Taylor and Laurent Series — Residue Theory — Conformal Mapping — Applications of Harmonic Functions — Fourier Series and the Laplace Transform</p>
+      <a class="card-detail-link" href="complex-analysis-age-21-bachelors-4">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="optics"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,optics,bachelor's-4,age-21">
+      <h3 class="card-title"><a class="card-title-link" href="optics-age-21-bachelors-4">Optics (Age 21, US Studia licencjackie 4)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook treats optics at the level of students in the later stage of their bachelor or the beginning of their master. It is assumed that the student is familiar with Maxwell’s equations.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Basic Electromagnetic and Wave Optics — Geometrical Optics — Optical Instruments — Polarisation — Interference and Coherence — Scalar Diffraction Optics — Lasers</p>
+      <a class="card-detail-link" href="optics-age-21-bachelors-4">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="real-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,real-analysis,bachelor's-4,age-21">
+      <h3 class="card-title"><a class="card-title-link" href="real-analysis-volume-1-age-21-bachelors-4">Real Analysis (Advanced Calculus): Volume 1 (Age 21, US Studia licencjackie 4)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers all the standard material for a senior level undergraduate real analysis course. The first volume is a one semester course in basic analysis. With the second volume, it is a year-long course. A prerequisite for the course is a basic proof course.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — Real Numbers — Sequences and Series — Continuous Functions — The Derivative — The Riemann Integral — Sequences of Functions — Metric Spaces</p>
+      <a class="card-detail-link" href="real-analysis-volume-1-age-21-bachelors-4">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="bachelor"
+        data-subject="real-analysis"
+        data-age="21"
+        data-grade="bachelor's-4"
+        data-tags="english,bachelor,real-analysis,bachelor's-4,age-21">
+      <h3 class="card-title"><a class="card-title-link" href="real-analysis-volume-2-age-21-bachelors-4">Real Analysis (Advanced Calculus): Volume 2 (Age 21, US Studia licencjackie 4)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook covers all the standard material for a senior level undergraduate real analysis course. The first volume is a one semester course in basic analysis. With the second volume, it is a year-long course. A prerequisite for the course is a basic proof course.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — Several Variables and Partial Derivatives — One-dimensional Integrals in Several Variables — Multivariable Integral — Functions as Limits</p>
+      <a class="card-detail-link" href="real-analysis-volume-2-age-21-bachelors-4">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="coastal-dynamics"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,coastal-dynamics,master's-1,age-22">
+      <h3 class="card-title"><a class="card-title-link" href="coastal-dynamics-age-22-masters-1">Coastal Dynamics (Age 22, US Studia magisterskie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook focuses on the interrelation between physical wave, flow and sediment transport phenomena and the resulting morphodynamics of a wide variety of coastal systems. The objective is to provide hydraulic and coastal engineering Master of Science students with insights into the phenomenological and theoretical, as well as applied aspects of these phenomena.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Overview — Large-scale Geographical Variation of Coasts — Ocean Waves — Global Wave and Tidal Environments — Coastal Hydrodynamics — Sediment Transport — Cross-shore Transport and Profile Development — Longshore Transport and Coastline Changes — Coastal Inlets and Tidal Basins — Coastal Protection</p>
+      <a class="card-detail-link" href="coastal-dynamics-age-22-masters-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="structured-electronics-design"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,structured-electronics-design,master's-1,age-22">
+      <h3 class="card-title"><a class="card-title-link" href="structured-electronics-design-age-22-masters-1">Structured Electronics Design (Age 22, US Studia magisterskie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook offers strategies, methods, and techniques for electronic circuit design.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — Modeling and Specification of Amplifiers — Amplification Mechanism — Active Devices — Basic Amplification: CS Stage — Balancing Techniques — Design of Feedback Amplifier Configurations — Application and Specification of Operational Amplifiers — Introduction to Amplifier Biasing — Modeling of Negative Feedback Circuits — Amplifier Performance and Controller Requirements — Frequency Compensation — Local Feedback Stages — Multi-stage Feedback Amplifiers — Amplifier Biasing — Signal Modeling (Selected Topics) — System Modeling (Selected Topics) — Network Theory (Selected Topics) — Noise in Electronic Systems</p>
+      <a class="card-detail-link" href="structured-electronics-design-age-22-masters-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="traffic-flow-theory"
+        data-age="22"
+        data-grade="master's-1"
+        data-tags="english,master,traffic-flow-theory,master's-1,age-22">
+      <h3 class="card-title"><a class="card-title-link" href="traffic-flow-theory-age-22-masters-1">Traffic Flow Theory (Age 22, US Studia magisterskie 1)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides an introduction to the field of traffic flow theory. Only basic calculus is assumed as base knowledge.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Variables — Cumulative Curves — Relationships of Traffic Variables — Shock Wave Theory — Shockwave Theory: Moving Bottlenecks — Traffic States and Phenomena — Car-following — Microscopic Lane Change Models — Use of Traffic Models — Macroscopic Dynamic Traffic Flow Models — An Introduction to Node Models — Macroscopic Fundamental Diagram — Method of Characteristics — Headway Models — Traffic State Dynamics in Three Representations</p>
+      <a class="card-detail-link" href="traffic-flow-theory-age-22-masters-1">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="catalog-card"
+        data-language="english"
+        data-level="master"
+        data-subject="quantum-electrical-circuits"
+        data-age="23"
+        data-grade="master's-2"
+        data-tags="english,master,quantum-electrical-circuits,master's-2,age-23">
+      <h3 class="card-title"><a class="card-title-link" href="quantum-electrical-circuits-age-23-masters-2">Quantum Electrical Circuits (Age 23, US Studia magisterskie 2)</a></h3>
+      <p class="card-language"><strong>Język:</strong> Angielski</p>
+      <p class="card-about"><strong>Opis:</strong> This textbook provides a comprehensive overview of circuit quantum electrodynamics or circuit QED. It is intended for theoretically-oriented Master or PhD students in physics and electrical engineering, as well as Master and PhD students who work on experimental superconducting quantum devices and wish to learn more theory.</p>
+      <p class="card-contents"><strong>Spis treści:</strong> Introduction — Lagrangians and Hamiltonians for Electrical Circuits — Applying Canonical Quantization — The Transmon Qubit, Resonators and their Coupling — Linear Networks and Black-box Quantization — Nonreciprocity — Noise, or All that Can Go Wrong — Models of Superconducting Amplifiers</p>
+      <a class="card-detail-link" href="quantum-electrical-circuits-age-23-masters-2">Zobacz szczegóły i pobierz</a>
+    </div>
+
+    <div class="page-section page-back-to-top">
+      <div class="page-section-body">
+        <a href="#top" class="back-to-top-button">Powrót na górę</a>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Footer Section -->
+  <footer>
+    <p>© 2025 UOTI ∙ <a href="terms-pl.html">Regulamin</a> ∙ <a href="privacy-pl.html">Prywatność</a> ∙ <a href="mailto:contact@uotinitiative.org">Kontakt</a></p>
+  </footer>
+
+  <!-- External Scripts -->
+  <script src="scripts.js"></script>
+</body>
+</html>
