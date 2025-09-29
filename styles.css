@@ -17,9 +17,9 @@ p {
 }
 
 .highlight-yellow {
-    background: linear-gradient(transparent 0%, #fff59d 5%);
-    padding: 0 2px;
+    background: linear-gradient(180deg, transparent 70%, rgba(244, 190, 43, 0.35) 0);
 }
+
 
 h1 {
     font-size: 35px;
