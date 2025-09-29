@@ -760,6 +760,10 @@ header {
 .privacy-page .book-container h1 {
     text-align: center;
 }
+.homepage .book-container h1 {
+    margin-top: 0;
+    margin-bottom: 14px;
+}
 .homepage .textbook-panel-title,
 .search-page .textbook-panel-title,
 .about-page .textbook-panel-title,
@@ -786,6 +790,8 @@ header {
 .homepage .book-container {
     text-align: center;
     align-items: center;
+    padding-top: 24px;
+    padding-bottom: 24px;
 }
 .homepage-intro {
     max-width: 680px;
