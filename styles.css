@@ -1288,11 +1288,11 @@ header {
 }
 
 .tag-close {
-  display: none; /* Hide by default */
+  display: none;
 }
 
 .tag.active .tag-close {
-  display: inline; /* Show only when tag is active */
+  display: inline;
 }
 
 .filter-container {
@@ -1542,7 +1542,7 @@ header {
   border:1px solid #e5e7eb;
   border-radius:12px;
   padding:1.25rem 1.75rem;
-  min-width:140px;          /* keeps width even when number changes */
+  min-width:140px;
   text-align:center;
   box-shadow:0 2px 4px rgba(0,0,0,.04);
 }

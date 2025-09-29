@@ -1,11 +1,9 @@
 // Configuration object
-// Catalog configuration is populated at runtime from data/catalog.json
 const CONFIG = { languages: {} };
 let catalogReady = false;
 let catalogLoadPromise = null;
 
 // Map English textbook folders to their corresponding detail page slugs
-// Used to route catalog selections to the richer detail page instead of directly to the PDF
 const DETAIL_PAGE_MAP = {
   'english_10_science': 'science-age-10-grade-5',
   'english_11_math': 'math-age-11-grade-6',
@@ -114,7 +112,7 @@ function buildConfigMap(entries) {
         ageBucket[age].subjects[subject] = pdf;
     });
 
-    return { languages }; // keep downstream access identical to the legacy CONFIG shape
+    return { languages };
 }
 
 async function loadCatalogConfig() {
@@ -174,7 +172,7 @@ function getDetailSlugFromPdf(pdfUrl) {
     }
 
     if (pdfUrl.startsWith('http')) {
-        return null; // External URLs do not have matching detail pages
+        return null;
     }
 
     const segments = pdfUrl.split('/');
@@ -607,7 +605,7 @@ document.querySelectorAll('.tag').forEach(tag => {
       tag.classList.add('active');
     }
 
-    filterAndHighlight(); // re-run filtering
+    filterAndHighlight();
   });
 });
 
