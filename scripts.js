@@ -88,12 +88,12 @@ const DETAIL_PAGE_MAP = {
   'english_9_science': 'science-age-9-grade-4',
 };
 
-// Map non-English textbook folder prefixes to the suffix used by the localized detail page
-const DETAIL_PAGE_LANGUAGE_SUFFIX = {
-    arabic: '-ar',
-    spanish: '-es',
-    chinese: '-zh',
-    polish: '-pl',
+// Map non-English textbook folder prefixes to their locale path segment
+const DETAIL_PAGE_LANGUAGE_PREFIX = {
+    arabic: 'ar',
+    spanish: 'es',
+    chinese: 'zh',
+    polish: 'pl',
 };
 
 function buildConfigMap(entries) {
@@ -204,15 +204,15 @@ function getDetailSlugFromPdf(pdfUrl) {
     }
 
     if (languagePrefix === 'english') {
-        return englishSlug;
+        return `/${englishSlug}.html`;
     }
 
-    const suffix = DETAIL_PAGE_LANGUAGE_SUFFIX[languagePrefix];
-    if (!suffix) {
+    const locale = DETAIL_PAGE_LANGUAGE_PREFIX[languagePrefix];
+    if (!locale) {
         return null;
     }
 
-    return `${englishSlug}${suffix}`;
+    return `/${locale}/${englishSlug}/`;
 }
 
 // Prepare signed URLs for textbook detail download links
