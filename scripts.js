@@ -3,41 +3,6 @@ const CONFIG = { languages: {} };
 let catalogReady = false;
 let catalogLoadPromise = null;
 
-const UI_STRINGS = {
-    en: {
-        selectOption: 'Select Option',
-        selectLanguage: 'Select Language',
-        selectAge: 'Select Age',
-        selectSubject: 'Select Subject',
-        catalogUnavailable: 'Catalog unavailable',
-        downloadFailed: 'Sorry, the download failed. Please try again.',
-        downloadUnavailable: 'Download unavailable'
-    },
-    zh: {
-        selectOption: '请选择',
-        selectLanguage: '选择语言',
-        selectAge: '选择学习者年龄',
-        selectSubject: '选择学科',
-        catalogUnavailable: '目录不可用',
-        downloadFailed: '抱歉，下载失败。请重试。',
-        downloadUnavailable: '暂时无法下载'
-    }
-};
-
-function getUiLanguage() {
-    const langAttr = (document.documentElement.lang || '').toLowerCase();
-    if (langAttr.startsWith('zh')) {
-        return 'zh';
-    }
-    return 'en';
-}
-
-function t(key) {
-    const lang = getUiLanguage();
-    const langStrings = UI_STRINGS[lang] || UI_STRINGS.en;
-    return langStrings[key] || UI_STRINGS.en[key] || key;
-}
-
 // Map English textbook folders to their corresponding detail page slugs
 const DETAIL_PAGE_MAP = {
   'english_10_science': 'science-age-10-grade-5',
@@ -310,7 +275,7 @@ function prepareTextbookDetailDownloads() {
                 console.error('Signed download link failed to load', error);
                 link.classList.remove('textbook-download--loading');
                 link.classList.add('textbook-download--error');
-                link.textContent = t('downloadUnavailable');
+                link.textContent = 'Download unavailable';
                 link.setAttribute('data-download-state', 'error');
                 link.removeAttribute('tabindex');
                 link.removeAttribute('aria-disabled');
@@ -321,7 +286,7 @@ function prepareTextbookDetailDownloads() {
 }
 
 // Helper function to populate select options
-function populateSelect(selectId, options, defaultText = t('selectOption')) {
+function populateSelect(selectId, options, defaultText = "Select Option") {
     const select = document.getElementById(selectId);
     if (!select) {
         return;
@@ -358,7 +323,7 @@ function showLearnerAge() {
     }
 
     const ages = CONFIG.languages[language].ages;
-    populateSelect("learner-age", ages, t('selectAge'));
+    populateSelect("learner-age", ages, "Select Age");
     resetSelections("learner-age");
 }
 
@@ -375,7 +340,7 @@ function showSubject() {
     const languageConfig = CONFIG.languages[language];
     const ageConfig = languageConfig && languageConfig.ages ? languageConfig.ages[age] : null;
     const subjects = ageConfig ? ageConfig.subjects : {};
-    populateSelect("subject", subjects, t('selectSubject'));
+    populateSelect("subject", subjects, "Select Subject");
     resetSelections("subject");
 }
 
@@ -416,7 +381,7 @@ function showDownload() {
         .catch(err => {
             console.error("Failed to fetch signed URL", err);
             disableDownloadLink();
-            alert(t('downloadFailed'));
+            alert("Sorry, the download failed. Please try again.");
         });
 }
 
@@ -425,7 +390,7 @@ function resetSelections(startFrom) {
     if (startFrom === "language") {
         const learnerAgeSelect = document.getElementById("learner-age");
         if (learnerAgeSelect) {
-            learnerAgeSelect.innerHTML = `<option value="">${t('selectAge')}</option>`;
+            learnerAgeSelect.innerHTML = '<option value="">Select Age</option>';
             learnerAgeSelect.disabled = true;
             updateSelectTitle(learnerAgeSelect);
         }
@@ -433,7 +398,7 @@ function resetSelections(startFrom) {
     if (startFrom === "language" || startFrom === "learner-age") {
         const subjectSelect = document.getElementById("subject");
         if (subjectSelect) {
-            subjectSelect.innerHTML = `<option value="">${t('selectSubject')}</option>`;
+            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
             subjectSelect.disabled = true;
             updateSelectTitle(subjectSelect);
         }
@@ -460,9 +425,9 @@ async function initForm() {
 
     try {
         await loadCatalogConfig();
-        populateSelect("language", CONFIG.languages, t('selectLanguage'));
+        populateSelect("language", CONFIG.languages, "Select Language");
     } catch (error) {
-        languageSelect.innerHTML = `<option value="">${t('catalogUnavailable')}</option>`;
+        languageSelect.innerHTML = '<option value="">Catalog unavailable</option>';
         languageSelect.disabled = true;
         resetSelections("language");
     }
