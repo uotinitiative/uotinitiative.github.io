@@ -96,6 +96,155 @@ const DETAIL_PAGE_LANGUAGE_SUFFIX = {
     polish: '-pl',
 };
 
+const PAGE_LANGUAGE_VARIANTS = {
+  about: ['en', 'es', 'ar', 'zh', 'pl'],
+  'abstract-algebra-age-20-bachelors-3': ['en', 'es', 'ar', 'zh'],
+  'biology-science-majors-age-18-bachelors-1': ['en', 'ar', 'zh'],
+  'calculus-volume-1-age-18-bachelors-1': ['en', 'es', 'ar', 'zh'],
+  'calculus-volume-2-age-18-bachelors-1': ['en', 'es'],
+  'calculus-volume-3-age-18-bachelors-1': ['en', 'es'],
+  'chemistry-age-18-bachelors-1': ['en', 'es'],
+  index: ['en', 'es', 'ar', 'zh', 'pl'],
+  'macroeconomics-age-18-bachelors-1': ['en', 'ar', 'pl'],
+  'microeconomics-age-18-bachelors-1': ['en', 'pl'],
+  'physics-calculus-based-volume-1-age-18-bachelors-1': ['en', 'es', 'pl'],
+  'physics-calculus-based-volume-2-age-18-bachelors-1': ['en', 'es', 'pl'],
+  'physics-calculus-based-volume-3-age-18-bachelors-1': ['en', 'es', 'pl'],
+  'precalculus-age-17-grade-12': ['en', 'es'],
+  privacy: ['en', 'es', 'ar', 'zh', 'pl'],
+  'psychology-age-18-bachelors-1': ['en', 'pl'],
+  search: ['en', 'es', 'ar', 'zh', 'pl'],
+  'statistics-age-18-bachelors-1': ['en', 'es'],
+  terms: ['en', 'es', 'ar', 'zh', 'pl'],
+  updates: ['en', 'es', 'ar', 'zh', 'pl'],
+};
+
+const LANGUAGE_DISPLAY_ORDER = ['en', 'es', 'ar', 'zh', 'pl'];
+
+const LANGUAGE_LABEL_FALLBACK = {
+  en: 'English',
+  es: 'Español',
+  ar: 'العربية',
+  zh: '中文',
+  pl: 'Polski',
+};
+
+function normalizeLanguageCode(value) {
+  if (!value) {
+    return '';
+  }
+  const lower = String(value).toLowerCase();
+  return lower.split(/[-_]/)[0];
+}
+
+function getLocalizedPath(baseSlug, langCode) {
+  if (!baseSlug) {
+    return '';
+  }
+  const normalizedLang = normalizeLanguageCode(langCode) || 'en';
+  if (normalizedLang === 'en') {
+    return `${baseSlug}.html`;
+  }
+  return `${baseSlug}-${normalizedLang}.html`;
+}
+
+function getCurrentPageInfo() {
+  const path = window.location && window.location.pathname ? window.location.pathname : '';
+  const lastSegment = path.substring(path.lastIndexOf('/') + 1);
+  let fileName = lastSegment || 'index.html';
+
+  if (!fileName.includes('.')) {
+    fileName = `${fileName}.html`;
+  }
+
+  const baseName = fileName.replace(/\.html$/i, '');
+  const suffixMatch = baseName.match(/^(.*?)-(ar|es|zh|pl)$/i);
+  const baseSlug = suffixMatch ? suffixMatch[1] : baseName;
+  const lang = suffixMatch ? normalizeLanguageCode(suffixMatch[2]) : 'en';
+
+  return {
+    baseSlug,
+    lang,
+    fileName,
+  };
+}
+
+function sortLanguages(languages) {
+  if (!Array.isArray(languages)) {
+    return [];
+  }
+
+  return languages
+    .map(normalizeLanguageCode)
+    .filter(Boolean)
+    .sort((a, b) => {
+      const indexA = LANGUAGE_DISPLAY_ORDER.indexOf(a);
+      const indexB = LANGUAGE_DISPLAY_ORDER.indexOf(b);
+      const rankA = indexA === -1 ? Number.MAX_SAFE_INTEGER : indexA;
+      const rankB = indexB === -1 ? Number.MAX_SAFE_INTEGER : indexB;
+
+      if (rankA !== rankB) {
+        return rankA - rankB;
+      }
+
+      return a.localeCompare(b);
+    });
+}
+
+function getLanguageLabel(langCode, selectors) {
+  const normalized = normalizeLanguageCode(langCode);
+
+  if (selectors) {
+    for (const select of selectors) {
+      const match = Array.from(select.options || []).find(option => normalizeLanguageCode(option.dataset.lang) === normalized);
+      if (match) {
+        return (match.textContent || '').trim();
+      }
+    }
+  }
+
+  return LANGUAGE_LABEL_FALLBACK[normalized] || langCode;
+}
+
+function initLanguageAvailabilityNotice(pageInfo, languages, selectors) {
+  if (!document.body || !document.body.classList.contains('textbook-detail-page')) {
+    return;
+  }
+
+  const sortedLanguages = sortLanguages(languages).filter(lang => lang !== pageInfo.lang);
+  if (!sortedLanguages.length) {
+    return;
+  }
+
+  const container = document.querySelector('.book-container') || document.querySelector('main');
+  if (!container || container.querySelector('.language-availability')) {
+    return;
+  }
+
+  const section = document.createElement('section');
+  section.className = 'language-availability';
+
+  const heading = document.createElement('h2');
+  heading.className = 'language-availability__title';
+  heading.textContent = 'Also available in';
+  section.appendChild(heading);
+
+  const list = document.createElement('ul');
+  list.className = 'language-availability__list';
+
+  sortedLanguages.forEach(langCode => {
+    const item = document.createElement('li');
+    const link = document.createElement('a');
+    link.href = getLocalizedPath(pageInfo.baseSlug, langCode);
+    link.textContent = getLanguageLabel(langCode, selectors);
+    item.appendChild(link);
+    list.appendChild(item);
+  });
+
+  section.appendChild(list);
+  container.appendChild(section);
+}
+
 function buildConfigMap(entries) {
     const languages = {};
 
@@ -434,21 +583,43 @@ async function initForm() {
 }
 
 function initSiteLanguageSelectors() {
-    const documentLang = (document.documentElement.lang || '').toLowerCase();
+    const documentLangFull = (document.documentElement.lang || '').toLowerCase();
+    const documentLang = normalizeLanguageCode(documentLangFull);
     const selectors = document.querySelectorAll('[data-language-switcher]');
 
     if (!selectors.length) {
         return;
     }
 
+    const pageInfo = getCurrentPageInfo();
+    const pageLanguages = PAGE_LANGUAGE_VARIANTS[pageInfo.baseSlug];
+    const availableLanguages = pageLanguages ? new Set(pageLanguages.map(normalizeLanguageCode)) : null;
+
     selectors.forEach(select => {
         const options = Array.from(select.options || []);
-        const matchingOption = options.find(option => {
-            return (option.dataset.lang || '').toLowerCase() === documentLang;
+
+        options.forEach(option => {
+            const optionLang = normalizeLanguageCode(option.dataset.lang);
+            if (!option.hasAttribute('data-default-href')) {
+                option.setAttribute('data-default-href', option.value);
+            }
+
+            if (availableLanguages && optionLang && availableLanguages.has(optionLang)) {
+                option.value = getLocalizedPath(pageInfo.baseSlug, optionLang);
+            } else {
+                const fallback = option.getAttribute('data-default-href');
+                if (fallback) {
+                    option.value = fallback;
+                }
+            }
         });
 
-        if (matchingOption) {
-            select.value = matchingOption.value;
+        const selectedOption = options.find(option => normalizeLanguageCode(option.dataset.lang) === pageInfo.lang)
+            || options.find(option => normalizeLanguageCode(option.dataset.lang) === documentLang)
+            || options.find(option => (option.dataset.lang || '').toLowerCase() === documentLangFull);
+
+        if (selectedOption) {
+            select.value = selectedOption.value;
         }
 
         select.addEventListener('change', event => {
@@ -457,14 +628,18 @@ function initSiteLanguageSelectors() {
                 return;
             }
 
-            const selectedOption = target.selectedOptions && target.selectedOptions[0];
-            const nextLocation = selectedOption ? selectedOption.value : '';
+            const selectedOptionEl = target.selectedOptions && target.selectedOptions[0];
+            const nextLocation = selectedOptionEl ? selectedOptionEl.value : '';
 
             if (nextLocation) {
                 window.location.href = nextLocation;
             }
         });
     });
+
+    if (availableLanguages) {
+        initLanguageAvailabilityNotice(pageInfo, Array.from(availableLanguages), selectors);
+    }
 }
 
 // Call initForm when the DOM is fully loaded

@@ -752,6 +752,38 @@ header {
     color: #475569;
     font-size: 15px;
 }
+.language-availability {
+    margin-top: 32px;
+    padding-top: 20px;
+    border-top: 1px solid #e5e7eb;
+}
+.language-availability__title {
+    font-size: 13px;
+    letter-spacing: 0.18em;
+    text-transform: uppercase;
+    color: #0f172a;
+    margin-bottom: 12px;
+}
+.language-availability__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+.language-availability__list li {
+    font-size: 15px;
+}
+.language-availability__list a {
+    color: #2964AA;
+    font-weight: 500;
+    text-decoration: none;
+}
+.language-availability__list a:hover,
+.language-availability__list a:focus {
+    text-decoration: underline;
+}
 .homepage .book-container h1,
 .search-page .book-container h1,
 .about-page .book-container h1,
