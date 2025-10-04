@@ -315,6 +315,21 @@ function enableDownloadLink(url) {
     downloadLink.href = url;
 }
 
+function handleDisabledDownloadClick(event) {
+    const target = event.currentTarget;
+    if (!target) {
+        return;
+    }
+    const isDisabled = target.classList.contains("disabled") || target.getAttribute("aria-disabled") === "true";
+    if (!isDisabled) {
+        return;
+    }
+
+    event.preventDefault();
+    event.stopPropagation();
+    alert("Select a language, learner age, and subject before viewing details.");
+}
+
 function getDetailSlugFromPdf(pdfUrl) {
     if (!pdfUrl || typeof pdfUrl !== 'string') {
         return null;
@@ -561,16 +576,18 @@ async function initForm() {
     const languageSelect = document.getElementById("language");
     const ageSelect = document.getElementById("learner-age");
     const subjectSelect = document.getElementById("subject");
+    const downloadLink = document.getElementById("download-link");
 
     disableDownloadLink();
 
-    if (!(languageSelect && ageSelect && subjectSelect)) {
+    if (!(languageSelect && ageSelect && subjectSelect && downloadLink)) {
         return;
     }
 
     languageSelect.addEventListener("change", showLearnerAge);
     ageSelect.addEventListener("change", showSubject);
     subjectSelect.addEventListener("change", showDownload);
+    downloadLink.addEventListener("click", handleDisabledDownloadClick);
 
     try {
         await loadCatalogConfig();
