@@ -1,12 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://uotinitiative.org/</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
     <lastmod>2025-10-05T04:38:53+00:00</lastmod>
     <priority>1.00</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/about</loc>
+    <loc>https://uotinitiative.org/about.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -31,7 +43,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/abstract-algebra-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -51,42 +63,42 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/algebra-1-age-14-grade-9</loc>
+    <loc>https://uotinitiative.org/algebra-1-age-14-grade-9.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/algebra-2-age-15-grade-10</loc>
+    <loc>https://uotinitiative.org/algebra-2-age-15-grade-10.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/algebra-with-trigonometry-age-16-grade-11</loc>
+    <loc>https://uotinitiative.org/algebra-with-trigonometry-age-16-grade-11.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/anatomy-and-physiology-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/anatomy-and-physiology-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/anthropology-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/anthropology-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/astronomy-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/astronomy-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/biology-non-science-majors-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/biology-non-science-majors-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/biology-science-majors-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -101,17 +113,17 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/biosystems-engineering-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/biosystems-engineering-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/business-law-essentials-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/business-law-essentials-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -131,7 +143,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -141,7 +153,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -151,7 +163,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/chemistry-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/chemistry-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -161,52 +173,52 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/clinical-nursing-skills-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/clinical-nursing-skills-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/coastal-dynamics-age-22-masters-1</loc>
+    <loc>https://uotinitiative.org/coastal-dynamics-age-22-masters-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/college-algebra-non-stem-age-17-grade-12</loc>
+    <loc>https://uotinitiative.org/college-algebra-non-stem-age-17-grade-12.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/complex-analysis-age-21-bachelors-4</loc>
+    <loc>https://uotinitiative.org/complex-analysis-age-21-bachelors-4.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/differential-equations-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/differential-equations-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/discrete-structures-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/discrete-structures-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/electromagnetics-volume-1-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/electromagnetics-volume-1-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/electromagnetics-volume-2-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/electromagnetics-volume-2-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/entrepreneurship-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/entrepreneurship-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/foundations-of-computation-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/foundations-of-computation-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -231,47 +243,47 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introduction-to-business-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/introduction-to-business-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introduction-to-intellectual-property-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/introduction-to-intellectual-property-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introductory-business-ethics-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/introductory-business-ethics-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introductory-business-statistics-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/introductory-business-statistics-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introductory-physics-algebra-based-age-16-grade-11</loc>
+    <loc>https://uotinitiative.org/introductory-physics-algebra-based-age-16-grade-11.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/introductory-statistics-age-17-grade-12</loc>
+    <loc>https://uotinitiative.org/introductory-statistics-age-17-grade-12.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/linear-algebra-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/linear-algebra-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/linear-time-invariant-dynamic-systems-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/linear-time-invariant-dynamic-systems-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/macroeconomics-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -286,32 +298,32 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/maternal-newborn-nursing-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/maternal-newborn-nursing-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/math-age-11-grade-6</loc>
+    <loc>https://uotinitiative.org/math-age-11-grade-6.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/math-age-12-grade-7</loc>
+    <loc>https://uotinitiative.org/math-age-12-grade-7.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/mathematics-for-liberal-arts-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/mathematics-for-liberal-arts-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/microbiology-for-non-majors-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/microbiology-for-non-majors-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/microeconomics-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/microeconomics-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -321,42 +333,42 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/nutrition-for-nurses-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/nutrition-for-nurses-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/optics-age-21-bachelors-4</loc>
+    <loc>https://uotinitiative.org/optics-age-21-bachelors-4.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/organic-chemistry-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/organic-chemistry-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/organizational-behavior-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/organizational-behavior-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/pharmacology-for-nurses-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/pharmacology-for-nurses-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/philosophy-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/philosophy-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/physics-algebra-based-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/physics-algebra-based-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -371,7 +383,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -386,7 +398,7 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -401,22 +413,22 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/political-science-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/political-science-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/population-health-for-nurses-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/population-health-for-nurses-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/prealgebra-age-13-grade-8</loc>
+    <loc>https://uotinitiative.org/prealgebra-age-13-grade-8.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/precalculus-age-17-grade-12</loc>
+    <loc>https://uotinitiative.org/precalculus-age-17-grade-12.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -426,32 +438,38 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/principles-of-finance-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/principles-of-finance-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/principles-of-management-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/principles-of-management-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/principles-of-marketing-age-19-bachelors-2</loc>
+    <loc>https://uotinitiative.org/principles-of-marketing-age-19-bachelors-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/privacy</loc>
+    <loc>https://uotinitiative.org/privacy.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -476,12 +494,12 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/psychiatric-mental-health-nursing-age-20-bachelors-3</loc>
+    <loc>https://uotinitiative.org/psychiatric-mental-health-nursing-age-20-bachelors-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/psychology-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/psychology-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -491,57 +509,63 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/python-programming-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/python-programming-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/quantum-electrical-circuits-age-23-masters-2</loc>
+    <loc>https://uotinitiative.org/quantum-electrical-circuits-age-23-masters-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/real-analysis-volume-1-age-21-bachelors-4</loc>
+    <loc>https://uotinitiative.org/real-analysis-volume-1-age-21-bachelors-4.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/real-analysis-volume-2-age-21-bachelors-4</loc>
+    <loc>https://uotinitiative.org/real-analysis-volume-2-age-21-bachelors-4.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-10-grade-5</loc>
+    <loc>https://uotinitiative.org/science-age-10-grade-5.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-5-kindergarten</loc>
+    <loc>https://uotinitiative.org/science-age-5-kindergarten.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-6-grade-1</loc>
+    <loc>https://uotinitiative.org/science-age-6-grade-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-7-grade-2</loc>
+    <loc>https://uotinitiative.org/science-age-7-grade-2.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-8-grade-3</loc>
+    <loc>https://uotinitiative.org/science-age-8-grade-3.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/science-age-9-grade-4</loc>
+    <loc>https://uotinitiative.org/science-age-9-grade-4.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/search</loc>
+    <loc>https://uotinitiative.org/search.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
     <lastmod>2025-09-30T14:27:38+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -566,12 +590,12 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/sociology-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/sociology-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/statistics-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/statistics-age-18-bachelors-1.html</loc>
     <lastmod>2025-10-05T04:40:16+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -581,12 +605,18 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/structured-electronics-design-age-22-masters-1</loc>
+    <loc>https://uotinitiative.org/structured-electronics-design-age-22-masters-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/terms</loc>
+    <loc>https://uotinitiative.org/terms.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -611,12 +641,18 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/traffic-flow-theory-age-22-masters-1</loc>
+    <loc>https://uotinitiative.org/traffic-flow-theory-age-22-masters-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/updates</loc>
+    <loc>https://uotinitiative.org/updates.html</loc>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
@@ -641,22 +677,22 @@
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/workplace-software-and-skills-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/workplace-software-and-skills-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/world-history-volume-1-to-1500-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/world-history-volume-1-to-1500-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/world-history-volume-2-from-1400-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/world-history-volume-2-from-1400-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
   <url>
-    <loc>https://uotinitiative.org/writing-guide-with-handbook-age-18-bachelors-1</loc>
+    <loc>https://uotinitiative.org/writing-guide-with-handbook-age-18-bachelors-1.html</loc>
     <lastmod>2025-09-30T04:21:14+00:00</lastmod>
     <priority>0.80</priority>
   </url>
