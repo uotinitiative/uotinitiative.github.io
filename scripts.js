@@ -89,11 +89,12 @@ const DETAIL_PAGE_MAP = {
 };
 
 // Map non-English textbook folder prefixes to the suffix used by the localized detail page
-const DETAIL_PAGE_LANGUAGE_SUFFIX = {
-    arabic: '-ar',
-    spanish: '-es',
-    chinese: '-zh',
-    polish: '-pl',
+const LANGUAGE_PREFIX_TO_CODE = {
+    english: 'en',
+    arabic: 'ar',
+    spanish: 'es',
+    chinese: 'zh',
+    polish: 'pl',
 };
 
 const PAGE_LANGUAGE_VARIANTS = {
@@ -141,31 +142,64 @@ function getLocalizedPath(baseSlug, langCode) {
   if (!baseSlug) {
     return '';
   }
+
   const normalizedLang = normalizeLanguageCode(langCode) || 'en';
+  const normalizedSlug = String(baseSlug).replace(/^\/+/, '');
+
   if (normalizedLang === 'en') {
-    return `${baseSlug}.html`;
+    if (normalizedSlug === 'index') {
+      return '/';
+    }
+    return `/${normalizedSlug}.html`;
   }
-  return `${baseSlug}-${normalizedLang}.html`;
+
+  if (normalizedSlug === 'index') {
+    return `/${normalizedLang}/`;
+  }
+
+  return `/${normalizedLang}/${normalizedSlug}.html`;
 }
 
 function getCurrentPageInfo() {
   const path = window.location && window.location.pathname ? window.location.pathname : '';
-  const lastSegment = path.substring(path.lastIndexOf('/') + 1);
-  let fileName = lastSegment || 'index.html';
+  const segments = path.split('/').filter(Boolean);
+  const supportedNonEnglish = new Set(LANGUAGE_DISPLAY_ORDER.filter(code => code !== 'en'));
 
-  if (!fileName.includes('.')) {
-    fileName = `${fileName}.html`;
+  let lang = 'en';
+  let fileNameSegment = segments.length ? segments[segments.length - 1] : 'index.html';
+
+  if (!fileNameSegment || fileNameSegment.endsWith('/')) {
+    fileNameSegment = 'index.html';
   }
 
-  const baseName = fileName.replace(/\.html$/i, '');
-  const suffixMatch = baseName.match(/^(.*?)-(ar|es|zh|pl)$/i);
-  const baseSlug = suffixMatch ? suffixMatch[1] : baseName;
-  const lang = suffixMatch ? normalizeLanguageCode(suffixMatch[2]) : 'en';
+  if (!fileNameSegment.includes('.')) {
+    fileNameSegment = `${fileNameSegment}.html`;
+  }
+
+  if (segments.length) {
+    const firstSegment = segments[0];
+    const maybeLang = normalizeLanguageCode(firstSegment);
+
+    if (maybeLang && supportedNonEnglish.has(maybeLang) && normalizeLanguageCode(firstSegment) === maybeLang && firstSegment.length === maybeLang.length) {
+      lang = maybeLang;
+
+      if (segments.length === 1) {
+        fileNameSegment = 'index.html';
+      } else {
+        fileNameSegment = segments[segments.length - 1] || 'index.html';
+        if (!fileNameSegment.includes('.')) {
+          fileNameSegment = `${fileNameSegment}.html`;
+        }
+      }
+    }
+  }
+
+  const baseSlug = fileNameSegment.replace(/\.html$/i, '');
 
   return {
     baseSlug,
     lang,
-    fileName,
+    fileName: fileNameSegment,
   };
 }
 
@@ -266,7 +300,7 @@ function buildConfigMap(entries) {
 
 async function loadCatalogConfig() {
     if (!catalogLoadPromise) {
-        catalogLoadPromise = fetch('data/catalog.json', { cache: 'no-store' })
+        catalogLoadPromise = fetch('/data/catalog.json', { cache: 'no-store' })
             .then(response => {
                 if (!response.ok) {
                     throw new Error(`Failed to load catalog: ${response.status}`);
@@ -352,16 +386,12 @@ function getDetailSlugFromPdf(pdfUrl) {
         return null;
     }
 
-    if (languagePrefix === 'english') {
-        return englishSlug;
-    }
-
-    const suffix = DETAIL_PAGE_LANGUAGE_SUFFIX[languagePrefix];
-    if (!suffix) {
+    const languageCode = LANGUAGE_PREFIX_TO_CODE[languagePrefix];
+    if (!languageCode) {
         return null;
     }
 
-    return `${englishSlug}${suffix}`;
+    return getLocalizedPath(englishSlug, languageCode);
 }
 
 // Prepare signed URLs for textbook detail download links
@@ -600,16 +630,21 @@ function initSiteLanguageSelectors() {
 
         options.forEach(option => {
             const optionLang = normalizeLanguageCode(option.dataset.lang);
+            const languageHome = optionLang ? getLocalizedPath('index', optionLang) : '';
             if (!option.hasAttribute('data-default-href')) {
-                option.setAttribute('data-default-href', option.value);
+                option.setAttribute('data-default-href', option.value || languageHome || '');
             }
 
             if (availableLanguages && optionLang && availableLanguages.has(optionLang)) {
                 option.value = getLocalizedPath(pageInfo.baseSlug, optionLang);
             } else {
-                const fallback = option.getAttribute('data-default-href');
-                if (fallback) {
-                    option.value = fallback;
+                if (languageHome) {
+                    option.value = languageHome;
+                } else {
+                    const fallback = option.getAttribute('data-default-href');
+                    if (fallback) {
+                        option.value = fallback;
+                    }
                 }
             }
         });
