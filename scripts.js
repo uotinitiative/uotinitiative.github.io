@@ -857,3 +857,51 @@ document.addEventListener('DOMContentLoaded', () => {
     update();
   });
 });
+
+// Inject BreadcrumbList structured data
+document.addEventListener('DOMContentLoaded', () => {
+  const breadcrumbNav = document.querySelector('nav.breadcrumb');
+  if (!breadcrumbNav) {
+    return;
+  }
+
+  const crumbNodes = Array.from(breadcrumbNav.querySelectorAll('a, span[aria-current="page"]'));
+  if (!crumbNodes.length) {
+    return;
+  }
+
+  const itemListElement = crumbNodes.reduce((items, node, index) => {
+    const name = node.textContent.trim();
+    if (!name) {
+      return items;
+    }
+
+    const isLink = node.tagName.toLowerCase() === 'a';
+    const href = isLink ? node.getAttribute('href') : '';
+    const itemUrl = isLink ? new URL(href, window.location.href).href : window.location.href;
+
+    items.push({
+      "@type": "ListItem",
+      position: index + 1,
+      name,
+      item: itemUrl
+    });
+
+    return items;
+  }, []);
+
+  if (!itemListElement.length) {
+    return;
+  }
+
+  const schema = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement
+  };
+
+  const script = document.createElement('script');
+  script.type = 'application/ld+json';
+  script.text = JSON.stringify(schema);
+  document.head.appendChild(script);
+});
