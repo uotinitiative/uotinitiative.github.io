@@ -2,607 +2,706 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>https://uotinitiative.org/</loc>
-    <lastmod>2025-10-05T04:38:53+00:00</lastmod>
-    <priority>1.00</priority>
+    <lastmod>2025-10-05T12:22:50+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
   </url>
   <url>
     <loc>https://uotinitiative.org/about.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:23:05+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/about.html</loc>
-    <lastmod>2025-10-04T07:15:51+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/about.html</loc>
-    <lastmod>2025-10-04T11:28:53+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/about.html</loc>
-    <lastmod>2025-10-02T10:26:35+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/about.html</loc>
-    <lastmod>2025-10-04T07:42:46+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html</loc>
-    <lastmod>2025-10-04T13:48:46+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html</loc>
-    <lastmod>2025-10-04T07:43:01+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/algebra-1-age-14-grade-9.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/algebra-1-age-14-grade-9.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/algebra-1-age-14-grade-9.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/algebra-2-age-15-grade-10.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/algebra-2-age-15-grade-10.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/algebra-2-age-15-grade-10.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/algebra-with-trigonometry-age-16-grade-11.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/algebra-with-trigonometry-age-16-grade-11.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/algebra-with-trigonometry-age-16-grade-11.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/anatomy-and-physiology-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/anatomy-and-physiology-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/anatomy-and-physiology-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/anthropology-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/anthropology-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/anthropology-age-18-bachelors-1.html" />
   </url>
   <url>
+    <loc>https://uotinitiative.org/ar/</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/about.html</loc>
+    <lastmod>2025-10-05T12:31:50+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/privacy.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/search.html</loc>
+    <lastmod>2025-10-05T10:09:02+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/terms.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/ar/updates.html</loc>
+    <lastmod>2025-10-05T12:11:57+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
+  </url>
+  <url>
     <loc>https://uotinitiative.org/astronomy-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/astronomy-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/astronomy-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/biology-non-science-majors-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-non-science-majors-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-non-science-majors-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T13:48:46+00:00</lastmod>
-    <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T18:01:45+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/biosystems-engineering-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biosystems-engineering-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biosystems-engineering-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/business-law-essentials-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/business-law-essentials-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/business-law-essentials-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T13:48:46+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:42:57+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/calculus-volume-2-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-2-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-3-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/calculus-volume-3-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/chemistry-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/chemistry-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/chemistry-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/chemistry-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/clinical-nursing-skills-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/clinical-nursing-skills-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/clinical-nursing-skills-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/coastal-dynamics-age-22-masters-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/coastal-dynamics-age-22-masters-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/coastal-dynamics-age-22-masters-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/college-algebra-non-stem-age-17-grade-12.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/college-algebra-non-stem-age-17-grade-12.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/college-algebra-non-stem-age-17-grade-12.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/complex-analysis-age-21-bachelors-4.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/complex-analysis-age-21-bachelors-4.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/complex-analysis-age-21-bachelors-4.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/differential-equations-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/differential-equations-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/differential-equations-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/discrete-structures-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/discrete-structures-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/discrete-structures-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/electromagnetics-volume-1-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/electromagnetics-volume-1-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/electromagnetics-volume-1-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/electromagnetics-volume-2-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/electromagnetics-volume-2-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/electromagnetics-volume-2-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/entrepreneurship-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/entrepreneurship-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/entrepreneurship-age-19-bachelors-2.html" />
   </url>
   <url>
+    <loc>https://uotinitiative.org/es/</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/about.html</loc>
+    <lastmod>2025-10-05T12:32:00+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/calculus-volume-2-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-2-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/calculus-volume-3-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-3-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-3-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/chemistry-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/chemistry-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/chemistry-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/precalculus-age-17-grade-12.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/precalculus-age-17-grade-12.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/privacy.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/search.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/statistics-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/statistics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/terms.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/es/updates.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
+  </url>
+  <url>
     <loc>https://uotinitiative.org/foundations-of-computation-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/foundations-of-computation-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/foundations-of-computation-age-18-bachelors-1.html" />
   </url>
   <url>
-    <loc>https://uotinitiative.org/ar/</loc>
-    <lastmod>2025-10-05T04:39:28+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/</loc>
-    <lastmod>2025-10-05T04:39:09+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/</loc>
-    <lastmod>2025-10-05T04:39:59+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/</loc>
-    <lastmod>2025-10-05T04:39:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
-  </url>
-  <url>
     <loc>https://uotinitiative.org/introduction-to-business-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introduction-to-business-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introduction-to-business-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/introduction-to-intellectual-property-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introduction-to-intellectual-property-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introduction-to-intellectual-property-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/introductory-business-ethics-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introductory-business-ethics-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introductory-business-ethics-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/introductory-business-statistics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introductory-business-statistics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introductory-business-statistics-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/introductory-physics-algebra-based-age-16-grade-11.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introductory-physics-algebra-based-age-16-grade-11.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introductory-physics-algebra-based-age-16-grade-11.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/introductory-statistics-age-17-grade-12.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/introductory-statistics-age-17-grade-12.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/introductory-statistics-age-17-grade-12.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/linear-algebra-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/linear-algebra-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/linear-algebra-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/linear-time-invariant-dynamic-systems-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/linear-time-invariant-dynamic-systems-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/linear-time-invariant-dynamic-systems-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T17:50:20+00:00</lastmod>
-    <priority>0.80</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:51:17+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/maternal-newborn-nursing-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/maternal-newborn-nursing-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/maternal-newborn-nursing-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/math-age-11-grade-6.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/math-age-11-grade-6.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/math-age-11-grade-6.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/math-age-12-grade-7.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/math-age-12-grade-7.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/math-age-12-grade-7.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/mathematics-for-liberal-arts-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/mathematics-for-liberal-arts-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/mathematics-for-liberal-arts-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/microbiology-for-non-majors-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/microbiology-for-non-majors-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/microbiology-for-non-majors-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/microeconomics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/microeconomics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/microeconomics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:51:17+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/microeconomics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/nutrition-for-nurses-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/nutrition-for-nurses-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/nutrition-for-nurses-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/optics-age-21-bachelors-4.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/optics-age-21-bachelors-4.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/optics-age-21-bachelors-4.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/organic-chemistry-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/organic-chemistry-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/organic-chemistry-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/organizational-behavior-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/organizational-behavior-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/organizational-behavior-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/pharmacology-for-nurses-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/pharmacology-for-nurses-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/pharmacology-for-nurses-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/philosophy-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/philosophy-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/philosophy-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/physics-algebra-based-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-algebra-based-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-algebra-based-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:50:47+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
@@ -610,26 +709,9 @@
   </url>
   <url>
     <loc>https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:50:47+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
@@ -637,479 +719,529 @@
   </url>
   <url>
     <loc>https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
   </url>
   <url>
-    <loc>https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
+    <loc>https://uotinitiative.org/pl/</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/about.html</loc>
+    <lastmod>2025-10-05T12:32:12+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/macroeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/macroeconomics-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/microeconomics-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/microeconomics-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/microeconomics-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-1-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-2-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/pl/physics-calculus-based-volume-3-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:50:47+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/physics-calculus-based-volume-3-age-18-bachelors-1.html" />
   </url>
   <url>
+    <loc>https://uotinitiative.org/pl/privacy.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/psychology-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/psychology-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/search.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/terms.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/pl/updates.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
+  </url>
+  <url>
     <loc>https://uotinitiative.org/political-science-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/political-science-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/political-science-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/population-health-for-nurses-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/population-health-for-nurses-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/population-health-for-nurses-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/prealgebra-age-13-grade-8.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/prealgebra-age-13-grade-8.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/prealgebra-age-13-grade-8.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/precalculus-age-17-grade-12.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/precalculus-age-17-grade-12.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/precalculus-age-17-grade-12.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/precalculus-age-17-grade-12.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/precalculus-age-17-grade-12.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/principles-of-accounting-vol-1-financial-accounting-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/principles-of-accounting-vol-2-managerial-accounting-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/principles-of-finance-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/principles-of-finance-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/principles-of-finance-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/principles-of-management-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/principles-of-management-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/principles-of-management-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/principles-of-marketing-age-19-bachelors-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/principles-of-marketing-age-19-bachelors-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/principles-of-marketing-age-19-bachelors-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/privacy.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/privacy.html</loc>
-    <lastmod>2025-10-04T07:14:54+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/privacy.html</loc>
-    <lastmod>2025-10-04T11:28:57+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/privacy.html</loc>
-    <lastmod>2025-10-02T10:26:46+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/privacy.html</loc>
-    <lastmod>2025-10-02T10:18:53+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/psychiatric-mental-health-nursing-age-20-bachelors-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/psychiatric-mental-health-nursing-age-20-bachelors-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/psychiatric-mental-health-nursing-age-20-bachelors-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/psychology-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/psychology-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/psychology-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-04T07:51:17+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/psychology-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/psychology-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/python-programming-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/python-programming-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/python-programming-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/quantum-electrical-circuits-age-23-masters-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/quantum-electrical-circuits-age-23-masters-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/quantum-electrical-circuits-age-23-masters-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/real-analysis-volume-1-age-21-bachelors-4.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/real-analysis-volume-1-age-21-bachelors-4.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/real-analysis-volume-1-age-21-bachelors-4.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/real-analysis-volume-2-age-21-bachelors-4.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/real-analysis-volume-2-age-21-bachelors-4.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/real-analysis-volume-2-age-21-bachelors-4.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-10-grade-5.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-10-grade-5.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-10-grade-5.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-5-kindergarten.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-5-kindergarten.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-5-kindergarten.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-6-grade-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-6-grade-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-6-grade-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-7-grade-2.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-7-grade-2.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-7-grade-2.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-8-grade-3.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-8-grade-3.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-8-grade-3.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/science-age-9-grade-4.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/science-age-9-grade-4.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/science-age-9-grade-4.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/search.html</loc>
-    <lastmod>2025-09-30T14:27:38+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/search.html</loc>
-    <lastmod>2025-10-04T17:50:05+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/search.html</loc>
-    <lastmod>2025-10-04T17:00:12+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/search.html</loc>
-    <lastmod>2025-10-04T18:08:01+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/search.html</loc>
-    <lastmod>2025-10-04T18:01:24+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/sociology-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/sociology-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/sociology-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/statistics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-05T04:40:16+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/statistics-age-18-bachelors-1.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/statistics-age-18-bachelors-1.html</loc>
-    <lastmod>2025-10-05T04:40:29+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/statistics-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/statistics-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/structured-electronics-design-age-22-masters-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/structured-electronics-design-age-22-masters-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/structured-electronics-design-age-22-masters-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/terms.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/terms.html</loc>
-    <lastmod>2025-10-04T07:14:54+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/terms.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/terms.html</loc>
-    <lastmod>2025-10-02T10:26:42+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/terms.html</loc>
-    <lastmod>2025-10-04T07:42:51+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/traffic-flow-theory-age-22-masters-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/traffic-flow-theory-age-22-masters-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/traffic-flow-theory-age-22-masters-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/updates.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
     <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
     <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/ar/updates.html</loc>
-    <lastmod>2025-10-04T07:14:54+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
     <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/es/updates.html</loc>
-    <lastmod>2025-10-04T11:28:43+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/pl/updates.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
-    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
-  </url>
-  <url>
-    <loc>https://uotinitiative.org/zh/updates.html</loc>
-    <lastmod>2025-10-02T10:18:42+00:00</lastmod>
-    <priority>0.80</priority>
-    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
-    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
-    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
-    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
-    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/workplace-software-and-skills-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/workplace-software-and-skills-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/workplace-software-and-skills-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/world-history-volume-1-to-1500-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/world-history-volume-1-to-1500-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/world-history-volume-1-to-1500-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/world-history-volume-2-from-1400-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/world-history-volume-2-from-1400-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/world-history-volume-2-from-1400-age-18-bachelors-1.html" />
   </url>
   <url>
     <loc>https://uotinitiative.org/writing-guide-with-handbook-age-18-bachelors-1.html</loc>
-    <lastmod>2025-09-30T04:21:14+00:00</lastmod>
-    <priority>0.80</priority>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
     <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/writing-guide-with-handbook-age-18-bachelors-1.html" />
     <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/writing-guide-with-handbook-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/about.html</loc>
+    <lastmod>2025-10-05T12:32:25+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/about.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/about.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/about.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/about.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/about.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/about.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/abstract-algebra-age-20-bachelors-3.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/abstract-algebra-age-20-bachelors-3.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/biology-science-majors-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/biology-science-majors-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/calculus-volume-1-age-18-bachelors-1.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/calculus-volume-1-age-18-bachelors-1.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/privacy.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/privacy.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/privacy.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/search.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.6</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/search.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/search.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/search.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/search.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/search.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/search.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/terms.html</loc>
+    <lastmod>2025-10-05T12:43:18+00:00</lastmod>
+    <changefreq>yearly</changefreq>
+    <priority>0.5</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/terms.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/terms.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/terms.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/terms.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/terms.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/terms.html" />
+  </url>
+  <url>
+    <loc>https://uotinitiative.org/zh/updates.html</loc>
+    <lastmod>2025-10-05T12:14:33+00:00</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.7</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://uotinitiative.org/ar/updates.html" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://uotinitiative.org/updates.html" />
+    <xhtml:link rel="alternate" hreflang="es" href="https://uotinitiative.org/es/updates.html" />
+    <xhtml:link rel="alternate" hreflang="pl" href="https://uotinitiative.org/pl/updates.html" />
+    <xhtml:link rel="alternate" hreflang="zh" href="https://uotinitiative.org/zh/updates.html" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://uotinitiative.org/updates.html" />
   </url>
 </urlset>
