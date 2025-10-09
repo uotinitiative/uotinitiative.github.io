@@ -688,6 +688,11 @@ header {
 .card-title-link:focus {
     text-decoration: underline;
 }
+.link-with-arrow {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
 .card-detail-link {
     display: inline-flex;
     align-items: center;
@@ -696,13 +701,23 @@ header {
     font-weight: 600;
     color: #F69520;
 }
-.card-detail-link::after {
+.card-detail-link::after,
+.link-with-arrow::after {
     content: '\2192';
     font-size: 16px;
     transition: transform 0.2s ease;
 }
-.card-detail-link:hover::after {
+.card-detail-link:hover::after,
+.link-with-arrow:not(.disabled):hover::after {
     transform: translateX(3px);
+}
+html[dir="rtl"] .card-detail-link::after,
+html[dir="rtl"] .link-with-arrow::after {
+    content: '\2190';
+}
+html[dir="rtl"] .card-detail-link:hover::after,
+html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
+    transform: translateX(-3px);
 }
 
 .book-container {
