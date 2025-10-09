@@ -1005,8 +1005,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 }
 .textbook-specs {
     border-top: 1px solid #e5e7eb;
-    padding: 16px 0;
-    margin-bottom: 32px;
+    padding: 25px 0;
 }
 .textbook-specs-table {
     width: 100%;
