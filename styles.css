@@ -17,7 +17,11 @@ p {
 }
 
 .highlight-yellow {
-    background: linear-gradient(180deg, transparent 70%, rgba(244, 190, 43, 0.35) 0);
+    background: none;
+    text-decoration: underline;
+    text-decoration-color: #F69520;
+    text-decoration-thickness: 0.1em;
+    text-underline-offset: 0.2em;
 }
 
 
@@ -89,7 +93,7 @@ footer {
 }
 
 footer nav a {
-    color: #2964AA;
+    color: #F69520;
     text-decoration: none;
     margin: 0 10px;
 }
@@ -133,8 +137,8 @@ select option {
 
 select:focus {
     outline: none;
-    border-color: #2964AA;
-    box-shadow: 0 0 0 3px rgba(41, 100, 170, 0.15);
+    border-color: #F69520;
+    box-shadow: 0 0 0 3px rgba(246, 149, 32, 0.15);
 }
 
 select:hover {
@@ -176,7 +180,7 @@ th, td {
 
 a {
     text-decoration: none;
-    color: #2964AA;
+    color: #F69520;
 }
 
 a:hover {
@@ -216,10 +220,11 @@ a.hidden {
 
 #download-link.download-link-active,
 .download-link.download-link-active {
-    background: linear-gradient(transparent 0%, #fff59d 5%);
+    background-color: #F69520;
     border-radius: 6px;
-    border-color: #d1d5db;
-    transition: background 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
+    border-color: #F69520;
+    color: #ffffff;
+    transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
 
 #download-link.disabled,
@@ -251,7 +256,7 @@ header {
 
 /* Donate Button for Desktop & Mobile */
 .donate-button {
-    background-color: #2964AA;
+    background-color: #F69520;
     color: #fff !important;
     padding: 8px 16px;
     border-radius: 20px;
@@ -263,7 +268,7 @@ header {
 }
 
 .donate-button:hover {
-    background-color: #1d4f8a;
+    background-color: #d47916;
     text-decoration: none;
 }
 
@@ -324,13 +329,13 @@ header {
     padding: 7px 36px 7px 14px;
     font-size: 13px;
     border-radius: 999px;
-    border-color: #d1d5db;
+    border-color: #F69520;
     background-color: #ffffff;
     color: #0f172a;
 }
 
 .language-selector__control:focus {
-    border-color: #2964AA;
+    border-color: #F69520;
 }
 
 .language-selector__control:hover {
@@ -346,11 +351,11 @@ header {
 }
 
 .custom-nav a.active {
-    color: #2964AA;
+    color: #F69520;
 }
 
 .nav-menu a.active {
-    color: #2964AA;
+    color: #F69520;
 }
 
 .custom-nav a:hover {
@@ -643,8 +648,8 @@ header {
 
 #catalog-search:focus {
     outline: none;
-    border-color: #4a90e2;
-    box-shadow: 0 0 5px rgba(74, 144, 226, 0.3);
+    border-color: #F69520;
+    box-shadow: 0 0 5px rgba(246, 149, 32, 0.3);
 }
 
 .search-icon {
@@ -673,7 +678,7 @@ header {
     margin-bottom: 10px;
 }
 .card-title-link {
-    color: #2964AA;
+    color: #F69520;
     text-decoration: none;
 }
 .card-title-link:hover,
@@ -686,7 +691,7 @@ header {
     gap: 6px;
     margin-top: 10px;
     font-weight: 600;
-    color: #2964AA;
+    color: #F69520;
 }
 .card-detail-link::after {
     content: '\2192';
@@ -776,7 +781,7 @@ header {
     font-size: 15px;
 }
 .language-availability__list a {
-    color: #2964AA;
+    color: #F69520;
     font-weight: 500;
     text-decoration: none;
 }
@@ -909,7 +914,7 @@ header {
     line-height: 1.7;
 }
 .textbook-panel a {
-    color: #2964aa;
+    color: #F69520;
     text-decoration: none;
 }
 .textbook-panel a:hover {
@@ -951,7 +956,7 @@ header {
     line-height: 1.7;
 }
 .page-section a {
-    color: #2964aa;
+    color: #F69520;
     text-decoration: none;
 }
 .page-section a:hover {
@@ -1015,7 +1020,7 @@ header {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #2964AA;
+    background-color: #F69520;
     color: #fff !important;
     padding: 6px 14px;
     border-radius: 18px;
@@ -1028,7 +1033,7 @@ header {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .textbook-download:hover {
-    background-color: #1d4f8a;
+    background-color: #d47916;
     text-decoration: none;
     transform: translateY(-1px);
 }
@@ -1052,7 +1057,7 @@ header {
     cursor: pointer;
 }
 .license-tooltip__trigger:focus-visible {
-    outline: 2px solid #2964AA;
+    outline: 2px solid #F69520;
     outline-offset: 2px;
 }
 .license-tooltip__icon {
@@ -1099,11 +1104,11 @@ header {
     pointer-events: auto;
 }
 .license-tooltip__content a {
-    color: #bfdbfe;
+    color: #F69520;
     text-decoration: underline;
 }
 .license-tooltip__content a:hover {
-    color: #dbeafe;
+    color: #d47916;
 }
 .visually-hidden {
     position: absolute;
@@ -1201,7 +1206,7 @@ header {
     color: #6b7280;
 }
 .breadcrumb a {
-    color: #2964AA;
+    color: #F69520;
 }
 .book-tagline {
     font-size: 18px;
@@ -1231,7 +1236,7 @@ header {
     gap: 8px;
     padding: 12px 18px;
     border-radius: 999px;
-    background-color: #2964AA;
+    background-color: #F69520;
     color: #ffffff;
     font-weight: 600;
     text-decoration: none;
@@ -1239,7 +1244,7 @@ header {
 }
 .primary-download:hover {
     text-decoration: none;
-    background-color: #1f4f84;
+    background-color: #d47916;
 }
 .book-section {
     text-align: left;
@@ -1308,13 +1313,13 @@ header {
 }
 
 .tag:hover {
-  background-color: #e0e7ff;
+  background-color: #fde0c4;
 }
 
 .tag.active {
-  background-color: #2964AA;
+  background-color: #F69520;
   color: white;
-  border-color: #2964AA;
+  border-color: #F69520;
 }
 
 .tag-close {
@@ -1365,8 +1370,8 @@ header {
 
 .filter-group select:focus {
     outline: none;
-    border-color: #3b82f6;
-    box-shadow: 0 0 0 2px rgba(59, 130, 246, 0.1);
+    border-color: #F69520;
+    box-shadow: 0 0 0 2px rgba(246, 149, 32, 0.1);
 }
 
 @media (max-width: 768px) {
@@ -1421,13 +1426,13 @@ header {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: #2964AA;
+    color: #F69520;
     text-decoration: none;
     font-weight: 500;
 }
 
 .download-link.download-link-active {
-    color: #111827;
+    color: #ffffff;
 }
 
 .download-link:hover {
@@ -1566,7 +1571,7 @@ header {
 .stat .counter {
   font-size:2.75rem;
   font-weight: bold;
-  color: #2964AA;
+  color: #F69520;
   display: inline-block;
   min-width: 2ch;
 }
