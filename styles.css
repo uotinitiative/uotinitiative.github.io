@@ -87,13 +87,13 @@ footer {
     text-align: center;
     padding: 20px 0;
     font-size: 14px;
-    color: #333;
+    color: #000000;
     border-top: none;
     width: 100%;
 }
 
 footer a {
-    color: #333;
+    color: #000000;
     text-decoration: none;
 }
 
