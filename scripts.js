@@ -130,12 +130,68 @@ const LANGUAGE_LABEL_FALLBACK = {
   pl: 'Polski',
 };
 
+const FORM_TEXT = {
+  en: {
+    selectOption: 'Select Option',
+    selectLanguage: 'Select Language',
+    selectAge: 'Select Age',
+    selectSubject: 'Select Subject',
+    catalogUnavailable: 'Catalog unavailable',
+    downloadUnavailable: 'Download unavailable',
+    downloadFailed: 'Sorry, the download failed. Please try again.',
+  },
+  es: {
+    selectOption: 'Selecciona una opción',
+    selectLanguage: 'Selecciona un idioma',
+    selectAge: 'Selecciona una edad',
+    selectSubject: 'Selecciona una asignatura',
+    catalogUnavailable: 'Catálogo no disponible',
+    downloadUnavailable: 'Descarga no disponible',
+    downloadFailed: 'Lo sentimos, la descarga falló. Inténtalo de nuevo.',
+  },
+  ar: {
+    selectOption: 'اختر خيارًا',
+    selectLanguage: 'اختر لغة',
+    selectAge: 'اختر عمرًا',
+    selectSubject: 'اختر مادة',
+    catalogUnavailable: 'الفهرس غير متاح',
+    downloadUnavailable: 'التنزيل غير متاح',
+    downloadFailed: 'عذرًا، فشل التنزيل. يرجى المحاولة مرة أخرى.',
+  },
+  zh: {
+    selectOption: '选择选项',
+    selectLanguage: '选择语言',
+    selectAge: '选择年龄',
+    selectSubject: '选择学科',
+    catalogUnavailable: '目录不可用',
+    downloadUnavailable: '无法下载',
+    downloadFailed: '抱歉，下载失败。请重试。',
+  },
+  pl: {
+    selectOption: 'Wybierz opcję',
+    selectLanguage: 'Wybierz język',
+    selectAge: 'Wybierz wiek',
+    selectSubject: 'Wybierz przedmiot',
+    catalogUnavailable: 'Katalog niedostępny',
+    downloadUnavailable: 'Pobieranie niedostępne',
+    downloadFailed: 'Przepraszamy, pobieranie nie powiodło się. Spróbuj ponownie.',
+  },
+};
+
 function normalizeLanguageCode(value) {
   if (!value) {
     return '';
   }
   const lower = String(value).toLowerCase();
   return lower.split(/[-_]/)[0];
+}
+
+const DOCUMENT_LANGUAGE = (document.documentElement.lang || 'en');
+const CURRENT_LANGUAGE = normalizeLanguageCode(DOCUMENT_LANGUAGE) || 'en';
+
+function getFormText(key) {
+  const languageTexts = FORM_TEXT[CURRENT_LANGUAGE] || FORM_TEXT.en;
+  return languageTexts[key] || FORM_TEXT.en[key] || '';
 }
 
 function getLocalizedPath(baseSlug, langCode) {
@@ -454,7 +510,7 @@ function prepareTextbookDetailDownloads() {
                 console.error('Signed download link failed to load', error);
                 link.classList.remove('textbook-download--loading');
                 link.classList.add('textbook-download--error');
-                link.textContent = 'Download unavailable';
+                link.textContent = getFormText('downloadUnavailable');
                 link.setAttribute('data-download-state', 'error');
                 link.removeAttribute('tabindex');
                 link.removeAttribute('aria-disabled');
@@ -465,7 +521,7 @@ function prepareTextbookDetailDownloads() {
 }
 
 // Helper function to populate select options
-function populateSelect(selectId, options, defaultText = "Select Option") {
+function populateSelect(selectId, options, defaultText = getFormText('selectOption')) {
     const select = document.getElementById(selectId);
     if (!select) {
         return;
@@ -502,7 +558,7 @@ function showLearnerAge() {
     }
 
     const ages = CONFIG.languages[language].ages;
-    populateSelect("learner-age", ages, "Select Age");
+    populateSelect("learner-age", ages, getFormText('selectAge'));
     resetSelections("learner-age");
 }
 
@@ -519,7 +575,7 @@ function showSubject() {
     const languageConfig = CONFIG.languages[language];
     const ageConfig = languageConfig && languageConfig.ages ? languageConfig.ages[age] : null;
     const subjects = ageConfig ? ageConfig.subjects : {};
-    populateSelect("subject", subjects, "Select Subject");
+    populateSelect("subject", subjects, getFormText('selectSubject'));
     resetSelections("subject");
 }
 
@@ -560,7 +616,7 @@ function showDownload() {
         .catch(err => {
             console.error("Failed to fetch signed URL", err);
             disableDownloadLink();
-            alert("Sorry, the download failed. Please try again.");
+            alert(getFormText('downloadFailed'));
         });
 }
 
@@ -569,7 +625,7 @@ function resetSelections(startFrom) {
     if (startFrom === "language") {
         const learnerAgeSelect = document.getElementById("learner-age");
         if (learnerAgeSelect) {
-            learnerAgeSelect.innerHTML = '<option value="">Select Age</option>';
+            learnerAgeSelect.innerHTML = `<option value="">${getFormText('selectAge')}</option>`;
             learnerAgeSelect.disabled = true;
             updateSelectTitle(learnerAgeSelect);
         }
@@ -577,7 +633,7 @@ function resetSelections(startFrom) {
     if (startFrom === "language" || startFrom === "learner-age") {
         const subjectSelect = document.getElementById("subject");
         if (subjectSelect) {
-            subjectSelect.innerHTML = '<option value="">Select Subject</option>';
+            subjectSelect.innerHTML = `<option value="">${getFormText('selectSubject')}</option>`;
             subjectSelect.disabled = true;
             updateSelectTitle(subjectSelect);
         }
@@ -604,9 +660,9 @@ async function initForm() {
 
     try {
         await loadCatalogConfig();
-        populateSelect("language", CONFIG.languages, "Select Language");
+        populateSelect("language", CONFIG.languages, getFormText('selectLanguage'));
     } catch (error) {
-        languageSelect.innerHTML = '<option value="">Catalog unavailable</option>';
+        languageSelect.innerHTML = `<option value="">${getFormText('catalogUnavailable')}</option>`;
         languageSelect.disabled = true;
         resetSelections("language");
     }
