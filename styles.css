@@ -1,11 +1,9 @@
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Playfair+Display:wght@600&display=swap");
-
 /* =====================================================
    1. Global Base Styles
 ===================================================== */
 body {
-    font-family: "Inter", system-ui, -apple-system, Arial, sans-serif;
-    line-height: 1.7;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
+    line-height: 1.6;
     margin: 0;
     padding: 0;
     background-color: #ffffff;
@@ -28,12 +26,8 @@ p {
 
 
 h1 {
-    font-family: "Playfair Display", "Inter", Georgia, serif;
-    font-size: 38px;
-    font-weight: 600;
-    letter-spacing: -0.01em;
-    color: #0f172a;
-    margin-bottom: 24px;
+    font-size: 35px;
+    margin-bottom: 20px;
 }
 
 .visually-hidden {
@@ -60,9 +54,9 @@ h1 {
     padding: 0 20px 20px;
     max-width: 800px;
     margin: auto;
+    text-align: center;
     box-shadow: none;
     border: none;
-    text-align: left;
 }
 
 .back-to-top-button {
@@ -89,12 +83,12 @@ html {
 }
 
 footer {
-    background-color: transparent;
+    background-color: #ffffff;
     text-align: center;
-    padding: 32px 0 24px;
+    padding: 20px 0;
     font-size: 14px;
-    color: #475569;
-    border-top: 1px solid rgba(148, 163, 184, 0.18);
+    color: #333;
+    border-top: none;
     width: 100%;
 }
 
@@ -120,7 +114,7 @@ select {
     border-radius: 8px;
     padding: 10px 36px 10px 20px;
     font-size: 14px;
-    font-family: "Inter", system-ui, -apple-system, Arial, sans-serif;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
     cursor: pointer;
     width: 180px;
     max-width: 100%;
@@ -203,7 +197,7 @@ a.hidden {
     justify-content: center;
     gap: 8px;
     font-size: 14px;
-    font-family: "Inter", system-ui, -apple-system, Arial, sans-serif;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
     padding: 10px 16px;
     border: 1px solid #d1d5db;
     border-radius: 8px;
@@ -316,7 +310,7 @@ header {
     display: flex;
     align-items: center;
     gap: 22px;
-    font-family: "Inter", system-ui, -apple-system, Arial, sans-serif;
+    font-family: system-ui, -apple-system, Arial, sans-serif;
 }
 
 .header-actions {
@@ -350,11 +344,10 @@ header {
 
 .custom-nav a {
     text-decoration: none;
-    color: #1f2937;
-    font-size: 13px;
-    letter-spacing: 0.16em;
-    font-weight: 500;
-    transition: color 0.2s ease;
+    color: #000;
+    font-size: 14px;
+    letter-spacing: 0.1em;
+    font-weight: 400;
 }
 
 .custom-nav a.active {
@@ -366,8 +359,7 @@ header {
 }
 
 .custom-nav a:hover {
-    text-decoration: none;
-    color: #F69520;
+    text-decoration: underline;
 }
 
 /* --- Mobile Header --- */
