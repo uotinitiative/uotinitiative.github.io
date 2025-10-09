@@ -78,6 +78,10 @@ h1 {
   text-decoration: none;
 }
 
+.page-section .back-to-top-button {
+  color: #111827;
+}
+
 html {
   scroll-behavior: smooth;
 }
