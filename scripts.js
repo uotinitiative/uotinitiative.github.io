@@ -424,8 +424,9 @@ function getDetailSlugFromPdf(pdfUrl) {
         return null;
     }
 
-    if (DETAIL_PAGE_MAP[folderName]) {
-        return DETAIL_PAGE_MAP[folderName];
+    const directEnglishSlug = DETAIL_PAGE_MAP[folderName];
+    if (directEnglishSlug) {
+        return getLocalizedPath(directEnglishSlug, 'en');
     }
 
     const folderParts = folderName.split('_');
