@@ -178,6 +178,16 @@ const FORM_TEXT = {
   },
 };
 
+const DOWNLOAD_API_ENDPOINT = 'https://uoti-vercel-api.vercel.app/api/download?file=';
+
+function onDomReady(callback) {
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', callback);
+    return;
+  }
+  callback();
+}
+
 function normalizeLanguageCode(value) {
   if (!value) {
     return '';
@@ -355,54 +365,72 @@ function buildConfigMap(entries) {
 }
 
 async function loadCatalogConfig() {
-    if (!catalogLoadPromise) {
-        catalogLoadPromise = fetch('/data/catalog.json', { cache: 'no-store' })
-            .then(response => {
-                if (!response.ok) {
-                    throw new Error(`Failed to load catalog: ${response.status}`);
-                }
-                return response.json();
-            })
-            .then(entries => {
-                const normalizedEntries = Array.isArray(entries) ? entries : [];
-                const map = buildConfigMap(normalizedEntries);
-                CONFIG.languages = map.languages;
-                catalogReady = true;
-                return CONFIG;
-            })
-            .catch(error => {
-                console.error('Catalog data failed to load', error);
-                catalogReady = false;
-                catalogLoadPromise = null;
-                throw error;
-            });
+    if (catalogLoadPromise) {
+        return catalogLoadPromise;
     }
+
+    catalogLoadPromise = (async () => {
+        try {
+            const response = await fetch('/data/catalog.json', { cache: 'no-store' });
+            if (!response.ok) {
+                throw new Error(`Failed to load catalog: ${response.status}`);
+            }
+
+            const entries = await response.json();
+            const normalizedEntries = Array.isArray(entries) ? entries : [];
+            const map = buildConfigMap(normalizedEntries);
+            CONFIG.languages = map.languages;
+            catalogReady = true;
+            return CONFIG;
+        } catch (error) {
+            console.error('Catalog data failed to load', error);
+            catalogReady = false;
+            catalogLoadPromise = null;
+            throw error;
+        }
+    })();
 
     return catalogLoadPromise;
 }
 
-function disableDownloadLink() {
-    const downloadLink = document.getElementById("download-link");
-    if (!downloadLink) {
-        return;
-    }
-    downloadLink.classList.add("disabled");
-    downloadLink.classList.remove("download-link-active");
-    downloadLink.setAttribute("aria-disabled", "true");
-    downloadLink.setAttribute("tabindex", "-1");
-    downloadLink.href = "#";
+function getDownloadLinkElement() {
+    return document.getElementById("download-link");
 }
 
-function enableDownloadLink(url) {
-    const downloadLink = document.getElementById("download-link");
-    if (!downloadLink) {
+function disableDownloadLink(link = getDownloadLinkElement()) {
+    if (!link) {
         return;
     }
-    downloadLink.classList.remove("disabled");
-    downloadLink.classList.add("download-link-active");
-    downloadLink.removeAttribute("aria-disabled");
-    downloadLink.removeAttribute("tabindex");
-    downloadLink.href = url;
+    link.classList.add("disabled");
+    link.classList.remove("download-link-active");
+    link.setAttribute("aria-disabled", "true");
+    link.setAttribute("tabindex", "-1");
+    link.href = "#";
+}
+
+function enableDownloadLink(url, link = getDownloadLinkElement()) {
+    if (!link) {
+        return;
+    }
+    link.classList.remove("disabled");
+    link.classList.add("download-link-active");
+    link.removeAttribute("aria-disabled");
+    link.removeAttribute("tabindex");
+    link.href = url;
+}
+
+async function fetchSignedDownloadUrl(filePath) {
+    const response = await fetch(`${DOWNLOAD_API_ENDPOINT}${encodeURIComponent(filePath)}`);
+    if (!response.ok) {
+        throw new Error(`Failed to fetch signed URL: ${response.status}`);
+    }
+
+    const data = await response.json();
+    if (!data || !data.url) {
+        throw new Error('Response missing URL');
+    }
+
+    return data.url;
 }
 
 function getDetailSlugFromPdf(pdfUrl) {
@@ -459,66 +487,61 @@ function prepareTextbookDetailDownloads() {
     }
 
     detailLinks.forEach(link => {
-        const state = link.getAttribute('data-download-state');
-        if (state === 'loading' || state === 'ready') {
-            return;
-        }
-
-        const linkTarget = link.getAttribute('data-pdf') || link.getAttribute('href');
-        if (!linkTarget || linkTarget === '#' || linkTarget.startsWith('http')) {
-            return;
-        }
-
-        link.setAttribute('data-pdf', linkTarget);
-        link.setAttribute('data-download-state', 'loading');
-        link.classList.add('textbook-download--loading');
-        link.setAttribute('aria-disabled', 'true');
-        link.setAttribute('tabindex', '-1');
-        if (!link.hasAttribute('data-original-content')) {
-            link.setAttribute('data-original-content', link.innerHTML);
-        }
-        if (link.hasAttribute('target') && !link.hasAttribute('data-original-target')) {
-            link.setAttribute('data-original-target', link.getAttribute('target'));
-        }
-        link.href = '#';
-
-        fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(linkTarget)}`)
-            .then(res => {
-                if (!res.ok) {
-                    throw new Error(`Failed to fetch signed URL: ${res.status}`);
-                }
-                return res.json();
-            })
-            .then(data => {
-                if (!data || !data.url) {
-                    throw new Error('Response missing URL');
-                }
-                link.href = data.url;
-                link.classList.remove('textbook-download--loading');
-                link.removeAttribute('aria-disabled');
-                link.removeAttribute('tabindex');
-                const originalContent = link.getAttribute('data-original-content');
-                if (originalContent) {
-                    link.innerHTML = originalContent;
-                }
-                const originalTarget = link.getAttribute('data-original-target');
-                if (originalTarget) {
-                    link.setAttribute('target', originalTarget);
-                }
-                link.setAttribute('data-download-state', 'ready');
-            })
-            .catch(error => {
-                console.error('Signed download link failed to load', error);
-                link.classList.remove('textbook-download--loading');
-                link.classList.add('textbook-download--error');
-                link.textContent = getFormText('downloadUnavailable');
-                link.setAttribute('data-download-state', 'error');
-                link.removeAttribute('tabindex');
-                link.removeAttribute('aria-disabled');
-                link.removeAttribute('target');
-                link.href = '#';
-            });
+        prepareTextbookDownloadLink(link);
     });
+}
+
+async function prepareTextbookDownloadLink(link) {
+    const state = link.getAttribute('data-download-state');
+    if (state === 'loading' || state === 'ready') {
+        return;
+    }
+
+    const linkTarget = link.getAttribute('data-pdf') || link.getAttribute('href');
+    if (!linkTarget || linkTarget === '#' || linkTarget.startsWith('http')) {
+        return;
+    }
+
+    link.setAttribute('data-pdf', linkTarget);
+    link.setAttribute('data-download-state', 'loading');
+    link.classList.add('textbook-download--loading');
+    link.setAttribute('aria-disabled', 'true');
+    link.setAttribute('tabindex', '-1');
+
+    if (!link.hasAttribute('data-original-content')) {
+        link.setAttribute('data-original-content', link.innerHTML);
+    }
+    if (link.hasAttribute('target') && !link.hasAttribute('data-original-target')) {
+        link.setAttribute('data-original-target', link.getAttribute('target'));
+    }
+    link.href = '#';
+
+    try {
+        const url = await fetchSignedDownloadUrl(linkTarget);
+        link.href = url;
+        link.classList.remove('textbook-download--loading');
+        link.removeAttribute('aria-disabled');
+        link.removeAttribute('tabindex');
+        const originalContent = link.getAttribute('data-original-content');
+        if (originalContent) {
+            link.innerHTML = originalContent;
+        }
+        const originalTarget = link.getAttribute('data-original-target');
+        if (originalTarget) {
+            link.setAttribute('target', originalTarget);
+        }
+        link.setAttribute('data-download-state', 'ready');
+    } catch (error) {
+        console.error('Signed download link failed to load', error);
+        link.classList.remove('textbook-download--loading');
+        link.classList.add('textbook-download--error');
+        link.textContent = getFormText('downloadUnavailable');
+        link.setAttribute('data-download-state', 'error');
+        link.removeAttribute('tabindex');
+        link.removeAttribute('aria-disabled');
+        link.removeAttribute('target');
+        link.href = '#';
+    }
 }
 
 // Helper function to populate select options
@@ -581,7 +604,7 @@ function showSubject() {
 }
 
 // Show download link based on selected subject
-function showDownload() {
+async function showDownload() {
     const language = document.getElementById("language").value;
     const age = document.getElementById("learner-age").value;
     const subject = document.getElementById("subject").value;
@@ -609,16 +632,14 @@ function showDownload() {
         return;
     }
 
-    fetch(`https://uoti-vercel-api.vercel.app/api/download?file=${encodeURIComponent(pdfUrl)}`)
-        .then(res => res.json())
-        .then(data => {
-            enableDownloadLink(data.url);
-        })
-        .catch(err => {
-            console.error("Failed to fetch signed URL", err);
-            disableDownloadLink();
-            alert(getFormText('downloadFailed'));
-        });
+    try {
+        const signedUrl = await fetchSignedDownloadUrl(pdfUrl);
+        enableDownloadLink(signedUrl);
+    } catch (err) {
+        console.error("Failed to fetch signed URL", err);
+        disableDownloadLink();
+        alert(getFormText('downloadFailed'));
+    }
 }
 
 // Reset selections and hide download link
@@ -734,33 +755,29 @@ function initSiteLanguageSelectors() {
     }
 }
 
-// Call initForm when the DOM is fully loaded
-document.addEventListener("DOMContentLoaded", initForm);
-document.addEventListener("DOMContentLoaded", prepareTextbookDetailDownloads);
-document.addEventListener('DOMContentLoaded', initSiteLanguageSelectors);
-
-// Nav link
-document.addEventListener('DOMContentLoaded', function () {
+function initNavMenu() {
     const hamburger = document.querySelector('.hamburger-menu');
     const navMenu = document.querySelector('.nav-menu');
 
-    function closeMenu() {
-        hamburger.classList.remove('active');
-        navMenu.classList.remove('active');
+    if (!(hamburger && navMenu)) {
+        return;
     }
 
-    hamburger.addEventListener('click', function () {
+    const closeMenu = () => {
+        hamburger.classList.remove('active');
+        navMenu.classList.remove('active');
+    };
+
+    hamburger.addEventListener('click', () => {
         hamburger.classList.toggle('active');
         navMenu.classList.toggle('active');
     });
 
-    // Close menu when a nav link is clicked
     document.querySelectorAll('.nav-menu a').forEach(link => {
         link.addEventListener('click', closeMenu);
     });
 
-    // Close menu when clicking outside
-    document.addEventListener('click', function (event) {
+    document.addEventListener('click', event => {
         const isClickInsideMenu = navMenu.contains(event.target);
         const isClickOnHamburger = hamburger.contains(event.target);
 
@@ -769,29 +786,26 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     });
 
-    // Function to check if scrolling is possible
-    function isScrollable() {
-        return document.documentElement.scrollHeight > document.documentElement.clientHeight;
-    }
+    const isScrollable = () => document.documentElement.scrollHeight > document.documentElement.clientHeight;
 
-    // Close menu immediately when scrolling starts, but only if scrolling is possible
-    window.addEventListener('scroll', function () {
+    window.addEventListener('scroll', () => {
         if (navMenu.classList.contains('active') && isScrollable()) {
             closeMenu();
         }
     }, { passive: true });
 
-    // Check for changes in page content that might affect scrollability
-    const resizeObserver = new ResizeObserver(() => {
-        if (navMenu.classList.contains('active') && !isScrollable()) {
-            navMenu.classList.add('no-scroll');
-        } else {
-            navMenu.classList.remove('no-scroll');
-        }
-    });
+    if (typeof ResizeObserver === 'function' && document.body) {
+        const resizeObserver = new ResizeObserver(() => {
+            if (navMenu.classList.contains('active') && !isScrollable()) {
+                navMenu.classList.add('no-scroll');
+            } else {
+                navMenu.classList.remove('no-scroll');
+            }
+        });
 
-    resizeObserver.observe(document.body);
-});
+        resizeObserver.observe(document.body);
+    }
+}
 
 // Search
 
@@ -860,47 +874,67 @@ function filterAndHighlight() {
 
 const selectedTags = new Set();
 
-document.querySelectorAll('.tag').forEach(tag => {
-  tag.addEventListener('click', () => {
-    const value = tag.dataset.filter;
+function initCatalogTagFilters() {
+  const tags = document.querySelectorAll('.tag');
+  if (!tags.length) {
+    return;
+  }
 
-    if (selectedTags.has(value)) {
-      selectedTags.delete(value);
-      tag.classList.remove('active');
-    } else {
-      selectedTags.add(value);
-      tag.classList.add('active');
-    }
+  tags.forEach(tag => {
+    tag.addEventListener('click', () => {
+      const value = tag.dataset.filter;
+      if (!value) {
+        return;
+      }
 
-    filterAndHighlight();
-  });
-});
+      if (selectedTags.has(value)) {
+        selectedTags.delete(value);
+        tag.classList.remove('active');
+      } else {
+        selectedTags.add(value);
+        tag.classList.add('active');
+      }
 
-// FAQ
-  document.addEventListener('DOMContentLoaded', () => {
-    const questions = document.querySelectorAll('.faq-question.collapsible');
-    
-    questions.forEach(q => {
-      q.addEventListener('click', () => {
-        q.classList.toggle('active');
-        const answer = q.nextElementSibling;
-        if (answer.style.display === 'block') {
-          answer.style.display = 'none';
-        } else {
-          answer.style.display = 'block';
-        }
-      });
+      filterAndHighlight();
     });
   });
+}
+
+// FAQ
+function initFaqAccordion() {
+  const questions = document.querySelectorAll('.faq-question.collapsible');
+  if (!questions.length) {
+    return;
+  }
+
+  questions.forEach(question => {
+    question.addEventListener('click', () => {
+      question.classList.toggle('active');
+      const answer = question.nextElementSibling;
+      if (!answer) {
+        return;
+      }
+
+      if (answer.style.display === 'block') {
+        answer.style.display = 'none';
+      } else {
+        answer.style.display = 'block';
+      }
+    });
+  });
+}
 
 // Stats
-document.addEventListener('DOMContentLoaded', () => {
+function initAnimatedCounters() {
   const counters = document.querySelectorAll('.counter');
+  if (!counters.length) {
+    return;
+  }
 
   counters.forEach(counter => {
     const update = () => {
-      const target = +counter.getAttribute('data-target');
-      const current = +counter.innerText;
+      const target = Number(counter.getAttribute('data-target'));
+      const current = Number(counter.innerText);
       const increment = Math.ceil(target / 200);
 
       if (current < target) {
@@ -913,10 +947,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
     update();
   });
-});
+}
 
 // Inject BreadcrumbList structured data
-document.addEventListener('DOMContentLoaded', () => {
+function injectBreadcrumbSchema() {
   const breadcrumbNav = document.querySelector('nav.breadcrumb');
   if (!breadcrumbNav) {
     return;
@@ -961,4 +995,15 @@ document.addEventListener('DOMContentLoaded', () => {
   script.type = 'application/ld+json';
   script.text = JSON.stringify(schema);
   document.head.appendChild(script);
+}
+
+onDomReady(() => {
+  initForm();
+  prepareTextbookDetailDownloads();
+  initSiteLanguageSelectors();
+  initNavMenu();
+  initCatalogTagFilters();
+  initFaqAccordion();
+  initAnimatedCounters();
+  injectBreadcrumbSchema();
 });
