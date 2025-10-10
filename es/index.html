@@ -50,7 +50,8 @@
   <link rel="alternate" href="https://uotinitiative.org/zh/" hreflang="zh">
   <link rel="alternate" href="https://uotinitiative.org/pl/" hreflang="pl">
   <link rel="alternate" href="https://uotinitiative.org/" hreflang="x-default">
-<!-- Structured Data -->
+
+  <!-- Structured Data -->
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -94,7 +95,7 @@
             <label class="visually-hidden" for="site-language-selector-desktop">Selecciona el idioma del sitio</label>
             <select id="site-language-selector-desktop" class="language-selector__control" data-language-switcher>
               <option value="/" data-lang="en">English</option>
-              <option value="/es/" data-lang="es">Español</option>
+              <option value="/es/" data-lang="es" selected>Español</option>
               <option value="/ar/" data-lang="ar">العربية</option>
               <option value="/zh/" data-lang="zh">中文</option>
               <option value="/pl/" data-lang="pl">Polski</option>
@@ -118,7 +119,7 @@
             <label class="visually-hidden" for="site-language-selector-mobile">Selecciona el idioma del sitio</label>
             <select id="site-language-selector-mobile" class="language-selector__control" data-language-switcher>
               <option value="/" data-lang="en">English</option>
-              <option value="/es/" data-lang="es">Español</option>
+              <option value="/es/" data-lang="es" selected>Español</option>
               <option value="/ar/" data-lang="ar">العربية</option>
               <option value="/zh/" data-lang="zh">中文</option>
               <option value="/pl/" data-lang="pl">Polski</option>
@@ -159,33 +160,34 @@
 
     <section class="homepage-downloads download-section">
       <table>
+        <caption class="visually-hidden">Selecciona un idioma, edad del estudiante y asignatura para acceder a los libros de texto abiertos.</caption>
         <thead>
           <tr>
-            <th>Idioma</th>
-            <th>Edad del estudiante</th>
-            <th>Asignatura</th>
-            <th>Descarga</th>
+            <th id="language-column" scope="col">Idioma</th>
+            <th id="age-column" scope="col">Edad del estudiante</th>
+            <th id="subject-column" scope="col">Asignatura</th>
+            <th id="download-column" scope="col">Descarga</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>
-              <select id="language" onchange="showLearnerAge()">
+              <select id="language" aria-labelledby="language-column">
                 <option value="">Selecciona un idioma</option>
               </select>
             </td>
             <td>
-              <select id="learner-age" onchange="showSubject()" disabled>
+              <select id="learner-age" aria-labelledby="age-column" disabled>
                 <option value="">Selecciona una edad</option>
               </select>
             </td>
             <td>
-              <select id="subject" onchange="showDownload()" disabled>
+              <select id="subject" aria-labelledby="subject-column" disabled>
                 <option value="">Selecciona una asignatura</option>
               </select>
             </td>
             <td>
-              <a id="download-link" class="download-link link-with-arrow disabled" href="#" target="_blank" aria-disabled="true" tabindex="-1">
+              <a id="download-link" class="download-link link-with-arrow disabled" href="#" target="_blank" aria-disabled="true" tabindex="-1" aria-labelledby="download-column">
                 Ver detalles y descargar
               </a>
             </td>
