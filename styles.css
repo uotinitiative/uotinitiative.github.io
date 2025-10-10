@@ -3,6 +3,7 @@
 ===================================================== */
 :root {
     --font-family-base: system-ui, -apple-system, Arial, sans-serif;
+    --font-family-brand: "Cormorant Garamond", "Times New Roman", serif;
     --color-accent: #F69520;
     --color-accent-dark: #d47916;
 }
@@ -34,6 +35,12 @@ p {
 h1 {
     font-size: 35px;
     margin-bottom: 20px;
+}
+
+.homepage main > h1 {
+    font-family: var(--font-family-brand);
+    font-weight: 600;
+    letter-spacing: 0.01em;
 }
 
 .visually-hidden {
