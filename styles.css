@@ -1,8 +1,14 @@
 /* =====================================================
    1. Global Base Styles
 ===================================================== */
+:root {
+    --font-family-base: system-ui, -apple-system, Arial, sans-serif;
+    --color-accent: #F69520;
+    --color-accent-dark: #d47916;
+}
+
 body {
-    font-family: system-ui, -apple-system, Arial, sans-serif;
+    font-family: var(--font-family-base);
     line-height: 1.6;
     margin: 0;
     padding: 0;
@@ -19,7 +25,7 @@ p {
 .highlight-yellow {
     background: none;
     text-decoration: underline;
-    text-decoration-color: #F69520;
+    text-decoration-color: var(--color-accent);
     text-decoration-thickness: 0.05em;
     text-underline-offset: 0.2em;
 }
@@ -41,6 +47,7 @@ h1 {
     white-space: nowrap;
     border: 0;
 }
+
 
 /* =====================================================
    2. Layout Containers
@@ -117,7 +124,7 @@ select {
     border-radius: 8px;
     padding: 10px 36px 10px 20px;
     font-size: 14px;
-    font-family: system-ui, -apple-system, Arial, sans-serif;
+    font-family: var(--font-family-base);
     cursor: pointer;
     width: 180px;
     max-width: 100%;
@@ -140,7 +147,7 @@ select option {
 
 select:focus {
     outline: none;
-    border-color: #F69520;
+    border-color: var(--color-accent);
     box-shadow: 0 0 0 3px rgba(246, 149, 32, 0.15);
 }
 
@@ -183,7 +190,7 @@ th, td {
 
 a {
     text-decoration: none;
-    color: #F69520;
+    color: var(--color-accent);
 }
 
 a:hover {
@@ -200,7 +207,7 @@ a.hidden {
     justify-content: center;
     gap: 8px;
     font-size: 14px;
-    font-family: system-ui, -apple-system, Arial, sans-serif;
+    font-family: var(--font-family-base);
     padding: 10px 16px;
     border: 1px solid #d1d5db;
     border-radius: 8px;
@@ -223,9 +230,9 @@ a.hidden {
 
 #download-link.download-link-active,
 .download-link.download-link-active {
-    background-color: #F69520;
+    background-color: var(--color-accent);
     border-radius: 6px;
-    border-color: #F69520;
+    border-color: var(--color-accent);
     color: #ffffff;
     transition: background-color 0.2s ease-in-out, border-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
@@ -259,7 +266,7 @@ header {
 
 /* Donate Button for Desktop & Mobile */
 .donate-button {
-    background-color: #F69520;
+    background-color: var(--color-accent);
     color: #fff !important;
     padding: 8px 16px;
     border-radius: 20px;
@@ -271,7 +278,7 @@ header {
 }
 
 .donate-button:hover {
-    background-color: #d47916;
+    background-color: var(--color-accent-dark);
     text-decoration: none;
 }
 
@@ -313,7 +320,7 @@ header {
     display: flex;
     align-items: center;
     gap: 22px;
-    font-family: system-ui, -apple-system, Arial, sans-serif;
+    font-family: var(--font-family-base);
 }
 
 .header-actions {
@@ -332,13 +339,13 @@ header {
     padding: 7px 36px 7px 14px;
     font-size: 13px;
     border-radius: 999px;
-    border-color: #F69520;
+    border-color: var(--color-accent);
     background-color: #ffffff;
     color: #0f172a;
 }
 
 .language-selector__control:focus {
-    border-color: #F69520;
+    border-color: var(--color-accent);
 }
 
 .language-selector__control:hover {
@@ -354,11 +361,11 @@ header {
 }
 
 .custom-nav a.active {
-    color: #F69520;
+    color: var(--color-accent);
 }
 
 .nav-menu a.active {
-    color: #F69520;
+    color: var(--color-accent);
 }
 
 .custom-nav a:hover {
@@ -651,7 +658,7 @@ header {
 
 #catalog-search:focus {
     outline: none;
-    border-color: #F69520;
+    border-color: var(--color-accent);
     box-shadow: 0 0 5px rgba(246, 149, 32, 0.3);
 }
 
@@ -681,7 +688,7 @@ header {
     margin-bottom: 10px;
 }
 .card-title-link {
-    color: #F69520;
+    color: var(--color-accent);
     text-decoration: none;
 }
 .card-title-link:hover,
@@ -699,7 +706,7 @@ header {
     gap: 6px;
     margin-top: 10px;
     font-weight: 600;
-    color: #F69520;
+    color: var(--color-accent);
 }
 .card-detail-link::after,
 .link-with-arrow::after {
@@ -799,7 +806,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     font-size: 15px;
 }
 .language-availability__list a {
-    color: #F69520;
+    color: var(--color-accent);
     font-weight: 500;
     text-decoration: none;
 }
@@ -807,32 +814,17 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 .language-availability__list a:focus {
     text-decoration: underline;
 }
-.homepage .book-container h1,
-.search-page .book-container h1,
-.about-page .book-container h1,
-.updates-page .book-container h1,
-.terms-page .book-container h1,
-.privacy-page .book-container h1 {
+:is(.homepage, .search-page, .about-page, .updates-page, .terms-page, .privacy-page) .book-container h1 {
     text-align: center;
 }
 .homepage .book-container h1 {
     margin-top: 14px;
     margin-bottom: 14px;
 }
-.homepage .textbook-panel-title,
-.search-page .textbook-panel-title,
-.about-page .textbook-panel-title,
-.updates-page .textbook-panel-title,
-.terms-page .textbook-panel-title,
-.privacy-page .textbook-panel-title {
+:is(.homepage, .search-page, .about-page, .updates-page, .terms-page, .privacy-page) .textbook-panel-title {
     text-align: center;
 }
-.homepage .page-section-title,
-.search-page .page-section-title,
-.about-page .page-section-title,
-.updates-page .page-section-title,
-.terms-page .page-section-title,
-.privacy-page .page-section-title {
+:is(.homepage, .search-page, .about-page, .updates-page, .terms-page, .privacy-page) .page-section-title {
     text-align: center;
 }
 .homepage .book-container p {
@@ -932,7 +924,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     line-height: 1.7;
 }
 .textbook-panel a {
-    color: #F69520;
+    color: var(--color-accent);
     text-decoration: none;
 }
 .textbook-panel a:hover {
@@ -974,7 +966,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     line-height: 1.7;
 }
 .page-section a {
-    color: #F69520;
+    color: var(--color-accent);
     text-decoration: none;
 }
 .page-section a:hover {
@@ -1037,7 +1029,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     display: inline-flex;
     align-items: center;
     justify-content: center;
-    background-color: #F69520;
+    background-color: var(--color-accent);
     color: #fff !important;
     padding: 6px 14px;
     border-radius: 18px;
@@ -1050,7 +1042,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
 .textbook-download:hover {
-    background-color: #d47916;
+    background-color: var(--color-accent-dark);
     text-decoration: none;
     transform: translateY(-1px);
 }
@@ -1074,7 +1066,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     cursor: pointer;
 }
 .license-tooltip__trigger:focus-visible {
-    outline: 2px solid #F69520;
+    outline: 2px solid var(--color-accent);
     outline-offset: 2px;
 }
 .license-tooltip__icon {
@@ -1121,22 +1113,11 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     pointer-events: auto;
 }
 .license-tooltip__content a {
-    color: #F69520;
+    color: var(--color-accent);
     text-decoration: underline;
 }
 .license-tooltip__content a:hover {
-    color: #d47916;
-}
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    padding: 0;
-    margin: -1px;
-    overflow: hidden;
-    clip: rect(0, 0, 0, 0);
-    white-space: nowrap;
-    border: 0;
+    color: var(--color-accent-dark);
 }
 @media (max-width: 640px) {
     .textbook-detail-page .book-container {
@@ -1223,7 +1204,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     color: #6b7280;
 }
 .breadcrumb a {
-    color: #F69520;
+    color: var(--color-accent);
 }
 .book-tagline {
     font-size: 18px;
@@ -1253,7 +1234,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     gap: 8px;
     padding: 12px 18px;
     border-radius: 999px;
-    background-color: #F69520;
+    background-color: var(--color-accent);
     color: #ffffff;
     font-weight: 600;
     text-decoration: none;
@@ -1261,7 +1242,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 }
 .primary-download:hover {
     text-decoration: none;
-    background-color: #d47916;
+    background-color: var(--color-accent-dark);
 }
 .book-section {
     text-align: left;
@@ -1334,9 +1315,9 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 }
 
 .tag.active {
-  background-color: #F69520;
+  background-color: var(--color-accent);
   color: white;
-  border-color: #F69520;
+  border-color: var(--color-accent);
 }
 
 .tag-close {
@@ -1387,7 +1368,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 
 .filter-group select:focus {
     outline: none;
-    border-color: #F69520;
+    border-color: var(--color-accent);
     box-shadow: 0 0 0 2px rgba(246, 149, 32, 0.1);
 }
 
@@ -1443,7 +1424,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     display: inline-flex;
     align-items: center;
     gap: 5px;
-    color: #F69520;
+    color: var(--color-accent);
     text-decoration: none;
     font-weight: 500;
 }
@@ -1588,7 +1569,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
 .stat .counter {
   font-size:2.75rem;
   font-weight: bold;
-  color: #F69520;
+  color: var(--color-accent);
   display: inline-block;
   min-width: 2ch;
 }
