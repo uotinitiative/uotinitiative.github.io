@@ -349,7 +349,7 @@ header {
 }
 
 .language-selector__control:hover {
-    border-color: #d56401;
+    border-color: var(--color-accent-dark);
 }
 
 .custom-nav a {
