@@ -8,6 +8,12 @@ Sitemap: https://uotinitiative.org/sitemap.xml
 User-agent: GPTBot
 Allow: /
 
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
 User-agent: ChatGPT-User
 Allow: /
 

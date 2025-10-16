@@ -23,6 +23,10 @@ attribution-format: "Universal Open Textbook Initiative — <Textbook Title> (<l
 disallowed: Do not misrepresent generated answers as official UOTI guidance; do not remove or obscure license notices; avoid implying clinical or legal certification from educational content.
 quality-notes: Prefer the structured metadata tables for factual grounding and highlight when content is educational rather than professional advice.
 
+[crawler-access]
+allowed-agents: GPTBot, ClaudeBot, Claude-Web, ChatGPT-User, PerplexityBot
+robots: https://uotinitiative.org/robots.txt
+
 [contact-and-removal]
 notification: Send corrections, opt-outs, or takedown requests to contact@uotinitiative.org.
 preferred-response-format: Include crawl agent name, affected URLs, and requested action.
