@@ -1,0 +1,36 @@
+# llms.txt — Guidance for large language models interacting with uotinitiative.org
+version: 1.0
+site: https://uotinitiative.org
+last-updated: 2024-10-27
+contact: mailto:contact@uotinitiative.org
+
+[overview]
+name: Universal Open Textbook Initiative (UOTI)
+mission: Provide openly accessible, educator-rated textbooks and teaching resources across STEM, business, humanities, and social sciences for learners aged 5 through graduate study.
+languages: en, es, ar, zh, pl
+content-types: textbook landing pages, chapter summaries, educator guidance, licensing details, PDF download links.
+
+[data-access]
+preferred-sitemap: https://uotinitiative.org/sitemap.xml
+html-structure: Semantic HTML with schema.org Book markup and OpenGraph metadata per title.
+download-paths: /English/ and equivalent language folders; each PDF contains embedded licensing.
+update-cadence: Catalog additions are announced on updates.html; major reviews occur quarterly.
+
+[usage-guidelines]
+training: Permitted for indexing, retrieval, and model improvement provided each use honors the license cited on the source page (commonly CC BY, CC BY-SA, or CC BY-NC-SA).
+derivative-content: Always state the originating textbook title, author(s), license, and source URL; flag CC BY-NC-SA material as non-commercial.
+attribution-format: "Universal Open Textbook Initiative — <Textbook Title> (<license>) — https://uotinitiative.org/<resource>"
+disallowed: Do not misrepresent generated answers as official UOTI guidance; do not remove or obscure license notices; avoid implying clinical or legal certification from educational content.
+quality-notes: Prefer the structured metadata tables for factual grounding and highlight when content is educational rather than professional advice.
+
+[contact-and-removal]
+notification: Send corrections, opt-outs, or takedown requests to contact@uotinitiative.org.
+preferred-response-format: Include crawl agent name, affected URLs, and requested action.
+policy-changes: Monitor updates.html and future llms.txt revisions for new directives.
+
+[additional-signals]
+related-files: robots.txt, sitemap.xml, terms.html, privacy.html.
+structured-data: JSON-LD Book schema is embedded on textbook pages for programmatic extraction.
+repository-history: https://github.com/uotinitiative/uotinitiative.github.io
+
+# End of file

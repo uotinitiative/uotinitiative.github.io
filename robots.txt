@@ -3,6 +3,8 @@ Allow: /
 
 Sitemap: https://uotinitiative.org/sitemap.xml
 
+# Large language model usage guidelines: https://uotinitiative.org/llms.txt
+
 User-agent: GPTBot
 Allow: /
 
