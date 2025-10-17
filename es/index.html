@@ -1,292 +1,345 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="es">
- <head>
-  <meta charset="utf-8"/>
-  <meta content="width=device-width,initial-scale=1" name="viewport"/>
-  <title>
-   Iniciativa Universal de Libros de Texto Abiertos
-  </title>
-  <link href="/styles.css" rel="stylesheet"/>
-  <link href="https://fonts.googleapis.com" rel="dns-prefetch"/>
-  <link href="https://fonts.gstatic.com" rel="dns-prefetch"/>
-  <link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
-  <link href="https://www.google-analytics.com" rel="dns-prefetch"/>
-  <link href="https://uoti-vercel-api.vercel.app" rel="dns-prefetch"/>
-  <link href="https://www.googletagmanager.com" rel="preconnect"/>
-  <link href="https://fonts.googleapis.com" rel="preconnect"/>
-  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
-  <link as="style" crossorigin="" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
-  <noscript>
-   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap" rel="stylesheet"/>
-  </noscript>
-  <meta content="La Iniciativa Universal de Libros de Texto Abiertos (UOTI) busca mejorar la calidad y la accesibilidad de los recursos educativos en todo el mundo al ofrecer libros de texto gratuitos, de alta calidad y en múltiples idiomas." name="description"/>
-  <meta content="libros de texto abiertos, REA, educación universal, Vatsal, recursos educativos" name="keywords"/>
-  <meta content="index, follow" name="robots"/>
-  <meta content="Iniciativa Universal de Libros de Texto Abiertos" property="og:site_name"/>
-  <meta content="website" property="og:type"/>
-  <meta content="Iniciativa Universal de Libros de Texto Abiertos" property="og:title"/>
-  <meta content="Descubre la colección más grande de libros de texto abiertos, gratuitos y multilingües de la Iniciativa Universal de Libros de Texto Abiertos." property="og:description"/>
-  <meta content="https://uotinitiative.org/es/" property="og:url"/>
-  <meta content="https://uotinitiative.org/logo.svg" property="og:image"/>
-  <meta content="es-419" property="og:locale"/>
-  <meta content="summary_large_image" name="twitter:card"/>
-  <meta content="Iniciativa Universal de Libros de Texto Abiertos" name="twitter:title"/>
-  <meta content="Accede a libros de texto abiertos, gratuitos y multilingües para todos los niveles educativos." name="twitter:description"/>
-  <meta content="https://uotinitiative.org/logo.svg" name="twitter:image"/>
-  <link href="https://uotinitiative.org/favicon/favicon.ico" rel="icon"/>
-  <link href="https://uotinitiative.org/favicon/favicon.ico" rel="shortcut icon"/>
-  <link href="https://uotinitiative.org/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
-  <link href="https://uotinitiative.org/favicon/web-app-manifest-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
-  <link href="https://uotinitiative.org/favicon/web-app-manifest-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
-  <link href="https://uotinitiative.org/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
-  <link href="https://uotinitiative.org/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
-  <link href="https://uotinitiative.org/favicon/site.webmanifest" rel="manifest"/>
-  <link href="https://uotinitiative.org/es/" rel="canonical"/>
-  <link href="https://uotinitiative.org/" hreflang="en" rel="alternate"/>
-  <link href="https://uotinitiative.org/es/" hreflang="es" rel="alternate"/>
-  <link href="https://uotinitiative.org/ar/" hreflang="ar" rel="alternate"/>
-  <link href="https://uotinitiative.org/zh/" hreflang="zh" rel="alternate"/>
-  <link href="https://uotinitiative.org/pl/" hreflang="pl" rel="alternate"/>
-  <link href="https://uotinitiative.org/" hreflang="x-default" rel="alternate"/>
-  <script type="application/ld+json">
-   {"@context":"https://schema.org","@type":["NonProfit","EducationalOrganization"],"name":"Iniciativa Universal de Libros de Texto Abiertos","foundingDate":"2024-05-27","founder":{"@type":"Person","name":"Vatsal","url":"https://www.readvatsal.com"},"description":"La Iniciativa Universal de Libros de Texto Abiertos (UOTI) busca mejorar la calidad y la accesibilidad de los recursos educativos en todo el mundo al ofrecer libros de texto gratuitos, de alta calidad y en m\u00faltiples idiomas.","contactPoint":{"@type":"ContactPoint","email":"contact@uotinitiative.org","contactType":"customer support"},"url":"https://uotinitiative.org"}
-  </script>
- </head>
- <body class="static-page homepage">
-  <header>
-   <div class="custom-header desktop-only">
-    <div class="header-content">
-     <div class="header-logo">
-      <a href="/es/">
-       <img alt="Logo" class="logo" src="/logo.svg"/>
-      </a>
-     </div>
-     <nav class="custom-nav">
-      <a href="/es/search.html">
-       BUSCAR
-      </a>
-      <a href="/es/about.html">
-       ACERCA DE
-      </a>
-      <a href="/es/updates.html">
-       NOVEDADES
-      </a>
-      <a href="mailto:contact@uotinitiative.org">
-       CONTACTO
-      </a>
-     </nav>
-     <div class="header-actions">
-      <div class="language-selector">
-       <label class="visually-hidden" for="site-language-selector-desktop">
-        Selecciona el idioma del sitio
-       </label>
-       <select class="language-selector__control" data-language-switcher="" id="site-language-selector-desktop">
-        <option data-lang="en" value="/">
-         English
-        </option>
-        <option data-lang="es" selected="selected" value="/es/">
-         Español
-        </option>
-        <option data-lang="ar" value="/ar/">
-         العربية
-        </option>
-        <option data-lang="zh" value="/zh/">
-         中文
-        </option>
-        <option data-lang="pl" value="/pl/">
-         Polski
-        </option>
-       </select>
-      </div>
-      <a class="donate-button" href="mailto:contact@uotinitiative.org" target="_blank">
-       DONAR
-      </a>
-     </div>
-    </div>
-   </div>
-   <div class="mobile-only">
-    <div class="header-content">
-     <div class="header-logo">
-      <a href="/es/">
-       <img alt="Logo" class="logo" src="/logo.svg"/>
-      </a>
-     </div>
-     <div class="mobile-right">
-      <div class="language-selector">
-       <label class="visually-hidden" for="site-language-selector-mobile">
-        Selecciona el idioma del sitio
-       </label>
-       <select class="language-selector__control" data-language-switcher="" id="site-language-selector-mobile">
-        <option data-lang="en" value="/">
-         English
-        </option>
-        <option data-lang="es" selected="selected" value="/es/">
-         Español
-        </option>
-        <option data-lang="ar" value="/ar/">
-         العربية
-        </option>
-        <option data-lang="zh" value="/zh/">
-         中文
-        </option>
-        <option data-lang="pl" value="/pl/">
-         Polski
-        </option>
-       </select>
-      </div>
-      <div class="header-logo">
-       <a class="donate-button" href="mailto:contact@uotinitiative.org" target="_blank">
-        DONAR
-       </a>
-      </div>
-      <nav class="navbar">
-       <div class="hamburger-menu">
-        <div class="bar">
+  <head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width,initial-scale=1" name="viewport" />
+    <title>Iniciativa Universal de Libros de Texto Abiertos</title>
+    <link href="/styles.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com" rel="dns-prefetch" />
+    <link href="https://fonts.gstatic.com" rel="dns-prefetch" />
+    <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
+    <link href="https://www.google-analytics.com" rel="dns-prefetch" />
+    <link href="https://uoti-vercel-api.vercel.app" rel="dns-prefetch" />
+    <link href="https://www.googletagmanager.com" rel="preconnect" />
+    <link href="https://fonts.googleapis.com" rel="preconnect" />
+    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+    <link
+      as="style"
+      crossorigin=""
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap"
+      onload="this.onload=null;this.rel='stylesheet'"
+      rel="preload"
+    />
+    <noscript>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap"
+        rel="stylesheet"
+      />
+    </noscript>
+    <meta
+      content="La Iniciativa Universal de Libros de Texto Abiertos (UOTI) busca mejorar la calidad y la accesibilidad de los recursos educativos en todo el mundo al ofrecer libros de texto gratuitos, de alta calidad y en múltiples idiomas."
+      name="description"
+    />
+    <meta
+      content="libros de texto abiertos, REA, educación universal, Vatsal, recursos educativos"
+      name="keywords"
+    />
+    <meta content="index, follow" name="robots" />
+    <meta
+      content="Iniciativa Universal de Libros de Texto Abiertos"
+      property="og:site_name"
+    />
+    <meta content="website" property="og:type" />
+    <meta
+      content="Iniciativa Universal de Libros de Texto Abiertos"
+      property="og:title"
+    />
+    <meta
+      content="Descubre la colección más grande de libros de texto abiertos, gratuitos y multilingües de la Iniciativa Universal de Libros de Texto Abiertos."
+      property="og:description"
+    />
+    <meta content="https://uotinitiative.org/es/" property="og:url" />
+    <meta content="https://uotinitiative.org/logo.svg" property="og:image" />
+    <meta content="es-419" property="og:locale" />
+    <meta content="summary_large_image" name="twitter:card" />
+    <meta
+      content="Iniciativa Universal de Libros de Texto Abiertos"
+      name="twitter:title"
+    />
+    <meta
+      content="Accede a libros de texto abiertos, gratuitos y multilingües para todos los niveles educativos."
+      name="twitter:description"
+    />
+    <meta content="https://uotinitiative.org/logo.svg" name="twitter:image" />
+    <link href="https://uotinitiative.org/favicon/favicon.ico" rel="icon" />
+    <link
+      href="https://uotinitiative.org/favicon/favicon.ico"
+      rel="shortcut icon"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/favicon-96x96.png"
+      rel="icon"
+      sizes="96x96"
+      type="image/png"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/web-app-manifest-192x192.png"
+      rel="icon"
+      sizes="192x192"
+      type="image/png"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/web-app-manifest-512x512.png"
+      rel="icon"
+      sizes="512x512"
+      type="image/png"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/favicon.svg"
+      rel="icon"
+      type="image/svg+xml"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/apple-touch-icon.png"
+      rel="apple-touch-icon"
+      sizes="180x180"
+    />
+    <link
+      href="https://uotinitiative.org/favicon/site.webmanifest"
+      rel="manifest"
+    />
+    <link href="https://uotinitiative.org/es/" rel="canonical" />
+    <link href="https://uotinitiative.org/" hreflang="en" rel="alternate" />
+    <link href="https://uotinitiative.org/es/" hreflang="es" rel="alternate" />
+    <link href="https://uotinitiative.org/ar/" hreflang="ar" rel="alternate" />
+    <link href="https://uotinitiative.org/zh/" hreflang="zh" rel="alternate" />
+    <link href="https://uotinitiative.org/pl/" hreflang="pl" rel="alternate" />
+    <link
+      href="https://uotinitiative.org/"
+      hreflang="x-default"
+      rel="alternate"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": ["NonProfit", "EducationalOrganization"],
+        "name": "Iniciativa Universal de Libros de Texto Abiertos",
+        "foundingDate": "2024-05-27",
+        "founder": {
+          "@type": "Person",
+          "name": "Vatsal",
+          "url": "https://www.readvatsal.com"
+        },
+        "description": "La Iniciativa Universal de Libros de Texto Abiertos (UOTI) busca mejorar la calidad y la accesibilidad de los recursos educativos en todo el mundo al ofrecer libros de texto gratuitos, de alta calidad y en m\u00faltiples idiomas.",
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "email": "contact@uotinitiative.org",
+          "contactType": "customer support"
+        },
+        "url": "https://uotinitiative.org"
+      }
+    </script>
+  </head>
+  <body class="static-page homepage">
+    <header>
+      <div class="custom-header desktop-only">
+        <div class="header-content">
+          <div class="header-logo">
+            <a href="/es/">
+              <img alt="Logo" class="logo" src="/logo.svg" />
+            </a>
+          </div>
+          <nav class="custom-nav">
+            <a href="/es/search.html"> BUSCAR </a>
+            <a href="/es/about.html"> ACERCA DE </a>
+            <a href="/es/updates.html"> NOVEDADES </a>
+            <a href="mailto:contact@uotinitiative.org"> CONTACTO </a>
+          </nav>
+          <div class="header-actions">
+            <div class="language-selector">
+              <label
+                class="visually-hidden"
+                for="site-language-selector-desktop"
+              >
+                Selecciona el idioma del sitio
+              </label>
+              <select
+                class="language-selector__control"
+                data-language-switcher=""
+                id="site-language-selector-desktop"
+              >
+                <option data-lang="en" value="/">English</option>
+                <option data-lang="es" selected="" value="/es/">
+                  Español
+                </option>
+                <option data-lang="ar" value="/ar/">العربية</option>
+                <option data-lang="zh" value="/zh/">中文</option>
+                <option data-lang="pl" value="/pl/">Polski</option>
+              </select>
+            </div>
+            <a
+              class="donate-button"
+              href="mailto:contact@uotinitiative.org"
+              target="_blank"
+            >
+              DONAR
+            </a>
+          </div>
         </div>
-        <div class="bar">
+      </div>
+      <div class="mobile-only">
+        <div class="header-content">
+          <div class="header-logo">
+            <a href="/es/">
+              <img alt="Logo" class="logo" src="/logo.svg" />
+            </a>
+          </div>
+          <div class="mobile-right">
+            <div class="language-selector">
+              <label
+                class="visually-hidden"
+                for="site-language-selector-mobile"
+              >
+                Selecciona el idioma del sitio
+              </label>
+              <select
+                class="language-selector__control"
+                data-language-switcher=""
+                id="site-language-selector-mobile"
+              >
+                <option data-lang="en" value="/">English</option>
+                <option data-lang="es" selected="" value="/es/">
+                  Español
+                </option>
+                <option data-lang="ar" value="/ar/">العربية</option>
+                <option data-lang="zh" value="/zh/">中文</option>
+                <option data-lang="pl" value="/pl/">Polski</option>
+              </select>
+            </div>
+            <div class="header-logo">
+              <a
+                class="donate-button"
+                href="mailto:contact@uotinitiative.org"
+                target="_blank"
+              >
+                DONAR
+              </a>
+            </div>
+            <nav class="navbar">
+              <div class="hamburger-menu">
+                <div class="bar"></div>
+                <div class="bar"></div>
+                <div class="bar"></div>
+              </div>
+            </nav>
+          </div>
         </div>
-        <div class="bar">
+        <div class="nav-menu">
+          <ul>
+            <li>
+              <a href="/es/search.html"> Buscar </a>
+            </li>
+            <li>
+              <a href="/es/about.html"> Acerca de </a>
+            </li>
+            <li>
+              <a href="/es/updates.html"> Novedades </a>
+            </li>
+            <li>
+              <a href="mailto:contact@uotinitiative.org"> Contacto </a>
+            </li>
+          </ul>
         </div>
-       </div>
-      </nav>
-     </div>
-    </div>
-    <div class="nav-menu">
-     <ul>
-      <li>
-       <a href="/es/search.html">
-        Buscar
-       </a>
-      </li>
-      <li>
-       <a href="/es/about.html">
-        Acerca de
-       </a>
-      </li>
-      <li>
-       <a href="/es/updates.html">
-        Novedades
-       </a>
-      </li>
-      <li>
-       <a href="mailto:contact@uotinitiative.org">
-        Contacto
-       </a>
-      </li>
-     </ul>
-    </div>
-   </div>
-  </header>
-  <main class="container book-container">
-   <h1>
-    Iniciativa Universal de Libros de Texto Abiertos
-   </h1>
-   <section class="homepage-intro">
-    <p>
-     La Iniciativa Universal de Libros de Texto Abiertos está creando el mayor repositorio mundial de libros de texto abiertos, multilingües y de alta calidad. La fundó
-     <a href="https://www.readvatsal.com/about" target="_blank">
-      Vatsal
-     </a>
-     , filósofo y emprendedor.
-    </p>
-    <p>
-     Actualmente nuestra plataforma ofrece
-     <span class="highlight-yellow">
-      79 libros de texto
-     </span>
-     en
-     <span class="highlight-yellow">
-      5 idiomas
-     </span>
-     , con asignaturas que abarcan desde
-     <span class="highlight-yellow">
-      preescolar
-     </span>
-     hasta
-     <span class="highlight-yellow">
-      maestría
-     </span>
-     . Todo el material se puede descargar, compartir y adaptar de forma gratuita.
-    </p>
-    <p>
-     Empieza eligiendo un idioma a continuación o explora toda la colección en la página de
-     <a href="/es/search.html">
-      Búsqueda
-     </a>
-     .
-    </p>
-   </section>
-   <section class="homepage-downloads download-section">
-    <table>
-     <caption class="visually-hidden">
-      Selecciona un idioma, edad del estudiante y asignatura para acceder a los libros de texto abiertos.
-     </caption>
-     <thead>
-      <tr>
-       <th id="language-column" scope="col">
-        Idioma
-       </th>
-       <th id="age-column" scope="col">
-        Edad del estudiante
-       </th>
-       <th id="subject-column" scope="col">
-        Asignatura
-       </th>
-       <th id="download-column" scope="col">
-        Descarga
-       </th>
-      </tr>
-     </thead>
-     <tbody>
-      <tr>
-       <td>
-        <select aria-labelledby="language-column" id="language">
-         <option value="">
-          Selecciona un idioma
-         </option>
-        </select>
-       </td>
-       <td>
-        <select aria-labelledby="age-column" disabled="disabled" id="learner-age">
-         <option value="">
-          Selecciona una edad
-         </option>
-        </select>
-       </td>
-       <td>
-        <select aria-labelledby="subject-column" disabled="disabled" id="subject">
-         <option value="">
-          Selecciona una asignatura
-         </option>
-        </select>
-       </td>
-       <td>
-        <a aria-disabled="true" aria-labelledby="download-column" class="download-link link-with-arrow disabled" href="#" id="download-link" tabindex="-1" target="_blank">
-         Ver detalles y descargar
-        </a>
-       </td>
-      </tr>
-     </tbody>
-    </table>
-   </section>
-  </main>
-  <footer>
-   <p>
-    © 2025 UOTI ∙
-    <a href="/es/terms.html">
-     Términos
-    </a>
-    ∙
-    <a href="/es/privacy.html">
-     Privacidad
-    </a>
-    ∙
-    <a href="mailto:contact@uotinitiative.org">
-     Contacto
-    </a>
-   </p>
-  </footer>
-  <script defer="" src="/scripts.js">
-  </script>
- </body>
+      </div>
+    </header>
+    <main class="container book-container">
+      <h1>Iniciativa Universal de Libros de Texto Abiertos</h1>
+      <section class="homepage-intro">
+        <p>
+          La Iniciativa Universal de Libros de Texto Abiertos está creando el
+          mayor repositorio mundial de libros de texto abiertos, multilingües y
+          de alta calidad. La fundó
+          <a href="https://www.readvatsal.com/about" target="_blank">
+            Vatsal
+          </a>
+          , filósofo y emprendedor.
+        </p>
+        <p>
+          Actualmente nuestra plataforma ofrece
+          <span class="highlight-yellow"> 79 libros de texto </span>
+          en
+          <span class="highlight-yellow"> 5 idiomas </span>
+          , con asignaturas que abarcan desde
+          <span class="highlight-yellow"> preescolar </span>
+          hasta
+          <span class="highlight-yellow"> maestría </span>
+          . Todo el material se puede descargar, compartir y adaptar de forma
+          gratuita.
+        </p>
+        <p>
+          Empieza eligiendo un idioma a continuación o explora toda la colección
+          en la página de
+          <a href="/es/search.html"> Búsqueda </a>
+          .
+        </p>
+      </section>
+      <section class="homepage-downloads download-section">
+        <table>
+          <caption class="visually-hidden">
+            Selecciona un idioma, edad del estudiante y asignatura para acceder
+            a los libros de texto abiertos.
+          </caption>
+          <thead>
+            <tr>
+              <th id="language-column" scope="col">Idioma</th>
+              <th id="age-column" scope="col">Edad del estudiante</th>
+              <th id="subject-column" scope="col">Asignatura</th>
+              <th id="download-column" scope="col">Descarga</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <select aria-labelledby="language-column" id="language">
+                  <option value="">Selecciona un idioma</option>
+                </select>
+              </td>
+              <td>
+                <select
+                  aria-labelledby="age-column"
+                  disabled=""
+                  id="learner-age"
+                >
+                  <option value="">Selecciona una edad</option>
+                </select>
+              </td>
+              <td>
+                <select
+                  aria-labelledby="subject-column"
+                  disabled=""
+                  id="subject"
+                >
+                  <option value="">Selecciona una asignatura</option>
+                </select>
+              </td>
+              <td>
+                <a
+                  aria-disabled="true"
+                  aria-labelledby="download-column"
+                  class="download-link link-with-arrow disabled"
+                  href="#"
+                  id="download-link"
+                  tabindex="-1"
+                  target="_blank"
+                >
+                  Ver detalles y descargar
+                </a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </main>
+    <footer>
+      <p>
+        © 2025 UOTI ∙
+        <a href="/es/terms.html"> Términos </a>
+        ∙
+        <a href="/es/privacy.html"> Privacidad </a>
+        ∙
+        <a href="mailto:contact@uotinitiative.org"> Contacto </a>
+      </p>
+    </footer>
+    <script defer="" src="/scripts.js"></script>
+  </body>
 </html>
