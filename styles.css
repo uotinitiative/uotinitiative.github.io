@@ -838,16 +838,6 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
   transform: translateY(-1px);
 }
 
-.textbook-download__size {
-  margin-left: 6px;
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: normal;
-  text-transform: none;
-  opacity: 0.85;
-  white-space: nowrap;
-}
-
 .license-tooltip {
   display: inline-flex;
   align-items: center;

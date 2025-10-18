@@ -536,88 +536,6 @@ const DownloadManager = (() => {
     return data.url;
   }
 
-  async function fetchFileSizeFromUrl(url) {
-    try {
-      const response = await fetch(url, {
-        method: "HEAD",
-        mode: "cors",
-        credentials: "omit",
-      });
-      if (!response.ok) {
-        throw new Error(`Failed to fetch file size: ${response.status}`);
-      }
-      const lengthHeader = response.headers.get("content-length");
-      if (!lengthHeader) {
-        return null;
-      }
-      const bytes = Number(lengthHeader);
-      return Number.isFinite(bytes) && bytes > 0 ? bytes : null;
-    } catch (error) {
-      console.warn("Unable to determine download size", error);
-      return null;
-    }
-  }
-
-  function formatFileSize(bytes) {
-    if (!Number.isFinite(bytes) || bytes <= 0) {
-      return null;
-    }
-    const units = ["B", "KB", "MB", "GB", "TB"];
-    const base = 1024;
-    const exponent = Math.min(
-      Math.floor(Math.log(bytes) / Math.log(base)),
-      units.length - 1,
-    );
-    const value = bytes / Math.pow(base, exponent);
-    const decimals =
-      exponent === 0 || value >= 10
-        ? 0
-        : exponent === 1
-          ? 0
-          : 1;
-    return `${value.toFixed(decimals)} ${units[exponent]}`;
-  }
-
-  function ensureSizeElement(link) {
-    let sizeElement = link.querySelector(".textbook-download__size");
-    if (!sizeElement) {
-      sizeElement = document.createElement("span");
-      sizeElement.className = "textbook-download__size";
-      sizeElement.setAttribute("aria-live", "polite");
-      link.appendChild(sizeElement);
-    }
-    return sizeElement;
-  }
-
-  async function updateDownloadSize(link, signedUrl) {
-    if (!link || !signedUrl) {
-      return;
-    }
-    const state = link.getAttribute("data-download-size-state");
-    if (state === "loading" || state === "ready") {
-      return;
-    }
-
-    link.setAttribute("data-download-size-state", "loading");
-
-    const bytes = await fetchFileSizeFromUrl(signedUrl);
-    if (!bytes) {
-      link.setAttribute("data-download-size-state", "error");
-      return;
-    }
-
-    const formatted = formatFileSize(bytes);
-    if (!formatted) {
-      link.setAttribute("data-download-size-state", "error");
-      return;
-    }
-
-    const sizeElement = ensureSizeElement(link);
-    sizeElement.textContent = ` (${formatted})`;
-    sizeElement.setAttribute("data-bytes", String(bytes));
-    link.setAttribute("data-download-size-state", "ready");
-  }
-
   function mapPdfToDetailSlug(pdfPath) {
     if (!pdfPath || typeof pdfPath !== "string") {
       return null;
@@ -742,7 +660,6 @@ const DownloadManager = (() => {
 
       link.setAttribute("data-download-state", "ready");
       attachDownloadAnalytics(link);
-      updateDownloadSize(link, signedUrl);
     } catch (error) {
       console.error("Signed download link failed to load", error);
       link.classList.remove("textbook-download--loading");
