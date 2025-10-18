@@ -1,365 +1,295 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta content="width=device-width,initial-scale=1" name="viewport" />
-    <title>Universal Open Textbook Initiative</title>
-    <link href="/styles.css" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com" rel="dns-prefetch" />
-    <link href="https://fonts.gstatic.com" rel="dns-prefetch" />
-    <link href="https://www.googletagmanager.com" rel="dns-prefetch" />
-    <link href="https://www.google-analytics.com" rel="dns-prefetch" />
-    <link href="https://uoti-vercel-api.vercel.app" rel="dns-prefetch" />
-    <link href="https://www.googletagmanager.com" rel="preconnect" />
-    <link href="https://fonts.googleapis.com" rel="preconnect" />
-    <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
-    <link
-      as="style"
-      crossorigin=""
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap"
-      onload="this.onload=null;this.rel='stylesheet'"
-      rel="preload"
-    />
-    <noscript>
-      <link
-        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap"
-        rel="stylesheet"
-      />
-    </noscript>
-    <meta
-      content="The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks."
-      name="description"
-    />
-    <meta
-      content="open textbooks, OER, universal education, Vatsal, learning resources"
-      name="keywords"
-    />
-    <meta content="index, follow" name="robots" />
-    <meta
-      content="Universal Open Textbook Initiative"
-      property="og:site_name"
-    />
-    <meta content="website" property="og:type" />
-    <meta content="Universal Open Textbook Initiative" property="og:title" />
-    <meta
-      content="The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks."
-      property="og:description"
-    />
-    <meta content="https://uotinitiative.org/" property="og:url" />
-    <meta content="https://uotinitiative.org/logo.svg" property="og:image" />
-    <meta content="en-US" property="og:locale" />
-    <meta content="summary_large_image" name="twitter:card" />
-    <meta content="Universal Open Textbook Initiative" name="twitter:title" />
-    <meta
-      content="Explore the world’s largest repository of free, high-quality, multilingual open textbooks from the Universal Open Textbook Initiative."
-      name="twitter:description"
-    />
-    <meta content="https://uotinitiative.org/logo.svg" name="twitter:image" />
-    <link href="https://uotinitiative.org/favicon/favicon.ico" rel="icon" />
-    <link
-      href="https://uotinitiative.org/favicon/favicon.ico"
-      rel="shortcut icon"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/favicon-96x96.png"
-      rel="icon"
-      sizes="96x96"
-      type="image/png"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/web-app-manifest-192x192.png"
-      rel="icon"
-      sizes="192x192"
-      type="image/png"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/web-app-manifest-512x512.png"
-      rel="icon"
-      sizes="512x512"
-      type="image/png"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/favicon.svg"
-      rel="icon"
-      type="image/svg+xml"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/apple-touch-icon.png"
-      rel="apple-touch-icon"
-      sizes="180x180"
-    />
-    <link
-      href="https://uotinitiative.org/favicon/site.webmanifest"
-      rel="manifest"
-    />
-    <link href="https://uotinitiative.org/" rel="canonical" />
-    <link href="https://uotinitiative.org/" hreflang="en" rel="alternate" />
-    <link href="https://uotinitiative.org/es/" hreflang="es" rel="alternate" />
-    <link href="https://uotinitiative.org/ar/" hreflang="ar" rel="alternate" />
-    <link href="https://uotinitiative.org/zh/" hreflang="zh" rel="alternate" />
-    <link href="https://uotinitiative.org/pl/" hreflang="pl" rel="alternate" />
-    <link
-      href="https://uotinitiative.org/"
-      hreflang="x-default"
-      rel="alternate"
-    />
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": ["NonProfit", "EducationalOrganization"],
-        "name": "Universal Open Textbook Initiative",
-        "foundingDate": "2024-05-27",
-        "founder": {
-          "@type": "Person",
-          "name": "Vatsal",
-          "url": "https://www.readvatsal.com"
-        },
-        "description": "The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks.",
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "email": "contact@uotinitiative.org",
-          "contactType": "customer support"
-        },
-        "url": "https://uotinitiative.org"
-      }
-    </script>
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": "Universal Open Textbook Library",
-        "serviceType": "Free multilingual open textbooks",
-        "description": "Access, download, and adapt high-quality open textbooks in multiple languages for learners worldwide.",
-        "provider": {
-          "@type": ["NonProfit", "EducationalOrganization"],
-          "name": "Universal Open Textbook Initiative",
-          "url": "https://uotinitiative.org"
-        },
-        "areaServed": { "@type": "AdministrativeArea", "name": "Worldwide" },
-        "audience": {
-          "@type": "EducationalAudience",
-          "audienceType": "Students, educators, and self-learners",
-          "educationalRole": "Learner"
-        },
-        "offers": {
-          "@type": "Offer",
-          "price": "0",
-          "priceCurrency": "USD",
-          "availability": "https://schema.org/InStock",
-          "url": "https://uotinitiative.org/search.html"
-        }
-      }
-    </script>
-  </head>
-  <body class="static-page homepage">
-    <header>
-      <div class="custom-header desktop-only">
-        <div class="header-content">
-          <div class="header-logo">
-            <a href="/">
-              <img alt="Logo" class="logo" src="logo.svg" />
-            </a>
-          </div>
-          <nav class="custom-nav">
-            <a href="search.html"> SEARCH </a>
-            <a href="about.html"> ABOUT </a>
-            <a href="updates.html"> UPDATES </a>
-            <a href="mailto:contact@uotinitiative.org"> CONTACT </a>
-          </nav>
-          <div class="header-actions">
-            <div class="language-selector">
-              <label
-                class="visually-hidden"
-                for="site-language-selector-desktop"
-              >
-                Select site language
-              </label>
-              <select
-                class="language-selector__control"
-                data-language-switcher=""
-                id="site-language-selector-desktop"
-              >
-                <option data-lang="en" selected="" value="/">
-                  English
-                </option>
-                <option data-lang="es" value="/es/">Español</option>
-                <option data-lang="ar" value="/ar/">العربية</option>
-                <option data-lang="zh" value="/zh/">中文</option>
-                <option data-lang="pl" value="/pl/">Polski</option>
-              </select>
-            </div>
-            <a
-              class="donate-button"
-              href="mailto:contact@uotinitiative.org"
-              target="_blank"
-            >
-              DONATE
-            </a>
-          </div>
-        </div>
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>
+   Universal Open Textbook Initiative
+  </title>
+  <link href="/styles.css" rel="stylesheet"/>
+  <link href="https://fonts.googleapis.com" rel="dns-prefetch"/>
+  <link href="https://fonts.gstatic.com" rel="dns-prefetch"/>
+  <link href="https://www.googletagmanager.com" rel="dns-prefetch"/>
+  <link href="https://www.google-analytics.com" rel="dns-prefetch"/>
+  <link href="https://uoti-vercel-api.vercel.app" rel="dns-prefetch"/>
+  <link href="https://www.googletagmanager.com" rel="preconnect"/>
+  <link href="https://fonts.googleapis.com" rel="preconnect"/>
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+  <link as="style" crossorigin="" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap" onload="this.onload=null;this.rel='stylesheet'" rel="preload"/>
+  <noscript>
+   <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600&amp;display=swap" rel="stylesheet"/>
+  </noscript>
+  <meta content="The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks." name="description"/>
+  <meta content="open textbooks, OER, universal education, Vatsal, learning resources" name="keywords"/>
+  <meta content="index, follow" name="robots"/>
+  <meta content="Universal Open Textbook Initiative" property="og:site_name"/>
+  <meta content="website" property="og:type"/>
+  <meta content="Universal Open Textbook Initiative" property="og:title"/>
+  <meta content="The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks." property="og:description"/>
+  <meta content="https://uotinitiative.org/" property="og:url"/>
+  <meta content="https://uotinitiative.org/logo.svg" property="og:image"/>
+  <meta content="en-US" property="og:locale"/>
+  <meta content="summary_large_image" name="twitter:card"/>
+  <meta content="Universal Open Textbook Initiative" name="twitter:title"/>
+  <meta content="Explore the world’s largest repository of free, high-quality, multilingual open textbooks from the Universal Open Textbook Initiative." name="twitter:description"/>
+  <meta content="https://uotinitiative.org/logo.svg" name="twitter:image"/>
+  <link href="https://uotinitiative.org/favicon/favicon.ico" rel="icon"/>
+  <link href="https://uotinitiative.org/favicon/favicon.ico" rel="shortcut icon"/>
+  <link href="https://uotinitiative.org/favicon/favicon-96x96.png" rel="icon" sizes="96x96" type="image/png"/>
+  <link href="https://uotinitiative.org/favicon/web-app-manifest-192x192.png" rel="icon" sizes="192x192" type="image/png"/>
+  <link href="https://uotinitiative.org/favicon/web-app-manifest-512x512.png" rel="icon" sizes="512x512" type="image/png"/>
+  <link href="https://uotinitiative.org/favicon/favicon.svg" rel="icon" type="image/svg+xml"/>
+  <link href="https://uotinitiative.org/favicon/apple-touch-icon.png" rel="apple-touch-icon" sizes="180x180"/>
+  <link href="https://uotinitiative.org/favicon/site.webmanifest" rel="manifest"/>
+  <link href="https://uotinitiative.org/" rel="canonical"/>
+  <link href="https://uotinitiative.org/" hreflang="en" rel="alternate"/>
+  <link href="https://uotinitiative.org/es/" hreflang="es" rel="alternate"/>
+  <link href="https://uotinitiative.org/ar/" hreflang="ar" rel="alternate"/>
+  <link href="https://uotinitiative.org/zh/" hreflang="zh" rel="alternate"/>
+  <link href="https://uotinitiative.org/pl/" hreflang="pl" rel="alternate"/>
+  <link href="https://uotinitiative.org/" hreflang="x-default" rel="alternate"/>
+  <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":["NonProfit","EducationalOrganization"],"name":"Universal Open Textbook Initiative","foundingDate":"2024-05-27","founder":{"@type":"Person","name":"Vatsal","url":"https://www.readvatsal.com"},"description":"The Universal Open Textbook Initiative (UOTI) aims to improve the quality and accessibility of educational resources worldwide by providing free, high-quality, multilingual textbooks.","contactPoint":{"@type":"ContactPoint","email":"contact@uotinitiative.org","contactType":"customer support"},"url":"https://uotinitiative.org"}
+  </script>
+  <script type="application/ld+json">
+   {"@context":"https://schema.org","@type":"Service","name":"Universal Open Textbook Library","serviceType":"Free multilingual open textbooks","description":"Access, download, and adapt high-quality open textbooks in multiple languages for learners worldwide.","provider":{"@type":["NonProfit","EducationalOrganization"],"name":"Universal Open Textbook Initiative","url":"https://uotinitiative.org"},"areaServed":{"@type":"AdministrativeArea","name":"Worldwide"},"audience":{"@type":"EducationalAudience","audienceType":"Students, educators, and self-learners","educationalRole":"Learner"},"offers":{"@type":"Offer","price":"0","priceCurrency":"USD","availability":"https://schema.org/InStock","url":"https://uotinitiative.org/search.html"}}
+  </script>
+ </head>
+ <body class="static-page homepage">
+  <header>
+   <div class="custom-header desktop-only">
+    <div class="header-content">
+     <div class="header-logo">
+      <a href="/">
+       <img alt="Logo" class="logo" src="logo.svg"/>
+      </a>
+     </div>
+     <nav class="custom-nav">
+      <a href="search.html">
+       SEARCH
+      </a>
+      <a href="about.html">
+       ABOUT
+      </a>
+      <a href="updates.html">
+       UPDATES
+      </a>
+      <a href="mailto:contact@uotinitiative.org">
+       CONTACT
+      </a>
+     </nav>
+     <div class="header-actions">
+      <div class="language-selector">
+       <label class="visually-hidden" for="site-language-selector-desktop">
+        Select site language
+       </label>
+       <select class="language-selector__control" data-language-switcher="" id="site-language-selector-desktop">
+        <option data-lang="en" selected="selected" value="/">
+         English
+        </option>
+        <option data-lang="es" value="/es/">
+         Español
+        </option>
+        <option data-lang="ar" value="/ar/">
+         العربية
+        </option>
+        <option data-lang="zh" value="/zh/">
+         中文
+        </option>
+        <option data-lang="pl" value="/pl/">
+         Polski
+        </option>
+       </select>
       </div>
-      <div class="mobile-only">
-        <div class="header-content">
-          <div class="header-logo">
-            <a href="/">
-              <img alt="Logo" class="logo" src="logo.svg" />
-            </a>
-          </div>
-          <div class="mobile-right">
-            <div class="language-selector">
-              <label
-                class="visually-hidden"
-                for="site-language-selector-mobile"
-              >
-                Select site language
-              </label>
-              <select
-                class="language-selector__control"
-                data-language-switcher=""
-                id="site-language-selector-mobile"
-              >
-                <option data-lang="en" selected="" value="/">
-                  English
-                </option>
-                <option data-lang="es" value="/es/">Español</option>
-                <option data-lang="ar" value="/ar/">العربية</option>
-                <option data-lang="zh" value="/zh/">中文</option>
-                <option data-lang="pl" value="/pl/">Polski</option>
-              </select>
-            </div>
-            <div class="header-logo">
-              <a
-                class="donate-button"
-                href="mailto:contact@uotinitiative.org"
-                target="_blank"
-              >
-                DONATE
-              </a>
-            </div>
-            <nav class="navbar">
-              <div class="hamburger-menu">
-                <div class="bar"></div>
-                <div class="bar"></div>
-                <div class="bar"></div>
-              </div>
-            </nav>
-          </div>
-        </div>
-        <div class="nav-menu">
-          <ul>
-            <li>
-              <a href="search.html"> Search </a>
-            </li>
-            <li>
-              <a href="about.html"> About </a>
-            </li>
-            <li>
-              <a href="updates.html"> Updates </a>
-            </li>
-            <li>
-              <a href="mailto:contact@uotinitiative.org"> Contact </a>
-            </li>
-          </ul>
-        </div>
+      <a class="donate-button" href="mailto:contact@uotinitiative.org" target="_blank">
+       DONATE
+      </a>
+     </div>
+    </div>
+   </div>
+   <div class="mobile-only">
+    <div class="header-content">
+     <div class="header-logo">
+      <a href="/">
+       <img alt="Logo" class="logo" src="logo.svg"/>
+      </a>
+     </div>
+     <div class="mobile-right">
+      <div class="language-selector">
+       <label class="visually-hidden" for="site-language-selector-mobile">
+        Select site language
+       </label>
+       <select class="language-selector__control" data-language-switcher="" id="site-language-selector-mobile">
+        <option data-lang="en" selected="selected" value="/">
+         English
+        </option>
+        <option data-lang="es" value="/es/">
+         Español
+        </option>
+        <option data-lang="ar" value="/ar/">
+         العربية
+        </option>
+        <option data-lang="zh" value="/zh/">
+         中文
+        </option>
+        <option data-lang="pl" value="/pl/">
+         Polski
+        </option>
+       </select>
       </div>
-    </header>
-    <main class="container book-container">
-      <h1>Universal Open Textbook Initiative</h1>
-      <section class="homepage-intro">
-        <p>
-          The Universal Open Textbook Initiative is building the world’s largest
-          repository of high-quality, multilingual open textbooks. It was
-          founded by
-          <a href="https://www.readvatsal.com/about" target="_blank">
-            Vatsal
-          </a>
-          , a philosopher and entrepreneur.
-        </p>
-        <p>
-          Our platform currently offers
-          <span class="highlight-yellow"> 79 textbooks </span>
-          in
-          <span class="highlight-yellow"> 5 languages </span>
-          , covering subjects from
-          <span class="highlight-yellow"> Kindergarten </span>
-          through
-          <span class="highlight-yellow"> Master’s </span>
-          . All materials are free to download, share, and adapt.
-        </p>
-        <p>
-          Get started by selecting a language below, or explore the entire
-          collection on the
-          <a href="search.html"> Search </a>
-          page.
-        </p>
-      </section>
-      <section class="homepage-downloads download-section">
-        <table>
-          <caption class="visually-hidden">
-            Select a language, learner age, and subject to access open textbook
-            downloads.
-          </caption>
-          <thead>
-            <tr>
-              <th id="language-column" scope="col">Language</th>
-              <th id="age-column" scope="col">Learner Age</th>
-              <th id="subject-column" scope="col">Subject</th>
-              <th id="download-column" scope="col">Download</th>
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <td>
-                <select aria-labelledby="language-column" id="language">
-                  <option value="">Select Language</option>
-                </select>
-              </td>
-              <td>
-                <select
-                  aria-labelledby="age-column"
-                  disabled=""
-                  id="learner-age"
-                >
-                  <option value="">Select Age</option>
-                </select>
-              </td>
-              <td>
-                <select
-                  aria-labelledby="subject-column"
-                  disabled=""
-                  id="subject"
-                >
-                  <option value="">Select Subject</option>
-                </select>
-              </td>
-              <td>
-                <a
-                  aria-disabled="true"
-                  aria-labelledby="download-column"
-                  class="download-link link-with-arrow disabled"
-                  href="#"
-                  id="download-link"
-                  tabindex="-1"
-                  target="_blank"
-                >
-                  View Details &amp; Download
-                </a>
-              </td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
-    </main>
-    <footer>
-      <p>
-        © 2025 UOTI ∙
-        <a href="terms.html"> Terms </a>
-        ∙
-        <a href="privacy.html"> Privacy </a>
-        ∙
-        <a href="mailto:contact@uotinitiative.org"> Contact </a>
-      </p>
-    </footer>
-    <script defer="" src="/scripts.js"></script>
-  </body>
+      <div class="header-logo">
+       <a class="donate-button" href="mailto:contact@uotinitiative.org" target="_blank">
+        DONATE
+       </a>
+      </div>
+      <nav class="navbar">
+       <div class="hamburger-menu">
+        <div class="bar">
+        </div>
+        <div class="bar">
+        </div>
+        <div class="bar">
+        </div>
+       </div>
+      </nav>
+     </div>
+    </div>
+    <div class="nav-menu">
+     <ul>
+      <li>
+       <a href="search.html">
+        Search
+       </a>
+      </li>
+      <li>
+       <a href="about.html">
+        About
+       </a>
+      </li>
+      <li>
+       <a href="updates.html">
+        Updates
+       </a>
+      </li>
+      <li>
+       <a href="mailto:contact@uotinitiative.org">
+        Contact
+       </a>
+      </li>
+     </ul>
+    </div>
+   </div>
+  </header>
+  <main class="container book-container">
+   <h1>
+    Universal Open Textbook Initiative
+   </h1>
+   <section class="homepage-intro">
+    <p>
+     The Universal Open Textbook Initiative is building the world’s largest repository of high-quality, multilingual open textbooks. It was founded by
+     <a href="https://www.readvatsal.com/about" target="_blank">
+      Vatsal
+     </a>
+     , a philosopher and entrepreneur.
+    </p>
+    <p>
+     Our platform currently offers
+     <span class="highlight-yellow">
+      79 textbooks
+     </span>
+     in
+     <span class="highlight-yellow">
+      5 languages
+     </span>
+     , covering subjects from
+     <span class="highlight-yellow">
+      Kindergarten
+     </span>
+     through
+     <span class="highlight-yellow">
+      Master’s
+     </span>
+     . All materials are free to download, share, and adapt.
+    </p>
+    <p>
+     Get started by selecting a language below, or explore the entire collection on the
+     <a href="search.html">
+      Search
+     </a>
+     page.
+    </p>
+   </section>
+   <section class="homepage-downloads download-section">
+    <table>
+     <caption class="visually-hidden">
+      Select a language, learner age, and subject to access open textbook downloads.
+     </caption>
+     <thead>
+      <tr>
+       <th id="language-column" scope="col">
+        Language
+       </th>
+       <th id="age-column" scope="col">
+        Learner Age
+       </th>
+       <th id="subject-column" scope="col">
+        Subject
+       </th>
+       <th id="download-column" scope="col">
+        Download
+       </th>
+      </tr>
+     </thead>
+     <tbody>
+      <tr>
+       <td>
+        <select aria-labelledby="language-column" id="language">
+         <option value="">
+          Select Language
+         </option>
+        </select>
+       </td>
+       <td>
+        <select aria-labelledby="age-column" disabled="disabled" id="learner-age">
+         <option value="">
+          Select Age
+         </option>
+        </select>
+       </td>
+       <td>
+        <select aria-labelledby="subject-column" disabled="disabled" id="subject">
+         <option value="">
+          Select Subject
+         </option>
+        </select>
+       </td>
+       <td>
+        <a aria-disabled="true" aria-labelledby="download-column" class="download-link link-with-arrow disabled" href="#" id="download-link" tabindex="-1" target="_blank">
+         View Details &amp; Download
+        </a>
+       </td>
+      </tr>
+     </tbody>
+    </table>
+   </section>
+  </main>
+  <footer>
+   <p>
+    © 2025 UOTI ∙
+    <a href="terms.html">
+     Terms
+    </a>
+    ∙
+    <a href="privacy.html">
+     Privacy
+    </a>
+    ∙
+    <a href="mailto:contact@uotinitiative.org">
+     Contact
+    </a>
+   </p>
+  </footer>
+  <script defer="" src="/scripts.js">
+  </script>
+ </body>
 </html>
