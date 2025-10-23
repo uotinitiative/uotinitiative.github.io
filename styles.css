@@ -278,7 +278,7 @@ header {
   text-decoration: underline;
 }
 
-.donate-button {
+.header-search-button {
   background-color: var(--color-accent);
   color: var(--color-surface) !important;
   padding: 8px 16px;
@@ -288,11 +288,23 @@ header {
   text-transform: uppercase;
   letter-spacing: 0.05em;
   transition: background-color 0.3s ease;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
 }
 
-.donate-button:hover {
+.header-search-button:hover {
   background-color: var(--color-accent-dark);
   text-decoration: none;
+}
+
+.header-search-button__icon {
+  width: 20px;
+  height: 20px;
+}
+
+.header-search-button__label {
+  line-height: 1;
 }
 
 .mobile-only header .navbar {
@@ -326,10 +338,16 @@ header {
   margin-right: auto;
 }
 
-.mobile-only .donate-button {
+.mobile-only .header-search-button {
   margin: 0;
   padding: 6px 12px;
   font-size: 11px;
+  gap: 6px;
+}
+
+.mobile-only .header-search-button__icon {
+  width: 18px;
+  height: 18px;
 }
 
 .hamburger-menu {
@@ -1413,7 +1431,7 @@ html[dir="rtl"] .link-with-arrow:not(.disabled):hover::after {
     width: 45px;
   }
 
-  .donate-button {
+  .header-search-button {
     font-size: 11.5px;
   }
 
