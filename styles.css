@@ -1,7 +1,7 @@
 /* Root tokens */
 :root {
   --font-family-base: system-ui, -apple-system, Arial, sans-serif;
-  --font-family-brand: "Cormorant Garamond", "Times New Roman", serif;
+  --font-family-brand: "Cormorant Garamond", Garamond, "Times New Roman", serif;
   --color-accent: #f69520;
   --color-accent-dark: #d47916;
   --color-surface: #fff;
