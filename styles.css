@@ -245,20 +245,29 @@ header {
 .language-selector__control {
   width: auto;
   min-width: 0;
-  padding: 7px 36px 7px 14px;
+  padding: 8px 44px 8px 18px;
   font-size: 13px;
+  font-weight: 500;
+  letter-spacing: 0.015em;
   border-radius: 999px;
-  border-color: var(--color-accent);
+  border: 1.5px solid var(--color-accent);
   background-color: var(--color-surface);
+  background-image: url("data:image/svg+xml;utf8,<svg fill='%23f69520' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/></svg>");
+  background-repeat: no-repeat;
+  background-position: right 16px center;
+  background-size: 13px;
   color: var(--color-text-primary);
+  transition: border-color 0.2s ease-in-out, background-color 0.2s ease-in-out;
 }
 
 .language-selector__control:focus {
-  border-color: var(--color-accent);
+  border-color: var(--color-accent-dark);
+  background-color: var(--color-surface);
 }
 
 .language-selector__control:hover {
   border-color: var(--color-accent-dark);
+  background-color: var(--color-surface);
 }
 
 .custom-nav a {
@@ -281,13 +290,14 @@ header {
 .header-search-button {
   background-color: var(--color-accent);
   color: var(--color-surface) !important;
-  padding: 8px 16px;
-  border-radius: 20px;
+  padding: 8px 20px;
+  border-radius: 999px;
+  border: 1.5px solid var(--color-accent);
   font-size: 14px;
-  font-weight: 500;
+  font-weight: 600;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, transform 0.2s ease;
   display: inline-flex;
   align-items: center;
   gap: 8px;
@@ -296,6 +306,8 @@ header {
 .header-search-button:hover {
   background-color: var(--color-accent-dark);
   text-decoration: none;
+  transform: translateY(-1px);
+  box-shadow: 0 10px 18px rgba(212, 121, 22, 0.32);
 }
 
 .header-search-button__icon {
