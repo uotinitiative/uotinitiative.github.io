@@ -1,7 +1,47 @@
+@font-face {
+  font-family: "Cinzel";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/Cinzel-homepage.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/CormorantGaramond-homepage.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("/assets/fonts/NotoNaskhArabic-homepage.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "Noto Naskh Arabic";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/NotoNaskhArabic-homepage.woff2") format("woff2");
+}
+
+@font-face {
+  font-family: "ZCOOL XiaoWei";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("/assets/fonts/ZCOOLXiaoWei-homepage.woff2") format("woff2");
+}
+
 /* Root tokens */
 :root {
   --font-family-base: system-ui, -apple-system, Arial, sans-serif;
-  --font-family-brand: "Trajan Pro", "Trajan", "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-family-brand: "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
   --color-accent: #f69520;
   --color-accent-dark: #d47916;
   --color-surface: #fff;
