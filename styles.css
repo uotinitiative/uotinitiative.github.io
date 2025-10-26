@@ -34,6 +34,19 @@ body {
   flex-direction: column;
 }
 
+html[lang="es"],
+html[lang="pl"] {
+  --font-family-brand: "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
+}
+
+html[lang="zh"] {
+  --font-family-brand: "Noto Serif SC", "Songti SC", "SimSun", serif;
+}
+
+html[lang="ar"] {
+  --font-family-brand: "Amiri", "Scheherazade New", serif;
+}
+
 p {
   margin-bottom: 1em;
 }
