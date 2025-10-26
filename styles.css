@@ -1,7 +1,7 @@
 /* Root tokens */
 :root {
   --font-family-base: system-ui, -apple-system, Arial, sans-serif;
-  --font-family-brand: "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-family-brand: "Trajan Pro", "Trajan", "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
   --color-accent: #f69520;
   --color-accent-dark: #d47916;
   --color-surface: #fff;
@@ -45,8 +45,8 @@ h1 {
 
 .homepage main > h1 {
   font-family: var(--font-family-brand);
-  font-weight: 600;
-  letter-spacing: 0.01em;
+  font-weight: 500;
+  letter-spacing: 0.08em;
 }
 
 .highlight-yellow {
