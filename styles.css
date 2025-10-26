@@ -46,7 +46,7 @@ h1 {
 .homepage main > h1 {
   font-family: var(--font-family-brand);
   font-weight: 500;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
 }
 
 .highlight-yellow {
