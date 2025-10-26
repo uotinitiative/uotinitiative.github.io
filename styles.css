@@ -40,11 +40,11 @@ html[lang="pl"] {
 }
 
 html[lang="zh"] {
-  --font-family-brand: "Noto Serif SC", "Songti SC", "SimSun", serif;
+  --font-family-brand: "ZCOOL XiaoWei", "Songti SC", "STSong", "SimSun", serif;
 }
 
 html[lang="ar"] {
-  --font-family-brand: "Amiri", "Scheherazade New", serif;
+  --font-family-brand: "Noto Naskh Arabic", "Amiri", "Scheherazade New", serif;
 }
 
 p {
@@ -60,6 +60,11 @@ h1 {
   font-family: var(--font-family-brand);
   font-weight: 500;
   letter-spacing: 0.06em;
+}
+
+html[lang="zh"] .homepage main > h1,
+html[lang="ar"] .homepage main > h1 {
+  letter-spacing: 0;
 }
 
 .highlight-yellow {
