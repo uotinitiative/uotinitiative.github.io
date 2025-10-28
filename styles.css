@@ -20,7 +20,7 @@
   font-family: "Noto Naskh Arabic";
   font-style: normal;
   font-weight: 500;
-  font-display: block;
+  font-display: swap;
   src: url("/assets/fonts/NotoNaskhArabic-homepage.woff2") format("woff2");
 }
 
@@ -28,7 +28,7 @@
   font-family: "Noto Naskh Arabic";
   font-style: normal;
   font-weight: 600;
-  font-display: block;
+  font-display: swap;
   src: url("/assets/fonts/NotoNaskhArabic-homepage.woff2") format("woff2");
 }
 
@@ -36,7 +36,7 @@
   font-family: "ZCOOL XiaoWei";
   font-style: normal;
   font-weight: 400;
-  font-display: block;
+  font-display: swap;
   src: url("/assets/fonts/ZCOOLXiaoWei-homepage.woff2") format("woff2");
 }
 
@@ -44,7 +44,7 @@
   font-family: "ZCOOL XiaoWei";
   font-style: normal;
   font-weight: 500;
-  font-display: block;
+  font-display: swap;
   src: url("/assets/fonts/ZCOOLXiaoWei-homepage.woff2") format("woff2");
 }
 
@@ -132,6 +132,16 @@ html[lang="zh"] .hero h1,
 html[lang="ar"] .hero h1 {
   letter-spacing: 0;
   text-transform: none;
+}
+
+html[lang="zh"] .hero h1 {
+  font-weight: 500;
+  font-synthesis: none;
+}
+
+html[lang="ar"] .hero h1 {
+  font-weight: 600;
+  font-synthesis: none;
 }
 
 @media (min-width: 1200px) {
