@@ -52,6 +52,9 @@
 :root {
   --font-family-base: system-ui, -apple-system, Arial, sans-serif;
   --font-family-brand: "Playfair Display", "Times New Roman", serif;
+  --hero-heading-font-weight: 600;
+  --hero-heading-text-transform: uppercase;
+  --hero-heading-letter-spacing: 0.012em;
   --color-accent: #f69520;
   --color-accent-dark: #d47916;
   --color-surface: #fff;
@@ -91,10 +94,15 @@ html[lang="pl"] {
 
 html[lang="zh"] {
   --font-family-brand: "ZCOOL XiaoWei", "Songti SC", "STSong", "SimSun", serif;
+  --hero-heading-font-weight: 500;
+  --hero-heading-text-transform: none;
+  --hero-heading-letter-spacing: 0;
 }
 
 html[lang="ar"] {
   --font-family-brand: "Noto Naskh Arabic", "Amiri", "Scheherazade New", serif;
+  --hero-heading-text-transform: none;
+  --hero-heading-letter-spacing: 0;
 }
 
 p {
@@ -108,12 +116,12 @@ h1 {
 
 .hero h1 {
   font-family: var(--font-family-brand);
-  font-weight: 600;
+  font-weight: var(--hero-heading-font-weight, 600);
   font-optical-sizing: auto;
   font-feature-settings: "kern" 1, "liga" 1;
   color: #1f2a37;
-  text-transform: uppercase;
-  letter-spacing: 0.012em;
+  text-transform: var(--hero-heading-text-transform, uppercase);
+  letter-spacing: var(--hero-heading-letter-spacing, 0.012em);
   line-height: 1.1;
   margin-bottom: 0.6rem;
   font-size: clamp(28px, 4.2vw, 48px);
@@ -130,17 +138,6 @@ h1 {
 
 html[lang="zh"] .hero h1,
 html[lang="ar"] .hero h1 {
-  letter-spacing: 0;
-  text-transform: none;
-}
-
-html[lang="zh"] .hero h1 {
-  font-weight: 500;
-  font-synthesis: none;
-}
-
-html[lang="ar"] .hero h1 {
-  font-weight: 600;
   font-synthesis: none;
 }
 
