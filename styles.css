@@ -1,17 +1,19 @@
 @font-face {
-  font-family: "Cinzel";
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: url("/assets/fonts/Cinzel-homepage.woff2") format("woff2");
-}
-
-@font-face {
-  font-family: "Cormorant Garamond";
+  font-family: "Playfair Display";
   font-style: normal;
   font-weight: 600;
   font-display: swap;
-  src: url("/assets/fonts/CormorantGaramond-homepage.woff2") format("woff2");
+  src: url("/assets/fonts/PlayfairDisplay-SemiBold-latin-ext.woff2") format("woff2");
+  unicode-range: U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C0, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+@font-face {
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("/assets/fonts/PlayfairDisplay-SemiBold-latin.woff2") format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 }
 
 @font-face {
@@ -49,7 +51,7 @@
 /* Root tokens */
 :root {
   --font-family-base: system-ui, -apple-system, Arial, sans-serif;
-  --font-family-brand: "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-family-brand: "Playfair Display", "Times New Roman", serif;
   --color-accent: #f69520;
   --color-accent-dark: #d47916;
   --color-surface: #fff;
@@ -84,7 +86,7 @@ body {
 
 html[lang="es"],
 html[lang="pl"] {
-  --font-family-brand: "Cinzel", "Cormorant Garamond", Garamond, "Times New Roman", serif;
+  --font-family-brand: "Playfair Display", "Times New Roman", serif;
 }
 
 html[lang="zh"] {
@@ -104,15 +106,38 @@ h1 {
   margin-bottom: 20px;
 }
 
-.homepage main > h1 {
+.hero h1 {
   font-family: var(--font-family-brand);
-  font-weight: 500;
-  letter-spacing: 0.06em;
+  font-weight: 600;
+  font-optical-sizing: auto;
+  font-feature-settings: "kern" 1, "liga" 1;
+  color: #1f2a37;
+  text-transform: uppercase;
+  letter-spacing: 0.012em;
+  line-height: 1.1;
+  margin-bottom: 0.6rem;
+  font-size: clamp(28px, 4.2vw, 48px);
 }
 
-html[lang="zh"] .homepage main > h1,
-html[lang="ar"] .homepage main > h1 {
+.hero .intro {
+  max-width: 62ch;
+  line-height: 1.55;
+}
+
+.hero .intro p + p {
+  margin-top: 0.5rem;
+}
+
+html[lang="zh"] .hero h1,
+html[lang="ar"] .hero h1 {
   letter-spacing: 0;
+  text-transform: none;
+}
+
+@media (min-width: 1200px) {
+  .hero h1 {
+    font-size: 44px;
+  }
 }
 
 .highlight-yellow {
@@ -559,7 +584,7 @@ header {
   font-size: 14px;
   font-family: var(--font-family-base);
   padding: 10px 16px;
-  border: 1px solid #d1d5db;
+  border: 1px solid var(--color-border-subtle);
   border-radius: 8px;
   background-color: var(--color-surface);
   box-sizing: border-box;
@@ -574,8 +599,8 @@ header {
 }
 
 .homepage-downloads .download-link:not(.disabled):hover {
-  border-color: #a0aec0;
-  box-shadow: 0 2px 4px rgba(15, 23, 42, 0.12);
+  border-color: #cbd5f0;
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.08);
 }
 
 #download-link.download-link-active,
